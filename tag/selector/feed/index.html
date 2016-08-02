@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; selector</title>
+	<atom:link href="http://marcusschiesser.de/tag/selector/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Let the user select an item in a modal dialog</title>
+		<link>http://marcusschiesser.de/2009/08/05/selecting-an-item-in-javascript/</link>
+		<comments>http://marcusschiesser.de/2009/08/05/selecting-an-item-in-javascript/#comments</comments>
+		<pubDate>Wed, 05 Aug 2009 13:31:29 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Component]]></category>
+		<category><![CDATA[YUI]]></category>
+		<category><![CDATA[choose]]></category>
+		<category><![CDATA[item]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[selector]]></category>
+		<category><![CDATA[yui3]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=328</guid>
+		<description><![CDATA[After having used the shiny new YUI3 library for a project, it&#8217;s about time to share my YUI3 experiences with you. For the project I built an item selector: A modal dialog is openend and the user has to select an item. After selection the dialog is closed and the selected item is passed to &#8230; <a href="http://marcusschiesser.de/2009/08/05/selecting-an-item-in-javascript/" class="more-link">Continue reading <span class="screen-reader-text">Let the user select an item in a modal dialog</span></a>]]></description>
+				<content:encoded><![CDATA[<p><script src="http://yui.yahooapis.com/3.0.0/build/yui/yui-min.js">
+</script>After having used the shiny new <a href="http://developer.yahoo.com/yui/3/">YUI3</a> library for a project, it&#8217;s about time to share my YUI3 experiences with you.<br />
+For the project I built an item selector: A modal dialog is openend and the user has to select an item. After selection the dialog is closed and the selected item is passed to a callback function.</p>
+<p>Here you can find the <a href="http://www.marcusschiesser.de/wp-content/uploads/2009/08/ItemSelector.js">full source</a> for the item selector. An example to use the selector can be as simple as this:</p><pre class="crayon-plain-tag">ms.ItemSelector.selectItem(['Bart', 'Lisa', 'Homer', 'Marge', 'Maggie', 'Ned', 'Barney', 'Bob'], function(item){
+  alert(item + ' is your favorite character.');
+});</pre><p></p>
+<p>Just click on the following button, to start the example. Enjoy and let me know your comments.</p>
+<style type="text/css">			a.item-selector-clickme {
+				background-color: red;
+				padding: 4px;
+				color: white;
+				text-decoration: none;
+			}	a.item-selector-clickme:hover {
+				color: yellow;
+			}  .item-selector-header {
+                font-weight: bold;
+                padding: 10px;
+            } .item-selector {
+                overflow: auto;
+                height: 150px;
+            }.item-selector li a:hover {
+                color: red;
+            }.item-selector li {
+                list-style: none;
+            } .item-selector li a {
+                text-decoration: none;
+                color: #333;
+            }  .yui-overlay-content {
+                padding: 3px; font-size: 16px;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+				width: 200px;
+				height: 210px;
+                border: 2px solid #000;
+                background-color: #fff;
+            }
+        </style>
+<p>        <script type="text/javascript" src="http://www.marcusschiesser.de/wp-content/uploads/2009/08/ItemSelector.js">
+        </script><br />
+        <script type="text/javascript" src="http://www.marcusschiesser.de/wp-content/uploads/2009/08/itemselector.js">
+        </script></p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/08/05/selecting-an-item-in-javascript/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Phone number selector in ExtJS</title>
+		<link>http://marcusschiesser.de/2009/04/08/phone-number-selector-in-extjs/</link>
+		<comments>http://marcusschiesser.de/2009/04/08/phone-number-selector-in-extjs/#comments</comments>
+		<pubDate>Wed, 08 Apr 2009 17:10:42 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[ExtJS]]></category>
+		<category><![CDATA[Technology]]></category>
+		<category><![CDATA[code]]></category>
+		<category><![CDATA[country]]></category>
+		<category><![CDATA[ext]]></category>
+		<category><![CDATA[field]]></category>
+		<category><![CDATA[number]]></category>
+		<category><![CDATA[phone]]></category>
+		<category><![CDATA[selector]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=232</guid>
+		<description><![CDATA[Wouldn&#8217;t it be nice to use a combo box of flag images to select the country code of phone numbers? If you use a country selection component that&#8217;s quite easy. Just wrap it in a re-usable component together with a textfield for the local number and the result looks like this: And here&#8217;s the example&#8217;s &#8230; <a href="http://marcusschiesser.de/2009/04/08/phone-number-selector-in-extjs/" class="more-link">Continue reading <span class="screen-reader-text">Phone number selector in ExtJS</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Wouldn&#8217;t it be nice to use a combo box of flag images to select the country code of phone numbers? </p>
+<p>If you use a <a href="http://www.marcusschiesser.de/?p=209">country selection component</a> that&#8217;s quite easy. Just wrap it in a re-usable component together with a textfield for the local number and the result looks like this:</p>
+<p><script type="text/javascript" src='http://www.marcusschiesser.de/wp-content/uploads/2009/04/iconcombo1.js'>iconcombo1</script><script type="text/javascript" src='http://www.marcusschiesser.de/wp-content/uploads/2009/04/countrycombo1.js'>countrycombo1</script><script type="text/javascript" src='http://www.marcusschiesser.de/wp-content/uploads/2009/04/phonefield.js'>phonefield</script><script type="text/javascript" src='http://www.marcusschiesser.de/wp-content/uploads/2009/04/phonefield1.js'>phonefield1</script></p>
+<p>And here&#8217;s the example&#8217;s source:</p>
+<p></p><pre class="crayon-plain-tag">Ext.onReady(function(){
+    var panel = new Ext.FormPanel({
+        style: 'padding: 10px;',
+        frame: true,
+        labelWidth: 50,
+        width: 400,
+        
+        items: [{
+            fieldLabel: 'Mobile',
+            xtype: 'phonefield',
+            anchor: '100%',
+            emptyText: '(e.g.: 423-423-423)',
+            defaultCountryCode: '49',
+            maskRe: /[0-9 -]/
+        }]
+    });
+    var element = Ext.query('script[src$=phonefield.js]')[0];
+    var renderElement = element.parentNode;
+    panel.render(renderElement);
+});</pre><p></p>
+<p><b>Update:</b> You can find this code and all my other ExtJS components bundled in <a href="http://code.google.com/p/extensive/">a library called &#8216;extensive&#8217;</a>. Enjoy the code and feel free to support the project by participating.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/04/08/phone-number-selector-in-extjs/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Component for selecting multiple items in Ext</title>
+		<link>http://marcusschiesser.de/2009/04/08/component-for-selecting-multiple-items-in-ext/</link>
+		<comments>http://marcusschiesser.de/2009/04/08/component-for-selecting-multiple-items-in-ext/#comments</comments>
+		<pubDate>Wed, 08 Apr 2009 16:52:08 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[ExtJS]]></category>
+		<category><![CDATA[Technology]]></category>
+		<category><![CDATA[combo]]></category>
+		<category><![CDATA[Component]]></category>
+		<category><![CDATA[ext]]></category>
+		<category><![CDATA[items]]></category>
+		<category><![CDATA[multiple]]></category>
+		<category><![CDATA[select]]></category>
+		<category><![CDATA[selector]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=224</guid>
+		<description><![CDATA[Ext already provides a component to select multiple items. The thing I do not like about it is that it covers too much space on the screen. Therefore I thought of a component that initially looks like a combo box and then opens a new window to let the user select the items. As a &#8230; <a href="http://marcusschiesser.de/2009/04/08/component-for-selecting-multiple-items-in-ext/" class="more-link">Continue reading <span class="screen-reader-text">Component for selecting multiple items in Ext</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Ext already provides <a href="http://extjs.com/deploy/dev/examples/multiselect/multiselect-demo.html">a component to select multiple items</a>. The thing I do not like about it is that it covers too much space on the screen.<br />
+Therefore I thought of a component that initially looks like a combo box and then opens a new window to let the user select the items.</p>
+<p>As a nice example tells more than thousand words &#8211; here it is:</p>
+<p><script type="text/javascript" src="http://www.marcusschiesser.de/wp-content/uploads/2009/04/ddview.js">
+</script><script type="text/javascript" src="http://www.marcusschiesser.de/wp-content/uploads/2009/04/multiselect.js"></script><script type="text/javascript" src="http://www.marcusschiesser.de/wp-content/uploads/2009/04/itemselector.js"></script><script type="text/javascript" src="http://www.marcusschiesser.de/wp-content/uploads/2009/04/multiselect1.js"></script><script type="text/javascript" src="http://www.marcusschiesser.de/wp-content/uploads/2009/04/ext-multiselector.js"></script></p>
+<p>As you can see, it is actually based on the component provided by the Ext examples. </p>
+<p>And here&#8217;s the source code for the example:</p>
+<p></p><pre class="crayon-plain-tag">Ext.onReady(function(){
+    var model = new Ext.data.SimpleStore({
+        fields: ['label', 'value'],
+        data: [['Homer', 1], ['Marge', 2], ['Maggie', 3], ['Bart', 4], ['Lisa', 4]]
+    });
+    var panel = new Ext.FormPanel({
+        frame: true,
+        labelWidth: 50,
+        width: 300,
+        
+        items: [{
+            fieldLabel: 'I like',
+            xtype: 'singleLineMultiSelect',
+            store: model,
+            anchor: '90%',
+            mode: 'local',
+            displayField: 'label',
+            fromLegend: 'available',
+            toLegend: 'selected',
+            valueField: 'value',
+            deleteText: 'delete',
+            emptyText: 'Which Simpsons do you like?'
+        }]
+    });
+    var element = Ext.query('script[src$=ext-multiselector.js]')[0];
+    var renderElement = element.parentNode;
+    panel.render(renderElement);
+});</pre><p></p>
+<p>Altough the example binds an in-memory store, you can also use an external store. If so, please remove the <code>mode</code> property &#8211; similar to a combo box.</p>
+<p><b>Update:</b> You can find this code and all my other ExtJS components bundled in <a href="http://code.google.com/p/extensive/">a library called &#8216;extensive&#8217;</a>. Enjoy the code and feel free to support the project by participating.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/04/08/component-for-selecting-multiple-items-in-ext/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Country selector with flag images in ExtJS</title>
+		<link>http://marcusschiesser.de/2009/04/01/country-selector-with-flag-images-in-extjs/</link>
+		<comments>http://marcusschiesser.de/2009/04/01/country-selector-with-flag-images-in-extjs/#comments</comments>
+		<pubDate>Wed, 01 Apr 2009 10:04:48 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[ExtJS]]></category>
+		<category><![CDATA[box]]></category>
+		<category><![CDATA[combo]]></category>
+		<category><![CDATA[country]]></category>
+		<category><![CDATA[ext]]></category>
+		<category><![CDATA[flag]]></category>
+		<category><![CDATA[selector]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=209</guid>
+		<description><![CDATA[Based on the ExtJS-Tutorial on how to build a combo box with an icon, I built a component that can be used as a country selector in ExtJS. Here you can find the code of the component: [crayon-57a0195279ab6812114956/] It&#8217;s basically just a ComboBox using the IconCombo plugin with a predefined Store. The Store is in &#8230; <a href="http://marcusschiesser.de/2009/04/01/country-selector-with-flag-images-in-extjs/" class="more-link">Continue reading <span class="screen-reader-text">Country selector with flag images in ExtJS</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Based on the <a href="http://extjs.com/learn/Tutorial:Extending_Ext_Class">ExtJS-Tutorial on how to build a combo box with an icon</a>, I built a component that can be used as a country selector in ExtJS.</p>
+<p>Here you can find the code of the component: </p>
+<p></p><pre class="crayon-plain-tag">Ext.ns('Extreme.components');
+
+Extreme.components.CountryCombo = Ext.extend(Ext.form.ComboBox, {
+    constructor: function(config){
+        var data;
+        if (config.phoneLabels) {
+            data = [['+49', '+49', 'ux-flag-de'], ['+43', '+43', 'ux-flag-at'], ['+41', '+41', 'ux-flag-ch'], ['+352', '+352', 'ux-flag-lu'], ['+432', '+432', 'ux-flag-li']];
+        }
+        else {
+            data = [['DE', 'Deutschland', 'ux-flag-de'], ['AT', '&Ouml;sterreich', 'ux-flag-at'], ['CH', 'Schweiz', 'ux-flag-ch'], ['LU', 'Luxemburg', 'ux-flag-lu'], ['LI', 'Lichtenstein', 'ux-flag-li']];
+        }
+        
+        Extreme.components.CountryCombo.superclass.constructor.call(this, Ext.apply({
+            store: new Ext.data.SimpleStore({
+                fields: ['countryCode', 'countryName', 'countryFlag'],
+                data: data
+            }),
+            plugins: new Ext.ux.plugins.IconCombo(),
+            valueField: 'countryCode',
+            displayField: 'countryName',
+            iconClsField: 'countryFlag',
+            triggerAction: 'all',
+            mode: 'local'
+        }, config));
+    }
+});
+Ext.reg('countrycombo', Extreme.components.CountryCombo);</pre><p></p>
+<p>It&#8217;s basically just a <code>ComboBox </code>using the <code>IconCombo </code>plugin with a predefined <code>Store</code>. The <code>Store </code>is in fact a <code>SimpleStore </code>which contains the country codes, labels and css classes for the icons for each country.<br />
+(If you wonder about the <code>Extreme </code>namespace, I am right now building a little component library for ExtJS).<br />
+The country selector is registered under the xtype of &#8216;countrycombo&#8217;. So here&#8217;s a small example of how to use it:</p>
+<p></p><pre class="crayon-plain-tag">Ext.onReady(function(){
+	
+    var form = new Ext.FormPanel({
+		items: [{
+			xtype: 'countrycombo',
+			fieldLabel: 'Country',
+            name: 'country',
+			anchor: '100%'
+		}],
+		frame: true,
+		style: 'padding: 10px;',
+		width: 250,
+		labelWidth: 50
+	});
+    
+	var element = Ext.query('script[src$=country-combo.js]')[0];
+	var renderElement = element.parentNode;
+	form.render(renderElement);
+});</pre><p></p>
+<p>Thanks go also to <a href="http://www.famfamfam.com/lab/icons/flags/">FamFamFam</a> where i retrieved the flag images.</p>
+<p><b>Update:</b> You can find this code and all my other ExtJS components bundled in <a href="http://code.google.com/p/extensive/">a library called &#8216;extensive&#8217;</a>. Enjoy the code and feel free to support the project by participating.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/04/01/country-selector-with-flag-images-in-extjs/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; Component</title>
+	<atom:link href="http://marcusschiesser.de/category/component/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Let the user select an item in a modal dialog</title>
+		<link>http://marcusschiesser.de/2009/08/05/selecting-an-item-in-javascript/</link>
+		<comments>http://marcusschiesser.de/2009/08/05/selecting-an-item-in-javascript/#comments</comments>
+		<pubDate>Wed, 05 Aug 2009 13:31:29 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Component]]></category>
+		<category><![CDATA[YUI]]></category>
+		<category><![CDATA[choose]]></category>
+		<category><![CDATA[item]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[selector]]></category>
+		<category><![CDATA[yui3]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=328</guid>
+		<description><![CDATA[After having used the shiny new YUI3 library for a project, it&#8217;s about time to share my YUI3 experiences with you. For the project I built an item selector: A modal dialog is openend and the user has to select an item. After selection the dialog is closed and the selected item is passed to &#8230; <a href="http://marcusschiesser.de/2009/08/05/selecting-an-item-in-javascript/" class="more-link">Continue reading <span class="screen-reader-text">Let the user select an item in a modal dialog</span></a>]]></description>
+				<content:encoded><![CDATA[<p><script src="http://yui.yahooapis.com/3.0.0/build/yui/yui-min.js">
+</script>After having used the shiny new <a href="http://developer.yahoo.com/yui/3/">YUI3</a> library for a project, it&#8217;s about time to share my YUI3 experiences with you.<br />
+For the project I built an item selector: A modal dialog is openend and the user has to select an item. After selection the dialog is closed and the selected item is passed to a callback function.</p>
+<p>Here you can find the <a href="http://www.marcusschiesser.de/wp-content/uploads/2009/08/ItemSelector.js">full source</a> for the item selector. An example to use the selector can be as simple as this:</p><pre class="crayon-plain-tag">ms.ItemSelector.selectItem(['Bart', 'Lisa', 'Homer', 'Marge', 'Maggie', 'Ned', 'Barney', 'Bob'], function(item){
+  alert(item + ' is your favorite character.');
+});</pre><p></p>
+<p>Just click on the following button, to start the example. Enjoy and let me know your comments.</p>
+<style type="text/css">			a.item-selector-clickme {
+				background-color: red;
+				padding: 4px;
+				color: white;
+				text-decoration: none;
+			}	a.item-selector-clickme:hover {
+				color: yellow;
+			}  .item-selector-header {
+                font-weight: bold;
+                padding: 10px;
+            } .item-selector {
+                overflow: auto;
+                height: 150px;
+            }.item-selector li a:hover {
+                color: red;
+            }.item-selector li {
+                list-style: none;
+            } .item-selector li a {
+                text-decoration: none;
+                color: #333;
+            }  .yui-overlay-content {
+                padding: 3px; font-size: 16px;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+				width: 200px;
+				height: 210px;
+                border: 2px solid #000;
+                background-color: #fff;
+            }
+        </style>
+<p>        <script type="text/javascript" src="http://www.marcusschiesser.de/wp-content/uploads/2009/08/ItemSelector.js">
+        </script><br />
+        <script type="text/javascript" src="http://www.marcusschiesser.de/wp-content/uploads/2009/08/itemselector.js">
+        </script></p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/08/05/selecting-an-item-in-javascript/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Add a delete button in each row of an ExtJS data grid</title>
+		<link>http://marcusschiesser.de/2009/06/13/add-a-delete-button-in-each-row-of-an-extjs-data-grid/</link>
+		<comments>http://marcusschiesser.de/2009/06/13/add-a-delete-button-in-each-row-of-an-extjs-data-grid/#comments</comments>
+		<pubDate>Sat, 13 Jun 2009 19:53:56 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Component]]></category>
+		<category><![CDATA[ExtJS]]></category>
+		<category><![CDATA[button]]></category>
+		<category><![CDATA[data grid]]></category>
+		<category><![CDATA[delete]]></category>
+		<category><![CDATA[row]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=309</guid>
+		<description><![CDATA[For usability reasons it is usually a good idea to add a delete button to each row of a data grid. If the user clicks on such a button, the whole row that contained the button will be deleted. The data grid of ExtJS does not contain such a feature by default, but it could &#8230; <a href="http://marcusschiesser.de/2009/06/13/add-a-delete-button-in-each-row-of-an-extjs-data-grid/" class="more-link">Continue reading <span class="screen-reader-text">Add a delete button in each row of an ExtJS data grid</span></a>]]></description>
+				<content:encoded><![CDATA[<p>For usability reasons it is usually a good idea to add a delete button to each row of a data grid. If the user clicks on such a button, the whole row that contained the button will be deleted.</p>
+<p>The data grid of <a href="http://www.extjs.com">ExtJS</a> does not contain such a feature by default, but it could be implemented by adding a special column to the column model. Using <a href="http://www.marcusschiesser.de/wp-content/uploads/2009/06/ItemDeleter.js">this extension</a>, it could be easily done like this:</p>
+<p></p><pre class="crayon-plain-tag">var itemDeleter = new Extensive.grid.ItemDeleter();
+
+var grid = new Ext.grid.GridPanel({
+        store: people,
+        cm: new Ext.grid.ColumnModel([new Ext.grid.RowNumberer(), {
+            header: 'First name',
+            width: 100,
+            dataIndex: 'firstName'
+        }, {
+            header: 'Last name',
+            width: 150,
+            dataIndex: 'lastName'
+        }, itemDeleter]),
+        selModel: itemDeleter,
+        autoHeight: true
+});</pre><p>Note that the <code>itemDeleter</code> instance must be added to the <code>ColumnModel</code> and set as <code>selModel</code> to work properly.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/06/13/add-a-delete-button-in-each-row-of-an-extjs-data-grid/feed/</wfw:commentRss>
+		<slash:comments>27</slash:comments>
+		</item>
+		<item>
+		<title>Display an info text in a HTML input field if its focus is lost</title>
+		<link>http://marcusschiesser.de/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</link>
+		<comments>http://marcusschiesser.de/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/#comments</comments>
+		<pubDate>Fri, 12 Jun 2009 09:18:02 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Component]]></category>
+		<category><![CDATA[ExtJS]]></category>
+		<category><![CDATA[core]]></category>
+		<category><![CDATA[ext]]></category>
+		<category><![CDATA[field]]></category>
+		<category><![CDATA[focus]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[info]]></category>
+		<category><![CDATA[input]]></category>
+		<category><![CDATA[lost]]></category>
+		<category><![CDATA[text]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=286</guid>
+		<description><![CDATA[Now that with Ext Core a light-weight version (just 25kB) of ExtJS has been released, I thought it&#8217;s time to build a nice example with it. The result is something very useful that you can see in actually a lot of web sites: Display a info text inside of a input text field if it &#8230; <a href="http://marcusschiesser.de/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/" class="more-link">Continue reading <span class="screen-reader-text">Display an info text in a HTML input field if its focus is lost</span></a>]]></description>
+				<content:encoded><![CDATA[<style>
+        		.extensive-info-text {
+        			color: gray;
+					font-style: italic;
+        		}
+</style>
+<p>Now that with <a href="http://extjs.com/products/extcore">Ext Core</a> a light-weight version (just 25kB) of ExtJS has been released, I thought it&#8217;s time to build a nice example with it.</p>
+<p>The result is something very useful that you can see in actually a lot of web sites: Display a info text inside of a input text field if it is empty and does not have the focus. </p>
+<p>Here&#8217;s how it looks like:<br />
+<script src='http://www.marcusschiesser.de/wp-content/uploads/2009/06/SetInfoText.js'></script></p>
+<p>E-Mail: <script src='http://www.marcusschiesser.de/wp-content/uploads/2009/06/set-info-text.js'></script></p>
+<p>To add this behaviour to a input field you just have to call this single line:</p><pre class="crayon-plain-tag">Extensive.behaviours.setInfoText(inputElement, 'Your email like max@mustermann.de');</pre><p>As always you can find the code for this component in a library called &#8216;<a href="http://code.google.com/p/extensive/">extensive</a>&#8216;. Feel free to support the project by participating.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

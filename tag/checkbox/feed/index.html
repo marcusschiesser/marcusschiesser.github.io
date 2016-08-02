@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; checkbox</title>
+	<atom:link href="http://marcusschiesser.de/tag/checkbox/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Validator for ExtJS Checkbox</title>
+		<link>http://marcusschiesser.de/2009/02/20/151/</link>
+		<comments>http://marcusschiesser.de/2009/02/20/151/#comments</comments>
+		<pubDate>Fri, 20 Feb 2009 17:25:42 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[ExtJS]]></category>
+		<category><![CDATA[checkbox]]></category>
+		<category><![CDATA[error]]></category>
+		<category><![CDATA[message]]></category>
+		<category><![CDATA[valid]]></category>
+		<category><![CDATA[validator]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=151</guid>
+		<description><![CDATA[Very unfortunately ExtJS doesn&#8217;t offer a validator for its checkbox component. Normally a validator checks whether a field is valid and takes care of displaying an error message if not. For a checkbox we would like that to happen if the checkbox is not selected. Overriding the validate function of the checkbox we can provide &#8230; <a href="http://marcusschiesser.de/2009/02/20/151/" class="more-link">Continue reading <span class="screen-reader-text">Validator for ExtJS Checkbox</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Very unfortunately ExtJS doesn&#8217;t offer a validator for its checkbox component.<br />
+Normally a validator checks whether a field is valid and takes care of displaying an error message if not. For a checkbox we would like that to happen if the checkbox is not selected.<br />
+Overriding the <code>validate</code> function of the checkbox we can provide such a functionality for all checkbox instances we are about to create:</p>
+<p></p><pre class="crayon-plain-tag">Ext.form.Checkbox.prototype.validate = function(){
+        if (this.validateField) {
+            // other values as 'under' do not work
+            this.msgTarget = 'under';
+            if (this.checked) {
+                Ext.form.Field.prototype.clearInvalid.call(this); // use implementation from Field as function is deactivated for Checkbox
+            }
+            else {
+                Ext.form.Field.prototype.markInvalid.call(this, this.validateMessage);  // use implementation from Field as function is deactivated for Checkbox
+            }
+        }
+    };</pre><p></p>
+<p>The validator can be customized using the properties <code>validateField</code> and <code>validateMessage</code>. </p>
+<p>Here&#8217;s a small code example:</p>
+<p></p><pre class="crayon-plain-tag">Ext.onReady(function(){
+   var panel = new Ext.FormPanel({
+        hideLabels: true,
+        border: false,
+        header: false,
+        width: 200,
+        
+        items: [{
+            xtype: 'checkbox',
+            boxLabel: 'Yes, I like to do it',
+            validateMessage: 'You really should do it.',
+            validateField: true
+        }]
+    });
+    panel.addButton('Check', function(){
+        panel.getForm().isValid();
+    });
+    panel.render(Ext.get('output'));
+});</pre><p></p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/02/20/151/feed/</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+		</item>
+	</channel>
+</rss>

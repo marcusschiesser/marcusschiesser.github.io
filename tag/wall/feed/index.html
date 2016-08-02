@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; wall</title>
+	<atom:link href="http://marcusschiesser.de/tag/wall/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Using the Facebook Graph API from your GWT application</title>
+		<link>http://marcusschiesser.de/2013/01/03/using-the-facebook-graph-api-from-your-gwt-application/</link>
+		<comments>http://marcusschiesser.de/2013/01/03/using-the-facebook-graph-api-from-your-gwt-application/#comments</comments>
+		<pubDate>Thu, 03 Jan 2013 13:49:30 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Java]]></category>
+		<category><![CDATA[facebook]]></category>
+		<category><![CDATA[feed]]></category>
+		<category><![CDATA[graph api]]></category>
+		<category><![CDATA[gwt]]></category>
+		<category><![CDATA[oauth]]></category>
+		<category><![CDATA[oauth2]]></category>
+		<category><![CDATA[send]]></category>
+		<category><![CDATA[wall]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=485</guid>
+		<description><![CDATA[It might happen that you have a GWT application and you want to use the Graph API from Facebook. As the Graph API requires an authentication with OAuth2 this task can be easily accomplished using the GWT-OAuth2 library. To simplify things even more I build the following utility class for you: [crayon-57a01a3533b84572616986/] After setting the &#8230; <a href="http://marcusschiesser.de/2013/01/03/using-the-facebook-graph-api-from-your-gwt-application/" class="more-link">Continue reading <span class="screen-reader-text">Using the Facebook Graph API from your GWT application</span></a>]]></description>
+				<content:encoded><![CDATA[<p>It might happen that you have a GWT application and you want to use the <a href="https://developers.facebook.com/docs/reference/api/">Graph API</a> from Facebook.<br />
+As the Graph API requires an authentication with <a href="http://oauth.net/2/">OAuth2</a> this task can be easily accomplished using the <a href="http://code.google.com/p/gwt-oauth2/">GWT-OAuth2 library</a>.<br />
+To simplify things even more I build the following utility class for you:</p>
+<p></p><pre class="crayon-plain-tag">public class FacebookUtil {
+    private String token = null;
+
+    private static FacebookUtil instance = new FacebookUtil();
+
+    private static final String FACEBOOK_AUTH_URL = &quot;https://www.facebook.com/dialog/oauth&quot;;
+
+    private static final String FACEBOOK_CLIENT_ID = &quot;MY_CLIENT_ID&quot;; 
+
+    private FacebookUtil() {
+    }
+
+    public static FacebookUtil getInstance() {
+	return instance;
+    }
+
+    public void resetToken() {
+	token = null;
+    }
+
+    private void doAuth(Callback&lt;String, Throwable&gt; callback) {
+	final AuthRequest req = new AuthRequest(FACEBOOK_AUTH_URL,
+		FACEBOOK_CLIENT_ID).withScopes(&quot;email&quot;, &quot;user_birthday&quot;,
+		&quot;user_hometown&quot;, &quot;user_location&quot;, &quot;publish_stream&quot;)
+	// Facebook expects a comma-delimited list of scopes
+		.withScopeDelimiter(&quot;,&quot;);
+	Auth.get().clearAllTokens();
+	Auth.get().login(req, callback);
+    }
+
+    public void doGraph(final String id,
+	    final Callback&lt;JSONObject, Throwable&gt; callback) {
+	doGraph(id, RequestBuilder.GET, null, callback);
+    }
+
+    public void doGraph(final String id, final Method method,
+	    final String params, final Callback&lt;JSONObject, Throwable&gt; callback) {
+	if (token == null) {
+	    doAuth(new Callback&lt;String, Throwable&gt;() {
+		public void onSuccess(String token) {
+		    FacebookUtil.this.token = token;
+		    doGraphNoAuth(id, method, params, callback);
+		}
+
+		public void onFailure(Throwable reason) {
+		    callback.onFailure(reason);
+		}
+	    });
+	} else {
+	    doGraphNoAuth(id, method, params, callback);
+	}
+    }
+
+    private void doGraphNoAuth(String id, Method method, String params,
+	    final Callback&lt;JSONObject, Throwable&gt; callback) {
+	final String requestData = &quot;access_token=&quot; + token
+		+ (params != null ? &quot;&amp;&quot; + params : &quot;&quot;);
+	RequestBuilder builder;
+	if (method == RequestBuilder.POST) {
+	    builder = new RequestBuilder(method, &quot;https://graph.facebook.com/&quot;
+		    + id);
+	    builder.setHeader(&quot;Content-Type&quot;,
+		    &quot;application/x-www-form-urlencoded&quot;);
+	} else if (method == RequestBuilder.GET) {
+	    builder = new RequestBuilder(method, &quot;https://graph.facebook.com/&quot;
+		    + id + &quot;?&quot; + requestData);
+	} else {
+	    callback.onFailure(new IOException(
+		    &quot;doGraph only supports GET and POST requests&quot;));
+	    return;
+	}
+	try {
+	    builder.sendRequest(requestData, new RequestCallback() {
+		public void onError(Request request, Throwable exception) {
+		    callback.onFailure(exception);
+		}
+
+		public void onResponseReceived(Request request,
+			Response response) {
+		    if (Response.SC_OK == response.getStatusCode()) {
+			callback.onSuccess(JSONParser.parseStrict(
+				response.getText()).isObject());
+		    } else if (Response.SC_BAD_REQUEST == response
+			    .getStatusCode()) {
+			callback.onFailure(new IOException(&quot;Error: &quot;
+				+ response.getText()));
+		    } else {
+			callback.onFailure(new IOException(
+				&quot;Couldn't retrieve JSON (&quot;
+					+ response.getStatusText() + &quot;)&quot;));
+		    }
+		}
+
+	    });
+	} catch (RequestException e) {
+	    callback.onFailure(e);
+	}
+    }
+
+}</pre><p></p>
+<p>After setting the <a href="http://rieglerova.net/how-to-get-a-facebook-app-id/">unique ID of your facebook app</a> in the constant <code>FACEBOOK_CLIENT_ID</code>, you can easily use the Graph API by calling the <code>doGraph</code> method.<br />
+Here is an example that posts a message on the feed of the app user by sending some data to the <code>me/feed</code> path:</p>
+<p></p><pre class="crayon-plain-tag">FacebookUtil.getInstance().doGraph(
+	&quot;/me/feed/&quot;,
+	RequestBuilder.POST,
+	&quot;message=&quot;
+		+ URL.encodeQueryString(message)
+		+ &quot;&amp;link=&quot; + URL.encodeQueryString(url),
+	new Callback&lt;JSONObject, Throwable&gt;() {
+	    public void onFailure(Throwable reason) {
+	    }
+
+	    public void onSuccess(JSONObject result) {
+	    }
+	});</pre><p></p>
+<p>As you notice the variables <code>message</code> and <code>url</code> need to be defined with values of your choice before. Now have fun trying other methods of the Graph API.<br />
+If you need further permissions, you have to add them as parameters to the call of <code>withScopes</code> inside of the <code>doAuth</code> method.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2013/01/03/using-the-facebook-graph-api-from-your-gwt-application/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

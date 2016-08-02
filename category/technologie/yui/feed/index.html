@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; YUI</title>
+	<atom:link href="http://marcusschiesser.de/category/technologie/yui/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Let the user select an item in a modal dialog</title>
+		<link>http://marcusschiesser.de/2009/08/05/selecting-an-item-in-javascript/</link>
+		<comments>http://marcusschiesser.de/2009/08/05/selecting-an-item-in-javascript/#comments</comments>
+		<pubDate>Wed, 05 Aug 2009 13:31:29 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Component]]></category>
+		<category><![CDATA[YUI]]></category>
+		<category><![CDATA[choose]]></category>
+		<category><![CDATA[item]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[selector]]></category>
+		<category><![CDATA[yui3]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=328</guid>
+		<description><![CDATA[After having used the shiny new YUI3 library for a project, it&#8217;s about time to share my YUI3 experiences with you. For the project I built an item selector: A modal dialog is openend and the user has to select an item. After selection the dialog is closed and the selected item is passed to &#8230; <a href="http://marcusschiesser.de/2009/08/05/selecting-an-item-in-javascript/" class="more-link">Continue reading <span class="screen-reader-text">Let the user select an item in a modal dialog</span></a>]]></description>
+				<content:encoded><![CDATA[<p><script src="http://yui.yahooapis.com/3.0.0/build/yui/yui-min.js">
+</script>After having used the shiny new <a href="http://developer.yahoo.com/yui/3/">YUI3</a> library for a project, it&#8217;s about time to share my YUI3 experiences with you.<br />
+For the project I built an item selector: A modal dialog is openend and the user has to select an item. After selection the dialog is closed and the selected item is passed to a callback function.</p>
+<p>Here you can find the <a href="http://www.marcusschiesser.de/wp-content/uploads/2009/08/ItemSelector.js">full source</a> for the item selector. An example to use the selector can be as simple as this:</p><pre class="crayon-plain-tag">ms.ItemSelector.selectItem(['Bart', 'Lisa', 'Homer', 'Marge', 'Maggie', 'Ned', 'Barney', 'Bob'], function(item){
+  alert(item + ' is your favorite character.');
+});</pre><p></p>
+<p>Just click on the following button, to start the example. Enjoy and let me know your comments.</p>
+<style type="text/css">			a.item-selector-clickme {
+				background-color: red;
+				padding: 4px;
+				color: white;
+				text-decoration: none;
+			}	a.item-selector-clickme:hover {
+				color: yellow;
+			}  .item-selector-header {
+                font-weight: bold;
+                padding: 10px;
+            } .item-selector {
+                overflow: auto;
+                height: 150px;
+            }.item-selector li a:hover {
+                color: red;
+            }.item-selector li {
+                list-style: none;
+            } .item-selector li a {
+                text-decoration: none;
+                color: #333;
+            }  .yui-overlay-content {
+                padding: 3px; font-size: 16px;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+				width: 200px;
+				height: 210px;
+                border: 2px solid #000;
+                background-color: #fff;
+            }
+        </style>
+<p>        <script type="text/javascript" src="http://www.marcusschiesser.de/wp-content/uploads/2009/08/ItemSelector.js">
+        </script><br />
+        <script type="text/javascript" src="http://www.marcusschiesser.de/wp-content/uploads/2009/08/itemselector.js">
+        </script></p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/08/05/selecting-an-item-in-javascript/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

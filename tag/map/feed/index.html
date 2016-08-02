@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; map</title>
+	<atom:link href="http://marcusschiesser.de/tag/map/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Multi-level markers using Google Maps for Flash</title>
+		<link>http://marcusschiesser.de/2008/09/30/multi-level-markers-using-google-maps-for-flash/</link>
+		<comments>http://marcusschiesser.de/2008/09/30/multi-level-markers-using-google-maps-for-flash/#comments</comments>
+		<pubDate>Tue, 30 Sep 2008 17:47:05 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Flex]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[google maps]]></category>
+		<category><![CDATA[map]]></category>
+		<category><![CDATA[marker]]></category>
+		<category><![CDATA[multi-level]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=87</guid>
+		<description><![CDATA[You are using the MarkerManager for Google Maps for Flash to set different amounts of markers depending on the selected zoom level? You don&#8217;t want to specify the zoom level for each marker? Setting the zoom level makes sense if you have aggregated markers that relate to a couple of markers in a higher zoom &#8230; <a href="http://marcusschiesser.de/2008/09/30/multi-level-markers-using-google-maps-for-flash/" class="more-link">Continue reading <span class="screen-reader-text">Multi-level markers using Google Maps for Flash</span></a>]]></description>
+				<content:encoded><![CDATA[<p>You are using the <a href="http://groups.google.com/group/google-maps-api-for-flash/browse_thread/thread/b73568017851044b">MarkerManager</a> for <a href="http://code.google.com/apis/maps/documentation/flash/">Google Maps for Flash</a> to set different amounts of markers depending on the selected zoom level? You don&#8217;t want to specify the zoom level for each marker?<br />
+Setting the zoom level makes sense if you have aggregated markers that relate to a couple of markers in a higher zoom level. But it does not if you have a huge list of unordered markers with no one of them being more special than the other.<br />
+For the later case I was missing a method that let me just add a marker and the MarkerManager would take care of at which zoom level to display the marker (so that at higher zoom levels more markers are displayed than in lower ones).<br />
+The solution I thought of is to take care of that there are not too many markers in one grid cell, so I wrote a <code>calcMinZoomLevel</code> method that just returns the minimum zoom level so that adding the marker to that level it would be the only marker in the grid cell. </p>
+<p>Here it is:</p><pre class="crayon-plain-tag">private function calcMinZoomLevel(marker:Marker):Number {
+  var mPoint:LatLng = marker.getLatLng();
+  for(var zoom:Number = 1; zoom&lt;this.maxZoom_; zoom++) {
+    var gridPoint:Point = this.getTilePoint_(mPoint, zoom, new Point(0, 0));
+    var cell:Array = this.getGridCellNoCreate_(gridPoint.x, gridPoint.y, zoom);
+    if(cell==null)
+      return zoom;
+  }
+  return maxZoom_;
+}</pre><p></p>
+<p>And here&#8217;s a nice example including the <a href="http://www.marcusschiesser.de/downloads/markermanager/srcview/index.html">full source</a> under the <a href="http://en.wikipedia.org/wiki/BSD_license">BSD license</a>:</p>
+<p><a href="http://marcusschiesser.de/downloads/markermanager/example_markermanager.swf">Start Flash</a></p>
+<p>Try changing the zoom level and watch markers be added and removed.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2008/09/30/multi-level-markers-using-google-maps-for-flash/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Google Maps API for Flex</title>
+		<link>http://marcusschiesser.de/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/</link>
+		<comments>http://marcusschiesser.de/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/#comments</comments>
+		<pubDate>Tue, 09 Sep 2008 12:33:01 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Flex]]></category>
+		<category><![CDATA[api]]></category>
+		<category><![CDATA[Component]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[info]]></category>
+		<category><![CDATA[map]]></category>
+		<category><![CDATA[maps]]></category>
+		<category><![CDATA[window]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=77</guid>
+		<description><![CDATA[As I pointed out before, it&#8217;s unfortunately not possible to use Flex components as info windows for Google Maps. Another issue is that the map is not available as a Flex component itself, therefore it&#8217;s a bit complicated to use it in Flex. So I thought to address these issues in a little Google Maps &#8230; <a href="http://marcusschiesser.de/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/" class="more-link">Continue reading <span class="screen-reader-text">Google Maps API for Flex</span></a>]]></description>
+				<content:encoded><![CDATA[<p><a href="/?p=70">As I pointed out before</a>, it&#8217;s unfortunately not possible to use Flex components as info windows for <a href="http://code.google.com/apis/maps/documentation/flash/">Google Maps</a>.<br />
+Another issue is that the map is not available as a Flex component itself, therefore it&#8217;s a bit complicated to use it in Flex.<br />
+So I thought to address these issues in a little <a href="/downloads/map4flex/srcview/map4flex.zip">Google Maps API for Flex</a> that you can download here under BSD license.<br />
+With <code>openFlexInfoWindows</code> I also added a method that allows you to use multiple Flex components as info window at once &#8211; nicely seperated in tabs.<br />
+Find an example below:</p>
+<p><a href="/downloads/map4flex/example_openwindow.swf">Start Flash!</a><br />
+<a href="/downloads/map4flex/srcview/">Source Code</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+		<item>
+		<title>Adding custom info windows to Google Maps in Flex</title>
+		<link>http://marcusschiesser.de/2008/08/20/eigene-info-fenster-einer-google-map-in-flash-hinzufugen/</link>
+		<comments>http://marcusschiesser.de/2008/08/20/eigene-info-fenster-einer-google-map-in-flash-hinzufugen/#comments</comments>
+		<pubDate>Wed, 20 Aug 2008 11:37:29 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Flex]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[map]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=70</guid>
+		<description><![CDATA[I just tried to create a custom info window for a Google Map using the Google Maps API For Flash. Unfortunately it does not seem to work as expected by setting the customContent property in an object of type InfoWindowOptions. Therefore I wrote this little workaround that creates a popup window: [crayon-57a0192d16fc0521836039/]]]></description>
+				<content:encoded><![CDATA[<p>I just tried to create a custom info window for a Google Map using the <a href="http://code.google.com/apis/maps/documentation/flash/">Google Maps API For Flash</a>. Unfortunately it does not seem to work as expected by setting the <code>customContent</code> property in an object of type <code>InfoWindowOptions</code>. Therefore I wrote this little workaround that creates a popup window:</p>
+<p></p><pre class="crayon-plain-tag">private function createInfoWindow(map:Map, marker:Marker, infoWindow:Class):IFlexDisplayObject {
+  var popup:IFlexDisplayObject = PopUpManager.createPopUp(map, infoWindow);
+  var globalPos:Point = map.localToGlobal(map.fromLatLngToViewport(marker.getLatLng()));
+  popup.move(globalPos.x - popup.width/2, globalPos.y - popup.height - marker.getDisplayObject().height);
+  return popup;
+}</pre><p></p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2008/08/20/eigene-info-fenster-einer-google-map-in-flash-hinzufugen/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+	</channel>
+</rss>

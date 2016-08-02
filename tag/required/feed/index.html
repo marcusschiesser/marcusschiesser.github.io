@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; required</title>
+	<atom:link href="http://marcusschiesser.de/tag/required/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Mark Required Fields in a ExtJS Form</title>
+		<link>http://marcusschiesser.de/2009/05/04/mark-required-fields-in-a-extjs-form/</link>
+		<comments>http://marcusschiesser.de/2009/05/04/mark-required-fields-in-a-extjs-form/#comments</comments>
+		<pubDate>Mon, 04 May 2009 12:12:48 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[ExtJS]]></category>
+		<category><![CDATA[ext]]></category>
+		<category><![CDATA[field]]></category>
+		<category><![CDATA[form]]></category>
+		<category><![CDATA[required]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=259</guid>
+		<description><![CDATA[I just had the requirement to mark required fields in a ExtJS form. I started with the code from Jason (Thanks!) and extended it a bit. Now you may customize how the field marker would look like by assigning a CSS class to a requiredFieldCls property. I also added a descriptive tooltip for the marker. &#8230; <a href="http://marcusschiesser.de/2009/05/04/mark-required-fields-in-a-extjs-form/" class="more-link">Continue reading <span class="screen-reader-text">Mark Required Fields in a ExtJS Form</span></a>]]></description>
+				<content:encoded><![CDATA[<p>I just had the requirement to mark required fields in a ExtJS form. I started with the <a href="http://blog.edseek.com/archives/2009/04/19/illuminate-required-fields-via-extjs/">code from Jason</a> (Thanks!) and extended it a bit.<br />
+Now you may customize how the field marker would look like by assigning a CSS class to a <code>requiredFieldCls</code> property. I also added a descriptive tooltip for the marker.<br />
+Here&#8217;s the code:</p>
+<p></p><pre class="crayon-plain-tag">Ext.onReady(function(){
+    Ext.QuickTips.init();
+    Ext.form.Field.prototype.msgTarget = 'under';
+    Extensive.components.RequiredFieldInfo.prototype.requiredFieldText = 'These are really important things';
+    
+    var panel = new Ext.FormPanel({
+        frame: true,
+        labelWidth: 130,
+        width: 350,
+        
+        items: [{
+            xtype: 'textfield',
+            fieldLabel: 'This you might tell me',
+            anchor: '100%'
+        }, {
+            xtype: 'textfield',
+            fieldLabel: 'This I have to know',
+            allowBlank: false,
+            anchor: '100%',
+            blankText: 'As said, I have to know this!'
+        }, {
+            xtype: 'reqFieldInfo'
+        }]
+    });
+    var element = Ext.query('script[src$=required-field.js]')[0];
+    var renderElement = element.parentNode;
+    panel.render(renderElement);
+});</pre><p></p>
+<p>Dont&#8217; forget to also include these necessary modifications to <code>Ext.layout.FormLayout</code>:</p>
+<p></p><pre class="crayon-plain-tag">Ext.ns('Extensive.components');
+
+Ext.apply(Ext.layout.FormLayout.prototype, {
+    originalRenderItem: Ext.layout.FormLayout.prototype.renderItem,
+    renderItem: function(c, position, target){
+        if (c &amp;&amp; !c.rendered &amp;&amp; c.isFormField &amp;&amp; c.fieldLabel &amp;&amp; !c.allowBlank) {
+            c.fieldLabel = c.fieldLabel + &quot; &lt;span &quot; +
+            ((c.requiredFieldCls !== undefined) ? 'class=&quot;' + c.requiredFieldCls + '&quot;' : 'style=&quot;color:red;&quot;') +
+            &quot; ext:qtip=\&quot;&quot; +
+            ((c.blankText !== undefined) ? c.blankText : &quot;This field is required&quot;) +
+            &quot;\&quot;&gt;*&lt;/span&gt;&quot;;
+        }
+        this.originalRenderItem.apply(this, arguments);
+    }
+});
+
+Extensive.components.RequiredFieldInfo = Ext.extend(Ext.form.Label, {
+    constructor: function(config){
+        Extensive.components.RequiredFieldInfo.superclass.constructor.call(this, Ext.apply({
+            html: &quot;&lt;span &quot; +
+            ((this.requiredFieldCls !== undefined) ? 'class=&quot;' + this.requiredFieldCls + '&quot;' : 'style=&quot;color:red;&quot;') +
+            '&gt;*&lt;/span&gt; ' +
+            ((this.requiredFieldText !== undefined) ? this.requiredFieldText : 'Required field')
+        }, config));
+    }
+});
+Ext.reg('reqFieldInfo', Extensive.components.RequiredFieldInfo);</pre><p></p>
+<p>From know on you can find this code and all my other ExTJS components bundled in <a href="http://code.google.com/p/extensive/">a library called &#8216;extensive&#8217;</a> &#8211; hosted at Google Code. Feel free to support the project by participating.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/05/04/mark-required-fields-in-a-extjs-form/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+	</channel>
+</rss>

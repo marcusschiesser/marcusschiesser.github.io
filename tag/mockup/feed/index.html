@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; mockup</title>
+	<atom:link href="http://marcusschiesser.de/tag/mockup/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Building Mockups in ExtJS 4.1</title>
+		<link>http://marcusschiesser.de/2009/02/27/167/</link>
+		<comments>http://marcusschiesser.de/2009/02/27/167/#comments</comments>
+		<pubDate>Fri, 27 Feb 2009 17:15:03 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[ExtJS]]></category>
+		<category><![CDATA[ext]]></category>
+		<category><![CDATA[grid]]></category>
+		<category><![CDATA[httpproxy]]></category>
+		<category><![CDATA[memoryproxy]]></category>
+		<category><![CDATA[mockup]]></category>
+		<category><![CDATA[proxy]]></category>
+		<category><![CDATA[store]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=167</guid>
+		<description><![CDATA[Note: This post has been updated for ExtJS 4.1 In the early development phase it is usually a good idea to provide a mockup that is not using real data but some dummy data from memory. To do that for a grid in ExtJS we need to create a record class first. For a person &#8230; <a href="http://marcusschiesser.de/2009/02/27/167/" class="more-link">Continue reading <span class="screen-reader-text">Building Mockups in ExtJS 4.1</span></a>]]></description>
+				<content:encoded><![CDATA[<p><strong>Note:</strong> This post has been updated for ExtJS 4.1</p>
+<p>In the early development phase it is usually a good idea to provide a mockup that is not using real data but some dummy data from memory. To do that for a grid in ExtJS we need to create a record class first. For a person this might look like this:</p>
+<p></p><pre class="crayon-plain-tag">Ext.define('Person', {
+    extend: 'Ext.data.Model',
+    fields: ['firstName', 'lastName']
+});</pre><p></p>
+<p>Then we need a store where instances of the <code>Person</code> class will be stored:</p>
+<p></p><pre class="crayon-plain-tag">var people = Ext.create('Ext.data.Store', {
+    model: 'Person',
+    proxy: {
+        type: 'memory',
+        reader: {
+            type: 'json',
+            root: 'root'
+        }
+    }
+});
+people.load();</pre><p></p>
+<p>The store is initially loaded with data from <code>peopleProxy</code> which must be defined previously like this:</p><pre class="crayon-plain-tag">var peopleProxy = new Ext.data.MemoryProxy({
+    root: [{
+        firstName: 'Homer',
+        lastName: 'Simpson'}]
+});</pre><p></p>
+<p>If we want to replace this in a later development phase with real data, we simply replace this proxy with an <code>HttpProxy</code>, which might look like this:</p><pre class="crayon-plain-tag">var peopleProxy = new Ext.data.HttpProxy({
+    url: '/people.xml'
+}),</pre><p></p>
+<p>If we finally connect the store to a data grid, it looks like this:</p>
+<p><iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/marcusschiesser/5QRcB/5/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/02/27/167/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

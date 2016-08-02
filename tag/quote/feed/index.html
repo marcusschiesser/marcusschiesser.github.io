@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; quote</title>
+	<atom:link href="http://marcusschiesser.de/tag/quote/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Splitting CSVs in Actionscript (the Excel way)</title>
+		<link>http://marcusschiesser.de/2008/10/21/splitting-csvs-in-actionscript-the-excel-way/</link>
+		<comments>http://marcusschiesser.de/2008/10/21/splitting-csvs-in-actionscript-the-excel-way/#comments</comments>
+		<pubDate>Tue, 21 Oct 2008 22:02:51 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Flex]]></category>
+		<category><![CDATA[actionscript]]></category>
+		<category><![CDATA[as]]></category>
+		<category><![CDATA[csv]]></category>
+		<category><![CDATA[delimiter]]></category>
+		<category><![CDATA[excel]]></category>
+		<category><![CDATA[import]]></category>
+		<category><![CDATA[quote]]></category>
+		<category><![CDATA[split]]></category>
+		<category><![CDATA[string]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=101</guid>
+		<description><![CDATA[Ever needed to split CVSs in Actionscript? Tried using String.split()? Using a CSV from Excel I had the problem that String.split() does not support to use the delimiter inside of the value fields (Excel puts double quotes around fields that contain the delimiter). After playing with some regular expressions I made a textSplit() method that &#8230; <a href="http://marcusschiesser.de/2008/10/21/splitting-csvs-in-actionscript-the-excel-way/" class="more-link">Continue reading <span class="screen-reader-text">Splitting CSVs in Actionscript (the Excel way)</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Ever needed to split <a href="http://en.wikipedia.org/wiki/Comma-separated_values">CVS</a>s in Actionscript? Tried using <code><a href="http://livedocs.adobe.com/flex/3/langref/String.html#split()">String.split()</a></code>?</p>
+<p>Using a CSV from Excel I had the problem that <code><a href="http://livedocs.adobe.com/flex/3/langref/String.html#split()">String.split()</a></code> does not support to use the delimiter inside of the value fields (Excel puts double quotes around fields that contain the delimiter).</p>
+<p>After playing with some regular expressions I made a <code>textSplit()</code> method that let&#8217;s you specify such a quoting character (I called it <code>textDelimiter</code>). Here it is (helpers included):</p>
+<p></p><pre class="crayon-plain-tag">private static function substituteTextDelimiter(value:String, textDelimiter:*):String {
+	if(value.charAt(0)==textDelimiter &amp;&amp; value.charAt(value.length-1)==textDelimiter) {
+		var valueWithOutDelimiters:String = value.substr(1, value.length-2);
+		var returnValue:String = valueWithOutDelimiters.replace(textDelimiter+textDelimiter, textDelimiter);
+		return returnValue;
+	} else {
+		return value;
+	}
+}
+
+private static function removeDelimiter(value:String, delimiter:*):String {
+	if(value.charAt(value.length-1)==delimiter)
+		return value.substr(0, value.length-1);
+	else
+		return value;
+}		
+
+public static function textSplit(str:String, delimiter:* = &quot;,&quot;, textDelimiter:* = '&quot;'):Array {
+	var regex:String = '&quot;([^&quot;]|&quot;{2,})*&quot;(;|$)|[^;]*(;|$)';
+	regex.replace('&quot;', textDelimiter);
+	regex.replace(';', delimiter);
+	var values:Array = str.match(new RegExp(regex, &quot;g&quot;));
+	for(var i:int=0; i&lt;values.length; i++) {
+		values[i] = removeDelimiter(values[i], delimiter);
+		values[i] = substituteTextDelimiter(values[i], textDelimiter);
+	}
+	return values;
+}</pre><p></p>
+<p>And here you can find the test case I used:</p>
+<p></p><pre class="crayon-plain-tag">var a:Array = textSplit('a;b;&quot;c&quot;;&quot;&quot;&quot;&quot;;&quot;a;b&quot;&quot;&quot;', &quot;;&quot;);
+// a has the value ['a', 'b', 'c', '&quot;', 'a;b&quot;']</pre><p></p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2008/10/21/splitting-csvs-in-actionscript-the-excel-way/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

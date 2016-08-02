@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Validator for ExtJS Checkbox</title>
+	<atom:link href="http://marcusschiesser.de/2009/02/20/151/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de/2009/02/20/151/</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 14 Nov 2015 03:24:43 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>By: jaydip</title>
+		<link>http://marcusschiesser.de/2009/02/20/151/comment-page-1/#comment-8274</link>
+		<dc:creator><![CDATA[jaydip]]></dc:creator>
+		<pubDate>Wed, 23 Oct 2013 09:48:51 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=151#comment-8274</guid>
+		<description><![CDATA[where to put code in javascript file that you discuss in above.]]></description>
+		<content:encoded><![CDATA[<p>where to put code in javascript file that you discuss in above.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Christiaan Westerbeek</title>
+		<link>http://marcusschiesser.de/2009/02/20/151/comment-page-1/#comment-8261</link>
+		<dc:creator><![CDATA[Christiaan Westerbeek]]></dc:creator>
+		<pubDate>Tue, 19 Feb 2013 20:07:32 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=151#comment-8261</guid>
+		<description><![CDATA[getForm.isValid() would always return false when you have other checkboxes without validateField set to true.
+
+This is better:
+
+Ext.form.field.Checkbox.prototype.validate = function(){
+    if (this.validateField) {
+        this.msgTarget = &#039;under&#039;;
+        if (this.checked) {
+            Ext.form.Field.prototype.clearInvalid.call(this);
+            return true;
+        }
+        Ext.form.Field.prototype.markInvalid.call(this, this.validateMessage);
+        return false;
+    }
+    return true;
+};]]></description>
+		<content:encoded><![CDATA[<p>getForm.isValid() would always return false when you have other checkboxes without validateField set to true.</p>
+<p>This is better:</p>
+<p>Ext.form.field.Checkbox.prototype.validate = function(){<br />
+    if (this.validateField) {<br />
+        this.msgTarget = &#8216;under&#8217;;<br />
+        if (this.checked) {<br />
+            Ext.form.Field.prototype.clearInvalid.call(this);<br />
+            return true;<br />
+        }<br />
+        Ext.form.Field.prototype.markInvalid.call(this, this.validateMessage);<br />
+        return false;<br />
+    }<br />
+    return true;<br />
+};</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Fred</title>
+		<link>http://marcusschiesser.de/2009/02/20/151/comment-page-1/#comment-8247</link>
+		<dc:creator><![CDATA[Fred]]></dc:creator>
+		<pubDate>Wed, 22 Aug 2012 08:32:25 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=151#comment-8247</guid>
+		<description><![CDATA[Hi there,
+Has anyone done this override with ExtJS 4.x.
+I do use version 4.1.1 and it seems that the errorEl is not part of the Checkbox class.
+So I get the following error:
+Uncaught TypeError: Cannot call method &#039;addCls&#039; of null ext-all-debug.js:71081
+
+&lt;code&gt;
+prepare: function(ownerContext, owner) {
+                    var errorEl = owner.errorEl,
+                        cls = Ext.baseCSSPrefix + &#039;form-invalid-under&#039;;
+
+                    errorEl.addCls(cls);
+Uncaught TypeError: Cannot call method &#039;addCls&#039; of null
+                    errorEl.setDisplayed(owner.hasActiveError());
+                },
+&lt;/code&gt;]]></description>
+		<content:encoded><![CDATA[<p>Hi there,<br />
+Has anyone done this override with ExtJS 4.x.<br />
+I do use version 4.1.1 and it seems that the errorEl is not part of the Checkbox class.<br />
+So I get the following error:<br />
+Uncaught TypeError: Cannot call method &#8216;addCls&#8217; of null ext-all-debug.js:71081</p>
+<p><code><br />
+prepare: function(ownerContext, owner) {<br />
+                    var errorEl = owner.errorEl,<br />
+                        cls = Ext.baseCSSPrefix + 'form-invalid-under';</p>
+<p>                    errorEl.addCls(cls);<br />
+Uncaught TypeError: Cannot call method 'addCls' of null<br />
+                    errorEl.setDisplayed(owner.hasActiveError());<br />
+                },<br />
+</code></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Philip Arad - SolarEdge Web Architect</title>
+		<link>http://marcusschiesser.de/2009/02/20/151/comment-page-1/#comment-8222</link>
+		<dc:creator><![CDATA[Philip Arad - SolarEdge Web Architect]]></dc:creator>
+		<pubDate>Wed, 25 Jan 2012 02:19:03 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=151#comment-8222</guid>
+		<description><![CDATA[Thanks for the tip.
+
+I have removes the code:
+this.msgTarget = &#039;under&#039;;
+Without it, you receive the red rounded alert icon, near the checkbox.
+
+In order to position it correctly I have used some CSS like this:
+#[checkbox id] .x-form-invalid-icon
+{
+  left:[value]px !important;
+  top:[value]px !important;
+}]]></description>
+		<content:encoded><![CDATA[<p>Thanks for the tip.</p>
+<p>I have removes the code:<br />
+this.msgTarget = &#8216;under&#8217;;<br />
+Without it, you receive the red rounded alert icon, near the checkbox.</p>
+<p>In order to position it correctly I have used some CSS like this:<br />
+#[checkbox id] .x-form-invalid-icon<br />
+{<br />
+  left:[value]px !important;<br />
+  top:[value]px !important;<br />
+}</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Andy Mitchell</title>
+		<link>http://marcusschiesser.de/2009/02/20/151/comment-page-1/#comment-8193</link>
+		<dc:creator><![CDATA[Andy Mitchell]]></dc:creator>
+		<pubDate>Tue, 20 Dec 2011 18:19:29 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=151#comment-8193</guid>
+		<description><![CDATA[In regards to ExtJS 4, the checkbox field has a &quot;getErrors: function(value)&quot; method that&#039;s called during submission.  If your checkbox is valid, return an empty array ([]).  Otherwise, return an array of strings to indicate the checkbox is invalid (example: [&#039;Please select the checkbox to indicate...&#039;]).]]></description>
+		<content:encoded><![CDATA[<p>In regards to ExtJS 4, the checkbox field has a &#8220;getErrors: function(value)&#8221; method that&#8217;s called during submission.  If your checkbox is valid, return an empty array ([]).  Otherwise, return an array of strings to indicate the checkbox is invalid (example: [&#8216;Please select the checkbox to indicate&#8230;&#8217;]).</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: ranjan</title>
+		<link>http://marcusschiesser.de/2009/02/20/151/comment-page-1/#comment-8143</link>
+		<dc:creator><![CDATA[ranjan]]></dc:creator>
+		<pubDate>Wed, 17 Aug 2011 12:14:30 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=151#comment-8143</guid>
+		<description><![CDATA[May i know, is this code compatible with the ExtJS 4.0.2.
+
+if not, can anybody assist me out with the code for extjs 4.0.2]]></description>
+		<content:encoded><![CDATA[<p>May i know, is this code compatible with the ExtJS 4.0.2.</p>
+<p>if not, can anybody assist me out with the code for extjs 4.0.2</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Shaheer</title>
+		<link>http://marcusschiesser.de/2009/02/20/151/comment-page-1/#comment-8103</link>
+		<dc:creator><![CDATA[Shaheer]]></dc:creator>
+		<pubDate>Thu, 26 May 2011 04:54:50 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=151#comment-8103</guid>
+		<description><![CDATA[How i call click event on radio button click?.. And how i can do in extjs like show and hide div in normal html and javascript?]]></description>
+		<content:encoded><![CDATA[<p>How i call click event on radio button click?.. And how i can do in extjs like show and hide div in normal html and javascript?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: batz</title>
+		<link>http://marcusschiesser.de/2009/02/20/151/comment-page-1/#comment-7661</link>
+		<dc:creator><![CDATA[batz]]></dc:creator>
+		<pubDate>Thu, 03 Mar 2011 08:42:07 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=151#comment-7661</guid>
+		<description><![CDATA[thx a lot
+helpful post]]></description>
+		<content:encoded><![CDATA[<p>thx a lot<br />
+helpful post</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: thosimo</title>
+		<link>http://marcusschiesser.de/2009/02/20/151/comment-page-1/#comment-2935</link>
+		<dc:creator><![CDATA[thosimo]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2010 15:45:36 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=151#comment-2935</guid>
+		<description><![CDATA[Thank you, but if I submit the form, I have always an error message until I change the code like this:
+&lt;pre&gt;
+      Ext.form.Checkbox.prototype.validate = function(){
+        if (this.validateField) {
+          // other values as &#039;under&#039; do not work
+          this.msgTarget = &#039;under&#039;;
+          if (this.checked) {
+            Ext.form.Field.prototype.clearInvalid.call(this);
+            return true;
+          } else {
+            Ext.form.Field.prototype.markInvalid.call(this, this.validateMessage); 
+          }
+        }
+      };
+&lt;/pre&gt;]]></description>
+		<content:encoded><![CDATA[<p>Thank you, but if I submit the form, I have always an error message until I change the code like this:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-57a019fddb612945674322" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+      Ext.form.Checkbox.prototype.validate = function(){
+        if (this.validateField) {
+          // other values as 'under' do not work
+          this.msgTarget = 'under';
+          if (this.checked) {
+            Ext.form.Field.prototype.clearInvalid.call(this);
+            return true;
+          } else {
+            Ext.form.Field.prototype.markInvalid.call(this, this.validateMessage); 
+          }
+        }
+      };</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57a019fddb612945674322-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019fddb612945674322-2">2</div><div class="crayon-num" data-line="crayon-57a019fddb612945674322-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019fddb612945674322-4">4</div><div class="crayon-num" data-line="crayon-57a019fddb612945674322-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019fddb612945674322-6">6</div><div class="crayon-num" data-line="crayon-57a019fddb612945674322-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019fddb612945674322-8">8</div><div class="crayon-num" data-line="crayon-57a019fddb612945674322-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019fddb612945674322-10">10</div><div class="crayon-num" data-line="crayon-57a019fddb612945674322-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019fddb612945674322-12">12</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57a019fddb612945674322-1"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">Ext</span><span class="crayon-sy">.</span><span class="crayon-v">form</span><span class="crayon-sy">.</span><span class="crayon-v">Checkbox</span><span class="crayon-sy">.</span><span class="crayon-v">prototype</span><span class="crayon-sy">.</span><span class="crayon-v">validate</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019fddb612945674322-2"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-r">this</span><span class="crayon-sy">.</span><span class="crayon-v">validateField</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a019fddb612945674322-3"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">// other values as 'under' do not work</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019fddb612945674322-4"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">this</span><span class="crayon-sy">.</span><span class="crayon-v">msgTarget</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">'under'</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019fddb612945674322-5"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-r">this</span><span class="crayon-sy">.</span><span class="crayon-v">checked</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019fddb612945674322-6"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">Ext</span><span class="crayon-sy">.</span><span class="crayon-v">form</span><span class="crayon-sy">.</span><span class="crayon-v">Field</span><span class="crayon-sy">.</span><span class="crayon-v">prototype</span><span class="crayon-sy">.</span><span class="crayon-v">clearInvalid</span><span class="crayon-sy">.</span><span class="crayon-e">call</span><span class="crayon-sy">(</span><span class="crayon-r">this</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019fddb612945674322-7"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-t">true</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019fddb612945674322-8"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span><span class="crayon-h"> </span><span class="crayon-st">else</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a019fddb612945674322-9"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">Ext</span><span class="crayon-sy">.</span><span class="crayon-v">form</span><span class="crayon-sy">.</span><span class="crayon-v">Field</span><span class="crayon-sy">.</span><span class="crayon-v">prototype</span><span class="crayon-sy">.</span><span class="crayon-v">markInvalid</span><span class="crayon-sy">.</span><span class="crayon-e">call</span><span class="crayon-sy">(</span><span class="crayon-r">this</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-r">this</span><span class="crayon-sy">.</span><span class="crayon-v">validateMessage</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019fddb612945674322-10"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-57a019fddb612945674322-11"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019fddb612945674322-12"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span><span class="crayon-sy">;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0021 seconds] -->
+<p></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Steve Martin</title>
+		<link>http://marcusschiesser.de/2009/02/20/151/comment-page-1/#comment-2827</link>
+		<dc:creator><![CDATA[Steve Martin]]></dc:creator>
+		<pubDate>Wed, 30 Dec 2009 02:12:27 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=151#comment-2827</guid>
+		<description><![CDATA[Marcus - thank you for the checkbox validation. I use a checkbox to verify that the user read the &quot;terms of engagement&quot; ... making the checkbox required before the form is submitted.
+
+Awesome on your part!!]]></description>
+		<content:encoded><![CDATA[<p>Marcus &#8211; thank you for the checkbox validation. I use a checkbox to verify that the user read the &#8220;terms of engagement&#8221; &#8230; making the checkbox required before the form is submitted.</p>
+<p>Awesome on your part!!</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

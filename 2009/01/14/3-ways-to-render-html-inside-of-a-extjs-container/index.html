@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://www.marcusschiesser.de/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/js/html5.js"></script>
+	<![endif]-->
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>3 Ways to render HTML inside of a ExtJS container | Marcus Schiesser</title>
+
+<!-- All in One SEO Pack 2.2.7.1 by Michael Torbert of Semper Fi Web Design[502,577] -->
+<meta name="description"  content="It has been a while since my last blog post. The main reason is that I am now having a nice new job at efiport which leads to the situation that I am doing now" />
+
+<link rel="canonical" href="http://www.marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/" />
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="Marcus Schiesser &raquo; Feed" href="http://www.marcusschiesser.de/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Marcus Schiesser &raquo; Comments Feed" href="http://www.marcusschiesser.de/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Marcus Schiesser &raquo; 3 Ways to render HTML inside of a ExtJS container Comments Feed" href="http://www.marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.marcusschiesser.de\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='crayon-css'  href='http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css'  href='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/style.css?ver=4.3.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.7.1","is_admin":"0","ajaxurl":"http:\/\/www.marcusschiesser.de\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.7.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.marcusschiesser.de/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.marcusschiesser.de/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Splitting CSVs in Actionscript (the Excel way)' href='http://www.marcusschiesser.de/2008/10/21/splitting-csvs-in-actionscript-the-excel-way/' />
+<link rel='next' title='Building a JSON web service with Java and Axis2' href='http://www.marcusschiesser.de/2009/01/23/building-a-json-web-service-with-java-and-axis2/' />
+<meta name="generator" content="WordPress 4.3.1" />
+<link rel='shortlink' href='http://www.marcusschiesser.de/?p=113' />
+		<style>
+		.gist table {
+			margin-bottom: 0 !important;
+		}
+		.gist .line-numbers
+		{
+			width: 4em !important;
+		}
+		.gist .line,
+		.gist .line-number
+		{
+			font-size: 12px !important;
+			height: 18px !important;
+			line-height: 18px !important;
+		}
+		.gist .line
+		{
+			white-space: pre !important;
+			width: auto !important;
+			word-wrap: normal !important;
+		}
+		.gist .line span
+		{
+			word-wrap: normal !important;
+		}
+		</style>
+		</head>
+
+<body class="single single-post postid-113 single-format-standard">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+										<p class="site-title"><a href="http://www.marcusschiesser.de/" rel="home">Marcus Schiesser</a></p>
+											<p class="site-description">Enterprise Software Development with JavaScript and Java</p>
+									<button class="secondary-toggle">Menu and widgets</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header -->
+
+			<div id="secondary" class="secondary">
+
+		
+		
+					<div id="widget-area" class="widget-area" role="complementary">
+				<aside id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widget-title">Topics</h2><div class="tagcloud"><a href='http://www.marcusschiesser.de/tag/actionscript/' class='tag-link-56' title='2 topics' style='font-size: 8pt;'>actionscript</a>
+<a href='http://www.marcusschiesser.de/tag/axis2/' class='tag-link-97' title='2 topics' style='font-size: 8pt;'>axis2</a>
+<a href='http://www.marcusschiesser.de/tag/backend/' class='tag-link-198' title='2 topics' style='font-size: 8pt;'>backend</a>
+<a href='http://www.marcusschiesser.de/tag/bewerbung/' class='tag-link-38' title='2 topics' style='font-size: 8pt;'>bewerbung</a>
+<a href='http://www.marcusschiesser.de/tag/button/' class='tag-link-155' title='2 topics' style='font-size: 8pt;'>button</a>
+<a href='http://www.marcusschiesser.de/tag/combo/' class='tag-link-126' title='3 topics' style='font-size: 10.333333333333pt;'>combo</a>
+<a href='http://www.marcusschiesser.de/tag/component/' class='tag-link-248' title='3 topics' style='font-size: 10.333333333333pt;'>Component</a>
+<a href='http://www.marcusschiesser.de/tag/country/' class='tag-link-129' title='2 topics' style='font-size: 8pt;'>country</a>
+<a href='http://www.marcusschiesser.de/tag/effekt/' class='tag-link-15' title='2 topics' style='font-size: 8pt;'>Effekt</a>
+<a href='http://www.marcusschiesser.de/tag/error/' class='tag-link-107' title='2 topics' style='font-size: 8pt;'>error</a>
+<a href='http://www.marcusschiesser.de/tag/ext/' class='tag-link-115' title='7 topics' style='font-size: 16.166666666667pt;'>ext</a>
+<a href='http://www.marcusschiesser.de/tag/extjs/' class='tag-link-249' title='15 topics' style='font-size: 22pt;'>ExtJS</a>
+<a href='http://www.marcusschiesser.de/tag/facebook/' class='tag-link-23' title='2 topics' style='font-size: 8pt;'>facebook</a>
+<a href='http://www.marcusschiesser.de/tag/feed/' class='tag-link-25' title='2 topics' style='font-size: 8pt;'>feed</a>
+<a href='http://www.marcusschiesser.de/tag/field/' class='tag-link-137' title='3 topics' style='font-size: 10.333333333333pt;'>field</a>
+<a href='http://www.marcusschiesser.de/tag/flash/' class='tag-link-71' title='2 topics' style='font-size: 8pt;'>flash</a>
+<a href='http://www.marcusschiesser.de/tag/flex/' class='tag-link-14' title='15 topics' style='font-size: 22pt;'>Flex</a>
+<a href='http://www.marcusschiesser.de/tag/form/' class='tag-link-128' title='2 topics' style='font-size: 8pt;'>form</a>
+<a href='http://www.marcusschiesser.de/tag/spas/' class='tag-link-244' title='4 topics' style='font-size: 12.277777777778pt;'>Fun</a>
+<a href='http://www.marcusschiesser.de/tag/google/' class='tag-link-69' title='2 topics' style='font-size: 8pt;'>google</a>
+<a href='http://www.marcusschiesser.de/tag/grid/' class='tag-link-113' title='3 topics' style='font-size: 10.333333333333pt;'>grid</a>
+<a href='http://www.marcusschiesser.de/tag/handler/' class='tag-link-58' title='2 topics' style='font-size: 8pt;'>handler</a>
+<a href='http://www.marcusschiesser.de/tag/html/' class='tag-link-94' title='2 topics' style='font-size: 8pt;'>html</a>
+<a href='http://www.marcusschiesser.de/tag/ideen/' class='tag-link-19' title='3 topics' style='font-size: 10.333333333333pt;'>Ideen</a>
+<a href='http://www.marcusschiesser.de/tag/info/' class='tag-link-78' title='2 topics' style='font-size: 8pt;'>info</a>
+<a href='http://www.marcusschiesser.de/tag/java/' class='tag-link-250' title='6 topics' style='font-size: 15.194444444444pt;'>Java</a>
+<a href='http://www.marcusschiesser.de/tag/javascript/' class='tag-link-101' title='4 topics' style='font-size: 12.277777777778pt;'>javascript</a>
+<a href='http://www.marcusschiesser.de/tag/jboss-2/' class='tag-link-186' title='2 topics' style='font-size: 8pt;'>jboss</a>
+<a href='http://www.marcusschiesser.de/tag/jersey/' class='tag-link-175' title='3 topics' style='font-size: 10.333333333333pt;'>jersey</a>
+<a href='http://www.marcusschiesser.de/tag/job/' class='tag-link-39' title='2 topics' style='font-size: 8pt;'>job</a>
+<a href='http://www.marcusschiesser.de/tag/json/' class='tag-link-72' title='3 topics' style='font-size: 10.333333333333pt;'>json</a>
+<a href='http://www.marcusschiesser.de/tag/map/' class='tag-link-70' title='3 topics' style='font-size: 10.333333333333pt;'>map</a>
+<a href='http://www.marcusschiesser.de/tag/mashup/' class='tag-link-11' title='5 topics' style='font-size: 13.833333333333pt;'>Mashup</a>
+<a href='http://www.marcusschiesser.de/tag/message/' class='tag-link-103' title='2 topics' style='font-size: 8pt;'>message</a>
+<a href='http://www.marcusschiesser.de/tag/sonstiges/' class='tag-link-243' title='3 topics' style='font-size: 10.333333333333pt;'>Other</a>
+<a href='http://www.marcusschiesser.de/tag/pictures/' class='tag-link-66' title='2 topics' style='font-size: 8pt;'>pictures</a>
+<a href='http://www.marcusschiesser.de/tag/pojo/' class='tag-link-99' title='2 topics' style='font-size: 8pt;'>pojo</a>
+<a href='http://www.marcusschiesser.de/tag/presse/' class='tag-link-8' title='2 topics' style='font-size: 8pt;'>Presse</a>
+<a href='http://www.marcusschiesser.de/tag/programmierung/' class='tag-link-4' title='3 topics' style='font-size: 10.333333333333pt;'>Programmierung</a>
+<a href='http://www.marcusschiesser.de/tag/proxy/' class='tag-link-118' title='2 topics' style='font-size: 8pt;'>proxy</a>
+<a href='http://www.marcusschiesser.de/tag/rails/' class='tag-link-247' title='2 topics' style='font-size: 8pt;'>Rails</a>
+<a href='http://www.marcusschiesser.de/tag/rest/' class='tag-link-180' title='2 topics' style='font-size: 8pt;'>rest</a>
+<a href='http://www.marcusschiesser.de/tag/selector/' class='tag-link-130' title='4 topics' style='font-size: 12.277777777778pt;'>selector</a>
+<a href='http://www.marcusschiesser.de/tag/web-20/' class='tag-link-6' title='4 topics' style='font-size: 12.277777777778pt;'>Web 2.0</a>
+<a href='http://www.marcusschiesser.de/tag/wordpress/' class='tag-link-246' title='2 topics' style='font-size: 8pt;'>Wordpress</a></div>
+</aside><aside id="linkcat-2" class="widget widget_links"><h2 class="widget-title">Blogroll</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://pdf.venedo.com/" rel="friend met" title="A blog about PDFs without barriers">Accessible PDFs</a></li>
+<li><a href="http://www.best-practice-business.de/blog/" title="Business Ideen und Lösungen">best-practice-business</a></li>
+<li><a href="http://blog.digitalbackcountry.com/" title="Blog über RIAs von Ryan Stewart, Technological Evangelist bei Adobe">Digital Backcountry</a></li>
+<li><a href="http://juriswritings.blogspot.de/">Juri&#039;s Writings &#8211; Software, technology and science.</a></li>
+<li><a href="http://radar.oreilly.com/">O&#8217;Reilly Radar</a></li>
+<li><a href="http://blog.stefanbotzenhart.com/" rel="contact met co-worker">Stefan Botzenhart</a></li>
+<li><a href="http://www.turngeek.press" title="Turngeek press &#8211; Online Java books" target="_blank">Turngeek press</a></li>
+
+	</ul>
+</aside>
+			</div><!-- .widget-area -->
+		
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+<article id="post-113" class="post-113 post type-post status-publish format-standard hentry category-extjs category-technologie tag-container tag-extjs tag-html tag-render">
+	
+	<header class="entry-header">
+		<h1 class="entry-title">3 Ways to render HTML inside of a ExtJS container</h1>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>It has been a while since my last blog post. The main reason is that I am now having a nice new job at <a href="http://www.efiport.de/">efiport</a> which leads to the situation that I am doing now good old Javascript (mainly <a href="http://extjs.com/">ExtJS</a>) instead of Flex.<br />
+So I think in the future there will be more posts about ExtJS then Flex. Sorry Flex folks.</p>
+<p>To tribute the change a bit, I start with the problem of adding HTML code inside of a ExtJS container.<br />
+I thought of three different ways &#8211; let&#8217;s take a look at them:</p>
+<p><iframe style="width: 100%; height: 360px" src="http://jsfiddle.net/JZG56/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>It&#8217;s easy to think about the first one and you can find it quite often by googling around. Just setting the <code>html</code> property of a panel. The problem I am having with it is that the overhead of a panel is generated and the HTML is just static &#8211; I can&#8217;t generate similar values at runtime (e.g. a different link label in the example).</p>
+<p>So apart from the second example that uses a template, I thought of the third solution that generates a DOM element at runtime using the <code>DomHelper</code> (the <code>autoEl</code> property calls this implicitly) and wraps it in a component. What do you think?</p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="http://www.marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/" rel="bookmark"><time class="entry-date published" datetime="2009-01-14T15:23:43+00:00">January 14, 2009</time><time class="updated" datetime="2012-07-10T21:15:14+00:00">July 10, 2012</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Author </span><a class="url fn n" href="http://www.marcusschiesser.de/author/admin/">Marcus Schiesser</a></span></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="http://www.marcusschiesser.de/category/technologie/extjs/" rel="category tag">ExtJS</a>, <a href="http://www.marcusschiesser.de/category/technologie/" rel="category tag">Technology</a></span><span class="tags-links"><span class="screen-reader-text">Tags </span><a href="http://www.marcusschiesser.de/tag/container/" rel="tag">container</a>, <a href="http://www.marcusschiesser.de/tag/extjs/" rel="tag">ExtJS</a>, <a href="http://www.marcusschiesser.de/tag/html/" rel="tag">html</a>, <a href="http://www.marcusschiesser.de/tag/render/" rel="tag">render</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-## -->
+
+<div id="disqus_thread">
+            <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-223">
+        <div id="dsq-comment-header-223" class="dsq-comment-header">
+            <cite id="dsq-cite-223">
+                <a id="dsq-author-user-223" href="http://extjs.com" target="_blank" rel="nofollow">Chris Scott (ExtJS)</a>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-223" class="dsq-comment-body">
+            <div id="dsq-comment-message-223" class="dsq-comment-message"><p>Hi there.  I have 3 more ways for you:</p>
+<p>4.  Use Ext.Panel @cfg&#8221;contentEl&#8221; {String}, providing an element id which will be used as the Panel&#8217;s body.</p>
+<p>5.  Simply use @cfg &#8220;html&#8221; {String} property of the containing panel itself (no need for child items).</p>
+<p>6.  Use Ext.Panel @cfg property &#8220;autoLoad&#8221; {String}, providing an url which the panel will use to generate an Ajax request. The response will be used as the Panel body&#8217;s innerHTML.</p>
+<p>Cheers.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-286">
+        <div id="dsq-comment-header-286" class="dsq-comment-header">
+            <cite id="dsq-cite-286">
+                <span id="dsq-author-user-286">Animal</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-286" class="dsq-comment-body">
+            <div id="dsq-comment-message-286" class="dsq-comment-message"><p>That 3rd way *is* how you create custom DOM structure for a Component.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-372">
+        <div id="dsq-comment-header-372" class="dsq-comment-header">
+            <cite id="dsq-cite-372">
+                <span id="dsq-author-user-372">tom</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-372" class="dsq-comment-body">
+            <div id="dsq-comment-message-372" class="dsq-comment-message"><p>all crazy ways to do html in extjs..<br />
+extjs is useless framework.<br />
+why would u need html in javascript.<br />
+extjs will soon be out&#8230;<br />
+our app is non-maintanable with extjs</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-416">
+        <div id="dsq-comment-header-416" class="dsq-comment-header">
+            <cite id="dsq-cite-416">
+                <span id="dsq-author-user-416">nktwrk</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-416" class="dsq-comment-body">
+            <div id="dsq-comment-message-416" class="dsq-comment-message"><p>@tom<br />
+Hey captain rage, don&#8217;t blame extjs just &#8216;cos you suck at your job.</p>
+<p>&#8216;why you need html in js&#8217;? You just dribbled on yourself.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-4990">
+        <div id="dsq-comment-header-4990" class="dsq-comment-header">
+            <cite id="dsq-cite-4990">
+                <span id="dsq-author-user-4990">Dineshkumar</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-4990" class="dsq-comment-body">
+            <div id="dsq-comment-message-4990" class="dsq-comment-message"><p>Hi,<br />
+I m using ExtJs,  in html:&#8217;example&#8217;  ,here is it possible to use java script inside html component.<br />
+Thanks,<br />
+Dinesh</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-5963">
+        <div id="dsq-comment-header-5963" class="dsq-comment-header">
+            <cite id="dsq-cite-5963">
+                <span id="dsq-author-user-5963">asdf</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5963" class="dsq-comment-body">
+            <div id="dsq-comment-message-5963" class="dsq-comment-message"><p>@tom &#8220;extjs is useless framework&#8221; this just funny <img src="http://www.marcusschiesser.de/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-6224">
+        <div id="dsq-comment-header-6224" class="dsq-comment-header">
+            <cite id="dsq-cite-6224">
+                <span id="dsq-author-user-6224">Gini</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-6224" class="dsq-comment-body">
+            <div id="dsq-comment-message-6224" class="dsq-comment-message"><p>@Tom<br />
+Let me know a useful framework&#8230;</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-6280">
+        <div id="dsq-comment-header-6280" class="dsq-comment-header">
+            <cite id="dsq-cite-6280">
+                <span id="dsq-author-user-6280">W</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-6280" class="dsq-comment-body">
+            <div id="dsq-comment-message-6280" class="dsq-comment-message"><p>Thank you this helped me a lot!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-6432">
+        <div id="dsq-comment-header-6432" class="dsq-comment-header">
+            <cite id="dsq-cite-6432">
+                <span id="dsq-author-user-6432">Sune</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-6432" class="dsq-comment-body">
+            <div id="dsq-comment-message-6432" class="dsq-comment-message"><p>@Dineshkumar </p>
+<p>Did you find a solution?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-6640">
+        <div id="dsq-comment-header-6640" class="dsq-comment-header">
+            <cite id="dsq-cite-6640">
+                <a id="dsq-author-user-6640" href="http://extjs" target="_blank" rel="nofollow">prabhu</a>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-6640" class="dsq-comment-body">
+            <div id="dsq-comment-message-6640" class="dsq-comment-message"><p>i am using extjs.nowe i wan to use filters in extjs.<br />
+i am using servlet to get the data,<br />
+thank in advance</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-6689">
+        <div id="dsq-comment-header-6689" class="dsq-comment-header">
+            <cite id="dsq-cite-6689">
+                <a id="dsq-author-user-6689" href="http://blog.mital.in" target="_blank" rel="nofollow">Mital</a>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-6689" class="dsq-comment-body">
+            <div id="dsq-comment-message-6689" class="dsq-comment-message"><p>html:  works fine, also use autoEl: {} to insert additional attributes of an html. </p>
+<p>I tailored one of my solution with this. Thx.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-6792">
+        <div id="dsq-comment-header-6792" class="dsq-comment-header">
+            <cite id="dsq-cite-6792">
+                <a id="dsq-author-user-6792" href="http://www.syncode.com.br/" target="_blank" rel="nofollow">Luiz Prado</a>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-6792" class="dsq-comment-body">
+            <div id="dsq-comment-message-6792" class="dsq-comment-message"><p>Nice work Marcus Schiesser!</p>
+<p>I found your blog searching  for something about &#8220;window.frames[&#8216;myIframe&#8217;].document.getElementById(&#8216;elementName&#8217;).value&#8221;.<br />
+I have it inside a BoxComponent:<br />
+autoEl: {   tag: &#8216;div&#8217;,      html: &#8220;&#8221;	    }</p>
+<p>It works fine, but I&#8217;d like know if exists another way in Extjs. Does it?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-7435">
+        <div id="dsq-comment-header-7435" class="dsq-comment-header">
+            <cite id="dsq-cite-7435">
+                <a id="dsq-author-user-7435" href="http://-" target="_blank" rel="nofollow">Jason</a>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7435" class="dsq-comment-body">
+            <div id="dsq-comment-message-7435" class="dsq-comment-message"><p>Thanks, its good to know different approaches.</p>
+<p>Also, lol @nktwrk&#8217;s comment about @tom!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-8009">
+        <div id="dsq-comment-header-8009" class="dsq-comment-header">
+            <cite id="dsq-cite-8009">
+                <span id="dsq-author-user-8009">FlashM</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8009" class="dsq-comment-body">
+            <div id="dsq-comment-message-8009" class="dsq-comment-message"><p>Wow Marcus,</p>
+<p>This really is something&#8230; Thanks for sharing&#8230; <img src="http://www.marcusschiesser.de/wp-includes/images/smilies/simple-smile.png" alt=":-)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-8123">
+        <div id="dsq-comment-header-8123" class="dsq-comment-header">
+            <cite id="dsq-cite-8123">
+                <a id="dsq-author-user-8123" href="http://none.com" target="_blank" rel="nofollow">J</a>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8123" class="dsq-comment-body">
+            <div id="dsq-comment-message-8123" class="dsq-comment-message"><p>I have an alternative, how about pure HTML5 with CSS and Javascript for wiring up user interactions?</p>
+<p>Ext stuff is overkill, and satisfies business sectors that deal with tons and rows upon rows of grid based data&#8230;..boring beyond comprehension.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-8225">
+        <div id="dsq-comment-header-8225" class="dsq-comment-header">
+            <cite id="dsq-cite-8225">
+                <span id="dsq-author-user-8225">dinesh roshan</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8225" class="dsq-comment-body">
+            <div id="dsq-comment-message-8225" class="dsq-comment-message"><p>how to pass parameters in extjs html &#8216;box&#8217; type</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-8245">
+        <div id="dsq-comment-header-8245" class="dsq-comment-header">
+            <cite id="dsq-cite-8245">
+                <span id="dsq-author-user-8245">bentong</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8245" class="dsq-comment-body">
+            <div id="dsq-comment-message-8245" class="dsq-comment-message"><p>how can add listeners to those items?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-8263">
+        <div id="dsq-comment-header-8263" class="dsq-comment-header">
+            <cite id="dsq-cite-8263">
+                <span id="dsq-author-user-8263">zentak</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8263" class="dsq-comment-body">
+            <div id="dsq-comment-message-8263" class="dsq-comment-message"><p>I have to agree with @J on this one.  Even with tons of rows up on rows of grid data, plain-old HTML/CSS/JavaScript can handle it.</p>
+<p>Agree that Ext is, in fact, overkill.  It wants you to do everything in JS (really, its little more than a giant JSON configuration) which is bad.  You wouldn&#8217;t build a house with only a hammer would you?  Then why build an app with only one tool.</p>
+<p>Tools that &#8220;do it all&#8221; do it very poorly.</p>
+<p>Do yourself a favor and learn HTML/CSS/JavaScript.  Its not hard.  Sure, there are browser differences to contend with but those will always be there and they&#8217;re a problem in Ext too.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-8264">
+        <div id="dsq-comment-header-8264" class="dsq-comment-header">
+            <cite id="dsq-cite-8264">
+                <span id="dsq-author-user-8264">Duleep</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8264" class="dsq-comment-body">
+            <div id="dsq-comment-message-8264" class="dsq-comment-message"><p>im write BoxComponent. for write html in extjs but i don&#8217;t know how to configure after init component </p>
+<p>This is my code<br />
+***************************************************************<br />
+ this.terms = new Ext.BoxComponent({<br />
+         id: &#8216;register_isv_terms_linkbox&#8217;,<br />
+         itemId: &#8216;register_isv_terms_link&#8217;,<br />
+         autoEl: {<br />
+            id: &#8216;register_isv_terms_link_el&#8217;,<br />
+            tag: &#8216;a&#8217;,<br />
+            html: &#8216;value&#8217;,<br />
+            cls: &#8216;ux-link&#8217;<br />
+          },<br />
+          listeners: {<br />
+               scope: this,<br />
+               render: function(component){<br />
+                  component.getEl().on(&#8216;click&#8217;, function(e){<br />
+                       var win=window.open(&#8216;value&#8217;, &#8216;_blank&#8217;);<br />
+                        win.focus();<br />
+                  })<br />
+              }<br />
+          }<br />
+      });<br />
+      this.urls.add(this.terms);<br />
+**************************************************************</p>
+<p>there is method (updateTab) now i want to change &#8216;listeners&#8217; and &#8216;html&#8217; vale inside that method i&#8217;m very new to ext js please help to me</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-8268">
+        <div id="dsq-comment-header-8268" class="dsq-comment-header">
+            <cite id="dsq-cite-8268">
+                <a id="dsq-author-user-8268" href="http://gravatar.com/foxmulder900" target="_blank" rel="nofollow">foxmulder900</a>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8268" class="dsq-comment-body">
+            <div id="dsq-comment-message-8268" class="dsq-comment-message"><p>Those of you who say ExtJs is overkill must not be developing very large apps. The complex apps that we require would take years of development in plain JS/HTML. Ext cuts our development time by tenfold at least. Not to mention it has a great community of people to help you out.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="http://www.marcusschiesser.de/2008/10/21/splitting-csvs-in-actionscript-the-excel-way/" rel="prev"><span class="meta-nav" aria-hidden="true">Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">Splitting CSVs in Actionscript (the Excel way)</span></a></div><div class="nav-next"><a href="http://www.marcusschiesser.de/2009/01/23/building-a-json-web-service-with-java-and-axis2/" rel="next"><span class="meta-nav" aria-hidden="true">Next</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">Building a JSON web service with Java and Axis2</span></a></div></div>
+	</nav>
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+						<a href="https://wordpress.org/">Proudly powered by WordPress</a>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js?ver=20141010'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/js/functions.js?ver=20150330'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var embedVars = {"disqusConfig":{"platform":"wordpress@4.3.1","language":""},"disqusIdentifier":"113 http:\/\/www.marcusschiesser.de\/?p=113","disqusShortname":"marcusschiesser","disqusTitle":"3 Ways to render HTML inside of a ExtJS container","disqusUrl":"http:\/\/www.marcusschiesser.de\/2009\/01\/14\/3-ways-to-render-html-inside-of-a-extjs-container\/","options":{"manualSync":false},"postId":"113"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/plugins/disqus-comment-system/media/js/disqus.js?ver=4.3.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"marcusschiesser"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/plugins/disqus-comment-system/media/js/count.js?ver=4.3.1'></script>
+
+</body>
+</html>

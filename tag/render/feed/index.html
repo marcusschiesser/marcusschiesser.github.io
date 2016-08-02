@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; render</title>
+	<atom:link href="http://marcusschiesser.de/tag/render/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>3 Ways to render HTML inside of a ExtJS container</title>
+		<link>http://marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/</link>
+		<comments>http://marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/#comments</comments>
+		<pubDate>Wed, 14 Jan 2009 14:23:43 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[ExtJS]]></category>
+		<category><![CDATA[Technology]]></category>
+		<category><![CDATA[container]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[render]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=113</guid>
+		<description><![CDATA[It has been a while since my last blog post. The main reason is that I am now having a nice new job at efiport which leads to the situation that I am doing now good old Javascript (mainly ExtJS) instead of Flex. So I think in the future there will be more posts about &#8230; <a href="http://marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/" class="more-link">Continue reading <span class="screen-reader-text">3 Ways to render HTML inside of a ExtJS container</span></a>]]></description>
+				<content:encoded><![CDATA[<p>It has been a while since my last blog post. The main reason is that I am now having a nice new job at <a href="http://www.efiport.de/">efiport</a> which leads to the situation that I am doing now good old Javascript (mainly <a href="http://extjs.com/">ExtJS</a>) instead of Flex.<br />
+So I think in the future there will be more posts about ExtJS then Flex. Sorry Flex folks.</p>
+<p>To tribute the change a bit, I start with the problem of adding HTML code inside of a ExtJS container.<br />
+I thought of three different ways &#8211; let&#8217;s take a look at them:</p>
+<p><iframe style="width: 100%; height: 360px" src="http://jsfiddle.net/JZG56/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>It&#8217;s easy to think about the first one and you can find it quite often by googling around. Just setting the <code>html</code> property of a panel. The problem I am having with it is that the overhead of a panel is generated and the HTML is just static &#8211; I can&#8217;t generate similar values at runtime (e.g. a different link label in the example).</p>
+<p>So apart from the second example that uses a template, I thought of the third solution that generates a DOM element at runtime using the <code>DomHelper</code> (the <code>autoEl</code> property calls this implicitly) and wraps it in a component. What do you think?</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/feed/</wfw:commentRss>
+		<slash:comments>20</slash:comments>
+		</item>
+	</channel>
+</rss>

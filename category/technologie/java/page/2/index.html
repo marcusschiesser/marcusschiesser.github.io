@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://www.marcusschiesser.de/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/js/html5.js"></script>
+	<![endif]-->
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Java | Marcus Schiesser - Part 2</title>
+
+<!-- All in One SEO Pack 2.2.7.1 by Michael Torbert of Semper Fi Web Design[502,541] -->
+<meta name="robots" content="noindex,follow" />
+<link rel='prev' href='http://www.marcusschiesser.de/category/technologie/java/' />
+
+<link rel="canonical" href="http://www.marcusschiesser.de/category/technologie/java/page/2/" />
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="Marcus Schiesser &raquo; Feed" href="http://www.marcusschiesser.de/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Marcus Schiesser &raquo; Comments Feed" href="http://www.marcusschiesser.de/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Marcus Schiesser &raquo; Java Category Feed" href="http://www.marcusschiesser.de/category/technologie/java/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.marcusschiesser.de\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='crayon-css'  href='http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-classic-css'  href='http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/themes/classic/classic.css?ver=2.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-monaco-css'  href='http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco.css?ver=2.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css'  href='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/style.css?ver=4.3.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.7.1","is_admin":"0","ajaxurl":"http:\/\/www.marcusschiesser.de\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.7.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.marcusschiesser.de/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.marcusschiesser.de/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.3.1" />
+		<style>
+		.gist table {
+			margin-bottom: 0 !important;
+		}
+		.gist .line-numbers
+		{
+			width: 4em !important;
+		}
+		.gist .line,
+		.gist .line-number
+		{
+			font-size: 12px !important;
+			height: 18px !important;
+			line-height: 18px !important;
+		}
+		.gist .line
+		{
+			white-space: pre !important;
+			width: auto !important;
+			word-wrap: normal !important;
+		}
+		.gist .line span
+		{
+			word-wrap: normal !important;
+		}
+		</style>
+		</head>
+
+<body class="archive paged category category-java category-96 paged-2 category-paged-2">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+										<p class="site-title"><a href="http://www.marcusschiesser.de/" rel="home">Marcus Schiesser</a></p>
+											<p class="site-description">Enterprise Software Development with JavaScript and Java</p>
+									<button class="secondary-toggle">Menu and widgets</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header -->
+
+			<div id="secondary" class="secondary">
+
+		
+		
+					<div id="widget-area" class="widget-area" role="complementary">
+				<aside id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widget-title">Topics</h2><div class="tagcloud"><a href='http://www.marcusschiesser.de/tag/actionscript/' class='tag-link-56' title='2 topics' style='font-size: 8pt;'>actionscript</a>
+<a href='http://www.marcusschiesser.de/tag/axis2/' class='tag-link-97' title='2 topics' style='font-size: 8pt;'>axis2</a>
+<a href='http://www.marcusschiesser.de/tag/backend/' class='tag-link-198' title='2 topics' style='font-size: 8pt;'>backend</a>
+<a href='http://www.marcusschiesser.de/tag/bewerbung/' class='tag-link-38' title='2 topics' style='font-size: 8pt;'>bewerbung</a>
+<a href='http://www.marcusschiesser.de/tag/button/' class='tag-link-155' title='2 topics' style='font-size: 8pt;'>button</a>
+<a href='http://www.marcusschiesser.de/tag/combo/' class='tag-link-126' title='3 topics' style='font-size: 10.333333333333pt;'>combo</a>
+<a href='http://www.marcusschiesser.de/tag/component/' class='tag-link-248' title='3 topics' style='font-size: 10.333333333333pt;'>Component</a>
+<a href='http://www.marcusschiesser.de/tag/country/' class='tag-link-129' title='2 topics' style='font-size: 8pt;'>country</a>
+<a href='http://www.marcusschiesser.de/tag/effekt/' class='tag-link-15' title='2 topics' style='font-size: 8pt;'>Effekt</a>
+<a href='http://www.marcusschiesser.de/tag/error/' class='tag-link-107' title='2 topics' style='font-size: 8pt;'>error</a>
+<a href='http://www.marcusschiesser.de/tag/ext/' class='tag-link-115' title='7 topics' style='font-size: 16.166666666667pt;'>ext</a>
+<a href='http://www.marcusschiesser.de/tag/extjs/' class='tag-link-249' title='15 topics' style='font-size: 22pt;'>ExtJS</a>
+<a href='http://www.marcusschiesser.de/tag/facebook/' class='tag-link-23' title='2 topics' style='font-size: 8pt;'>facebook</a>
+<a href='http://www.marcusschiesser.de/tag/feed/' class='tag-link-25' title='2 topics' style='font-size: 8pt;'>feed</a>
+<a href='http://www.marcusschiesser.de/tag/field/' class='tag-link-137' title='3 topics' style='font-size: 10.333333333333pt;'>field</a>
+<a href='http://www.marcusschiesser.de/tag/flash/' class='tag-link-71' title='2 topics' style='font-size: 8pt;'>flash</a>
+<a href='http://www.marcusschiesser.de/tag/flex/' class='tag-link-14' title='15 topics' style='font-size: 22pt;'>Flex</a>
+<a href='http://www.marcusschiesser.de/tag/form/' class='tag-link-128' title='2 topics' style='font-size: 8pt;'>form</a>
+<a href='http://www.marcusschiesser.de/tag/spas/' class='tag-link-244' title='4 topics' style='font-size: 12.277777777778pt;'>Fun</a>
+<a href='http://www.marcusschiesser.de/tag/google/' class='tag-link-69' title='2 topics' style='font-size: 8pt;'>google</a>
+<a href='http://www.marcusschiesser.de/tag/grid/' class='tag-link-113' title='3 topics' style='font-size: 10.333333333333pt;'>grid</a>
+<a href='http://www.marcusschiesser.de/tag/handler/' class='tag-link-58' title='2 topics' style='font-size: 8pt;'>handler</a>
+<a href='http://www.marcusschiesser.de/tag/html/' class='tag-link-94' title='2 topics' style='font-size: 8pt;'>html</a>
+<a href='http://www.marcusschiesser.de/tag/ideen/' class='tag-link-19' title='3 topics' style='font-size: 10.333333333333pt;'>Ideen</a>
+<a href='http://www.marcusschiesser.de/tag/info/' class='tag-link-78' title='2 topics' style='font-size: 8pt;'>info</a>
+<a href='http://www.marcusschiesser.de/tag/java/' class='tag-link-250' title='6 topics' style='font-size: 15.194444444444pt;'>Java</a>
+<a href='http://www.marcusschiesser.de/tag/javascript/' class='tag-link-101' title='4 topics' style='font-size: 12.277777777778pt;'>javascript</a>
+<a href='http://www.marcusschiesser.de/tag/jboss-2/' class='tag-link-186' title='2 topics' style='font-size: 8pt;'>jboss</a>
+<a href='http://www.marcusschiesser.de/tag/jersey/' class='tag-link-175' title='3 topics' style='font-size: 10.333333333333pt;'>jersey</a>
+<a href='http://www.marcusschiesser.de/tag/job/' class='tag-link-39' title='2 topics' style='font-size: 8pt;'>job</a>
+<a href='http://www.marcusschiesser.de/tag/json/' class='tag-link-72' title='3 topics' style='font-size: 10.333333333333pt;'>json</a>
+<a href='http://www.marcusschiesser.de/tag/map/' class='tag-link-70' title='3 topics' style='font-size: 10.333333333333pt;'>map</a>
+<a href='http://www.marcusschiesser.de/tag/mashup/' class='tag-link-11' title='5 topics' style='font-size: 13.833333333333pt;'>Mashup</a>
+<a href='http://www.marcusschiesser.de/tag/message/' class='tag-link-103' title='2 topics' style='font-size: 8pt;'>message</a>
+<a href='http://www.marcusschiesser.de/tag/sonstiges/' class='tag-link-243' title='3 topics' style='font-size: 10.333333333333pt;'>Other</a>
+<a href='http://www.marcusschiesser.de/tag/pictures/' class='tag-link-66' title='2 topics' style='font-size: 8pt;'>pictures</a>
+<a href='http://www.marcusschiesser.de/tag/pojo/' class='tag-link-99' title='2 topics' style='font-size: 8pt;'>pojo</a>
+<a href='http://www.marcusschiesser.de/tag/presse/' class='tag-link-8' title='2 topics' style='font-size: 8pt;'>Presse</a>
+<a href='http://www.marcusschiesser.de/tag/programmierung/' class='tag-link-4' title='3 topics' style='font-size: 10.333333333333pt;'>Programmierung</a>
+<a href='http://www.marcusschiesser.de/tag/proxy/' class='tag-link-118' title='2 topics' style='font-size: 8pt;'>proxy</a>
+<a href='http://www.marcusschiesser.de/tag/rails/' class='tag-link-247' title='2 topics' style='font-size: 8pt;'>Rails</a>
+<a href='http://www.marcusschiesser.de/tag/rest/' class='tag-link-180' title='2 topics' style='font-size: 8pt;'>rest</a>
+<a href='http://www.marcusschiesser.de/tag/selector/' class='tag-link-130' title='4 topics' style='font-size: 12.277777777778pt;'>selector</a>
+<a href='http://www.marcusschiesser.de/tag/web-20/' class='tag-link-6' title='4 topics' style='font-size: 12.277777777778pt;'>Web 2.0</a>
+<a href='http://www.marcusschiesser.de/tag/wordpress/' class='tag-link-246' title='2 topics' style='font-size: 8pt;'>Wordpress</a></div>
+</aside><aside id="linkcat-2" class="widget widget_links"><h2 class="widget-title">Blogroll</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://pdf.venedo.com/" rel="friend met" title="A blog about PDFs without barriers">Accessible PDFs</a></li>
+<li><a href="http://www.best-practice-business.de/blog/" title="Business Ideen und Lösungen">best-practice-business</a></li>
+<li><a href="http://blog.digitalbackcountry.com/" title="Blog über RIAs von Ryan Stewart, Technological Evangelist bei Adobe">Digital Backcountry</a></li>
+<li><a href="http://juriswritings.blogspot.de/">Juri&#039;s Writings &#8211; Software, technology and science.</a></li>
+<li><a href="http://radar.oreilly.com/">O&#8217;Reilly Radar</a></li>
+<li><a href="http://blog.stefanbotzenhart.com/" rel="contact met co-worker">Stefan Botzenhart</a></li>
+<li><a href="http://www.turngeek.press" title="Turngeek press &#8211; Online Java books" target="_blank">Turngeek press</a></li>
+
+	</ul>
+</aside>
+			</div><!-- .widget-area -->
+		
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+
+	<div id="content" class="site-content">
+
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			<header class="page-header">
+				<h1 class="page-title">Category: Java</h1>			</header><!-- .page-header -->
+
+			
+<article id="post-390" class="post-390 post type-post status-publish format-standard hentry category-java category-technologie tag-java tag-model tag-swing tag-tablecolumnmodel">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="http://www.marcusschiesser.de/2011/11/18/let-the-user-change-the-column-order-in-javaswing/" rel="bookmark">Let the user change the column order in Java/Swing</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>Do you have the requirement to let the user of your application change the order<br />
+of his columns and your app is based on Swing?</p>
+<p>Then you should read further. Below you find a <code><a href="http://download.oracle.com/javase/1.4.2/docs/api/javax/swing/table/TableColumnModel.html">TableColumnModel</a></code> that has<br />
+two states: <code>STANDARD</code> and <code>USERDEFINED</code>.<br />
+In the <code>STANDARD</code> state the user may not change the order of the columns by drag&#8217;n&#8217;drop,<br />
+in <code>USERDEFINED</code> he may. The good thing: If you toogle the state the column order is restored. </p>
+<p>Just a hint: If you want to store the column order, first get it by calling <code>getColumnMap()</code>.</p>
+<p>Before you ask you to use it. Try <code>setModel</code> of your <code>JTable</code><a href="http://download.oracle.com/javase/1.4.2/docs/api/javax/swing/JTable.html"></a> class 😉</p>
+<p>Have fun!</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-57a019a27d117067838300" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Java</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+public class StatefulTableColumnModel extends DefaultTableColumnModel {
+
+    public enum Mode {
+        STANDARD, USERDEFINED;
+    }
+    
+    private int columnMap[];
+    private Mode mode = Mode.STANDARD; 
+
+    public StatefulTableColumnModel(Mode mode, int[] columnMap) {
+        this.columnMap = columnMap;
+        if(mode!=null) 
+            setMode(mode);
+        else
+            setMode(Mode.STANDARD);
+    }
+    
+    public void setMode(Mode mode) {
+        this.mode = mode;
+        refresh();
+    }
+    
+    public Mode getMode() {
+        return this.mode;
+    }
+    
+    public int[] getColumnMap() {
+        return columnMap;
+    }
+    
+    /* (non-Javadoc)
+     * @see javax.swing.table.DefaultTableColumnModel#fireColumnMoved(javax.swing.event.TableColumnModelEvent)
+     */
+    @Override
+    protected void fireColumnMoved(TableColumnModelEvent e) {
+        switch(mode) {
+        case USERDEFINED:
+            // if columns have been moved there might have been Drag'n'Drop operations,
+            // so update the state 
+            columnMap = getColumnPositions();
+            break;
+        case STANDARD:
+            // in standard mode drag'n'drop operations are not permitted, so reset the order
+            resetColumnPositions();
+            break;
+        }
+        super.fireColumnMoved(e);
+    }
+
+    /**
+     * re-order table columns depending on their model index (this resets the original order), don't update view
+     */
+    private void resetColumnPositions() {
+        Collections.sort(tableColumns, new Comparator&lt;TableColumn&gt;() {
+            public int compare(TableColumn o1, TableColumn o2) {
+                return new Integer(o1.getModelIndex()).compareTo(o2.getModelIndex());
+            }
+        });
+    }
+
+    /**
+     * set the visible column positions (independent of state), don't update view
+     */
+    private void setColumnPositions(final int columnMap[]) {
+        resetColumnPositions();
+        if(columnMap!=null) {
+            Vector&lt;TableColumn&gt; newOrder = new Vector&lt;TableColumn&gt;(tableColumns.capacity());
+            newOrder.setSize(tableColumns.size());
+            int i=0;
+            for(TableColumn column: tableColumns) {
+                // lookup new position in newOrder
+                int newPos = columnMap[i++];
+                newOrder.set(newPos, column);
+            }
+            tableColumns = newOrder;
+        }
+    }
+
+    /**
+     * @return the visible column positions (independent of state)
+     */
+    private int[] getColumnPositions() {
+        int result[] = new int[tableColumns.size()];
+        int i=0;
+        for(TableColumn column: tableColumns) {
+            int modelIndex = column.getModelIndex();
+            result[modelIndex] = i++;
+        }
+        return result;
+    }
+
+    /**
+     * 
+     */
+    public void refresh() {
+        switch(mode) {
+        case STANDARD:
+            // reset position
+            resetColumnPositions();
+            break;
+        case USERDEFINED:
+            setColumnPositions(columnMap);
+            break;
+        }        
+        // inform view that column order has changed (seems to be sufficient to just tell 0 has moved to 1)
+        super.fireColumnMoved(new TableColumnModelEvent(this, 0, 1));        
+    }
+
+}</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57a019a27d117067838300-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-2">2</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-4">4</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-6">6</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-8">8</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-10">10</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-12">12</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-14">14</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-16">16</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-18">18</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-20">20</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-22">22</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-24">24</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-25">25</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-26">26</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-27">27</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-28">28</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-29">29</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-30">30</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-31">31</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-32">32</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-33">33</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-34">34</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-35">35</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-36">36</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-37">37</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-38">38</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-39">39</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-40">40</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-41">41</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-42">42</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-43">43</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-44">44</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-45">45</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-46">46</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-47">47</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-48">48</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-49">49</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-50">50</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-51">51</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-52">52</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-53">53</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-54">54</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-55">55</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-56">56</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-57">57</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-58">58</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-59">59</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-60">60</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-61">61</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-62">62</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-63">63</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-64">64</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-65">65</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-66">66</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-67">67</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-68">68</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-69">69</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-70">70</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-71">71</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-72">72</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-73">73</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-74">74</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-75">75</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-76">76</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-77">77</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-78">78</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-79">79</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-80">80</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-81">81</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-82">82</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-83">83</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-84">84</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-85">85</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-86">86</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-87">87</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-88">88</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-89">89</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-90">90</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-91">91</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-92">92</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-93">93</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-94">94</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-95">95</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-96">96</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-97">97</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-98">98</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-99">99</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-100">100</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-101">101</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-102">102</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-103">103</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-104">104</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-105">105</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-106">106</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-107">107</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d117067838300-108">108</div><div class="crayon-num" data-line="crayon-57a019a27d117067838300-109">109</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57a019a27d117067838300-1"><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-t">class</span><span class="crayon-h"> </span><span class="crayon-e">StatefulTableColumnModel</span><span class="crayon-h"> </span><span class="crayon-r">extends</span><span class="crayon-h"> </span><span class="crayon-e">DefaultTableColumnModel</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-2">&nbsp;</div><div class="crayon-line" id="crayon-57a019a27d117067838300-3"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-t">enum</span><span class="crayon-h"> </span><span class="crayon-e">Mode</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-4"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">STANDARD</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">USERDEFINED</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-5"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-6"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-7"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-m">private</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">columnMap</span><span class="crayon-sy">[</span><span class="crayon-sy">]</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-8"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-m">private</span><span class="crayon-h"> </span><span class="crayon-e">Mode </span><span class="crayon-v">mode</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">Mode</span><span class="crayon-sy">.</span><span class="crayon-v">STANDARD</span><span class="crayon-sy">;</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-9">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-10"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-e">StatefulTableColumnModel</span><span class="crayon-sy">(</span><span class="crayon-e">Mode </span><span class="crayon-v">mode</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-sy">[</span><span class="crayon-sy">]</span><span class="crayon-h"> </span><span class="crayon-v">columnMap</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-11"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">this</span><span class="crayon-sy">.</span><span class="crayon-v">columnMap</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">columnMap</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-12"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-sy">(</span><span class="crayon-v">mode</span><span class="crayon-o">!=</span><span class="crayon-t">null</span><span class="crayon-sy">)</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-13"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">setMode</span><span class="crayon-sy">(</span><span class="crayon-v">mode</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-14"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">else</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-15"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">setMode</span><span class="crayon-sy">(</span><span class="crayon-v">Mode</span><span class="crayon-sy">.</span><span class="crayon-v">STANDARD</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-16"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-17"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-18"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">setMode</span><span class="crayon-sy">(</span><span class="crayon-e">Mode </span><span class="crayon-v">mode</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-19"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">this</span><span class="crayon-sy">.</span><span class="crayon-v">mode</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">mode</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-20"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">refresh</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-21"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-22"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-23"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-e">Mode </span><span class="crayon-e">getMode</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-24"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-r">this</span><span class="crayon-sy">.</span><span class="crayon-v">mode</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-25"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-26"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-27"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-sy">[</span><span class="crayon-sy">]</span><span class="crayon-h"> </span><span class="crayon-e">getColumnMap</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-28"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-v">columnMap</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-29"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-30"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-31"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">/* (non-Javadoc)</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-32"><span class="crayon-c">&nbsp;&nbsp;&nbsp;&nbsp; * @see javax.swing.table.DefaultTableColumnModel#fireColumnMoved(javax.swing.event.TableColumnModelEvent)</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-33"><span class="crayon-c">&nbsp;&nbsp;&nbsp;&nbsp; */</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-34"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-n">@Override</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-35"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-m">protected</span><span class="crayon-h"> </span><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">fireColumnMoved</span><span class="crayon-sy">(</span><span class="crayon-i">TableColumnModelEvent</span><span class="crayon-h"> </span><span class="crayon-v">e</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-36"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">switch</span><span class="crayon-sy">(</span><span class="crayon-v">mode</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-37"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">case</span><span class="crayon-h"> </span><span class="crayon-v">USERDEFINED</span><span class="crayon-o">:</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-38"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">// if columns have been moved there might have been Drag'n'Drop operations,</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-39"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">// so update the state </span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-40"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">columnMap</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">getColumnPositions</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-41"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">break</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-42"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">case</span><span class="crayon-h"> </span><span class="crayon-v">STANDARD</span><span class="crayon-o">:</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-43"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">// in standard mode drag'n'drop operations are not permitted, so reset the order</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-44"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">resetColumnPositions</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-45"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">break</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-46"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-47"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">super</span><span class="crayon-sy">.</span><span class="crayon-e">fireColumnMoved</span><span class="crayon-sy">(</span><span class="crayon-v">e</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-48"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-49">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-50"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">/**</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-51"><span class="crayon-c">&nbsp;&nbsp;&nbsp;&nbsp; * re-order table columns depending on their model index (this resets the original order), don't update view</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-52"><span class="crayon-c">&nbsp;&nbsp;&nbsp;&nbsp; */</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-53"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-m">private</span><span class="crayon-h"> </span><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">resetColumnPositions</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-54"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">Collections</span><span class="crayon-sy">.</span><span class="crayon-e">sort</span><span class="crayon-sy">(</span><span class="crayon-v">tableColumns</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-v">Comparator</span><span class="crayon-e">&lt;TableColumn&gt;</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-55"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">compare</span><span class="crayon-sy">(</span><span class="crayon-e">TableColumn </span><span class="crayon-v">o1</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">TableColumn </span><span class="crayon-v">o2</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-56"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-t">Integer</span><span class="crayon-sy">(</span><span class="crayon-v">o1</span><span class="crayon-sy">.</span><span class="crayon-e">getModelIndex</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">.</span><span class="crayon-e">compareTo</span><span class="crayon-sy">(</span><span class="crayon-v">o2</span><span class="crayon-sy">.</span><span class="crayon-e">getModelIndex</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-57"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-58"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-59"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-60">&nbsp;</div><div class="crayon-line" id="crayon-57a019a27d117067838300-61"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">/**</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-62"><span class="crayon-c">&nbsp;&nbsp;&nbsp;&nbsp; * set the visible column positions (independent of state), don't update view</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-63"><span class="crayon-c">&nbsp;&nbsp;&nbsp;&nbsp; */</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-64"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-m">private</span><span class="crayon-h"> </span><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">setColumnPositions</span><span class="crayon-sy">(</span><span class="crayon-m">final</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">columnMap</span><span class="crayon-sy">[</span><span class="crayon-sy">]</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-65"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">resetColumnPositions</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-66"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-sy">(</span><span class="crayon-v">columnMap</span><span class="crayon-o">!=</span><span class="crayon-t">null</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-67"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">Vector</span><span class="crayon-e">&lt;TableColumn&gt;</span><span class="crayon-h"> </span><span class="crayon-v">newOrder</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-v">Vector</span><span class="crayon-e">&lt;TableColumn&gt;</span><span class="crayon-sy">(</span><span class="crayon-v">tableColumns</span><span class="crayon-sy">.</span><span class="crayon-e">capacity</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-68"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">newOrder</span><span class="crayon-sy">.</span><span class="crayon-e">setSize</span><span class="crayon-sy">(</span><span class="crayon-v">tableColumns</span><span class="crayon-sy">.</span><span class="crayon-e">size</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-69"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-o">=</span><span class="crayon-cn">0</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-70"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">for</span><span class="crayon-sy">(</span><span class="crayon-e">TableColumn </span><span class="crayon-v">column</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">tableColumns</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-71"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">// lookup new position in newOrder</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-72"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">newPos</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">columnMap</span><span class="crayon-sy">[</span><span class="crayon-v">i</span><span class="crayon-o">++</span><span class="crayon-sy">]</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-73"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">newOrder</span><span class="crayon-sy">.</span><span class="crayon-e">set</span><span class="crayon-sy">(</span><span class="crayon-v">newPos</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">column</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-74"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-75"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">tableColumns</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">newOrder</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-76"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-77"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-78">&nbsp;</div><div class="crayon-line" id="crayon-57a019a27d117067838300-79"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">/**</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-80"><span class="crayon-c">&nbsp;&nbsp;&nbsp;&nbsp; * @return the visible column positions (independent of state)</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-81"><span class="crayon-c">&nbsp;&nbsp;&nbsp;&nbsp; */</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-82"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-m">private</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-sy">[</span><span class="crayon-sy">]</span><span class="crayon-h"> </span><span class="crayon-e">getColumnPositions</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-83"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">result</span><span class="crayon-sy">[</span><span class="crayon-sy">]</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-sy">[</span><span class="crayon-v">tableColumns</span><span class="crayon-sy">.</span><span class="crayon-e">size</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">]</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-84"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-o">=</span><span class="crayon-cn">0</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-85"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">for</span><span class="crayon-sy">(</span><span class="crayon-e">TableColumn </span><span class="crayon-v">column</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">tableColumns</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-86"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">modelIndex</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">column</span><span class="crayon-sy">.</span><span class="crayon-e">getModelIndex</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-87"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">result</span><span class="crayon-sy">[</span><span class="crayon-v">modelIndex</span><span class="crayon-sy">]</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-o">++</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-88"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-89"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-v">result</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-90"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-91">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-92"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">/**</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-93"><span class="crayon-c">&nbsp;&nbsp;&nbsp;&nbsp; * </span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-94"><span class="crayon-c">&nbsp;&nbsp;&nbsp;&nbsp; */</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-95"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">refresh</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-96"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">switch</span><span class="crayon-sy">(</span><span class="crayon-v">mode</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-97"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">case</span><span class="crayon-h"> </span><span class="crayon-v">STANDARD</span><span class="crayon-o">:</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-98"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">// reset position</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-99"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">resetColumnPositions</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-100"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">break</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-101"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">case</span><span class="crayon-h"> </span><span class="crayon-v">USERDEFINED</span><span class="crayon-o">:</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-102"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">setColumnPositions</span><span class="crayon-sy">(</span><span class="crayon-v">columnMap</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-103"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">break</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-104"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-105"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">// inform view that column order has changed (seems to be sufficient to just tell 0 has moved to 1)</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-106"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">super</span><span class="crayon-sy">.</span><span class="crayon-e">fireColumnMoved</span><span class="crayon-sy">(</span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">TableColumnModelEvent</span><span class="crayon-sy">(</span><span class="crayon-r">this</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">1</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line" id="crayon-57a019a27d117067838300-107"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d117067838300-108">&nbsp;</div><div class="crayon-line" id="crayon-57a019a27d117067838300-109"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0796 seconds] -->
+<p></p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="http://www.marcusschiesser.de/2011/11/18/let-the-user-change-the-column-order-in-javaswing/" rel="bookmark"><time class="entry-date published updated" datetime="2011-11-18T15:36:15+00:00">November 18, 2011</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="http://www.marcusschiesser.de/category/technologie/java/" rel="category tag">Java</a>, <a href="http://www.marcusschiesser.de/category/technologie/" rel="category tag">Technology</a></span><span class="tags-links"><span class="screen-reader-text">Tags </span><a href="http://www.marcusschiesser.de/tag/java/" rel="tag">Java</a>, <a href="http://www.marcusschiesser.de/tag/model/" rel="tag">model</a>, <a href="http://www.marcusschiesser.de/tag/swing/" rel="tag">swing</a>, <a href="http://www.marcusschiesser.de/tag/tablecolumnmodel/" rel="tag">tablecolumnmodel</a></span><span class="comments-link"><a href="http://www.marcusschiesser.de/2011/11/18/let-the-user-change-the-column-order-in-javaswing/#respond"><span class="dsq-postid" data-dsqidentifier="390 http://www.marcusschiesser.de/?p=390">Leave a comment<span class="screen-reader-text"> on Let the user change the column order in Java/Swing</span></span></a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-## -->
+
+<article id="post-386" class="post-386 post type-post status-publish format-standard hentry category-articles category-idee category-java tag-appengine tag-bahn tag-booking tag-java tag-jersey tag-rest tag-ticket tag-webservice">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="http://www.marcusschiesser.de/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/" rel="bookmark">Openbahn-API – Bahn-Webseite als Webservice</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>As this is only of interest for German users &#8211; this article is in German only. It&#8217;s about a new project of mine. Sorry folks.</p>
+<p>Ich bin gerade dabei eine Android-App zu entwickeln, mit der es möglich ist Fahrkarten für Bahn-Pendler einfacher zu buchen.<br />
+Bei der Entwicklung ist mir aufgefallen, dass die Bahn leider keine Webservices nach außen zur Verfügung stellt – die Webseite <a href="http://www.bahn.de">www.bahn.de</a> ist zusammen mit der mobilen Variante <a href="http://m.bahn.de">m.bahn.de</a> die einzige Schnittstelle.</p>
+<p>Daher habe ich das Projekt <a href="http://code.google.com/p/openbahn-api">Openbahn-API</a> ins Leben gerufen: Es handelt sich um eine API, die Funktionalitäten der Bahn-Webseite als Webservices zur Verfügung stellt. Über diese Services können eigene Programme die verfügbaren Bahnhöfe oder Zugverbindungen inkl. Zeiten und Preise abrufen. Des Weiteren ist es über die Schnittstelle möglich, Zugtickets zu buchen oder Sitzplätze zu reservieren.</p>
+<p>Die Dokumentation und URLs zu den einzelnen Services finden sich auf der Projektseite unter <a href="http://code.google.com/p/openbahn-api">http://code.google.com/p/openbahn-api</a>. Diese werden über HTTP-GET aufgerufen und liefern JSON Objekte zurück. So gibt der Aufruf von <a href="http://openbahnapi.appspot.com/rest/stations/list?contains=karlsr">http://openbahnapi.appspot.com/rest/stations/list?contains=karlsr</a> eine Liste von JSON-Objekten zurück, die alle Bahnhöfe enthalten, die im Namen „karlsr“ enthalten. Im Beispiel sind dies die gesamten Bahnhöfe im Stadtgebiet von Karlsruhe.</p>
+<p>Die API kann verwendet werden, um eigene Anwendungen zu entwickeln, die Bahndaten benötigen.</p>
+<p>Um die Qualität des Parsers zu sichern, wird der Code komplett als GPL auf Google Code unter <a href="http://code.google.com/p/openbahn-api">http://code.google.com/p/openbahn-api</a> zur Verfügung gestellt – jeder Entwickler ist herzlich dazu eingeladen Verbesserungen und Erweiterungen vorzunehmen. Das Hosting erfolgt über die Google AppEngine. Die Ergebnisse der Anfragen werden über einen Cache zwischengespeichert, so dass die Kommunikation mit der Bahn-Webseite minimiert wird und für vorhandene Ergebnisse auch funktioniert, wenn diese offline ist.</p>
+<p>Ich bin gespannt auf eure Meinung und wünsche euch viel Spaß mit der neuen API.</p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="http://www.marcusschiesser.de/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/" rel="bookmark"><time class="entry-date published updated" datetime="2011-06-22T21:13:17+00:00">June 22, 2011</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="http://www.marcusschiesser.de/category/articles/" rel="category tag">Articles</a>, <a href="http://www.marcusschiesser.de/category/idee/" rel="category tag">Idea</a>, <a href="http://www.marcusschiesser.de/category/technologie/java/" rel="category tag">Java</a></span><span class="tags-links"><span class="screen-reader-text">Tags </span><a href="http://www.marcusschiesser.de/tag/appengine/" rel="tag">appengine</a>, <a href="http://www.marcusschiesser.de/tag/bahn/" rel="tag">bahn</a>, <a href="http://www.marcusschiesser.de/tag/booking/" rel="tag">booking</a>, <a href="http://www.marcusschiesser.de/tag/java/" rel="tag">Java</a>, <a href="http://www.marcusschiesser.de/tag/jersey/" rel="tag">jersey</a>, <a href="http://www.marcusschiesser.de/tag/rest/" rel="tag">rest</a>, <a href="http://www.marcusschiesser.de/tag/ticket/" rel="tag">ticket</a>, <a href="http://www.marcusschiesser.de/tag/webservice/" rel="tag">webservice</a></span><span class="comments-link"><a href="http://www.marcusschiesser.de/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/#comments"><span class="dsq-postid" data-dsqidentifier="386 http://www.marcusschiesser.de/?p=386">13 Comments<span class="screen-reader-text"> on Openbahn-API – Bahn-Webseite als Webservice</span></span></a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-## -->
+
+<article id="post-142" class="post-142 post type-post status-publish format-standard hentry category-java tag-axis2 tag-formatter tag-java tag-javascript tag-message tag-namespaces tag-service tag-xml">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="http://www.marcusschiesser.de/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/" rel="bookmark">Using Axis2 services from Javascript (by removing the XML namespaces)</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>If you want to call an <a href="http://ws.apache.org/axis2/">Axis2</a> service from Javascript you will face the problem that the XML response of an Axis2 service call contains XML namespaces &#8211; something Javascript doesn&#8217;t like in cross-browser-friendly way.<br />
+The idea to fix this issue is to make an XSLT transformation directly from Axis2 that removes the unnecessary namespaces.</p>
+<p>First we need an <a href="http://wiki.tei-c.org/index.php/Remove-Namespaces.xsl">XSLT transformation</a> that will do the job:</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-57a019a27d857013293196" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">XHTML</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+&lt;xsl:output method="xml" indent="no"/&gt;
+
+&lt;xsl:template match="/|comment()|processing-instruction()"&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:copy&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="*"&gt;
+    &lt;xsl:element name="{local-name()}"&gt;
+      &lt;xsl:apply-templates select="@*|node()"/&gt;
+    &lt;/xsl:element&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="@*"&gt;
+    &lt;xsl:attribute name="{local-name()}"&gt;
+      &lt;xsl:value-of select="."/&gt;
+    &lt;/xsl:attribute&gt;
+&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57a019a27d857013293196-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d857013293196-2">2</div><div class="crayon-num" data-line="crayon-57a019a27d857013293196-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d857013293196-4">4</div><div class="crayon-num" data-line="crayon-57a019a27d857013293196-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d857013293196-6">6</div><div class="crayon-num" data-line="crayon-57a019a27d857013293196-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d857013293196-8">8</div><div class="crayon-num" data-line="crayon-57a019a27d857013293196-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d857013293196-10">10</div><div class="crayon-num" data-line="crayon-57a019a27d857013293196-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d857013293196-12">12</div><div class="crayon-num" data-line="crayon-57a019a27d857013293196-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d857013293196-14">14</div><div class="crayon-num" data-line="crayon-57a019a27d857013293196-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d857013293196-16">16</div><div class="crayon-num" data-line="crayon-57a019a27d857013293196-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d857013293196-18">18</div><div class="crayon-num" data-line="crayon-57a019a27d857013293196-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d857013293196-20">20</div><div class="crayon-num" data-line="crayon-57a019a27d857013293196-21">21</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57a019a27d857013293196-1"><span class="crayon-r">&lt;xsl:stylesheet </span><span class="crayon-e">version</span><span class="crayon-o">=</span><span class="crayon-s">"1.0"</span><span class="crayon-h"> </span>xmlns<span class="crayon-o">:</span><span class="crayon-e">xsl</span><span class="crayon-o">=</span><span class="crayon-s">"http://www.w3.org/1999/XSL/Transform"</span><span class="crayon-r">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d857013293196-2"><span class="crayon-r">&lt;xsl:output </span><span class="crayon-e">method</span><span class="crayon-o">=</span><span class="crayon-s">"xml"</span><span class="crayon-h"> </span><span class="crayon-e">indent</span><span class="crayon-o">=</span><span class="crayon-s">"no"</span><span class="crayon-r">/&gt;</span></div><div class="crayon-line" id="crayon-57a019a27d857013293196-3">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d857013293196-4"><span class="crayon-r">&lt;xsl:template </span><span class="crayon-e">match</span><span class="crayon-o">=</span><span class="crayon-s">"/|comment()|processing-instruction()"</span><span class="crayon-r">&gt;</span></div><div class="crayon-line" id="crayon-57a019a27d857013293196-5"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;xsl:copy&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d857013293196-6"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;xsl:apply-templates/&gt;</span></div><div class="crayon-line" id="crayon-57a019a27d857013293196-7"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;/xsl:copy&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d857013293196-8"><span class="crayon-r">&lt;/xsl:template&gt;</span></div><div class="crayon-line" id="crayon-57a019a27d857013293196-9">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d857013293196-10"><span class="crayon-r">&lt;xsl:template </span><span class="crayon-e">match</span><span class="crayon-o">=</span><span class="crayon-s">"*"</span><span class="crayon-r">&gt;</span></div><div class="crayon-line" id="crayon-57a019a27d857013293196-11"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;xsl:element </span><span class="crayon-e">name</span><span class="crayon-o">=</span><span class="crayon-s">"{local-name()}"</span><span class="crayon-r">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d857013293196-12"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;xsl:apply-templates </span><span class="crayon-e">select</span><span class="crayon-o">=</span><span class="crayon-s">"@*|node()"</span><span class="crayon-r">/&gt;</span></div><div class="crayon-line" id="crayon-57a019a27d857013293196-13"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;/xsl:element&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d857013293196-14"><span class="crayon-r">&lt;/xsl:template&gt;</span></div><div class="crayon-line" id="crayon-57a019a27d857013293196-15">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d857013293196-16"><span class="crayon-r">&lt;xsl:template </span><span class="crayon-e">match</span><span class="crayon-o">=</span><span class="crayon-s">"@*"</span><span class="crayon-r">&gt;</span></div><div class="crayon-line" id="crayon-57a019a27d857013293196-17"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;xsl:attribute </span><span class="crayon-e">name</span><span class="crayon-o">=</span><span class="crayon-s">"{local-name()}"</span><span class="crayon-r">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d857013293196-18"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;xsl:value-of </span><span class="crayon-e">select</span><span class="crayon-o">=</span><span class="crayon-s">"."</span><span class="crayon-r">/&gt;</span></div><div class="crayon-line" id="crayon-57a019a27d857013293196-19"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;/xsl:attribute&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d857013293196-20"><span class="crayon-r">&lt;/xsl:template&gt;</span></div><div class="crayon-line" id="crayon-57a019a27d857013293196-21"><span class="crayon-r">&lt;/xsl:stylesheet&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0014 seconds] -->
+<p></p>
+<p>Then we&#8217;ll need a hand-made Axis2 conform <a href="http://ws.apache.org/axis2/1_3/api/org/apache/axis2/transport/MessageFormatter.html">MessageFormatter</a> that uses the standard formatter for XML and performs the XSLT transformation on the result:</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-57a019a27d85f747158473" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Java</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+package de.marcusschiesser.axis2;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.OutputStream;
+
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
+
+import org.apache.axiom.om.OMOutputFormat;
+import org.apache.axis2.AxisFault;
+import org.apache.axis2.context.MessageContext;
+import org.apache.axis2.transport.http.ApplicationXMLFormatter;
+
+public class NamespaceLessXMLFormatter extends ApplicationXMLFormatter {
+	private Transformer transformer;
+	private AxisFault fault; 
+	
+	public NamespaceLessXMLFormatter() {
+		super();
+		TransformerFactory tFactory = TransformerFactory.newInstance();
+		try {
+			transformer = tFactory.newTransformer(new StreamSource(new File("removeNamespaces.xsl")));
+		} catch (TransformerConfigurationException e) {
+			fault = AxisFault.makeFault(e);
+		}
+	}
+	
+	@Override
+	public void writeTo(MessageContext messageContext, OMOutputFormat format, OutputStream outputStream,
+			boolean preserve) throws AxisFault {
+		if(fault!=null) throw fault;
+		try {
+			ByteArrayOutputStream os = new ByteArrayOutputStream();
+			super.writeTo(messageContext, format, os, preserve);
+			ByteArrayInputStream is = new ByteArrayInputStream(os.toByteArray());
+			transformer.transform(new StreamSource(is), new StreamResult(outputStream));
+		} catch (TransformerException e) {
+			throw AxisFault.makeFault(e);
+		}
+	}
+
+}</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-2">2</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-4">4</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-6">6</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-8">8</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-10">10</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-12">12</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-14">14</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-16">16</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-18">18</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-20">20</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-22">22</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-24">24</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-25">25</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-26">26</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-27">27</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-28">28</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-29">29</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-30">30</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-31">31</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-32">32</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-33">33</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-34">34</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-35">35</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-36">36</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-37">37</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-38">38</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-39">39</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-40">40</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-41">41</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-42">42</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-43">43</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-44">44</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-45">45</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-46">46</div><div class="crayon-num" data-line="crayon-57a019a27d85f747158473-47">47</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27d85f747158473-48">48</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57a019a27d85f747158473-1"><span class="crayon-t">package</span><span class="crayon-h"> </span><span class="crayon-v">de</span><span class="crayon-sy">.</span><span class="crayon-v">marcusschiesser</span><span class="crayon-sy">.</span><span class="crayon-v">axis2</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-2">&nbsp;</div><div class="crayon-line" id="crayon-57a019a27d85f747158473-3"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">java</span><span class="crayon-sy">.</span><span class="crayon-v">io</span><span class="crayon-sy">.</span><span class="crayon-v">ByteArrayInputStream</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-4"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">java</span><span class="crayon-sy">.</span><span class="crayon-v">io</span><span class="crayon-sy">.</span><span class="crayon-v">ByteArrayOutputStream</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-5"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">java</span><span class="crayon-sy">.</span><span class="crayon-v">io</span><span class="crayon-sy">.</span><span class="crayon-v">File</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-6"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">java</span><span class="crayon-sy">.</span><span class="crayon-v">io</span><span class="crayon-sy">.</span><span class="crayon-v">OutputStream</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-7">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-8"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">javax</span><span class="crayon-sy">.</span><span class="crayon-v">xml</span><span class="crayon-sy">.</span><span class="crayon-v">transform</span><span class="crayon-sy">.</span><span class="crayon-v">Transformer</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-9"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">javax</span><span class="crayon-sy">.</span><span class="crayon-v">xml</span><span class="crayon-sy">.</span><span class="crayon-v">transform</span><span class="crayon-sy">.</span><span class="crayon-v">TransformerConfigurationException</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-10"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">javax</span><span class="crayon-sy">.</span><span class="crayon-v">xml</span><span class="crayon-sy">.</span><span class="crayon-v">transform</span><span class="crayon-sy">.</span><span class="crayon-v">TransformerException</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-11"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">javax</span><span class="crayon-sy">.</span><span class="crayon-v">xml</span><span class="crayon-sy">.</span><span class="crayon-v">transform</span><span class="crayon-sy">.</span><span class="crayon-v">TransformerFactory</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-12"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">javax</span><span class="crayon-sy">.</span><span class="crayon-v">xml</span><span class="crayon-sy">.</span><span class="crayon-v">transform</span><span class="crayon-sy">.</span><span class="crayon-v">stream</span><span class="crayon-sy">.</span><span class="crayon-v">StreamResult</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-13"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">javax</span><span class="crayon-sy">.</span><span class="crayon-v">xml</span><span class="crayon-sy">.</span><span class="crayon-v">transform</span><span class="crayon-sy">.</span><span class="crayon-v">stream</span><span class="crayon-sy">.</span><span class="crayon-v">StreamSource</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-14">&nbsp;</div><div class="crayon-line" id="crayon-57a019a27d85f747158473-15"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">org</span><span class="crayon-sy">.</span><span class="crayon-v">apache</span><span class="crayon-sy">.</span><span class="crayon-v">axiom</span><span class="crayon-sy">.</span><span class="crayon-v">om</span><span class="crayon-sy">.</span><span class="crayon-v">OMOutputFormat</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-16"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">org</span><span class="crayon-sy">.</span><span class="crayon-v">apache</span><span class="crayon-sy">.</span><span class="crayon-v">axis2</span><span class="crayon-sy">.</span><span class="crayon-v">AxisFault</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-17"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">org</span><span class="crayon-sy">.</span><span class="crayon-v">apache</span><span class="crayon-sy">.</span><span class="crayon-v">axis2</span><span class="crayon-sy">.</span><span class="crayon-v">context</span><span class="crayon-sy">.</span><span class="crayon-v">MessageContext</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-18"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">org</span><span class="crayon-sy">.</span><span class="crayon-v">apache</span><span class="crayon-sy">.</span><span class="crayon-v">axis2</span><span class="crayon-sy">.</span><span class="crayon-v">transport</span><span class="crayon-sy">.</span><span class="crayon-v">http</span><span class="crayon-sy">.</span><span class="crayon-v">ApplicationXMLFormatter</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-19">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-20"><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-t">class</span><span class="crayon-h"> </span><span class="crayon-e">NamespaceLessXMLFormatter</span><span class="crayon-h"> </span><span class="crayon-r">extends</span><span class="crayon-h"> </span><span class="crayon-e">ApplicationXMLFormatter</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-21"><span class="crayon-h">	</span><span class="crayon-m">private</span><span class="crayon-h"> </span><span class="crayon-e">Transformer </span><span class="crayon-v">transformer</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-22"><span class="crayon-h">	</span><span class="crayon-m">private</span><span class="crayon-h"> </span><span class="crayon-e">AxisFault </span><span class="crayon-v">fault</span><span class="crayon-sy">;</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-23"><span class="crayon-h">	</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-24"><span class="crayon-h">	</span><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-e">NamespaceLessXMLFormatter</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-25"><span class="crayon-h">		</span><span class="crayon-r">super</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-26"><span class="crayon-h">		</span><span class="crayon-e">TransformerFactory </span><span class="crayon-v">tFactory</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">TransformerFactory</span><span class="crayon-sy">.</span><span class="crayon-e">newInstance</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-27"><span class="crayon-h">		</span><span class="crayon-st">try</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-28"><span class="crayon-h">			</span><span class="crayon-v">transformer</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">tFactory</span><span class="crayon-sy">.</span><span class="crayon-e">newTransformer</span><span class="crayon-sy">(</span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">StreamSource</span><span class="crayon-sy">(</span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">File</span><span class="crayon-sy">(</span><span class="crayon-s">"removeNamespaces.xsl"</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-29"><span class="crayon-h">		</span><span class="crayon-sy">}</span><span class="crayon-h"> </span><span class="crayon-st">catch</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-i">TransformerConfigurationException</span><span class="crayon-h"> </span><span class="crayon-v">e</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-30"><span class="crayon-h">			</span><span class="crayon-v">fault</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">AxisFault</span><span class="crayon-sy">.</span><span class="crayon-e">makeFault</span><span class="crayon-sy">(</span><span class="crayon-v">e</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-31"><span class="crayon-h">		</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-32"><span class="crayon-h">	</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-33"><span class="crayon-h">	</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-34"><span class="crayon-h">	</span><span class="crayon-n">@Override</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-35"><span class="crayon-h">	</span><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">writeTo</span><span class="crayon-sy">(</span><span class="crayon-e">MessageContext </span><span class="crayon-v">messageContext</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">OMOutputFormat </span><span class="crayon-v">format</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">OutputStream </span><span class="crayon-v">outputStream</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-36"><span class="crayon-h">			</span><span class="crayon-t">boolean</span><span class="crayon-h"> </span><span class="crayon-v">preserve</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-m">throws</span><span class="crayon-h"> </span><span class="crayon-e">AxisFault</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-37"><span class="crayon-h">		</span><span class="crayon-st">if</span><span class="crayon-sy">(</span><span class="crayon-v">fault</span><span class="crayon-o">!=</span><span class="crayon-t">null</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">throw</span><span class="crayon-h"> </span><span class="crayon-v">fault</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-38"><span class="crayon-h">		</span><span class="crayon-st">try</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-39"><span class="crayon-h">			</span><span class="crayon-e">ByteArrayOutputStream </span><span class="crayon-v">os</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">ByteArrayOutputStream</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-40"><span class="crayon-h">			</span><span class="crayon-r">super</span><span class="crayon-sy">.</span><span class="crayon-e">writeTo</span><span class="crayon-sy">(</span><span class="crayon-v">messageContext</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">format</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">os</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">preserve</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-41"><span class="crayon-h">			</span><span class="crayon-e">ByteArrayInputStream </span><span class="crayon-st">is</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">ByteArrayInputStream</span><span class="crayon-sy">(</span><span class="crayon-v">os</span><span class="crayon-sy">.</span><span class="crayon-e">toByteArray</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-42"><span class="crayon-h">			</span><span class="crayon-v">transformer</span><span class="crayon-sy">.</span><span class="crayon-e">transform</span><span class="crayon-sy">(</span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">StreamSource</span><span class="crayon-sy">(</span><span class="crayon-st">is</span><span class="crayon-sy">)</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">StreamResult</span><span class="crayon-sy">(</span><span class="crayon-v">outputStream</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-43"><span class="crayon-h">		</span><span class="crayon-sy">}</span><span class="crayon-h"> </span><span class="crayon-st">catch</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-i">TransformerException</span><span class="crayon-h"> </span><span class="crayon-v">e</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-44"><span class="crayon-h">			</span><span class="crayon-st">throw</span><span class="crayon-h"> </span><span class="crayon-v">AxisFault</span><span class="crayon-sy">.</span><span class="crayon-e">makeFault</span><span class="crayon-sy">(</span><span class="crayon-v">e</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-45"><span class="crayon-h">		</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-46"><span class="crayon-h">	</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-57a019a27d85f747158473-47">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27d85f747158473-48"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0779 seconds] -->
+<p></p>
+<p>(Don&#8217;t forget to adjust the path of <code>removeNamespaces.xsl</code>, so the formatter can find the .xsl!)</p>
+<p>Finally just put the class of the newly created formatter in <code>WEB-INF/classes</code> of your Axis2 deployment and replace the reference in the axis2.xml configuration file.<br />
+For this just exchange the line:</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-57a019a27d865978141348" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">XHTML</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;messageFormatter contentType="application/xml" class="org.apache.axis2.transport.http.ApplicationXMLFormatter"/&gt; </textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57a019a27d865978141348-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57a019a27d865978141348-1"><span class="crayon-r">&lt;messageFormatter </span><span class="crayon-e">contentType</span><span class="crayon-o">=</span><span class="crayon-s">"application/xml"</span><span class="crayon-h"> </span><span class="crayon-e">class</span><span class="crayon-o">=</span><span class="crayon-s">"org.apache.axis2.transport.http.ApplicationXMLFormatter"</span><span class="crayon-r">/&gt;</span><span class="crayon-h"> </span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+<p></p>
+<p>with:</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-57a019a27d869900478934" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">XHTML</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;messageFormatter contentType="application/xml" class="de.marcusschiesser.axis2.NamespaceLessXMLFormatter"/&gt; </textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57a019a27d869900478934-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57a019a27d869900478934-1"><span class="crayon-r">&lt;messageFormatter </span><span class="crayon-e">contentType</span><span class="crayon-o">=</span><span class="crayon-s">"application/xml"</span><span class="crayon-h"> </span><span class="crayon-e">class</span><span class="crayon-o">=</span><span class="crayon-s">"de.marcusschiesser.axis2.NamespaceLessXMLFormatter"</span><span class="crayon-r">/&gt;</span><span class="crayon-h"> </span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+<p></p>
+<p>After a restart of your application server you should be able to use your Axis2 services from Javascript &#8211; Have fun!</p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="http://www.marcusschiesser.de/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/" rel="bookmark"><time class="entry-date published" datetime="2009-01-27T18:15:13+00:00">January 27, 2009</time><time class="updated" datetime="2010-12-21T10:35:14+00:00">December 21, 2010</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="http://www.marcusschiesser.de/category/technologie/java/" rel="category tag">Java</a></span><span class="tags-links"><span class="screen-reader-text">Tags </span><a href="http://www.marcusschiesser.de/tag/axis2/" rel="tag">axis2</a>, <a href="http://www.marcusschiesser.de/tag/formatter/" rel="tag">formatter</a>, <a href="http://www.marcusschiesser.de/tag/java/" rel="tag">Java</a>, <a href="http://www.marcusschiesser.de/tag/javascript/" rel="tag">javascript</a>, <a href="http://www.marcusschiesser.de/tag/message/" rel="tag">message</a>, <a href="http://www.marcusschiesser.de/tag/namespaces/" rel="tag">namespaces</a>, <a href="http://www.marcusschiesser.de/tag/service/" rel="tag">service</a>, <a href="http://www.marcusschiesser.de/tag/xml/" rel="tag">xml</a></span><span class="comments-link"><a href="http://www.marcusschiesser.de/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/#comments"><span class="dsq-postid" data-dsqidentifier="142 http://www.marcusschiesser.de/?p=142">3 Comments<span class="screen-reader-text"> on Using Axis2 services from Javascript (by removing the XML namespaces)</span></span></a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-## -->
+
+<article id="post-130" class="post-130 post type-post status-publish format-standard hentry category-java tag-axis2 tag-dynamic-response tag-java tag-jettison tag-json tag-pojo tag-web-service">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="http://www.marcusschiesser.de/2009/01/23/building-a-json-web-service-with-java-and-axis2/" rel="bookmark">Building a JSON web service with Java and Axis2</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>It is said that in Java usually the easiest things are the hardest. The following is a nice example as it took me some time to figure out how to do it.<br />
+I wanted to build a simple URL request based web service in Java that returns an JSON object. Yes, you can do that with a simple Servlet too, the advantage of using <a href="http://ws.apache.org/axis2/">Axis2</a> is that you can also call your deployed services using SOAP without any configuration changes. </p>
+<ol>
+<li><a href="http://apache.autinity.de/ws/axis2/1_4_1/axis2-1.4.1-war.zip">Download Axis2 as WAR</a> and install it in your servlet container</li>
+<li><a href="http://dist.wso2.org/maven2/org/wso2/dynamicresponse/wso2dynamic-response/SNAPSHOT/wso2dynamic-response-20080916.170559-241.mar">Download the DynamicResponseHandler module</a> and add it to Axis by copying it to WEB-INF/modules</li>
+<li><a href="http://markmail.org/message/cu2tw43qnrqgqgwp">Patch Jettison</a> or <a href='http://www.marcusschiesser.de/wp-content/uploads/2009/01/jettison-11-snapshot.jar'>download my patched version</a> and replace it with the one installed in WEB-INF/lib</li>
+<li>Add the DynamicResponseHandler module reference to the axis2.xml configuration (located in WEB-INF/conf):<br />
+<!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-57a019a27ddf5570579042" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">XHTML</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;module ref="DynamicResponseHandler"/&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57a019a27ddf5570579042-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57a019a27ddf5570579042-1"><span class="crayon-r">&lt;module </span><span class="crayon-e">ref</span><span class="crayon-o">=</span><span class="crayon-s">"DynamicResponseHandler"</span><span class="crayon-r">/&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+</li>
+<li>Add the JSON Message formatters to the axis2.xml:<br />
+<!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-57a019a27ddfd861542643" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">XHTML</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;messageFormatter contentType="application/json" class="org.apache.axis2.json.JSONMessageFormatter"/&gt;
+&lt;messageFormatter contentType="application/json/badgerfish" class="org.apache.axis2.json.JSONBadgerfishMessageFormatter"/&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57a019a27ddfd861542643-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27ddfd861542643-2">2</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57a019a27ddfd861542643-1"><span class="crayon-r">&lt;messageFormatter </span><span class="crayon-e">contentType</span><span class="crayon-o">=</span><span class="crayon-s">"application/json"</span><span class="crayon-h"> </span><span class="crayon-e">class</span><span class="crayon-o">=</span><span class="crayon-s">"org.apache.axis2.json.JSONMessageFormatter"</span><span class="crayon-r">/&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27ddfd861542643-2"><span class="crayon-r">&lt;messageFormatter </span><span class="crayon-e">contentType</span><span class="crayon-o">=</span><span class="crayon-s">"application/json/badgerfish"</span><span class="crayon-h"> </span><span class="crayon-e">class</span><span class="crayon-o">=</span><span class="crayon-s">"org.apache.axis2.json.JSONBadgerfishMessageFormatter"</span><span class="crayon-r">/&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0004 seconds] -->
+</li>
+<li>Add JSON Message builders to the axis2.xml:<br />
+<!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-57a019a27de01462117213" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">XHTML</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;messageBuilder contentType="application/json" class="org.apache.axis2.json.JSONOMBuilder"/&gt;
+&lt;messageBuilder contentType="application/json/badgerfish" class="org.apache.axis2.json.JSONBadgerfishOMBuilder"/&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57a019a27de01462117213-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a019a27de01462117213-2">2</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57a019a27de01462117213-1"><span class="crayon-r">&lt;messageBuilder </span><span class="crayon-e">contentType</span><span class="crayon-o">=</span><span class="crayon-s">"application/json"</span><span class="crayon-h"> </span><span class="crayon-e">class</span><span class="crayon-o">=</span><span class="crayon-s">"org.apache.axis2.json.JSONOMBuilder"</span><span class="crayon-r">/&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a019a27de01462117213-2"><span class="crayon-r">&lt;messageBuilder </span><span class="crayon-e">contentType</span><span class="crayon-o">=</span><span class="crayon-s">"application/json/badgerfish"</span><span class="crayon-h"> </span><span class="crayon-e">class</span><span class="crayon-o">=</span><span class="crayon-s">"org.apache.axis2.json.JSONBadgerfishOMBuilder"</span><span class="crayon-r">/&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0005 seconds] -->
+</li>
+<li>
+ Start your servlet container and test the standard version service by calling this url:<br />
+<a href="http://localhost:8080/axis2/services/Version/getVersion?response=application/json">http://localhost:8080/axis2/services/Version/getVersion?response=application/json</a></li>
+</ol>
+<p>Now you are ready to add your own web services. Here you can find an example <a href="http://ws.apache.org/axis2/1_1/pojoguide.html">how to deploy a simple POJO service</a>. Have fun!</p>
+<p><strong>Update</strong>: Zeno (see comments) sent me <a href='http://www.marcusschiesser.de/wp-content/uploads/2009/01/jettison-1.2-patch.zip.zip'>patch</a> for usage with Jettison 1.2 &#8211; otherwise he received a NullPointerException. I haven&#8217;t checked it, but I hope it helps you! Thanks Zeno!</p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="http://www.marcusschiesser.de/2009/01/23/building-a-json-web-service-with-java-and-axis2/" rel="bookmark"><time class="entry-date published" datetime="2009-01-23T16:05:04+00:00">January 23, 2009</time><time class="updated" datetime="2011-02-10T11:06:10+00:00">February 10, 2011</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="http://www.marcusschiesser.de/category/technologie/java/" rel="category tag">Java</a></span><span class="tags-links"><span class="screen-reader-text">Tags </span><a href="http://www.marcusschiesser.de/tag/axis2/" rel="tag">axis2</a>, <a href="http://www.marcusschiesser.de/tag/dynamic-response/" rel="tag">dynamic response</a>, <a href="http://www.marcusschiesser.de/tag/java/" rel="tag">Java</a>, <a href="http://www.marcusschiesser.de/tag/jettison/" rel="tag">jettison</a>, <a href="http://www.marcusschiesser.de/tag/json/" rel="tag">json</a>, <a href="http://www.marcusschiesser.de/tag/pojo/" rel="tag">pojo</a>, <a href="http://www.marcusschiesser.de/tag/web-service/" rel="tag">web service</a></span><span class="comments-link"><a href="http://www.marcusschiesser.de/2009/01/23/building-a-json-web-service-with-java-and-axis2/#comments"><span class="dsq-postid" data-dsqidentifier="130 http://www.marcusschiesser.de/?p=130">22 Comments<span class="screen-reader-text"> on Building a JSON web service with Java and Axis2</span></span></a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-## -->
+
+	<nav class="navigation pagination" role="navigation">
+		<h2 class="screen-reader-text">Posts navigation</h2>
+		<div class="nav-links"><a class="prev page-numbers" href="http://www.marcusschiesser.de/category/technologie/java/">Previous page</a>
+<a class='page-numbers' href='http://www.marcusschiesser.de/category/technologie/java/'><span class="meta-nav screen-reader-text">Page </span>1</a>
+<span class='page-numbers current'><span class="meta-nav screen-reader-text">Page </span>2</span></div>
+	</nav>
+		</main><!-- .site-main -->
+	</section><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+						<a href="https://wordpress.org/">Proudly powered by WordPress</a>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js?ver=20141010'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/js/functions.js?ver=20150330'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"marcusschiesser"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/plugins/disqus-comment-system/media/js/count.js?ver=4.3.1'></script>
+
+</body>
+</html>

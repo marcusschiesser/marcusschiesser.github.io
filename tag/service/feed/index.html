@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; service</title>
+	<atom:link href="http://marcusschiesser.de/tag/service/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Using Axis2 services from Javascript (by removing the XML namespaces)</title>
+		<link>http://marcusschiesser.de/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/</link>
+		<comments>http://marcusschiesser.de/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/#comments</comments>
+		<pubDate>Tue, 27 Jan 2009 17:15:13 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Java]]></category>
+		<category><![CDATA[axis2]]></category>
+		<category><![CDATA[formatter]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[message]]></category>
+		<category><![CDATA[namespaces]]></category>
+		<category><![CDATA[service]]></category>
+		<category><![CDATA[xml]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=142</guid>
+		<description><![CDATA[If you want to call an Axis2 service from Javascript you will face the problem that the XML response of an Axis2 service call contains XML namespaces &#8211; something Javascript doesn&#8217;t like in cross-browser-friendly way. The idea to fix this issue is to make an XSLT transformation directly from Axis2 that removes the unnecessary namespaces. &#8230; <a href="http://marcusschiesser.de/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/" class="more-link">Continue reading <span class="screen-reader-text">Using Axis2 services from Javascript (by removing the XML namespaces)</span></a>]]></description>
+				<content:encoded><![CDATA[<p>If you want to call an <a href="http://ws.apache.org/axis2/">Axis2</a> service from Javascript you will face the problem that the XML response of an Axis2 service call contains XML namespaces &#8211; something Javascript doesn&#8217;t like in cross-browser-friendly way.<br />
+The idea to fix this issue is to make an XSLT transformation directly from Axis2 that removes the unnecessary namespaces.</p>
+<p>First we need an <a href="http://wiki.tei-c.org/index.php/Remove-Namespaces.xsl">XSLT transformation</a> that will do the job:</p>
+<p></p><pre class="crayon-plain-tag">&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;no&quot;/&gt;
+
+&lt;xsl:template match=&quot;/|comment()|processing-instruction()&quot;&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:copy&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match=&quot;*&quot;&gt;
+    &lt;xsl:element name=&quot;{local-name()}&quot;&gt;
+      &lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;
+    &lt;/xsl:element&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match=&quot;@*&quot;&gt;
+    &lt;xsl:attribute name=&quot;{local-name()}&quot;&gt;
+      &lt;xsl:value-of select=&quot;.&quot;/&gt;
+    &lt;/xsl:attribute&gt;
+&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</pre><p></p>
+<p>Then we&#8217;ll need a hand-made Axis2 conform <a href="http://ws.apache.org/axis2/1_3/api/org/apache/axis2/transport/MessageFormatter.html">MessageFormatter</a> that uses the standard formatter for XML and performs the XSLT transformation on the result:</p>
+<p></p><pre class="crayon-plain-tag">package de.marcusschiesser.axis2;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.OutputStream;
+
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
+
+import org.apache.axiom.om.OMOutputFormat;
+import org.apache.axis2.AxisFault;
+import org.apache.axis2.context.MessageContext;
+import org.apache.axis2.transport.http.ApplicationXMLFormatter;
+
+public class NamespaceLessXMLFormatter extends ApplicationXMLFormatter {
+	private Transformer transformer;
+	private AxisFault fault; 
+	
+	public NamespaceLessXMLFormatter() {
+		super();
+		TransformerFactory tFactory = TransformerFactory.newInstance();
+		try {
+			transformer = tFactory.newTransformer(new StreamSource(new File(&quot;removeNamespaces.xsl&quot;)));
+		} catch (TransformerConfigurationException e) {
+			fault = AxisFault.makeFault(e);
+		}
+	}
+	
+	@Override
+	public void writeTo(MessageContext messageContext, OMOutputFormat format, OutputStream outputStream,
+			boolean preserve) throws AxisFault {
+		if(fault!=null) throw fault;
+		try {
+			ByteArrayOutputStream os = new ByteArrayOutputStream();
+			super.writeTo(messageContext, format, os, preserve);
+			ByteArrayInputStream is = new ByteArrayInputStream(os.toByteArray());
+			transformer.transform(new StreamSource(is), new StreamResult(outputStream));
+		} catch (TransformerException e) {
+			throw AxisFault.makeFault(e);
+		}
+	}
+
+}</pre><p></p>
+<p>(Don&#8217;t forget to adjust the path of <code>removeNamespaces.xsl</code>, so the formatter can find the .xsl!)</p>
+<p>Finally just put the class of the newly created formatter in <code>WEB-INF/classes</code> of your Axis2 deployment and replace the reference in the axis2.xml configuration file.<br />
+For this just exchange the line:</p>
+<p></p><pre class="crayon-plain-tag">&lt;messageFormatter contentType=&quot;application/xml&quot; class=&quot;org.apache.axis2.transport.http.ApplicationXMLFormatter&quot;/&gt;</pre><p></p>
+<p>with:</p>
+<p></p><pre class="crayon-plain-tag">&lt;messageFormatter contentType=&quot;application/xml&quot; class=&quot;de.marcusschiesser.axis2.NamespaceLessXMLFormatter&quot;/&gt;</pre><p></p>
+<p>After a restart of your application server you should be able to use your Axis2 services from Javascript &#8211; Have fun!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

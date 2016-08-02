@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; template</title>
+	<atom:link href="http://marcusschiesser.de/tag/template/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Putting ExtJS templates in separate files</title>
+		<link>http://marcusschiesser.de/2009/03/11/putting-extjs-templates-in-separate-files/</link>
+		<comments>http://marcusschiesser.de/2009/03/11/putting-extjs-templates-in-separate-files/#comments</comments>
+		<pubDate>Wed, 11 Mar 2009 10:37:40 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[ExtJS]]></category>
+		<category><![CDATA[lazy]]></category>
+		<category><![CDATA[loading]]></category>
+		<category><![CDATA[template]]></category>
+		<category><![CDATA[xtemplate]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=200</guid>
+		<description><![CDATA[To create a template in ExtJS you usually have to put the template code inline in your javascript. That could lead to problems if you want to edit your code and the designer wants to change the template. Therefore it&#8217;s a good idea to put the template in a separate file. For that reason I &#8230; <a href="http://marcusschiesser.de/2009/03/11/putting-extjs-templates-in-separate-files/" class="more-link">Continue reading <span class="screen-reader-text">Putting ExtJS templates in separate files</span></a>]]></description>
+				<content:encoded><![CDATA[<p>To create a <a href="http://extjs.com/deploy/ext/docs/output/Ext.Template.html">template in ExtJS</a> you usually have to put the template code inline in your javascript.<br />
+That could lead to problems if you want to edit your code and the designer wants to change the template. Therefore it&#8217;s a good idea to put the template in a separate file. </p>
+<p>For that reason I built this loader singleton that is capable of lazy loading ExtJS templates:</p>
+<p></p><pre class="crayon-plain-tag">Ext.ns('templates');
+
+templates.Loader = function(){
+	var that = {};
+	
+	var map = {};
+		
+	that.getTemplate = function(url, callback) {
+		if (map[url] === undefined) {
+			Ext.Ajax.request({
+				url: url,
+				success: function(xhr){
+					var template = new Ext.XTemplate(xhr.responseText);
+					template.compile();
+					map[url] = template;
+					callback(template);
+				}
+			});
+		} else {
+			callback(map[url]);
+		}
+	};
+	
+	return that;
+}();</pre><p></p>
+<p>Then you can just use your template by calling:</p>
+<p></p><pre class="crayon-plain-tag">templates.Loader.getTemplate('', '/templates/mytemplate.tpl', function(tpl) {
+   // do something with the template 'tpl'
+});</pre><p></p>
+<p>If you call the template loader a second time, the template is not loaded again but retrieved from cache, so you may also preload all your templates before the application starts.</p>
+<p><b>Update:</b> You can find this code and all my other ExtJS components bundled in <a href="http://code.google.com/p/extensive/">a library called &#8216;extensive&#8217;</a>. Enjoy the code and feel free to support the project by participating.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/03/11/putting-extjs-templates-in-separate-files/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

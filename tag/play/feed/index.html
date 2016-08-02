@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; play</title>
+	<atom:link href="http://marcusschiesser.de/tag/play/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Securing Your Play 2.1.1 Web Application Using a Filter</title>
+		<link>http://marcusschiesser.de/2013/04/27/securing-your-play-2-1-1-web-application-using-a-filter/</link>
+		<comments>http://marcusschiesser.de/2013/04/27/securing-your-play-2-1-1-web-application-using-a-filter/#comments</comments>
+		<pubDate>Sat, 27 Apr 2013 18:56:46 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Other]]></category>
+		<category><![CDATA[filter]]></category>
+		<category><![CDATA[play]]></category>
+		<category><![CDATA[play 2.1]]></category>
+		<category><![CDATA[scala]]></category>
+		<category><![CDATA[security]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=532</guid>
+		<description><![CDATA[After deploying my Play 2.1.1 based application to Cloudbees, I had the problem that everyone could access it. Not very ideal if you want to restrict your program to only a single audience. To solve the problem you would usually write a complicated user-based authentication system. Slightly an overkill, if you don&#8217;t need different users &#8230; <a href="http://marcusschiesser.de/2013/04/27/securing-your-play-2-1-1-web-application-using-a-filter/" class="more-link">Continue reading <span class="screen-reader-text">Securing Your Play 2.1.1 Web Application Using a Filter</span></a>]]></description>
+				<content:encoded><![CDATA[<p>After deploying my <a href="http://www.playframework.com/">Play 2.1.1</a> based application to <a href="http://www.cloudbees.com/">Cloudbees</a>, I had the problem that everyone could access it. Not very ideal if you want to restrict your program to only a single audience.</p>
+<p>To solve the problem you would usually write a complicated user-based authentication system. Slightly an overkill, if you don&#8217;t need different users accessing your program at all. My idea was more that the user has to add an URL parameter with a secret key, the first time the application is called. For later requests the key would just be stored in the session object.</p>
+<p>That way you basically access the program via the following URL:<br />
+<code>http://myapp.cloudbees.net/?access_key=secret</code><br />
+instead of just using:<br />
+<code>http://myapp.cloudbees.net</code></p>
+<p>The solution is quite simple. You just have to add a <a href="http://www.playframework.com/documentation/api/2.1.1/scala/index.html#play.api.mvc.Filter">Filter</a> that is checking every request. If the desired URL parameter is passed the request will be processed as usual. If not, we just log the potential threat and return a <a href="http://en.wikipedia.org/wiki/HTTP_404">404</a> (IMHO way better than returning a <a href="http://en.wikipedia.org/wiki/HTTP_401#4xx_Client_Error">401</a> and motivate the intruder that way to hack your site).<br />
+Let&#8217;s have a look at the following object called <code>AuthFilter</code>: </p>
+<div class="oembed-gist"><script src="https://gist.github.com/marcusschiesser/5474213.js"></script><noscript>View the code on <a href="https://gist.github.com/marcusschiesser/5474213">Gist</a>.</noscript></div>
+<p>Don&#8217;t blame me if the code above is not ideal &#8211; it&#8217;s not only my first program using Play but also using Scala. </p>
+<p>To activate the filter, you have to enhance the <code>Global</code> object (store it in the default package):</p>
+<p></p><pre class="crayon-plain-tag">import play.api.mvc.WithFilters
+import util.AuthFilter
+
+object Global extends WithFilters(AuthFilter)</pre><p></p>
+<p>You may wonder about the method <code>validSession</code> in the <code>AuthFilter</code>. It&#8217;s purpose is to add a valid token in your unit tests. Here&#8217;s an example with a <a href="http://www.playframework.com/documentation/api/2.1.1/scala/index.html#play.api.test.FakeRequest">FakeRequest</a> to /:</p>
+<p></p><pre class="crayon-plain-tag">route(FakeRequest(GET, &quot;/&quot;).withSession(AuthFilter.validSession)).get</pre><p></p>
+<p>Have fun hiding your applications! Don&#8217;t forget that the secret key is transferred unencrypted. So if you need some extra security, add SSL. Unfortunately this cost something on <a href="http://developer.cloudbees.com/bin/view/RUN/AppSSL">Cloudbees</a>&#8230;. </p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2013/04/27/securing-your-play-2-1-1-web-application-using-a-filter/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

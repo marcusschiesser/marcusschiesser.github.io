@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; jboss 7</title>
+	<atom:link href="http://marcusschiesser.de/tag/jboss-7/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>How to use JSF 2.2 with JBoss 7.1</title>
+		<link>http://marcusschiesser.de/2013/01/17/how-to-use-jsf-2-2-with-jboss-7-1/</link>
+		<comments>http://marcusschiesser.de/2013/01/17/how-to-use-jsf-2-2-with-jboss-7-1/#comments</comments>
+		<pubDate>Thu, 17 Jan 2013 00:17:11 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Java]]></category>
+		<category><![CDATA[how to]]></category>
+		<category><![CDATA[jboss]]></category>
+		<category><![CDATA[jboss 7]]></category>
+		<category><![CDATA[jsf]]></category>
+		<category><![CDATA[jsf 2.2]]></category>
+		<category><![CDATA[mojarra]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=503</guid>
+		<description><![CDATA[As the new JSF 2.2 is nearly finished, we all want to play with the new features of it. Markus Eisele has shown in his blog post Testdriving Mojarra 2.2.0-m08 how to do this with Glassfish 3. He&#8217;s German too, I begin to wonder if only we guys are that curious or no one else &#8230; <a href="http://marcusschiesser.de/2013/01/17/how-to-use-jsf-2-2-with-jboss-7-1/" class="more-link">Continue reading <span class="screen-reader-text">How to use JSF 2.2 with JBoss 7.1</span></a>]]></description>
+				<content:encoded><![CDATA[<p>As the new JSF 2.2 is nearly finished, we all want to play with <a href="http://jdevelopment.nl/jsf-22/">the new features of it</a>. </p>
+<p><a href="http://blog.eisele.net/">Markus Eisele</a> has shown in his blog post <a href="http://blog.eisele.net/2013/01/testdriving-mojarra-220-m08-on.html">Testdriving Mojarra 2.2.0-m08</a> how to do this with Glassfish 3. He&#8217;s German too, I begin to wonder if only we guys are that curious or no one else is using JSF any more <img src="http://s.w.org/images/core/emoji/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> </p>
+<p>Unfortunately with JBoss 7 we face the same problem he had: We can not just add the new libraries to our WAR archive as they will clash with the JSF 2.1 version of Mojarra (the reference implementation of JSF) already provided by JBoss 7.<br />
+So basically we have to disable this old version and activate the new version directly in the application server.</p>
+<p>I will show you how to do it with JBoss 7.1.1 and the M08 release of Mojarra 2.2, but it should work for other versions the very same way:</p>
+<p>JSF is divided into two parts: The implementation and the API. </p>
+<p>We firstly exchange the former one by starting to <a href="https://maven.java.net/content/repositories/releases/com/sun/faces/jsf-impl/2.2.0-m08/jsf-impl-2.2.0-m08.jar">download jsf-impl-2.2.0-m08.jar</a>, which is the JAR archive containing the implementation.<br />
+After downloading, copy this archive to the folder of the old JSF implementation of your JBoss installation, which will be <code>%JBOSS_HOME%/modules/com/sun/jsf-impl/main</code> in that case.<br />
+In the same directory you will find a file called <code>module.xml</code>. Edit it and change the contents of the <code>resources</code> tag like this:</p><pre class="crayon-plain-tag">&lt;resources&gt;
+    &lt;resource-root path=&quot;jsf-impl-2.2.0-m08.jar&quot;/&gt;
+&lt;/resources&gt;</pre><p>This is important as it tells JBoss which of the provided JAR archives (now there are two of them) to use. If you want to know more about this: Take a look at <a href="https://docs.jboss.org/author/display/MODULES/Home">JBoss Modules</a>, a module class loading approach JBoss 7 is using.<br />
+After that you have finished with exchanging the implementation and basically you have to do the same for the API part:</p>
+<p>Firstly download the <a href="https://maven.java.net/content/repositories/releases/com/sun/faces/jsf-api/2.2.0-m08/jsf-api-2.2.0-m08.jar">jsf-api-2.2.0-m08.jar</a> archive and copy it to <code>%JBOSS_HOME%/modules/javax/faces/api/main</code>. Secondly edit the <code>module.xml</code> in the same directory by exchanging the resources tag:</p><pre class="crayon-plain-tag">&lt;resources&gt;
+    &lt;resource-root path=&quot;jsf-api-2.2.0-m08.jar&quot;/&gt;
+&lt;/resources&gt;</pre><p>Basically you should be finished now, but there is a bug in the milestone 8 of the API that it has a dependency to the implementation. For that reason you have to declare it by adding the following contents to the <code>dependencies</code> tag of the same <code>module.xml</code> file:</p><pre class="crayon-plain-tag">&lt;module name=&quot;com.sun.jsf-impl&quot;/&gt;</pre><p></p>
+<p>After that you can restart your modified JBoss instance. As JSF is lazily loaded you have to deploy a WAR referencing JSF to check whether our changes work. If so, you should see a log message like this:</p>
+<p><code>[javax.enterprise.resource.webcontainer.jsf.config] (MSC service thread 1-2) Mojarra 2.2.0-m08</code> </p>
+<p>Finally, if you want to use the new features in application, you have to add the following dependency to your <code>pom.xml</code>:</p>
+<p></p><pre class="crayon-plain-tag">&lt;dependency&gt;
+   &lt;groupId&gt;com.sun.faces&lt;/groupId&gt;
+   &lt;artifactId&gt;jsf-api&lt;/artifactId&gt;
+   &lt;version&gt;2.2.0-m08&lt;/version&gt;
+   &lt;scope&gt;provided&lt;/scope&gt;
+&lt;/dependency&gt;</pre><p></p>
+<p>And now have fun using JSF 2.2!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2013/01/17/how-to-use-jsf-2-2-with-jboss-7-1/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

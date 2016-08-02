@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Putting ExtJS templates in separate files</title>
+	<atom:link href="http://marcusschiesser.de/2009/03/11/putting-extjs-templates-in-separate-files/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de/2009/03/11/putting-extjs-templates-in-separate-files/</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 14 Nov 2015 03:24:43 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>By: Florian Gilde</title>
+		<link>http://marcusschiesser.de/2009/03/11/putting-extjs-templates-in-separate-files/comment-page-1/#comment-8479</link>
+		<dc:creator><![CDATA[Florian Gilde]]></dc:creator>
+		<pubDate>Wed, 18 Jun 2014 12:50:59 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=200#comment-8479</guid>
+		<description><![CDATA[I think its better to extend from XTemplate, for example 
+
+Ext.define(&#039;My.Controls.ExternalTemplate&#039;, {
+	extend: &#039;Ext.XTemplate&#039;,
+	alternateClassName: &#039;My.ExternalTemplate&#039;,
+
+	constructor: function (htmlOrFilePath, config) {
+		if (this._isFileName(htmlOrFilePath)) {
+			My.ExternalTemplate.loadFromFile(htmlOrFilePath, function (tpl) {
+				Ext.apply(this, Ext.merge(tpl, config));
+			}, this, false);			
+		} else {
+			this.callParent(arguments);
+		}
+	},
+
+	statics: {
+		cache: {},
+		loadFromFile: function (url, callback, scope, async) {
+			if (async === undefined) {
+				async = true;
+			}
+			if (My.ExternalTemplate.cache[url] === undefined) {
+				Ext.Ajax.request({
+					url: url,
+					async: async,
+					success: function (xhr) {
+						var template = new My.ExternalTemplate(xhr.responseText);
+						template.compile();
+						My.ExternalTemplate.cache[url] = template;
+						Ext.callback(callback, scope, [template]);
+					}
+				});
+			} else {
+				Ext.callback(callback, scope, [My.ExternalTemplate.cache[url]]);
+			}
+		},		
+	},
+
+	_isFileName: function (s) {
+		return !s.contains(&#039;&#060;&#039;);
+	}
+});
+
+
+And you can call it with 
+
+Ext.create(&#039;My.ExternalTemplate&#039;, &#039;app/templates/WindowMenuTemplate.html&#039;);]]></description>
+		<content:encoded><![CDATA[<p>I think its better to extend from XTemplate, for example </p>
+<p>Ext.define(&#8216;My.Controls.ExternalTemplate&#8217;, {<br />
+	extend: &#8216;Ext.XTemplate&#8217;,<br />
+	alternateClassName: &#8216;My.ExternalTemplate&#8217;,</p>
+<p>	constructor: function (htmlOrFilePath, config) {<br />
+		if (this._isFileName(htmlOrFilePath)) {<br />
+			My.ExternalTemplate.loadFromFile(htmlOrFilePath, function (tpl) {<br />
+				Ext.apply(this, Ext.merge(tpl, config));<br />
+			}, this, false);<br />
+		} else {<br />
+			this.callParent(arguments);<br />
+		}<br />
+	},</p>
+<p>	statics: {<br />
+		cache: {},<br />
+		loadFromFile: function (url, callback, scope, async) {<br />
+			if (async === undefined) {<br />
+				async = true;<br />
+			}<br />
+			if (My.ExternalTemplate.cache[url] === undefined) {<br />
+				Ext.Ajax.request({<br />
+					url: url,<br />
+					async: async,<br />
+					success: function (xhr) {<br />
+						var template = new My.ExternalTemplate(xhr.responseText);<br />
+						template.compile();<br />
+						My.ExternalTemplate.cache[url] = template;<br />
+						Ext.callback(callback, scope, [template]);<br />
+					}<br />
+				});<br />
+			} else {<br />
+				Ext.callback(callback, scope, [My.ExternalTemplate.cache[url]]);<br />
+			}<br />
+		},<br />
+	},</p>
+<p>	_isFileName: function (s) {<br />
+		return !s.contains(&#8216;&lt;&#039;);<br />
+	}<br />
+});</p>
+<p>And you can call it with </p>
+<p>Ext.create(&#039;My.ExternalTemplate&#039;, &#039;app/templates/WindowMenuTemplate.html&#039;);</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jay Garcia</title>
+		<link>http://marcusschiesser.de/2009/03/11/putting-extjs-templates-in-separate-files/comment-page-1/#comment-402</link>
+		<dc:creator><![CDATA[Jay Garcia]]></dc:creator>
+		<pubDate>Tue, 05 May 2009 15:31:06 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=200#comment-402</guid>
+		<description><![CDATA[I think abstracting templates from javascript code cool.
+
+But why not create a &quot;constants&quot; configuration object with your templates in them?]]></description>
+		<content:encoded><![CDATA[<p>I think abstracting templates from javascript code cool.</p>
+<p>But why not create a &#8220;constants&#8221; configuration object with your templates in them?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

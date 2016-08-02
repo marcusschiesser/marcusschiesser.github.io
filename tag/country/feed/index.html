@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; country</title>
+	<atom:link href="http://marcusschiesser.de/tag/country/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Phone number selector in ExtJS</title>
+		<link>http://marcusschiesser.de/2009/04/08/phone-number-selector-in-extjs/</link>
+		<comments>http://marcusschiesser.de/2009/04/08/phone-number-selector-in-extjs/#comments</comments>
+		<pubDate>Wed, 08 Apr 2009 17:10:42 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[ExtJS]]></category>
+		<category><![CDATA[Technology]]></category>
+		<category><![CDATA[code]]></category>
+		<category><![CDATA[country]]></category>
+		<category><![CDATA[ext]]></category>
+		<category><![CDATA[field]]></category>
+		<category><![CDATA[number]]></category>
+		<category><![CDATA[phone]]></category>
+		<category><![CDATA[selector]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=232</guid>
+		<description><![CDATA[Wouldn&#8217;t it be nice to use a combo box of flag images to select the country code of phone numbers? If you use a country selection component that&#8217;s quite easy. Just wrap it in a re-usable component together with a textfield for the local number and the result looks like this: And here&#8217;s the example&#8217;s &#8230; <a href="http://marcusschiesser.de/2009/04/08/phone-number-selector-in-extjs/" class="more-link">Continue reading <span class="screen-reader-text">Phone number selector in ExtJS</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Wouldn&#8217;t it be nice to use a combo box of flag images to select the country code of phone numbers? </p>
+<p>If you use a <a href="http://www.marcusschiesser.de/?p=209">country selection component</a> that&#8217;s quite easy. Just wrap it in a re-usable component together with a textfield for the local number and the result looks like this:</p>
+<p><script type="text/javascript" src='http://www.marcusschiesser.de/wp-content/uploads/2009/04/iconcombo1.js'>iconcombo1</script><script type="text/javascript" src='http://www.marcusschiesser.de/wp-content/uploads/2009/04/countrycombo1.js'>countrycombo1</script><script type="text/javascript" src='http://www.marcusschiesser.de/wp-content/uploads/2009/04/phonefield.js'>phonefield</script><script type="text/javascript" src='http://www.marcusschiesser.de/wp-content/uploads/2009/04/phonefield1.js'>phonefield1</script></p>
+<p>And here&#8217;s the example&#8217;s source:</p>
+<p></p><pre class="crayon-plain-tag">Ext.onReady(function(){
+    var panel = new Ext.FormPanel({
+        style: 'padding: 10px;',
+        frame: true,
+        labelWidth: 50,
+        width: 400,
+        
+        items: [{
+            fieldLabel: 'Mobile',
+            xtype: 'phonefield',
+            anchor: '100%',
+            emptyText: '(e.g.: 423-423-423)',
+            defaultCountryCode: '49',
+            maskRe: /[0-9 -]/
+        }]
+    });
+    var element = Ext.query('script[src$=phonefield.js]')[0];
+    var renderElement = element.parentNode;
+    panel.render(renderElement);
+});</pre><p></p>
+<p><b>Update:</b> You can find this code and all my other ExtJS components bundled in <a href="http://code.google.com/p/extensive/">a library called &#8216;extensive&#8217;</a>. Enjoy the code and feel free to support the project by participating.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/04/08/phone-number-selector-in-extjs/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Country selector with flag images in ExtJS</title>
+		<link>http://marcusschiesser.de/2009/04/01/country-selector-with-flag-images-in-extjs/</link>
+		<comments>http://marcusschiesser.de/2009/04/01/country-selector-with-flag-images-in-extjs/#comments</comments>
+		<pubDate>Wed, 01 Apr 2009 10:04:48 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[ExtJS]]></category>
+		<category><![CDATA[box]]></category>
+		<category><![CDATA[combo]]></category>
+		<category><![CDATA[country]]></category>
+		<category><![CDATA[ext]]></category>
+		<category><![CDATA[flag]]></category>
+		<category><![CDATA[selector]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=209</guid>
+		<description><![CDATA[Based on the ExtJS-Tutorial on how to build a combo box with an icon, I built a component that can be used as a country selector in ExtJS. Here you can find the code of the component: [crayon-57a01882f3e70347968844/] It&#8217;s basically just a ComboBox using the IconCombo plugin with a predefined Store. The Store is in &#8230; <a href="http://marcusschiesser.de/2009/04/01/country-selector-with-flag-images-in-extjs/" class="more-link">Continue reading <span class="screen-reader-text">Country selector with flag images in ExtJS</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Based on the <a href="http://extjs.com/learn/Tutorial:Extending_Ext_Class">ExtJS-Tutorial on how to build a combo box with an icon</a>, I built a component that can be used as a country selector in ExtJS.</p>
+<p>Here you can find the code of the component: </p>
+<p></p><pre class="crayon-plain-tag">Ext.ns('Extreme.components');
+
+Extreme.components.CountryCombo = Ext.extend(Ext.form.ComboBox, {
+    constructor: function(config){
+        var data;
+        if (config.phoneLabels) {
+            data = [['+49', '+49', 'ux-flag-de'], ['+43', '+43', 'ux-flag-at'], ['+41', '+41', 'ux-flag-ch'], ['+352', '+352', 'ux-flag-lu'], ['+432', '+432', 'ux-flag-li']];
+        }
+        else {
+            data = [['DE', 'Deutschland', 'ux-flag-de'], ['AT', '&Ouml;sterreich', 'ux-flag-at'], ['CH', 'Schweiz', 'ux-flag-ch'], ['LU', 'Luxemburg', 'ux-flag-lu'], ['LI', 'Lichtenstein', 'ux-flag-li']];
+        }
+        
+        Extreme.components.CountryCombo.superclass.constructor.call(this, Ext.apply({
+            store: new Ext.data.SimpleStore({
+                fields: ['countryCode', 'countryName', 'countryFlag'],
+                data: data
+            }),
+            plugins: new Ext.ux.plugins.IconCombo(),
+            valueField: 'countryCode',
+            displayField: 'countryName',
+            iconClsField: 'countryFlag',
+            triggerAction: 'all',
+            mode: 'local'
+        }, config));
+    }
+});
+Ext.reg('countrycombo', Extreme.components.CountryCombo);</pre><p></p>
+<p>It&#8217;s basically just a <code>ComboBox </code>using the <code>IconCombo </code>plugin with a predefined <code>Store</code>. The <code>Store </code>is in fact a <code>SimpleStore </code>which contains the country codes, labels and css classes for the icons for each country.<br />
+(If you wonder about the <code>Extreme </code>namespace, I am right now building a little component library for ExtJS).<br />
+The country selector is registered under the xtype of &#8216;countrycombo&#8217;. So here&#8217;s a small example of how to use it:</p>
+<p></p><pre class="crayon-plain-tag">Ext.onReady(function(){
+	
+    var form = new Ext.FormPanel({
+		items: [{
+			xtype: 'countrycombo',
+			fieldLabel: 'Country',
+            name: 'country',
+			anchor: '100%'
+		}],
+		frame: true,
+		style: 'padding: 10px;',
+		width: 250,
+		labelWidth: 50
+	});
+    
+	var element = Ext.query('script[src$=country-combo.js]')[0];
+	var renderElement = element.parentNode;
+	form.render(renderElement);
+});</pre><p></p>
+<p>Thanks go also to <a href="http://www.famfamfam.com/lab/icons/flags/">FamFamFam</a> where i retrieved the flag images.</p>
+<p><b>Update:</b> You can find this code and all my other ExtJS components bundled in <a href="http://code.google.com/p/extensive/">a library called &#8216;extensive&#8217;</a>. Enjoy the code and feel free to support the project by participating.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/04/01/country-selector-with-flag-images-in-extjs/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

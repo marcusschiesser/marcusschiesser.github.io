@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; ticket</title>
+	<atom:link href="http://marcusschiesser.de/tag/ticket/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Openbahn-API – Bahn-Webseite als Webservice</title>
+		<link>http://marcusschiesser.de/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/</link>
+		<comments>http://marcusschiesser.de/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/#comments</comments>
+		<pubDate>Wed, 22 Jun 2011 20:13:17 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Idea]]></category>
+		<category><![CDATA[Java]]></category>
+		<category><![CDATA[appengine]]></category>
+		<category><![CDATA[bahn]]></category>
+		<category><![CDATA[booking]]></category>
+		<category><![CDATA[jersey]]></category>
+		<category><![CDATA[rest]]></category>
+		<category><![CDATA[ticket]]></category>
+		<category><![CDATA[webservice]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=386</guid>
+		<description><![CDATA[As this is only of interest for German users &#8211; this article is in German only. It&#8217;s about a new project of mine. Sorry folks. Ich bin gerade dabei eine Android-App zu entwickeln, mit der es möglich ist Fahrkarten für Bahn-Pendler einfacher zu buchen. Bei der Entwicklung ist mir aufgefallen, dass die Bahn leider keine &#8230; <a href="http://marcusschiesser.de/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/" class="more-link">Continue reading <span class="screen-reader-text">Openbahn-API – Bahn-Webseite als Webservice</span></a>]]></description>
+				<content:encoded><![CDATA[<p>As this is only of interest for German users &#8211; this article is in German only. It&#8217;s about a new project of mine. Sorry folks.</p>
+<p>Ich bin gerade dabei eine Android-App zu entwickeln, mit der es möglich ist Fahrkarten für Bahn-Pendler einfacher zu buchen.<br />
+Bei der Entwicklung ist mir aufgefallen, dass die Bahn leider keine Webservices nach außen zur Verfügung stellt – die Webseite <a href="http://www.bahn.de">www.bahn.de</a> ist zusammen mit der mobilen Variante <a href="http://m.bahn.de">m.bahn.de</a> die einzige Schnittstelle.</p>
+<p>Daher habe ich das Projekt <a href="http://code.google.com/p/openbahn-api">Openbahn-API</a> ins Leben gerufen: Es handelt sich um eine API, die Funktionalitäten der Bahn-Webseite als Webservices zur Verfügung stellt. Über diese Services können eigene Programme die verfügbaren Bahnhöfe oder Zugverbindungen inkl. Zeiten und Preise abrufen. Des Weiteren ist es über die Schnittstelle möglich, Zugtickets zu buchen oder Sitzplätze zu reservieren.</p>
+<p>Die Dokumentation und URLs zu den einzelnen Services finden sich auf der Projektseite unter <a href="http://code.google.com/p/openbahn-api">http://code.google.com/p/openbahn-api</a>. Diese werden über HTTP-GET aufgerufen und liefern JSON Objekte zurück. So gibt der Aufruf von <a href="http://openbahnapi.appspot.com/rest/stations/list?contains=karlsr">http://openbahnapi.appspot.com/rest/stations/list?contains=karlsr</a> eine Liste von JSON-Objekten zurück, die alle Bahnhöfe enthalten, die im Namen „karlsr“ enthalten. Im Beispiel sind dies die gesamten Bahnhöfe im Stadtgebiet von Karlsruhe.</p>
+<p>Die API kann verwendet werden, um eigene Anwendungen zu entwickeln, die Bahndaten benötigen.</p>
+<p>Um die Qualität des Parsers zu sichern, wird der Code komplett als GPL auf Google Code unter <a href="http://code.google.com/p/openbahn-api">http://code.google.com/p/openbahn-api</a> zur Verfügung gestellt – jeder Entwickler ist herzlich dazu eingeladen Verbesserungen und Erweiterungen vorzunehmen. Das Hosting erfolgt über die Google AppEngine. Die Ergebnisse der Anfragen werden über einen Cache zwischengespeichert, so dass die Kommunikation mit der Bahn-Webseite minimiert wird und für vorhandene Ergebnisse auch funktioniert, wenn diese offline ist.</p>
+<p>Ich bin gespannt auf eure Meinung und wünsche euch viel Spaß mit der neuen API.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+	</channel>
+</rss>

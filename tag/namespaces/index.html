@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://www.marcusschiesser.de/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/js/html5.js"></script>
+	<![endif]-->
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>namespaces | Marcus Schiesser</title>
+
+<!-- All in One SEO Pack 2.2.7.1 by Michael Torbert of Semper Fi Web Design[502,538] -->
+<link rel="canonical" href="http://www.marcusschiesser.de/tag/namespaces/" />
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="Marcus Schiesser &raquo; Feed" href="http://www.marcusschiesser.de/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Marcus Schiesser &raquo; Comments Feed" href="http://www.marcusschiesser.de/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Marcus Schiesser &raquo; namespaces Tag Feed" href="http://www.marcusschiesser.de/tag/namespaces/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.marcusschiesser.de\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='crayon-css'  href='http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-classic-css'  href='http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/themes/classic/classic.css?ver=2.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-monaco-css'  href='http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco.css?ver=2.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css'  href='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/style.css?ver=4.3.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.7.1","is_admin":"0","ajaxurl":"http:\/\/www.marcusschiesser.de\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.7.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.marcusschiesser.de/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.marcusschiesser.de/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.3.1" />
+		<style>
+		.gist table {
+			margin-bottom: 0 !important;
+		}
+		.gist .line-numbers
+		{
+			width: 4em !important;
+		}
+		.gist .line,
+		.gist .line-number
+		{
+			font-size: 12px !important;
+			height: 18px !important;
+			line-height: 18px !important;
+		}
+		.gist .line
+		{
+			white-space: pre !important;
+			width: auto !important;
+			word-wrap: normal !important;
+		}
+		.gist .line span
+		{
+			word-wrap: normal !important;
+		}
+		</style>
+		</head>
+
+<body class="archive tag tag-namespaces tag-105">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+										<p class="site-title"><a href="http://www.marcusschiesser.de/" rel="home">Marcus Schiesser</a></p>
+											<p class="site-description">Enterprise Software Development with JavaScript and Java</p>
+									<button class="secondary-toggle">Menu and widgets</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header -->
+
+			<div id="secondary" class="secondary">
+
+		
+		
+					<div id="widget-area" class="widget-area" role="complementary">
+				<aside id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widget-title">Topics</h2><div class="tagcloud"><a href='http://www.marcusschiesser.de/tag/actionscript/' class='tag-link-56' title='2 topics' style='font-size: 8pt;'>actionscript</a>
+<a href='http://www.marcusschiesser.de/tag/axis2/' class='tag-link-97' title='2 topics' style='font-size: 8pt;'>axis2</a>
+<a href='http://www.marcusschiesser.de/tag/backend/' class='tag-link-198' title='2 topics' style='font-size: 8pt;'>backend</a>
+<a href='http://www.marcusschiesser.de/tag/bewerbung/' class='tag-link-38' title='2 topics' style='font-size: 8pt;'>bewerbung</a>
+<a href='http://www.marcusschiesser.de/tag/button/' class='tag-link-155' title='2 topics' style='font-size: 8pt;'>button</a>
+<a href='http://www.marcusschiesser.de/tag/combo/' class='tag-link-126' title='3 topics' style='font-size: 10.333333333333pt;'>combo</a>
+<a href='http://www.marcusschiesser.de/tag/component/' class='tag-link-248' title='3 topics' style='font-size: 10.333333333333pt;'>Component</a>
+<a href='http://www.marcusschiesser.de/tag/country/' class='tag-link-129' title='2 topics' style='font-size: 8pt;'>country</a>
+<a href='http://www.marcusschiesser.de/tag/effekt/' class='tag-link-15' title='2 topics' style='font-size: 8pt;'>Effekt</a>
+<a href='http://www.marcusschiesser.de/tag/error/' class='tag-link-107' title='2 topics' style='font-size: 8pt;'>error</a>
+<a href='http://www.marcusschiesser.de/tag/ext/' class='tag-link-115' title='7 topics' style='font-size: 16.166666666667pt;'>ext</a>
+<a href='http://www.marcusschiesser.de/tag/extjs/' class='tag-link-249' title='15 topics' style='font-size: 22pt;'>ExtJS</a>
+<a href='http://www.marcusschiesser.de/tag/facebook/' class='tag-link-23' title='2 topics' style='font-size: 8pt;'>facebook</a>
+<a href='http://www.marcusschiesser.de/tag/feed/' class='tag-link-25' title='2 topics' style='font-size: 8pt;'>feed</a>
+<a href='http://www.marcusschiesser.de/tag/field/' class='tag-link-137' title='3 topics' style='font-size: 10.333333333333pt;'>field</a>
+<a href='http://www.marcusschiesser.de/tag/flash/' class='tag-link-71' title='2 topics' style='font-size: 8pt;'>flash</a>
+<a href='http://www.marcusschiesser.de/tag/flex/' class='tag-link-14' title='15 topics' style='font-size: 22pt;'>Flex</a>
+<a href='http://www.marcusschiesser.de/tag/form/' class='tag-link-128' title='2 topics' style='font-size: 8pt;'>form</a>
+<a href='http://www.marcusschiesser.de/tag/spas/' class='tag-link-244' title='4 topics' style='font-size: 12.277777777778pt;'>Fun</a>
+<a href='http://www.marcusschiesser.de/tag/google/' class='tag-link-69' title='2 topics' style='font-size: 8pt;'>google</a>
+<a href='http://www.marcusschiesser.de/tag/grid/' class='tag-link-113' title='3 topics' style='font-size: 10.333333333333pt;'>grid</a>
+<a href='http://www.marcusschiesser.de/tag/handler/' class='tag-link-58' title='2 topics' style='font-size: 8pt;'>handler</a>
+<a href='http://www.marcusschiesser.de/tag/html/' class='tag-link-94' title='2 topics' style='font-size: 8pt;'>html</a>
+<a href='http://www.marcusschiesser.de/tag/ideen/' class='tag-link-19' title='3 topics' style='font-size: 10.333333333333pt;'>Ideen</a>
+<a href='http://www.marcusschiesser.de/tag/info/' class='tag-link-78' title='2 topics' style='font-size: 8pt;'>info</a>
+<a href='http://www.marcusschiesser.de/tag/java/' class='tag-link-250' title='6 topics' style='font-size: 15.194444444444pt;'>Java</a>
+<a href='http://www.marcusschiesser.de/tag/javascript/' class='tag-link-101' title='4 topics' style='font-size: 12.277777777778pt;'>javascript</a>
+<a href='http://www.marcusschiesser.de/tag/jboss-2/' class='tag-link-186' title='2 topics' style='font-size: 8pt;'>jboss</a>
+<a href='http://www.marcusschiesser.de/tag/jersey/' class='tag-link-175' title='3 topics' style='font-size: 10.333333333333pt;'>jersey</a>
+<a href='http://www.marcusschiesser.de/tag/job/' class='tag-link-39' title='2 topics' style='font-size: 8pt;'>job</a>
+<a href='http://www.marcusschiesser.de/tag/json/' class='tag-link-72' title='3 topics' style='font-size: 10.333333333333pt;'>json</a>
+<a href='http://www.marcusschiesser.de/tag/map/' class='tag-link-70' title='3 topics' style='font-size: 10.333333333333pt;'>map</a>
+<a href='http://www.marcusschiesser.de/tag/mashup/' class='tag-link-11' title='5 topics' style='font-size: 13.833333333333pt;'>Mashup</a>
+<a href='http://www.marcusschiesser.de/tag/message/' class='tag-link-103' title='2 topics' style='font-size: 8pt;'>message</a>
+<a href='http://www.marcusschiesser.de/tag/sonstiges/' class='tag-link-243' title='3 topics' style='font-size: 10.333333333333pt;'>Other</a>
+<a href='http://www.marcusschiesser.de/tag/pictures/' class='tag-link-66' title='2 topics' style='font-size: 8pt;'>pictures</a>
+<a href='http://www.marcusschiesser.de/tag/pojo/' class='tag-link-99' title='2 topics' style='font-size: 8pt;'>pojo</a>
+<a href='http://www.marcusschiesser.de/tag/presse/' class='tag-link-8' title='2 topics' style='font-size: 8pt;'>Presse</a>
+<a href='http://www.marcusschiesser.de/tag/programmierung/' class='tag-link-4' title='3 topics' style='font-size: 10.333333333333pt;'>Programmierung</a>
+<a href='http://www.marcusschiesser.de/tag/proxy/' class='tag-link-118' title='2 topics' style='font-size: 8pt;'>proxy</a>
+<a href='http://www.marcusschiesser.de/tag/rails/' class='tag-link-247' title='2 topics' style='font-size: 8pt;'>Rails</a>
+<a href='http://www.marcusschiesser.de/tag/rest/' class='tag-link-180' title='2 topics' style='font-size: 8pt;'>rest</a>
+<a href='http://www.marcusschiesser.de/tag/selector/' class='tag-link-130' title='4 topics' style='font-size: 12.277777777778pt;'>selector</a>
+<a href='http://www.marcusschiesser.de/tag/web-20/' class='tag-link-6' title='4 topics' style='font-size: 12.277777777778pt;'>Web 2.0</a>
+<a href='http://www.marcusschiesser.de/tag/wordpress/' class='tag-link-246' title='2 topics' style='font-size: 8pt;'>Wordpress</a></div>
+</aside><aside id="linkcat-2" class="widget widget_links"><h2 class="widget-title">Blogroll</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://pdf.venedo.com/" rel="friend met" title="A blog about PDFs without barriers">Accessible PDFs</a></li>
+<li><a href="http://www.best-practice-business.de/blog/" title="Business Ideen und Lösungen">best-practice-business</a></li>
+<li><a href="http://blog.digitalbackcountry.com/" title="Blog über RIAs von Ryan Stewart, Technological Evangelist bei Adobe">Digital Backcountry</a></li>
+<li><a href="http://juriswritings.blogspot.de/">Juri&#039;s Writings &#8211; Software, technology and science.</a></li>
+<li><a href="http://radar.oreilly.com/">O&#8217;Reilly Radar</a></li>
+<li><a href="http://blog.stefanbotzenhart.com/" rel="contact met co-worker">Stefan Botzenhart</a></li>
+<li><a href="http://www.turngeek.press" title="Turngeek press &#8211; Online Java books" target="_blank">Turngeek press</a></li>
+
+	</ul>
+</aside>
+			</div><!-- .widget-area -->
+		
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+
+	<div id="content" class="site-content">
+
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			<header class="page-header">
+				<h1 class="page-title">Tag: namespaces</h1>			</header><!-- .page-header -->
+
+			
+<article id="post-142" class="post-142 post type-post status-publish format-standard hentry category-java tag-axis2 tag-formatter tag-java tag-javascript tag-message tag-namespaces tag-service tag-xml">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="http://www.marcusschiesser.de/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/" rel="bookmark">Using Axis2 services from Javascript (by removing the XML namespaces)</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>If you want to call an <a href="http://ws.apache.org/axis2/">Axis2</a> service from Javascript you will face the problem that the XML response of an Axis2 service call contains XML namespaces &#8211; something Javascript doesn&#8217;t like in cross-browser-friendly way.<br />
+The idea to fix this issue is to make an XSLT transformation directly from Axis2 that removes the unnecessary namespaces.</p>
+<p>First we need an <a href="http://wiki.tei-c.org/index.php/Remove-Namespaces.xsl">XSLT transformation</a> that will do the job:</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-57a01839d8fc0922231696" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">XHTML</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+&lt;xsl:output method="xml" indent="no"/&gt;
+
+&lt;xsl:template match="/|comment()|processing-instruction()"&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:copy&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="*"&gt;
+    &lt;xsl:element name="{local-name()}"&gt;
+      &lt;xsl:apply-templates select="@*|node()"/&gt;
+    &lt;/xsl:element&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="@*"&gt;
+    &lt;xsl:attribute name="{local-name()}"&gt;
+      &lt;xsl:value-of select="."/&gt;
+    &lt;/xsl:attribute&gt;
+&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57a01839d8fc0922231696-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fc0922231696-2">2</div><div class="crayon-num" data-line="crayon-57a01839d8fc0922231696-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fc0922231696-4">4</div><div class="crayon-num" data-line="crayon-57a01839d8fc0922231696-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fc0922231696-6">6</div><div class="crayon-num" data-line="crayon-57a01839d8fc0922231696-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fc0922231696-8">8</div><div class="crayon-num" data-line="crayon-57a01839d8fc0922231696-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fc0922231696-10">10</div><div class="crayon-num" data-line="crayon-57a01839d8fc0922231696-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fc0922231696-12">12</div><div class="crayon-num" data-line="crayon-57a01839d8fc0922231696-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fc0922231696-14">14</div><div class="crayon-num" data-line="crayon-57a01839d8fc0922231696-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fc0922231696-16">16</div><div class="crayon-num" data-line="crayon-57a01839d8fc0922231696-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fc0922231696-18">18</div><div class="crayon-num" data-line="crayon-57a01839d8fc0922231696-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fc0922231696-20">20</div><div class="crayon-num" data-line="crayon-57a01839d8fc0922231696-21">21</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57a01839d8fc0922231696-1"><span class="crayon-r">&lt;xsl:stylesheet </span><span class="crayon-e">version</span><span class="crayon-o">=</span><span class="crayon-s">"1.0"</span><span class="crayon-h"> </span>xmlns<span class="crayon-o">:</span><span class="crayon-e">xsl</span><span class="crayon-o">=</span><span class="crayon-s">"http://www.w3.org/1999/XSL/Transform"</span><span class="crayon-r">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fc0922231696-2"><span class="crayon-r">&lt;xsl:output </span><span class="crayon-e">method</span><span class="crayon-o">=</span><span class="crayon-s">"xml"</span><span class="crayon-h"> </span><span class="crayon-e">indent</span><span class="crayon-o">=</span><span class="crayon-s">"no"</span><span class="crayon-r">/&gt;</span></div><div class="crayon-line" id="crayon-57a01839d8fc0922231696-3">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fc0922231696-4"><span class="crayon-r">&lt;xsl:template </span><span class="crayon-e">match</span><span class="crayon-o">=</span><span class="crayon-s">"/|comment()|processing-instruction()"</span><span class="crayon-r">&gt;</span></div><div class="crayon-line" id="crayon-57a01839d8fc0922231696-5"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;xsl:copy&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fc0922231696-6"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;xsl:apply-templates/&gt;</span></div><div class="crayon-line" id="crayon-57a01839d8fc0922231696-7"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;/xsl:copy&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fc0922231696-8"><span class="crayon-r">&lt;/xsl:template&gt;</span></div><div class="crayon-line" id="crayon-57a01839d8fc0922231696-9">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fc0922231696-10"><span class="crayon-r">&lt;xsl:template </span><span class="crayon-e">match</span><span class="crayon-o">=</span><span class="crayon-s">"*"</span><span class="crayon-r">&gt;</span></div><div class="crayon-line" id="crayon-57a01839d8fc0922231696-11"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;xsl:element </span><span class="crayon-e">name</span><span class="crayon-o">=</span><span class="crayon-s">"{local-name()}"</span><span class="crayon-r">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fc0922231696-12"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;xsl:apply-templates </span><span class="crayon-e">select</span><span class="crayon-o">=</span><span class="crayon-s">"@*|node()"</span><span class="crayon-r">/&gt;</span></div><div class="crayon-line" id="crayon-57a01839d8fc0922231696-13"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;/xsl:element&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fc0922231696-14"><span class="crayon-r">&lt;/xsl:template&gt;</span></div><div class="crayon-line" id="crayon-57a01839d8fc0922231696-15">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fc0922231696-16"><span class="crayon-r">&lt;xsl:template </span><span class="crayon-e">match</span><span class="crayon-o">=</span><span class="crayon-s">"@*"</span><span class="crayon-r">&gt;</span></div><div class="crayon-line" id="crayon-57a01839d8fc0922231696-17"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;xsl:attribute </span><span class="crayon-e">name</span><span class="crayon-o">=</span><span class="crayon-s">"{local-name()}"</span><span class="crayon-r">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fc0922231696-18"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;xsl:value-of </span><span class="crayon-e">select</span><span class="crayon-o">=</span><span class="crayon-s">"."</span><span class="crayon-r">/&gt;</span></div><div class="crayon-line" id="crayon-57a01839d8fc0922231696-19"><span class="crayon-i">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">&lt;/xsl:attribute&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fc0922231696-20"><span class="crayon-r">&lt;/xsl:template&gt;</span></div><div class="crayon-line" id="crayon-57a01839d8fc0922231696-21"><span class="crayon-r">&lt;/xsl:stylesheet&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0016 seconds] -->
+<p></p>
+<p>Then we&#8217;ll need a hand-made Axis2 conform <a href="http://ws.apache.org/axis2/1_3/api/org/apache/axis2/transport/MessageFormatter.html">MessageFormatter</a> that uses the standard formatter for XML and performs the XSLT transformation on the result:</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-57a01839d8fce793697445" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Java</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+package de.marcusschiesser.axis2;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.OutputStream;
+
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
+
+import org.apache.axiom.om.OMOutputFormat;
+import org.apache.axis2.AxisFault;
+import org.apache.axis2.context.MessageContext;
+import org.apache.axis2.transport.http.ApplicationXMLFormatter;
+
+public class NamespaceLessXMLFormatter extends ApplicationXMLFormatter {
+	private Transformer transformer;
+	private AxisFault fault; 
+	
+	public NamespaceLessXMLFormatter() {
+		super();
+		TransformerFactory tFactory = TransformerFactory.newInstance();
+		try {
+			transformer = tFactory.newTransformer(new StreamSource(new File("removeNamespaces.xsl")));
+		} catch (TransformerConfigurationException e) {
+			fault = AxisFault.makeFault(e);
+		}
+	}
+	
+	@Override
+	public void writeTo(MessageContext messageContext, OMOutputFormat format, OutputStream outputStream,
+			boolean preserve) throws AxisFault {
+		if(fault!=null) throw fault;
+		try {
+			ByteArrayOutputStream os = new ByteArrayOutputStream();
+			super.writeTo(messageContext, format, os, preserve);
+			ByteArrayInputStream is = new ByteArrayInputStream(os.toByteArray());
+			transformer.transform(new StreamSource(is), new StreamResult(outputStream));
+		} catch (TransformerException e) {
+			throw AxisFault.makeFault(e);
+		}
+	}
+
+}</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-2">2</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-4">4</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-6">6</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-8">8</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-10">10</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-12">12</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-14">14</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-16">16</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-18">18</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-20">20</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-22">22</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-24">24</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-25">25</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-26">26</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-27">27</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-28">28</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-29">29</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-30">30</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-31">31</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-32">32</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-33">33</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-34">34</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-35">35</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-36">36</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-37">37</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-38">38</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-39">39</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-40">40</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-41">41</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-42">42</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-43">43</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-44">44</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-45">45</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-46">46</div><div class="crayon-num" data-line="crayon-57a01839d8fce793697445-47">47</div><div class="crayon-num crayon-striped-num" data-line="crayon-57a01839d8fce793697445-48">48</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57a01839d8fce793697445-1"><span class="crayon-t">package</span><span class="crayon-h"> </span><span class="crayon-v">de</span><span class="crayon-sy">.</span><span class="crayon-v">marcusschiesser</span><span class="crayon-sy">.</span><span class="crayon-v">axis2</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-2">&nbsp;</div><div class="crayon-line" id="crayon-57a01839d8fce793697445-3"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">java</span><span class="crayon-sy">.</span><span class="crayon-v">io</span><span class="crayon-sy">.</span><span class="crayon-v">ByteArrayInputStream</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-4"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">java</span><span class="crayon-sy">.</span><span class="crayon-v">io</span><span class="crayon-sy">.</span><span class="crayon-v">ByteArrayOutputStream</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-5"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">java</span><span class="crayon-sy">.</span><span class="crayon-v">io</span><span class="crayon-sy">.</span><span class="crayon-v">File</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-6"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">java</span><span class="crayon-sy">.</span><span class="crayon-v">io</span><span class="crayon-sy">.</span><span class="crayon-v">OutputStream</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-7">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-8"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">javax</span><span class="crayon-sy">.</span><span class="crayon-v">xml</span><span class="crayon-sy">.</span><span class="crayon-v">transform</span><span class="crayon-sy">.</span><span class="crayon-v">Transformer</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-9"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">javax</span><span class="crayon-sy">.</span><span class="crayon-v">xml</span><span class="crayon-sy">.</span><span class="crayon-v">transform</span><span class="crayon-sy">.</span><span class="crayon-v">TransformerConfigurationException</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-10"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">javax</span><span class="crayon-sy">.</span><span class="crayon-v">xml</span><span class="crayon-sy">.</span><span class="crayon-v">transform</span><span class="crayon-sy">.</span><span class="crayon-v">TransformerException</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-11"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">javax</span><span class="crayon-sy">.</span><span class="crayon-v">xml</span><span class="crayon-sy">.</span><span class="crayon-v">transform</span><span class="crayon-sy">.</span><span class="crayon-v">TransformerFactory</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-12"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">javax</span><span class="crayon-sy">.</span><span class="crayon-v">xml</span><span class="crayon-sy">.</span><span class="crayon-v">transform</span><span class="crayon-sy">.</span><span class="crayon-v">stream</span><span class="crayon-sy">.</span><span class="crayon-v">StreamResult</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-13"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">javax</span><span class="crayon-sy">.</span><span class="crayon-v">xml</span><span class="crayon-sy">.</span><span class="crayon-v">transform</span><span class="crayon-sy">.</span><span class="crayon-v">stream</span><span class="crayon-sy">.</span><span class="crayon-v">StreamSource</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-14">&nbsp;</div><div class="crayon-line" id="crayon-57a01839d8fce793697445-15"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">org</span><span class="crayon-sy">.</span><span class="crayon-v">apache</span><span class="crayon-sy">.</span><span class="crayon-v">axiom</span><span class="crayon-sy">.</span><span class="crayon-v">om</span><span class="crayon-sy">.</span><span class="crayon-v">OMOutputFormat</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-16"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">org</span><span class="crayon-sy">.</span><span class="crayon-v">apache</span><span class="crayon-sy">.</span><span class="crayon-v">axis2</span><span class="crayon-sy">.</span><span class="crayon-v">AxisFault</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-17"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">org</span><span class="crayon-sy">.</span><span class="crayon-v">apache</span><span class="crayon-sy">.</span><span class="crayon-v">axis2</span><span class="crayon-sy">.</span><span class="crayon-v">context</span><span class="crayon-sy">.</span><span class="crayon-v">MessageContext</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-18"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">org</span><span class="crayon-sy">.</span><span class="crayon-v">apache</span><span class="crayon-sy">.</span><span class="crayon-v">axis2</span><span class="crayon-sy">.</span><span class="crayon-v">transport</span><span class="crayon-sy">.</span><span class="crayon-v">http</span><span class="crayon-sy">.</span><span class="crayon-v">ApplicationXMLFormatter</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-19">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-20"><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-t">class</span><span class="crayon-h"> </span><span class="crayon-e">NamespaceLessXMLFormatter</span><span class="crayon-h"> </span><span class="crayon-r">extends</span><span class="crayon-h"> </span><span class="crayon-e">ApplicationXMLFormatter</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-21"><span class="crayon-h">	</span><span class="crayon-m">private</span><span class="crayon-h"> </span><span class="crayon-e">Transformer </span><span class="crayon-v">transformer</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-22"><span class="crayon-h">	</span><span class="crayon-m">private</span><span class="crayon-h"> </span><span class="crayon-e">AxisFault </span><span class="crayon-v">fault</span><span class="crayon-sy">;</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-23"><span class="crayon-h">	</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-24"><span class="crayon-h">	</span><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-e">NamespaceLessXMLFormatter</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-25"><span class="crayon-h">		</span><span class="crayon-r">super</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-26"><span class="crayon-h">		</span><span class="crayon-e">TransformerFactory </span><span class="crayon-v">tFactory</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">TransformerFactory</span><span class="crayon-sy">.</span><span class="crayon-e">newInstance</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-27"><span class="crayon-h">		</span><span class="crayon-st">try</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-28"><span class="crayon-h">			</span><span class="crayon-v">transformer</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">tFactory</span><span class="crayon-sy">.</span><span class="crayon-e">newTransformer</span><span class="crayon-sy">(</span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">StreamSource</span><span class="crayon-sy">(</span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">File</span><span class="crayon-sy">(</span><span class="crayon-s">"removeNamespaces.xsl"</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-29"><span class="crayon-h">		</span><span class="crayon-sy">}</span><span class="crayon-h"> </span><span class="crayon-st">catch</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-i">TransformerConfigurationException</span><span class="crayon-h"> </span><span class="crayon-v">e</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-30"><span class="crayon-h">			</span><span class="crayon-v">fault</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">AxisFault</span><span class="crayon-sy">.</span><span class="crayon-e">makeFault</span><span class="crayon-sy">(</span><span class="crayon-v">e</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-31"><span class="crayon-h">		</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-32"><span class="crayon-h">	</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-33"><span class="crayon-h">	</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-34"><span class="crayon-h">	</span><span class="crayon-n">@Override</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-35"><span class="crayon-h">	</span><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">writeTo</span><span class="crayon-sy">(</span><span class="crayon-e">MessageContext </span><span class="crayon-v">messageContext</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">OMOutputFormat </span><span class="crayon-v">format</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">OutputStream </span><span class="crayon-v">outputStream</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-36"><span class="crayon-h">			</span><span class="crayon-t">boolean</span><span class="crayon-h"> </span><span class="crayon-v">preserve</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-m">throws</span><span class="crayon-h"> </span><span class="crayon-e">AxisFault</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-37"><span class="crayon-h">		</span><span class="crayon-st">if</span><span class="crayon-sy">(</span><span class="crayon-v">fault</span><span class="crayon-o">!=</span><span class="crayon-t">null</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">throw</span><span class="crayon-h"> </span><span class="crayon-v">fault</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-38"><span class="crayon-h">		</span><span class="crayon-st">try</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-39"><span class="crayon-h">			</span><span class="crayon-e">ByteArrayOutputStream </span><span class="crayon-v">os</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">ByteArrayOutputStream</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-40"><span class="crayon-h">			</span><span class="crayon-r">super</span><span class="crayon-sy">.</span><span class="crayon-e">writeTo</span><span class="crayon-sy">(</span><span class="crayon-v">messageContext</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">format</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">os</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">preserve</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-41"><span class="crayon-h">			</span><span class="crayon-e">ByteArrayInputStream </span><span class="crayon-st">is</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">ByteArrayInputStream</span><span class="crayon-sy">(</span><span class="crayon-v">os</span><span class="crayon-sy">.</span><span class="crayon-e">toByteArray</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-42"><span class="crayon-h">			</span><span class="crayon-v">transformer</span><span class="crayon-sy">.</span><span class="crayon-e">transform</span><span class="crayon-sy">(</span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">StreamSource</span><span class="crayon-sy">(</span><span class="crayon-st">is</span><span class="crayon-sy">)</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">StreamResult</span><span class="crayon-sy">(</span><span class="crayon-v">outputStream</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-43"><span class="crayon-h">		</span><span class="crayon-sy">}</span><span class="crayon-h"> </span><span class="crayon-st">catch</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-i">TransformerException</span><span class="crayon-h"> </span><span class="crayon-v">e</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-44"><span class="crayon-h">			</span><span class="crayon-st">throw</span><span class="crayon-h"> </span><span class="crayon-v">AxisFault</span><span class="crayon-sy">.</span><span class="crayon-e">makeFault</span><span class="crayon-sy">(</span><span class="crayon-v">e</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-45"><span class="crayon-h">		</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-46"><span class="crayon-h">	</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-57a01839d8fce793697445-47">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57a01839d8fce793697445-48"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0087 seconds] -->
+<p></p>
+<p>(Don&#8217;t forget to adjust the path of <code>removeNamespaces.xsl</code>, so the formatter can find the .xsl!)</p>
+<p>Finally just put the class of the newly created formatter in <code>WEB-INF/classes</code> of your Axis2 deployment and replace the reference in the axis2.xml configuration file.<br />
+For this just exchange the line:</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-57a01839d8fd4041007145" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">XHTML</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;messageFormatter contentType="application/xml" class="org.apache.axis2.transport.http.ApplicationXMLFormatter"/&gt; </textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57a01839d8fd4041007145-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57a01839d8fd4041007145-1"><span class="crayon-r">&lt;messageFormatter </span><span class="crayon-e">contentType</span><span class="crayon-o">=</span><span class="crayon-s">"application/xml"</span><span class="crayon-h"> </span><span class="crayon-e">class</span><span class="crayon-o">=</span><span class="crayon-s">"org.apache.axis2.transport.http.ApplicationXMLFormatter"</span><span class="crayon-r">/&gt;</span><span class="crayon-h"> </span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+<p></p>
+<p>with:</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-57a01839d8fd8418060787" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">XHTML</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;messageFormatter contentType="application/xml" class="de.marcusschiesser.axis2.NamespaceLessXMLFormatter"/&gt; </textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57a01839d8fd8418060787-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57a01839d8fd8418060787-1"><span class="crayon-r">&lt;messageFormatter </span><span class="crayon-e">contentType</span><span class="crayon-o">=</span><span class="crayon-s">"application/xml"</span><span class="crayon-h"> </span><span class="crayon-e">class</span><span class="crayon-o">=</span><span class="crayon-s">"de.marcusschiesser.axis2.NamespaceLessXMLFormatter"</span><span class="crayon-r">/&gt;</span><span class="crayon-h"> </span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+<p></p>
+<p>After a restart of your application server you should be able to use your Axis2 services from Javascript &#8211; Have fun!</p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="http://www.marcusschiesser.de/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/" rel="bookmark"><time class="entry-date published" datetime="2009-01-27T18:15:13+00:00">January 27, 2009</time><time class="updated" datetime="2010-12-21T10:35:14+00:00">December 21, 2010</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="http://www.marcusschiesser.de/category/technologie/java/" rel="category tag">Java</a></span><span class="tags-links"><span class="screen-reader-text">Tags </span><a href="http://www.marcusschiesser.de/tag/axis2/" rel="tag">axis2</a>, <a href="http://www.marcusschiesser.de/tag/formatter/" rel="tag">formatter</a>, <a href="http://www.marcusschiesser.de/tag/java/" rel="tag">Java</a>, <a href="http://www.marcusschiesser.de/tag/javascript/" rel="tag">javascript</a>, <a href="http://www.marcusschiesser.de/tag/message/" rel="tag">message</a>, <a href="http://www.marcusschiesser.de/tag/namespaces/" rel="tag">namespaces</a>, <a href="http://www.marcusschiesser.de/tag/service/" rel="tag">service</a>, <a href="http://www.marcusschiesser.de/tag/xml/" rel="tag">xml</a></span><span class="comments-link"><a href="http://www.marcusschiesser.de/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/#comments"><span class="dsq-postid" data-dsqidentifier="142 http://www.marcusschiesser.de/?p=142">3 Comments<span class="screen-reader-text"> on Using Axis2 services from Javascript (by removing the XML namespaces)</span></span></a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-## -->
+
+		</main><!-- .site-main -->
+	</section><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+						<a href="https://wordpress.org/">Proudly powered by WordPress</a>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js?ver=20141010'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/js/functions.js?ver=20150330'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"marcusschiesser"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/plugins/disqus-comment-system/media/js/count.js?ver=4.3.1'></script>
+
+</body>
+</html>

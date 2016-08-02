@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; swing</title>
+	<atom:link href="http://marcusschiesser.de/tag/swing/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Let the user change the column order in Java/Swing</title>
+		<link>http://marcusschiesser.de/2011/11/18/let-the-user-change-the-column-order-in-javaswing/</link>
+		<comments>http://marcusschiesser.de/2011/11/18/let-the-user-change-the-column-order-in-javaswing/#comments</comments>
+		<pubDate>Fri, 18 Nov 2011 14:36:15 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Java]]></category>
+		<category><![CDATA[Technology]]></category>
+		<category><![CDATA[model]]></category>
+		<category><![CDATA[swing]]></category>
+		<category><![CDATA[tablecolumnmodel]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=390</guid>
+		<description><![CDATA[Do you have the requirement to let the user of your application change the order of his columns and your app is based on Swing? Then you should read further. Below you find a TableColumnModel that has two states: STANDARD and USERDEFINED. In the STANDARD state the user may not change the order of the &#8230; <a href="http://marcusschiesser.de/2011/11/18/let-the-user-change-the-column-order-in-javaswing/" class="more-link">Continue reading <span class="screen-reader-text">Let the user change the column order in Java/Swing</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Do you have the requirement to let the user of your application change the order<br />
+of his columns and your app is based on Swing?</p>
+<p>Then you should read further. Below you find a <code><a href="http://download.oracle.com/javase/1.4.2/docs/api/javax/swing/table/TableColumnModel.html">TableColumnModel</a></code> that has<br />
+two states: <code>STANDARD</code> and <code>USERDEFINED</code>.<br />
+In the <code>STANDARD</code> state the user may not change the order of the columns by drag&#8217;n&#8217;drop,<br />
+in <code>USERDEFINED</code> he may. The good thing: If you toogle the state the column order is restored. </p>
+<p>Just a hint: If you want to store the column order, first get it by calling <code>getColumnMap()</code>.</p>
+<p>Before you ask you to use it. Try <code>setModel</code> of your <code>JTable</code><a href="http://download.oracle.com/javase/1.4.2/docs/api/javax/swing/JTable.html"></a> class <img src="http://s.w.org/images/core/emoji/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Have fun!</p>
+<p></p><pre class="crayon-plain-tag">public class StatefulTableColumnModel extends DefaultTableColumnModel {
+
+    public enum Mode {
+        STANDARD, USERDEFINED;
+    }
+    
+    private int columnMap[];
+    private Mode mode = Mode.STANDARD; 
+
+    public StatefulTableColumnModel(Mode mode, int[] columnMap) {
+        this.columnMap = columnMap;
+        if(mode!=null) 
+            setMode(mode);
+        else
+            setMode(Mode.STANDARD);
+    }
+    
+    public void setMode(Mode mode) {
+        this.mode = mode;
+        refresh();
+    }
+    
+    public Mode getMode() {
+        return this.mode;
+    }
+    
+    public int[] getColumnMap() {
+        return columnMap;
+    }
+    
+    /* (non-Javadoc)
+     * @see javax.swing.table.DefaultTableColumnModel#fireColumnMoved(javax.swing.event.TableColumnModelEvent)
+     */
+    @Override
+    protected void fireColumnMoved(TableColumnModelEvent e) {
+        switch(mode) {
+        case USERDEFINED:
+            // if columns have been moved there might have been Drag'n'Drop operations,
+            // so update the state 
+            columnMap = getColumnPositions();
+            break;
+        case STANDARD:
+            // in standard mode drag'n'drop operations are not permitted, so reset the order
+            resetColumnPositions();
+            break;
+        }
+        super.fireColumnMoved(e);
+    }
+
+    /**
+     * re-order table columns depending on their model index (this resets the original order), don't update view
+     */
+    private void resetColumnPositions() {
+        Collections.sort(tableColumns, new Comparator&lt;TableColumn&gt;() {
+            public int compare(TableColumn o1, TableColumn o2) {
+                return new Integer(o1.getModelIndex()).compareTo(o2.getModelIndex());
+            }
+        });
+    }
+
+    /**
+     * set the visible column positions (independent of state), don't update view
+     */
+    private void setColumnPositions(final int columnMap[]) {
+        resetColumnPositions();
+        if(columnMap!=null) {
+            Vector&lt;TableColumn&gt; newOrder = new Vector&lt;TableColumn&gt;(tableColumns.capacity());
+            newOrder.setSize(tableColumns.size());
+            int i=0;
+            for(TableColumn column: tableColumns) {
+                // lookup new position in newOrder
+                int newPos = columnMap[i++];
+                newOrder.set(newPos, column);
+            }
+            tableColumns = newOrder;
+        }
+    }
+
+    /**
+     * @return the visible column positions (independent of state)
+     */
+    private int[] getColumnPositions() {
+        int result[] = new int[tableColumns.size()];
+        int i=0;
+        for(TableColumn column: tableColumns) {
+            int modelIndex = column.getModelIndex();
+            result[modelIndex] = i++;
+        }
+        return result;
+    }
+
+    /**
+     * 
+     */
+    public void refresh() {
+        switch(mode) {
+        case STANDARD:
+            // reset position
+            resetColumnPositions();
+            break;
+        case USERDEFINED:
+            setColumnPositions(columnMap);
+            break;
+        }        
+        // inform view that column order has changed (seems to be sufficient to just tell 0 has moved to 1)
+        super.fireColumnMoved(new TableColumnModelEvent(this, 0, 1));        
+    }
+
+}</pre><p></p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2011/11/18/let-the-user-change-the-column-order-in-javaswing/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

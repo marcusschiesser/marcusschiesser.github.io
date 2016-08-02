@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; values</title>
+	<atom:link href="http://marcusschiesser.de/tag/values/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Getting values from a form containing combos in Ext</title>
+		<link>http://marcusschiesser.de/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/</link>
+		<comments>http://marcusschiesser.de/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/#comments</comments>
+		<pubDate>Tue, 07 Apr 2009 15:54:45 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[ExtJS]]></category>
+		<category><![CDATA[combo]]></category>
+		<category><![CDATA[ext]]></category>
+		<category><![CDATA[form]]></category>
+		<category><![CDATA[values]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=219</guid>
+		<description><![CDATA[Actually it is pretty easy to get the values of all fields of a form in Ext: You just have to call the getValues() method of the BasicForm. The problem with that approach is that it just takes the values directly from the DOM and is not calling the getValue() for each field (Which I &#8230; <a href="http://marcusschiesser.de/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/" class="more-link">Continue reading <span class="screen-reader-text">Getting values from a form containing combos in Ext</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Actually it is pretty easy to get the values of all fields of a form in Ext: You just have to call the <code>getValues()</code> method of the <code>BasicForm</code>.<br />
+The problem with that approach is that it just takes the values directly from the DOM and is not calling the <code>getValue()</code> for each field (Which I assumed). One consequence is that you don&#8217;t get the values of combo boxes, but their labels.<br />
+To get the real values, I just did the following:</p>
+<p>Firstly, I retrieved an array of all fields of the form:</p><pre class="crayon-plain-tag">var fields = that.findBy(function(comp) {
+	return comp.xtype != 'fieldset';
+});</pre><p>(In my case these were just all children that were no fieldsets. You might have to change the condition above to suit your needs.)</p>
+<p>Then, I just iterated over all fields and added the name/value pair to a result object:</p><pre class="crayon-plain-tag">var result = {};
+fields.forEach(function(field){
+	var name = field.getName();
+	var value = field.getValue();
+	result[name] = value;
+});</pre><p></p>
+<p>That&#8217;s it &#8211; now <code>result</code> contains the real values of all fields.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

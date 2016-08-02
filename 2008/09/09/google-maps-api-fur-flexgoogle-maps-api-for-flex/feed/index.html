@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Google Maps API for Flex</title>
+	<atom:link href="http://marcusschiesser.de/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 14 Nov 2015 03:24:43 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>By: Konrad Persson</title>
+		<link>http://marcusschiesser.de/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/comment-page-1/#comment-2700</link>
+		<dc:creator><![CDATA[Konrad Persson]]></dc:creator>
+		<pubDate>Tue, 08 Dec 2009 13:00:19 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=77#comment-2700</guid>
+		<description><![CDATA[A work well done Marcus! 
+You should really make a tut. of this. I am trying to build an application that uses theese flex-components through PHP and loops to populate a map with twitter feeds. It&#039;s not going very well. But thanks anyway!]]></description>
+		<content:encoded><![CDATA[<p>A work well done Marcus!<br />
+You should really make a tut. of this. I am trying to build an application that uses theese flex-components through PHP and loops to populate a map with twitter feeds. It&#8217;s not going very well. But thanks anyway!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Dev</title>
+		<link>http://marcusschiesser.de/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/comment-page-1/#comment-368</link>
+		<dc:creator><![CDATA[Dev]]></dc:creator>
+		<pubDate>Tue, 28 Apr 2009 02:58:48 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=77#comment-368</guid>
+		<description><![CDATA[Hi Marcus,
+
+This is really great, thanks. 
+I have a question: How can I populate multiple markers on the map?
+Any suggestions? Thanks!]]></description>
+		<content:encoded><![CDATA[<p>Hi Marcus,</p>
+<p>This is really great, thanks.<br />
+I have a question: How can I populate multiple markers on the map?<br />
+Any suggestions? Thanks!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: David</title>
+		<link>http://marcusschiesser.de/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/comment-page-1/#comment-321</link>
+		<dc:creator><![CDATA[David]]></dc:creator>
+		<pubDate>Mon, 23 Mar 2009 17:17:08 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=77#comment-321</guid>
+		<description><![CDATA[Hey Marcus,
+
+Great component... an absolute necessity to complete the interactive map experience.  
+
+I had a bit of trouble using your code with a tab navigator.  The custom pop-ups stay visible even after you navigate away from the map.
+
+I tried to use the MapMouseEvent to determine when the mouse had left the screen.  Unfortunately the google version does not have a relatedObject... therefore I could not determine if the mouse was still on the map or not.
+
+Finally, I attached an additional MOUSE_MOVE listener on ROLL_OUT and finally had a bit of success.
+
+Now when you roll off of the map it automatically closes.  It&#039;s a bit of a kludge, but might be helpful to someone else out there.  Perhaps if you get some time you can figure out a way to make it work a bit more cohesively with your existing tool set.
+
+Here is some example code (please note: I am using the variable name mapContainer instead of flexMap):
+
+private function onMapReady(event:Event):void
+{
+	//place markers, render overlays
+	this.initMapControls();
+	model.projectDomainManager.list.addEventListener(DomainManager.LIST_CHANGE, listChangeHandler);
+	
+		//listen for the roll out event
+	mapContainer.map.addEventListener(MapMouseEvent.ROLL_OUT,
+        function(event:MapMouseEvent):void {
+        	if(mapContainer.map.popUpIsOpen())
+		{
+			//need to attach a seperate listener because google&#039;s MapMouseEvent does not have a relatedObject attached
+			//  therefore we cannot tell if we pointing at the popup or some irrelevant component
+				Application.application.addEventListener(MouseEvent.MOUSE_MOVE, tempCloseListener);
+		}
+        }
+    );
+}
+
+private function tempCloseListener(event:MouseEvent):void
+{
+	if(event.type == MouseEvent.MOUSE_MOVE)
+	{
+		var dispObj:DisplayObject = event.target as DisplayObject;
+		
+		//determine if this is still a part of the map
+		if(!containedBy(dispObj, mapContainer))
+		{
+			//close the window, we have rolled off of the map
+			mapContainer.map.closeFlexInfoWindow();
+			//remove the close listener, it was temporary anyway
+			Application.application.removeEventListener(MouseEvent.MOUSE_MOVE, tempCloseListener);
+		}
+	}	
+}
+
+public static function containedBy(descendant:DisplayObject, ancestor:DisplayObject):Boolean
+{
+	if(descendant.parent == null)
+	{
+		return false;
+	}
+	else if(descendant == ancestor)
+	{
+		return true;
+	}
+	else
+	{
+		return containedBy(descendant.parent, ancestor);
+	}
+}]]></description>
+		<content:encoded><![CDATA[<p>Hey Marcus,</p>
+<p>Great component&#8230; an absolute necessity to complete the interactive map experience.  </p>
+<p>I had a bit of trouble using your code with a tab navigator.  The custom pop-ups stay visible even after you navigate away from the map.</p>
+<p>I tried to use the MapMouseEvent to determine when the mouse had left the screen.  Unfortunately the google version does not have a relatedObject&#8230; therefore I could not determine if the mouse was still on the map or not.</p>
+<p>Finally, I attached an additional MOUSE_MOVE listener on ROLL_OUT and finally had a bit of success.</p>
+<p>Now when you roll off of the map it automatically closes.  It&#8217;s a bit of a kludge, but might be helpful to someone else out there.  Perhaps if you get some time you can figure out a way to make it work a bit more cohesively with your existing tool set.</p>
+<p>Here is some example code (please note: I am using the variable name mapContainer instead of flexMap):</p>
+<p>private function onMapReady(event:Event):void<br />
+{<br />
+	//place markers, render overlays<br />
+	this.initMapControls();<br />
+	model.projectDomainManager.list.addEventListener(DomainManager.LIST_CHANGE, listChangeHandler);</p>
+<p>		//listen for the roll out event<br />
+	mapContainer.map.addEventListener(MapMouseEvent.ROLL_OUT,<br />
+        function(event:MapMouseEvent):void {<br />
+        	if(mapContainer.map.popUpIsOpen())<br />
+		{<br />
+			//need to attach a seperate listener because google&#8217;s MapMouseEvent does not have a relatedObject attached<br />
+			//  therefore we cannot tell if we pointing at the popup or some irrelevant component<br />
+				Application.application.addEventListener(MouseEvent.MOUSE_MOVE, tempCloseListener);<br />
+		}<br />
+        }<br />
+    );<br />
+}</p>
+<p>private function tempCloseListener(event:MouseEvent):void<br />
+{<br />
+	if(event.type == MouseEvent.MOUSE_MOVE)<br />
+	{<br />
+		var dispObj:DisplayObject = event.target as DisplayObject;</p>
+<p>		//determine if this is still a part of the map<br />
+		if(!containedBy(dispObj, mapContainer))<br />
+		{<br />
+			//close the window, we have rolled off of the map<br />
+			mapContainer.map.closeFlexInfoWindow();<br />
+			//remove the close listener, it was temporary anyway<br />
+			Application.application.removeEventListener(MouseEvent.MOUSE_MOVE, tempCloseListener);<br />
+		}<br />
+	}<br />
+}</p>
+<p>public static function containedBy(descendant:DisplayObject, ancestor:DisplayObject):Boolean<br />
+{<br />
+	if(descendant.parent == null)<br />
+	{<br />
+		return false;<br />
+	}<br />
+	else if(descendant == ancestor)<br />
+	{<br />
+		return true;<br />
+	}<br />
+	else<br />
+	{<br />
+		return containedBy(descendant.parent, ancestor);<br />
+	}<br />
+}</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Javier</title>
+		<link>http://marcusschiesser.de/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/comment-page-1/#comment-299</link>
+		<dc:creator><![CDATA[Javier]]></dc:creator>
+		<pubDate>Wed, 11 Mar 2009 23:16:07 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=77#comment-299</guid>
+		<description><![CDATA[Hallo,wie ghets?
+I&#039;m working around this. I&#039;m trying to put a panel with a text, a list of images and some videos, given the posibility to click and maximize any images and reproduce the videos by clicking. Have you made any similiar? Not ony one embeded photo, but with a photo list and events....
+Do you know where i can find some examples or demos to do this? The only that i have founded is the InfoWindowTabbedComponent example at GoogleGroups....
+ I&#039;m stucked.
+thanks.]]></description>
+		<content:encoded><![CDATA[<p>Hallo,wie ghets?<br />
+I&#8217;m working around this. I&#8217;m trying to put a panel with a text, a list of images and some videos, given the posibility to click and maximize any images and reproduce the videos by clicking. Have you made any similiar? Not ony one embeded photo, but with a photo list and events&#8230;.<br />
+Do you know where i can find some examples or demos to do this? The only that i have founded is the InfoWindowTabbedComponent example at GoogleGroups&#8230;.<br />
+ I&#8217;m stucked.<br />
+thanks.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Brian Read</title>
+		<link>http://marcusschiesser.de/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/comment-page-1/#comment-42</link>
+		<dc:creator><![CDATA[Brian Read]]></dc:creator>
+		<pubDate>Wed, 01 Oct 2008 15:49:01 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=77#comment-42</guid>
+		<description><![CDATA[Hi Marcus,
+
+This is great - thanks.  A question: how can I populate the address component labels dynamically?  I have an ArrayCollection of address information that is downloaded from a MySQL database via a PHP backend.  I know the download is working - it populates a DataGrid without issue.  I thought for the address Component I&#039;d simply change the Label text field to get the data from the array via a loop.  However, the label ID isn&#039;t visible from the code - I get &quot;Error: Access of undefined property SiteAddr&quot; (SiteAddr being the id of the Label).  Any suggestions?  Thanks!]]></description>
+		<content:encoded><![CDATA[<p>Hi Marcus,</p>
+<p>This is great &#8211; thanks.  A question: how can I populate the address component labels dynamically?  I have an ArrayCollection of address information that is downloaded from a MySQL database via a PHP backend.  I know the download is working &#8211; it populates a DataGrid without issue.  I thought for the address Component I&#8217;d simply change the Label text field to get the data from the array via a loop.  However, the label ID isn&#8217;t visible from the code &#8211; I get &#8220;Error: Access of undefined property SiteAddr&#8221; (SiteAddr being the id of the Label).  Any suggestions?  Thanks!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: mesdocs</title>
+		<link>http://marcusschiesser.de/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/comment-page-1/#comment-41</link>
+		<dc:creator><![CDATA[mesdocs]]></dc:creator>
+		<pubDate>Tue, 30 Sep 2008 08:36:24 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=77#comment-41</guid>
+		<description><![CDATA[Hi,
+
+I tried to add a click event handler on the image component but i got an error at build time.
+
+Any idea ?]]></description>
+		<content:encoded><![CDATA[<p>Hi,</p>
+<p>I tried to add a click event handler on the image component but i got an error at build time.</p>
+<p>Any idea ?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Marcus Schiesser</title>
+		<link>http://marcusschiesser.de/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/comment-page-1/#comment-30</link>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+		<pubDate>Mon, 15 Sep 2008 10:38:01 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=77#comment-30</guid>
+		<description><![CDATA[What kind of errors are you getting?]]></description>
+		<content:encoded><![CDATA[<p>What kind of errors are you getting?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Juan</title>
+		<link>http://marcusschiesser.de/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/comment-page-1/#comment-29</link>
+		<dc:creator><![CDATA[Juan]]></dc:creator>
+		<pubDate>Sun, 14 Sep 2008 22:40:32 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=77#comment-29</guid>
+		<description><![CDATA[Hi, 
+
+I tried to add the API but I get errors using the flex.map classes.  Any idea?]]></description>
+		<content:encoded><![CDATA[<p>Hi, </p>
+<p>I tried to add the API but I get errors using the flex.map classes.  Any idea?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Elias Monteiro</title>
+		<link>http://marcusschiesser.de/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/comment-page-1/#comment-23</link>
+		<dc:creator><![CDATA[Elias Monteiro]]></dc:creator>
+		<pubDate>Wed, 10 Sep 2008 08:22:38 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=77#comment-23</guid>
+		<description><![CDATA[Hi
+thanks for is one thing that was really missing in google maps
+i&#039;ll try it and then i&#039;ll give feedback]]></description>
+		<content:encoded><![CDATA[<p>Hi<br />
+thanks for is one thing that was really missing in google maps<br />
+i&#8217;ll try it and then i&#8217;ll give feedback</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

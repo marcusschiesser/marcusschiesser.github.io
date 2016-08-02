@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; javascript</title>
+	<atom:link href="http://marcusschiesser.de/tag/javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Proxy Your Requests With Grunt</title>
+		<link>http://marcusschiesser.de/2015/03/13/proxy-your-requests-with-grunt/</link>
+		<comments>http://marcusschiesser.de/2015/03/13/proxy-your-requests-with-grunt/#comments</comments>
+		<pubDate>Fri, 13 Mar 2015 06:30:30 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[backend]]></category>
+		<category><![CDATA[connect]]></category>
+		<category><![CDATA[frontend]]></category>
+		<category><![CDATA[grunt]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[middleware]]></category>
+		<category><![CDATA[proxy]]></category>
+
+		<guid isPermaLink="false">http://marcusschiesser.de/?p=590</guid>
+		<description><![CDATA[Probably you&#8217;re already using grunt to serve your local frontend code. Everything is fine, but if you&#8217;re developing your backend with something different than JavaScript (Being a Java developer I heard that might happen), you will have problems accessing this backend while running grunt server. With grunt-connect-proxy there exists a grunt module to help you &#8230; <a href="http://marcusschiesser.de/2015/03/13/proxy-your-requests-with-grunt/" class="more-link">Continue reading <span class="screen-reader-text">Proxy Your Requests With Grunt</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Probably you&#8217;re already using grunt to serve your local frontend code. Everything is fine, but if you&#8217;re developing your backend with something different than JavaScript (Being a Java developer I heard that might happen), you will have problems accessing this backend while running <code>grunt server</code>.<br />
+With <a href="https://github.com/drewzboto/grunt-connect-proxy">grunt-connect-proxy</a> there exists a grunt module to help you out. It basically delegates requests that match a given URL to a different backend of your choice. Unfortunately I found it rather difficult to configure, if you are unaware of the <a href="http://stackoverflow.com/questions/5284340/what-is-node-js-connect-express-and-middleware" target="_blank">connect middleware concept</a>.</p>
+<p>Basically you just need to add two things to your <code>Gruntfile.js</code> file:</p>
+<p>Firstly add the connect server configuration to your config JSON inside of <code>grunt.initConfig</code>. This example delegates all requests to <code>http://localhost:8000/services</code> to <code>http://localhost:8090/services</code> &#8211; keep in mind the grunt server is running on port 8000 and the backend on port 8090:</p>
+<p></p><pre class="crayon-plain-tag">connect: {
+    site1: {
+        options: {
+            port: 8000,
+            base: '.',
+            keepalive: true,
+            middleware: function (connect, options, middlewares) {
+                middlewares.unshift(require('grunt-connect-proxy/lib/utils').proxyRequest);
+                return middlewares;
+            }
+        },
+        proxies: [
+            {
+                context: '/services',
+                host: 'localhost',
+                port: 8090,
+                https: false,
+                xforward: false
+            }
+        ]
+    }
+}</pre><p></p>
+<p>Secondly register your grunt server task:</p>
+<p></p><pre class="crayon-plain-tag">grunt.registerTask('server', function (target) {
+    grunt.task.run([
+        'configureProxies:site1',
+        'connect:site1'
+    ]);
+});</pre><p></p>
+<p>then you can call your grunt server with the configured proxy via :<br />
+<code>grunt server</code><br />
+from the command line.</p>
+<p>Enjoy!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2015/03/13/proxy-your-requests-with-grunt/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>How to detect whether an element is in a scrollable parent</title>
+		<link>http://marcusschiesser.de/2009/11/02/how-to-detect-whether-an-element-is-in-a-scrollable-parent/</link>
+		<comments>http://marcusschiesser.de/2009/11/02/how-to-detect-whether-an-element-is-in-a-scrollable-parent/#comments</comments>
+		<pubDate>Mon, 02 Nov 2009 20:54:28 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Technology]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[detect]]></category>
+		<category><![CDATA[element]]></category>
+		<category><![CDATA[hidden]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[overflow]]></category>
+		<category><![CDATA[parent]]></category>
+		<category><![CDATA[scroll]]></category>
+		<category><![CDATA[scrollable]]></category>
+		<category><![CDATA[visible]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=352</guid>
+		<description><![CDATA[Just think of having an element in a scrollable parent (the CSS property overflow is set to scroll) and you want to test whether the element is visible or not. Using this little function you can do the trick: [crayon-57a0191535bd1556107069/] And here&#8217;s a small use case &#8211; this one scrolls the element into the visible &#8230; <a href="http://marcusschiesser.de/2009/11/02/how-to-detect-whether-an-element-is-in-a-scrollable-parent/" class="more-link">Continue reading <span class="screen-reader-text">How to detect whether an element is in a scrollable parent</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Just think of having an element in a scrollable parent (the CSS property <code>overflow</code> is set to <code>scroll</code>) and you want to test whether the element is visible or not.</p>
+<p>Using this little function you can do the trick:</p><pre class="crayon-plain-tag">function isInView(node){
+            var offsetParent = node.offsetParent;
+            var top = offsetParent.scrollTop;
+            var height = offsetParent.offsetHeight;
+            var y = node.offsetTop;
+            return y &gt;= top &amp;&amp; y &lt;= (top + height);
+}</pre><p></p>
+<p>And here&#8217;s a small use case &#8211; this one scrolls the element into the visible region, if it is not already in the view:</p><pre class="crayon-plain-tag">if(!isInView(element)) {
+            element.scrollIntoView();
+}</pre><p></p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/11/02/how-to-detect-whether-an-element-is-in-a-scrollable-parent/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Let the user select an item in a modal dialog</title>
+		<link>http://marcusschiesser.de/2009/08/05/selecting-an-item-in-javascript/</link>
+		<comments>http://marcusschiesser.de/2009/08/05/selecting-an-item-in-javascript/#comments</comments>
+		<pubDate>Wed, 05 Aug 2009 13:31:29 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Component]]></category>
+		<category><![CDATA[YUI]]></category>
+		<category><![CDATA[choose]]></category>
+		<category><![CDATA[item]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[selector]]></category>
+		<category><![CDATA[yui3]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=328</guid>
+		<description><![CDATA[After having used the shiny new YUI3 library for a project, it&#8217;s about time to share my YUI3 experiences with you. For the project I built an item selector: A modal dialog is openend and the user has to select an item. After selection the dialog is closed and the selected item is passed to &#8230; <a href="http://marcusschiesser.de/2009/08/05/selecting-an-item-in-javascript/" class="more-link">Continue reading <span class="screen-reader-text">Let the user select an item in a modal dialog</span></a>]]></description>
+				<content:encoded><![CDATA[<p><script src="http://yui.yahooapis.com/3.0.0/build/yui/yui-min.js">
+</script>After having used the shiny new <a href="http://developer.yahoo.com/yui/3/">YUI3</a> library for a project, it&#8217;s about time to share my YUI3 experiences with you.<br />
+For the project I built an item selector: A modal dialog is openend and the user has to select an item. After selection the dialog is closed and the selected item is passed to a callback function.</p>
+<p>Here you can find the <a href="http://www.marcusschiesser.de/wp-content/uploads/2009/08/ItemSelector.js">full source</a> for the item selector. An example to use the selector can be as simple as this:</p><pre class="crayon-plain-tag">ms.ItemSelector.selectItem(['Bart', 'Lisa', 'Homer', 'Marge', 'Maggie', 'Ned', 'Barney', 'Bob'], function(item){
+  alert(item + ' is your favorite character.');
+});</pre><p></p>
+<p>Just click on the following button, to start the example. Enjoy and let me know your comments.</p>
+<style type="text/css">			a.item-selector-clickme {
+				background-color: red;
+				padding: 4px;
+				color: white;
+				text-decoration: none;
+			}	a.item-selector-clickme:hover {
+				color: yellow;
+			}  .item-selector-header {
+                font-weight: bold;
+                padding: 10px;
+            } .item-selector {
+                overflow: auto;
+                height: 150px;
+            }.item-selector li a:hover {
+                color: red;
+            }.item-selector li {
+                list-style: none;
+            } .item-selector li a {
+                text-decoration: none;
+                color: #333;
+            }  .yui-overlay-content {
+                padding: 3px; font-size: 16px;  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+				width: 200px;
+				height: 210px;
+                border: 2px solid #000;
+                background-color: #fff;
+            }
+        </style>
+<p>        <script type="text/javascript" src="http://www.marcusschiesser.de/wp-content/uploads/2009/08/ItemSelector.js">
+        </script><br />
+        <script type="text/javascript" src="http://www.marcusschiesser.de/wp-content/uploads/2009/08/itemselector.js">
+        </script></p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/08/05/selecting-an-item-in-javascript/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Using Axis2 services from Javascript (by removing the XML namespaces)</title>
+		<link>http://marcusschiesser.de/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/</link>
+		<comments>http://marcusschiesser.de/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/#comments</comments>
+		<pubDate>Tue, 27 Jan 2009 17:15:13 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Java]]></category>
+		<category><![CDATA[axis2]]></category>
+		<category><![CDATA[formatter]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[message]]></category>
+		<category><![CDATA[namespaces]]></category>
+		<category><![CDATA[service]]></category>
+		<category><![CDATA[xml]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=142</guid>
+		<description><![CDATA[If you want to call an Axis2 service from Javascript you will face the problem that the XML response of an Axis2 service call contains XML namespaces &#8211; something Javascript doesn&#8217;t like in cross-browser-friendly way. The idea to fix this issue is to make an XSLT transformation directly from Axis2 that removes the unnecessary namespaces. &#8230; <a href="http://marcusschiesser.de/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/" class="more-link">Continue reading <span class="screen-reader-text">Using Axis2 services from Javascript (by removing the XML namespaces)</span></a>]]></description>
+				<content:encoded><![CDATA[<p>If you want to call an <a href="http://ws.apache.org/axis2/">Axis2</a> service from Javascript you will face the problem that the XML response of an Axis2 service call contains XML namespaces &#8211; something Javascript doesn&#8217;t like in cross-browser-friendly way.<br />
+The idea to fix this issue is to make an XSLT transformation directly from Axis2 that removes the unnecessary namespaces.</p>
+<p>First we need an <a href="http://wiki.tei-c.org/index.php/Remove-Namespaces.xsl">XSLT transformation</a> that will do the job:</p>
+<p></p><pre class="crayon-plain-tag">&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;no&quot;/&gt;
+
+&lt;xsl:template match=&quot;/|comment()|processing-instruction()&quot;&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:copy&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match=&quot;*&quot;&gt;
+    &lt;xsl:element name=&quot;{local-name()}&quot;&gt;
+      &lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;
+    &lt;/xsl:element&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match=&quot;@*&quot;&gt;
+    &lt;xsl:attribute name=&quot;{local-name()}&quot;&gt;
+      &lt;xsl:value-of select=&quot;.&quot;/&gt;
+    &lt;/xsl:attribute&gt;
+&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</pre><p></p>
+<p>Then we&#8217;ll need a hand-made Axis2 conform <a href="http://ws.apache.org/axis2/1_3/api/org/apache/axis2/transport/MessageFormatter.html">MessageFormatter</a> that uses the standard formatter for XML and performs the XSLT transformation on the result:</p>
+<p></p><pre class="crayon-plain-tag">package de.marcusschiesser.axis2;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.OutputStream;
+
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
+
+import org.apache.axiom.om.OMOutputFormat;
+import org.apache.axis2.AxisFault;
+import org.apache.axis2.context.MessageContext;
+import org.apache.axis2.transport.http.ApplicationXMLFormatter;
+
+public class NamespaceLessXMLFormatter extends ApplicationXMLFormatter {
+	private Transformer transformer;
+	private AxisFault fault; 
+	
+	public NamespaceLessXMLFormatter() {
+		super();
+		TransformerFactory tFactory = TransformerFactory.newInstance();
+		try {
+			transformer = tFactory.newTransformer(new StreamSource(new File(&quot;removeNamespaces.xsl&quot;)));
+		} catch (TransformerConfigurationException e) {
+			fault = AxisFault.makeFault(e);
+		}
+	}
+	
+	@Override
+	public void writeTo(MessageContext messageContext, OMOutputFormat format, OutputStream outputStream,
+			boolean preserve) throws AxisFault {
+		if(fault!=null) throw fault;
+		try {
+			ByteArrayOutputStream os = new ByteArrayOutputStream();
+			super.writeTo(messageContext, format, os, preserve);
+			ByteArrayInputStream is = new ByteArrayInputStream(os.toByteArray());
+			transformer.transform(new StreamSource(is), new StreamResult(outputStream));
+		} catch (TransformerException e) {
+			throw AxisFault.makeFault(e);
+		}
+	}
+
+}</pre><p></p>
+<p>(Don&#8217;t forget to adjust the path of <code>removeNamespaces.xsl</code>, so the formatter can find the .xsl!)</p>
+<p>Finally just put the class of the newly created formatter in <code>WEB-INF/classes</code> of your Axis2 deployment and replace the reference in the axis2.xml configuration file.<br />
+For this just exchange the line:</p>
+<p></p><pre class="crayon-plain-tag">&lt;messageFormatter contentType=&quot;application/xml&quot; class=&quot;org.apache.axis2.transport.http.ApplicationXMLFormatter&quot;/&gt;</pre><p></p>
+<p>with:</p>
+<p></p><pre class="crayon-plain-tag">&lt;messageFormatter contentType=&quot;application/xml&quot; class=&quot;de.marcusschiesser.axis2.NamespaceLessXMLFormatter&quot;/&gt;</pre><p></p>
+<p>After a restart of your application server you should be able to use your Axis2 services from Javascript &#8211; Have fun!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

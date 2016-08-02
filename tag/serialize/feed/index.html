@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marcus Schiesser &#187; serialize</title>
+	<atom:link href="http://marcusschiesser.de/tag/serialize/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Using real POJOs (without JAXB Annotations) as transfer objects with JAX-RS</title>
+		<link>http://marcusschiesser.de/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/</link>
+		<comments>http://marcusschiesser.de/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/#comments</comments>
+		<pubDate>Thu, 01 Dec 2011 16:06:30 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Java]]></category>
+		<category><![CDATA[annotations]]></category>
+		<category><![CDATA[jax-rs]]></category>
+		<category><![CDATA[jaxb]]></category>
+		<category><![CDATA[jersey]]></category>
+		<category><![CDATA[json]]></category>
+		<category><![CDATA[marshall]]></category>
+		<category><![CDATA[pojo]]></category>
+		<category><![CDATA[rest]]></category>
+		<category><![CDATA[serialize]]></category>
+
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=413</guid>
+		<description><![CDATA[Are you annoyed that you have to annotate your POJOs with @XmlRootElement, so they can be used with JAX-RS? If your using Jersey as JAX-RS implementation your lucky: Just add to the &#60;servlet&#62; tag in your web.xml the following snippet: [crayon-57a01a9bdae17002112955/] After restarting your servlet, your POJOs are marshalled to JSON as a charme. Enjoy!]]></description>
+				<content:encoded><![CDATA[<p>Are you annoyed that you have to annotate your POJOs with <code>@XmlRootElement</code>, so they can be used with JAX-RS? If your using Jersey as JAX-RS implementation your lucky: Just add to the <code>&lt;servlet&gt;</code> tag in your <code>web.xml</code> the following snippet:</p>
+<p></p><pre class="crayon-plain-tag">&lt;init-param&gt;
+	&lt;param-name&gt;com.sun.jersey.api.json.POJOMappingFeature&lt;/param-name&gt;
+	&lt;param-value&gt;true&lt;/param-value&gt;
+&lt;/init-param&gt;</pre><p></p>
+<p>After restarting your servlet, your POJOs are marshalled to JSON as a charme. Enjoy!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://marcusschiesser.de/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

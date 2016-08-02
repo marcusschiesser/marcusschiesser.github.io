@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: 3 Ways to render HTML inside of a ExtJS container</title>
+	<atom:link href="http://marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/feed/" rel="self" type="application/rss+xml" />
+	<link>http://marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/</link>
+	<description>Enterprise Software Development with JavaScript and Java</description>
+	<lastBuildDate>Sat, 14 Nov 2015 03:24:43 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>By: foxmulder900</title>
+		<link>http://marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/comment-page-1/#comment-8268</link>
+		<dc:creator><![CDATA[foxmulder900]]></dc:creator>
+		<pubDate>Thu, 30 May 2013 18:15:52 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=113#comment-8268</guid>
+		<description><![CDATA[Those of you who say ExtJs is overkill must not be developing very large apps. The complex apps that we require would take years of development in plain JS/HTML. Ext cuts our development time by tenfold at least. Not to mention it has a great community of people to help you out.]]></description>
+		<content:encoded><![CDATA[<p>Those of you who say ExtJs is overkill must not be developing very large apps. The complex apps that we require would take years of development in plain JS/HTML. Ext cuts our development time by tenfold at least. Not to mention it has a great community of people to help you out.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Duleep</title>
+		<link>http://marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/comment-page-1/#comment-8264</link>
+		<dc:creator><![CDATA[Duleep]]></dc:creator>
+		<pubDate>Sun, 07 Apr 2013 16:53:46 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=113#comment-8264</guid>
+		<description><![CDATA[im write BoxComponent. for write html in extjs but i don&#039;t know how to configure after init component 
+
+This is my code
+***************************************************************
+ this.terms = new Ext.BoxComponent({
+         id: &#039;register_isv_terms_linkbox&#039;,
+         itemId: &#039;register_isv_terms_link&#039;,
+         autoEl: {
+            id: &#039;register_isv_terms_link_el&#039;,
+            tag: &#039;a&#039;,
+            html: &#039;value&#039;,
+            cls: &#039;ux-link&#039;
+          },
+          listeners: {
+               scope: this,
+               render: function(component){
+                  component.getEl().on(&#039;click&#039;, function(e){
+                       var win=window.open(&#039;value&#039;, &#039;_blank&#039;);
+                        win.focus();
+                  })
+              }
+          }
+      });
+      this.urls.add(this.terms);
+**************************************************************
+
+there is method (updateTab) now i want to change &#039;listeners&#039; and &#039;html&#039; vale inside that method i&#039;m very new to ext js please help to me]]></description>
+		<content:encoded><![CDATA[<p>im write BoxComponent. for write html in extjs but i don&#8217;t know how to configure after init component </p>
+<p>This is my code<br />
+***************************************************************<br />
+ this.terms = new Ext.BoxComponent({<br />
+         id: &#8216;register_isv_terms_linkbox&#8217;,<br />
+         itemId: &#8216;register_isv_terms_link&#8217;,<br />
+         autoEl: {<br />
+            id: &#8216;register_isv_terms_link_el&#8217;,<br />
+            tag: &#8216;a&#8217;,<br />
+            html: &#8216;value&#8217;,<br />
+            cls: &#8216;ux-link&#8217;<br />
+          },<br />
+          listeners: {<br />
+               scope: this,<br />
+               render: function(component){<br />
+                  component.getEl().on(&#8216;click&#8217;, function(e){<br />
+                       var win=window.open(&#8216;value&#8217;, &#8216;_blank&#8217;);<br />
+                        win.focus();<br />
+                  })<br />
+              }<br />
+          }<br />
+      });<br />
+      this.urls.add(this.terms);<br />
+**************************************************************</p>
+<p>there is method (updateTab) now i want to change &#8216;listeners&#8217; and &#8216;html&#8217; vale inside that method i&#8217;m very new to ext js please help to me</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: zentak</title>
+		<link>http://marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/comment-page-1/#comment-8263</link>
+		<dc:creator><![CDATA[zentak]]></dc:creator>
+		<pubDate>Wed, 27 Mar 2013 20:04:21 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=113#comment-8263</guid>
+		<description><![CDATA[I have to agree with @J on this one.  Even with tons of rows up on rows of grid data, plain-old HTML/CSS/JavaScript can handle it.
+
+Agree that Ext is, in fact, overkill.  It wants you to do everything in JS (really, its little more than a giant JSON configuration) which is bad.  You wouldn&#039;t build a house with only a hammer would you?  Then why build an app with only one tool.
+
+Tools that &quot;do it all&quot; do it very poorly.
+
+Do yourself a favor and learn HTML/CSS/JavaScript.  Its not hard.  Sure, there are browser differences to contend with but those will always be there and they&#039;re a problem in Ext too.]]></description>
+		<content:encoded><![CDATA[<p>I have to agree with @J on this one.  Even with tons of rows up on rows of grid data, plain-old HTML/CSS/JavaScript can handle it.</p>
+<p>Agree that Ext is, in fact, overkill.  It wants you to do everything in JS (really, its little more than a giant JSON configuration) which is bad.  You wouldn&#8217;t build a house with only a hammer would you?  Then why build an app with only one tool.</p>
+<p>Tools that &#8220;do it all&#8221; do it very poorly.</p>
+<p>Do yourself a favor and learn HTML/CSS/JavaScript.  Its not hard.  Sure, there are browser differences to contend with but those will always be there and they&#8217;re a problem in Ext too.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: bentong</title>
+		<link>http://marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/comment-page-1/#comment-8245</link>
+		<dc:creator><![CDATA[bentong]]></dc:creator>
+		<pubDate>Tue, 24 Jul 2012 05:36:00 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=113#comment-8245</guid>
+		<description><![CDATA[how can add listeners to those items?]]></description>
+		<content:encoded><![CDATA[<p>how can add listeners to those items?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: dinesh roshan</title>
+		<link>http://marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/comment-page-1/#comment-8225</link>
+		<dc:creator><![CDATA[dinesh roshan]]></dc:creator>
+		<pubDate>Sun, 26 Feb 2012 14:11:23 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=113#comment-8225</guid>
+		<description><![CDATA[how to pass parameters in extjs html &#039;box&#039; type]]></description>
+		<content:encoded><![CDATA[<p>how to pass parameters in extjs html &#8216;box&#8217; type</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: J</title>
+		<link>http://marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/comment-page-1/#comment-8123</link>
+		<dc:creator><![CDATA[J]]></dc:creator>
+		<pubDate>Mon, 11 Jul 2011 17:08:15 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=113#comment-8123</guid>
+		<description><![CDATA[I have an alternative, how about pure HTML5 with CSS and Javascript for wiring up user interactions?
+
+Ext stuff is overkill, and satisfies business sectors that deal with tons and rows upon rows of grid based data.....boring beyond comprehension.]]></description>
+		<content:encoded><![CDATA[<p>I have an alternative, how about pure HTML5 with CSS and Javascript for wiring up user interactions?</p>
+<p>Ext stuff is overkill, and satisfies business sectors that deal with tons and rows upon rows of grid based data&#8230;..boring beyond comprehension.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: FlashM</title>
+		<link>http://marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/comment-page-1/#comment-8009</link>
+		<dc:creator><![CDATA[FlashM]]></dc:creator>
+		<pubDate>Tue, 05 Apr 2011 12:10:07 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=113#comment-8009</guid>
+		<description><![CDATA[Wow Marcus,
+
+This really is something... Thanks for sharing... :-)]]></description>
+		<content:encoded><![CDATA[<p>Wow Marcus,</p>
+<p>This really is something&#8230; Thanks for sharing&#8230; <img src="http://marcusschiesser.de/wp-includes/images/smilies/simple-smile.png" alt=":-)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jason</title>
+		<link>http://marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/comment-page-1/#comment-7435</link>
+		<dc:creator><![CDATA[Jason]]></dc:creator>
+		<pubDate>Wed, 09 Feb 2011 03:51:15 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=113#comment-7435</guid>
+		<description><![CDATA[Thanks, its good to know different approaches.
+
+Also, lol @nktwrk&#039;s comment about @tom!]]></description>
+		<content:encoded><![CDATA[<p>Thanks, its good to know different approaches.</p>
+<p>Also, lol @nktwrk&#8217;s comment about @tom!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Luiz Prado</title>
+		<link>http://marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/comment-page-1/#comment-6792</link>
+		<dc:creator><![CDATA[Luiz Prado]]></dc:creator>
+		<pubDate>Fri, 19 Nov 2010 12:05:12 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=113#comment-6792</guid>
+		<description><![CDATA[Nice work Marcus Schiesser!
+
+I found your blog searching  for something about &quot;window.frames[&#039;myIframe&#039;].document.getElementById(&#039;elementName&#039;).value&quot;. 
+I have it inside a BoxComponent:
+autoEl: {   tag: &#039;div&#039;,      html: &quot;&quot;	    }
+
+It works fine, but I&#039;d like know if exists another way in Extjs. Does it?]]></description>
+		<content:encoded><![CDATA[<p>Nice work Marcus Schiesser!</p>
+<p>I found your blog searching  for something about &#8220;window.frames[&#8216;myIframe&#8217;].document.getElementById(&#8216;elementName&#8217;).value&#8221;.<br />
+I have it inside a BoxComponent:<br />
+autoEl: {   tag: &#8216;div&#8217;,      html: &#8220;&#8221;	    }</p>
+<p>It works fine, but I&#8217;d like know if exists another way in Extjs. Does it?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mital</title>
+		<link>http://marcusschiesser.de/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/comment-page-1/#comment-6689</link>
+		<dc:creator><![CDATA[Mital]]></dc:creator>
+		<pubDate>Thu, 11 Nov 2010 16:25:24 +0000</pubDate>
+		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=113#comment-6689</guid>
+		<description><![CDATA[html:  works fine, also use autoEl: {} to insert additional attributes of an html. 
+
+I tailored one of my solution with this. Thx.]]></description>
+		<content:encoded><![CDATA[<p>html:  works fine, also use autoEl: {} to insert additional attributes of an html. </p>
+<p>I tailored one of my solution with this. Thx.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>
