@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'MonacoRegular';
-    src: url('http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.eot');
-    src: url('http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.eot#iefix') format('embedded-opentype'),
-         url('http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.woff') format('woff'),
-         url('http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.ttf') format('truetype'),
-         url('http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.svg#MonacoRegular') format('svg');
+    src: url('/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.eot');
+    src: url('/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.eot#iefix') format('embedded-opentype'),
+         url('/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.woff') format('woff'),
+         url('/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.ttf') format('truetype'),
+         url('/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.svg#MonacoRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }

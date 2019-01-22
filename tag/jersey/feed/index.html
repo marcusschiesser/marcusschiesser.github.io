@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Marcus Schiesser &#187; jersey</title>
-	<atom:link href="http://marcusschiesser.de/tag/jersey/feed/" rel="self" type="application/rss+xml" />
-	<link>http://marcusschiesser.de</link>
+	<atom:link href="/tag/jersey/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description>Enterprise Software Development with JavaScript and Java</description>
 	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -19,8 +19,8 @@
 	<generator>http://wordpress.org/?v=4.3.1</generator>
 	<item>
 		<title>Using Google App Engine as Backend for Android</title>
-		<link>http://marcusschiesser.de/2011/12/02/using-google-app-engine-as-backend-for-android/</link>
-		<comments>http://marcusschiesser.de/2011/12/02/using-google-app-engine-as-backend-for-android/#comments</comments>
+		<link>/2011/12/02/using-google-app-engine-as-backend-for-android/</link>
+		<comments>/2011/12/02/using-google-app-engine-as-backend-for-android/#comments</comments>
 		<pubDate>Fri, 02 Dec 2011 17:40:57 +0000</pubDate>
 		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
 				<category><![CDATA[Android]]></category>
@@ -29,15 +29,15 @@
 		<category><![CDATA[backend]]></category>
 		<category><![CDATA[jersey]]></category>
 
-		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=436</guid>
-		<description><![CDATA[If you&#8217;re looking for a way to create a backend for your Android application, Google App Engine looks like the perfect choice: You can use Java as you can do for Android and you don&#8217;t need to think too much about hosting, as it is all stored in the cloud. Another benefit is that you &#8230; <a href="http://marcusschiesser.de/2011/12/02/using-google-app-engine-as-backend-for-android/" class="more-link">Continue reading <span class="screen-reader-text">Using Google App Engine as Backend for Android</span></a>]]></description>
+		<guid isPermaLink="false">/?p=436</guid>
+		<description><![CDATA[If you&#8217;re looking for a way to create a backend for your Android application, Google App Engine looks like the perfect choice: You can use Java as you can do for Android and you don&#8217;t need to think too much about hosting, as it is all stored in the cloud. Another benefit is that you &#8230; <a href="/2011/12/02/using-google-app-engine-as-backend-for-android/" class="more-link">Continue reading <span class="screen-reader-text">Using Google App Engine as Backend for Android</span></a>]]></description>
 				<content:encoded><![CDATA[<p>If you&#8217;re looking for a way to create a backend for your Android application, Google App Engine looks like the perfect choice: You can use Java as you can do for Android and you don&#8217;t need to think too much about hosting, as it is all stored in the cloud. </p>
 <p>Another benefit is that you can reuse your <a href="http://java.sun.com/blueprints/patterns/TransferObject.html">transfer objects</a> on the client and on server side. But as it is often there are some problems doing this in practice. So you don&#8217;t have the same ones I had, I am glad to share my experiences with you.</p>
 <p>So first question is what libraries are to use for the client/server communication. At start I tried <a href="http://www.restlet.org">Restlet 2.0</a>. Looked like a great choice as there are special editions for App Engine and for Android available. In practice it is not very useful as the libraries are to big for Android and I also very much disliked that fully serialized java objects are transfered.</p>
 <p>Best approach I found so far is to use <a href="http://jersey.java.net/">Jersey 1.6</a>: It is easy to use and implements the JAX-RS (JSR 311) standard. To set it up on the App Engine, please consult these blog posts from me: <a href="/2011/12/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/" title="Using real POJOs (without JAXB Annotations) as transfer objects with JAX-RS">Using real POJOs (without JAXB Annotations) as transfer objects with JAX-RS</a> and <a href="/2011/12/storing-large-images-restful-in-the-cloud-using-google-app-engine/" title="Storing large images RESTful in the cloud using Google App Engine">Storing large images RESTful in the cloud using Google App Engine</a>.</p>
 <p>Ok, so far about the server side. To keep things small and simple on the Android side, I mainly created the following wrapper class for the <code>HttpClient</code> to handle the HTTP requests:</p>
 <div class="oembed-gist"><script src="https://gist.github.com/marcusschiesser/5474307.js"></script><noscript>View the code on <a href="https://gist.github.com/marcusschiesser/5474307">Gist</a>.</noscript></div>
-<p>This implementation is far from perfect, especially exception handling and passing parameters need to be improved, but it works so far <img src="http://marcusschiesser.de/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>This implementation is far from perfect, especially exception handling and passing parameters need to be improved, but it works so far <img src="/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 <p>Using this class it is easy to store a file using the <code>FileServerResource</code> from my former blog post. Just call:</p>
 <p></p><pre class="crayon-plain-tag">File imageFile = new File(new URI(myimgage.getImageURL()));
 String url = HttpUtils.getInstance().doPutFile(&quot;file/store&quot;, imageFile);</pre><p></p>
@@ -45,13 +45,13 @@ String url = HttpUtils.getInstance().doPutFile(&quot;file/store&quot;, imageFile
 Jackson is therefore the only additional library that you need on the Android side which keeps the executable small. If you use the same version of Jackson on the client side as on the server side you&#8217;re also ensured that the (un-)marshalling process of your transfer objects works flawlessly on both sides.</p>
 <p>Hope you liked this approach &#8211; feel free to discuss here further ideas.</p>
 ]]></content:encoded>
-			<wfw:commentRss>http://marcusschiesser.de/2011/12/02/using-google-app-engine-as-backend-for-android/feed/</wfw:commentRss>
+			<wfw:commentRss>/2011/12/02/using-google-app-engine-as-backend-for-android/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 		<item>
 		<title>Using real POJOs (without JAXB Annotations) as transfer objects with JAX-RS</title>
-		<link>http://marcusschiesser.de/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/</link>
-		<comments>http://marcusschiesser.de/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/#comments</comments>
+		<link>/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/</link>
+		<comments>/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/#comments</comments>
 		<pubDate>Thu, 01 Dec 2011 16:06:30 +0000</pubDate>
 		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
 				<category><![CDATA[Java]]></category>
@@ -65,7 +65,7 @@ Jackson is therefore the only additional library that you need on the Android si
 		<category><![CDATA[rest]]></category>
 		<category><![CDATA[serialize]]></category>
 
-		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=413</guid>
+		<guid isPermaLink="false">/?p=413</guid>
 		<description><![CDATA[Are you annoyed that you have to annotate your POJOs with @XmlRootElement, so they can be used with JAX-RS? If your using Jersey as JAX-RS implementation your lucky: Just add to the &#60;servlet&#62; tag in your web.xml the following snippet: [crayon-57a01925dacee280949248/] After restarting your servlet, your POJOs are marshalled to JSON as a charme. Enjoy!]]></description>
 				<content:encoded><![CDATA[<p>Are you annoyed that you have to annotate your POJOs with <code>@XmlRootElement</code>, so they can be used with JAX-RS? If your using Jersey as JAX-RS implementation your lucky: Just add to the <code>&lt;servlet&gt;</code> tag in your <code>web.xml</code> the following snippet:</p>
 <p></p><pre class="crayon-plain-tag">&lt;init-param&gt;
@@ -74,13 +74,13 @@ Jackson is therefore the only additional library that you need on the Android si
 &lt;/init-param&gt;</pre><p></p>
 <p>After restarting your servlet, your POJOs are marshalled to JSON as a charme. Enjoy!</p>
 ]]></content:encoded>
-			<wfw:commentRss>http://marcusschiesser.de/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/feed/</wfw:commentRss>
+			<wfw:commentRss>/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 		<item>
 		<title>Openbahn-API – Bahn-Webseite als Webservice</title>
-		<link>http://marcusschiesser.de/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/</link>
-		<comments>http://marcusschiesser.de/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/#comments</comments>
+		<link>/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/</link>
+		<comments>/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/#comments</comments>
 		<pubDate>Wed, 22 Jun 2011 20:13:17 +0000</pubDate>
 		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
 				<category><![CDATA[Articles]]></category>
@@ -94,8 +94,8 @@ Jackson is therefore the only additional library that you need on the Android si
 		<category><![CDATA[ticket]]></category>
 		<category><![CDATA[webservice]]></category>
 
-		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=386</guid>
-		<description><![CDATA[As this is only of interest for German users &#8211; this article is in German only. It&#8217;s about a new project of mine. Sorry folks. Ich bin gerade dabei eine Android-App zu entwickeln, mit der es möglich ist Fahrkarten für Bahn-Pendler einfacher zu buchen. Bei der Entwicklung ist mir aufgefallen, dass die Bahn leider keine &#8230; <a href="http://marcusschiesser.de/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/" class="more-link">Continue reading <span class="screen-reader-text">Openbahn-API – Bahn-Webseite als Webservice</span></a>]]></description>
+		<guid isPermaLink="false">/?p=386</guid>
+		<description><![CDATA[As this is only of interest for German users &#8211; this article is in German only. It&#8217;s about a new project of mine. Sorry folks. Ich bin gerade dabei eine Android-App zu entwickeln, mit der es möglich ist Fahrkarten für Bahn-Pendler einfacher zu buchen. Bei der Entwicklung ist mir aufgefallen, dass die Bahn leider keine &#8230; <a href="/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/" class="more-link">Continue reading <span class="screen-reader-text">Openbahn-API – Bahn-Webseite als Webservice</span></a>]]></description>
 				<content:encoded><![CDATA[<p>As this is only of interest for German users &#8211; this article is in German only. It&#8217;s about a new project of mine. Sorry folks.</p>
 <p>Ich bin gerade dabei eine Android-App zu entwickeln, mit der es möglich ist Fahrkarten für Bahn-Pendler einfacher zu buchen.<br />
 Bei der Entwicklung ist mir aufgefallen, dass die Bahn leider keine Webservices nach außen zur Verfügung stellt – die Webseite <a href="http://www.bahn.de">www.bahn.de</a> ist zusammen mit der mobilen Variante <a href="http://m.bahn.de">m.bahn.de</a> die einzige Schnittstelle.</p>
@@ -105,7 +105,7 @@ Bei der Entwicklung ist mir aufgefallen, dass die Bahn leider keine Webservices 
 <p>Um die Qualität des Parsers zu sichern, wird der Code komplett als GPL auf Google Code unter <a href="http://code.google.com/p/openbahn-api">http://code.google.com/p/openbahn-api</a> zur Verfügung gestellt – jeder Entwickler ist herzlich dazu eingeladen Verbesserungen und Erweiterungen vorzunehmen. Das Hosting erfolgt über die Google AppEngine. Die Ergebnisse der Anfragen werden über einen Cache zwischengespeichert, so dass die Kommunikation mit der Bahn-Webseite minimiert wird und für vorhandene Ergebnisse auch funktioniert, wenn diese offline ist.</p>
 <p>Ich bin gespannt auf eure Meinung und wünsche euch viel Spaß mit der neuen API.</p>
 ]]></content:encoded>
-			<wfw:commentRss>http://marcusschiesser.de/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/feed/</wfw:commentRss>
+			<wfw:commentRss>/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/feed/</wfw:commentRss>
 		<slash:comments>13</slash:comments>
 		</item>
 	</channel>

@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="http://www.marcusschiesser.de/xmlrpc.php">
+	<link rel="pingback" href="/xmlrpc.php">
 	<!--[if lt IE 9]>
-	<script src="http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/js/html5.js"></script>
+	<script src="/wp-content/themes/twentyfifteen/js/html5.js"></script>
 	<![endif]-->
 	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
 <title>Getting values from a form containing combos in Ext | Marcus Schiesser</title>
@@ -14,13 +14,13 @@
 <!-- All in One SEO Pack 2.2.7.1 by Michael Torbert of Semper Fi Web Design[502,579] -->
 <meta name="description"  content="Actually it is pretty easy to get the values of all fields of a form in Ext: You just have to call the getValues() method of the BasicForm. The problem with" />
 
-<link rel="canonical" href="http://www.marcusschiesser.de/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/" />
+<link rel="canonical" href="/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/" />
 <!-- /all in one seo pack -->
-<link rel="alternate" type="application/rss+xml" title="Marcus Schiesser &raquo; Feed" href="http://www.marcusschiesser.de/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Marcus Schiesser &raquo; Comments Feed" href="http://www.marcusschiesser.de/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Marcus Schiesser &raquo; Getting values from a form containing combos in Ext Comments Feed" href="http://www.marcusschiesser.de/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Marcus Schiesser &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Marcus Schiesser &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Marcus Schiesser &raquo; Getting values from a form containing combos in Ext Comments Feed" href="/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/feed/" />
 		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.marcusschiesser.de\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
 			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
 		</script>
 		<style type="text/css">
@@ -37,33 +37,33 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='stylesheet' id='crayon-css'  href='http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.7.1' type='text/css' media='all' />
-<link rel='stylesheet' id='crayon-theme-classic-css'  href='http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/themes/classic/classic.css?ver=2.7.1' type='text/css' media='all' />
-<link rel='stylesheet' id='crayon-font-monaco-css'  href='http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco.css?ver=2.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-css'  href='/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-classic-css'  href='/wp-content/plugins/crayon-syntax-highlighter/themes/classic/classic.css?ver=2.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-monaco-css'  href='/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco.css?ver=2.7.1' type='text/css' media='all' />
 <link rel='stylesheet' id='twentyfifteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='genericons-css'  href='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=3.2' type='text/css' media='all' />
-<link rel='stylesheet' id='twentyfifteen-style-css'  href='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/style.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css'  href='/wp-content/themes/twentyfifteen/style.css?ver=4.3.1' type='text/css' media='all' />
 <!--[if lt IE 9]>
-<link rel='stylesheet' id='twentyfifteen-ie-css'  href='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010' type='text/css' media='all' />
 <![endif]-->
 <!--[if lt IE 8]>
-<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010' type='text/css' media='all' />
 <![endif]-->
-<script type='text/javascript' src='http://www.marcusschiesser.de/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
-<script type='text/javascript' src='http://www.marcusschiesser.de/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var CrayonSyntaxSettings = {"version":"2.7.1","is_admin":"0","ajaxurl":"http:\/\/www.marcusschiesser.de\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxSettings = {"version":"2.7.1","is_admin":"0","ajaxurl":"\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
 var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.7.1'></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.marcusschiesser.de/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.marcusschiesser.de/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Country selector with flag images in ExtJS' href='http://www.marcusschiesser.de/2009/04/01/country-selector-with-flag-images-in-extjs/' />
-<link rel='next' title='Component for selecting multiple items in Ext' href='http://www.marcusschiesser.de/2009/04/08/component-for-selecting-multiple-items-in-ext/' />
+<script type='text/javascript' src='/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.7.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" />
+<link rel='prev' title='Country selector with flag images in ExtJS' href='/2009/04/01/country-selector-with-flag-images-in-extjs/' />
+<link rel='next' title='Component for selecting multiple items in Ext' href='/2009/04/08/component-for-selecting-multiple-items-in-ext/' />
 <meta name="generator" content="WordPress 4.3.1" />
-<link rel='shortlink' href='http://www.marcusschiesser.de/?p=219' />
+<link rel='shortlink' href='/?p=219' />
 		<style>
 		.gist table {
 			margin-bottom: 0 !important;
@@ -99,7 +99,7 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 	<div id="sidebar" class="sidebar">
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding">
-										<p class="site-title"><a href="http://www.marcusschiesser.de/" rel="home">Marcus Schiesser</a></p>
+										<p class="site-title"><a href="/" rel="home">Marcus Schiesser</a></p>
 											<p class="site-description">Enterprise Software Development with JavaScript and Java</p>
 									<button class="secondary-toggle">Menu and widgets</button>
 			</div><!-- .site-branding -->
@@ -110,51 +110,51 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 		
 		
 					<div id="widget-area" class="widget-area" role="complementary">
-				<aside id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widget-title">Topics</h2><div class="tagcloud"><a href='http://www.marcusschiesser.de/tag/actionscript/' class='tag-link-56' title='2 topics' style='font-size: 8pt;'>actionscript</a>
-<a href='http://www.marcusschiesser.de/tag/axis2/' class='tag-link-97' title='2 topics' style='font-size: 8pt;'>axis2</a>
-<a href='http://www.marcusschiesser.de/tag/backend/' class='tag-link-198' title='2 topics' style='font-size: 8pt;'>backend</a>
-<a href='http://www.marcusschiesser.de/tag/bewerbung/' class='tag-link-38' title='2 topics' style='font-size: 8pt;'>bewerbung</a>
-<a href='http://www.marcusschiesser.de/tag/button/' class='tag-link-155' title='2 topics' style='font-size: 8pt;'>button</a>
-<a href='http://www.marcusschiesser.de/tag/combo/' class='tag-link-126' title='3 topics' style='font-size: 10.333333333333pt;'>combo</a>
-<a href='http://www.marcusschiesser.de/tag/component/' class='tag-link-248' title='3 topics' style='font-size: 10.333333333333pt;'>Component</a>
-<a href='http://www.marcusschiesser.de/tag/country/' class='tag-link-129' title='2 topics' style='font-size: 8pt;'>country</a>
-<a href='http://www.marcusschiesser.de/tag/effekt/' class='tag-link-15' title='2 topics' style='font-size: 8pt;'>Effekt</a>
-<a href='http://www.marcusschiesser.de/tag/error/' class='tag-link-107' title='2 topics' style='font-size: 8pt;'>error</a>
-<a href='http://www.marcusschiesser.de/tag/ext/' class='tag-link-115' title='7 topics' style='font-size: 16.166666666667pt;'>ext</a>
-<a href='http://www.marcusschiesser.de/tag/extjs/' class='tag-link-249' title='15 topics' style='font-size: 22pt;'>ExtJS</a>
-<a href='http://www.marcusschiesser.de/tag/facebook/' class='tag-link-23' title='2 topics' style='font-size: 8pt;'>facebook</a>
-<a href='http://www.marcusschiesser.de/tag/feed/' class='tag-link-25' title='2 topics' style='font-size: 8pt;'>feed</a>
-<a href='http://www.marcusschiesser.de/tag/field/' class='tag-link-137' title='3 topics' style='font-size: 10.333333333333pt;'>field</a>
-<a href='http://www.marcusschiesser.de/tag/flash/' class='tag-link-71' title='2 topics' style='font-size: 8pt;'>flash</a>
-<a href='http://www.marcusschiesser.de/tag/flex/' class='tag-link-14' title='15 topics' style='font-size: 22pt;'>Flex</a>
-<a href='http://www.marcusschiesser.de/tag/form/' class='tag-link-128' title='2 topics' style='font-size: 8pt;'>form</a>
-<a href='http://www.marcusschiesser.de/tag/spas/' class='tag-link-244' title='4 topics' style='font-size: 12.277777777778pt;'>Fun</a>
-<a href='http://www.marcusschiesser.de/tag/google/' class='tag-link-69' title='2 topics' style='font-size: 8pt;'>google</a>
-<a href='http://www.marcusschiesser.de/tag/grid/' class='tag-link-113' title='3 topics' style='font-size: 10.333333333333pt;'>grid</a>
-<a href='http://www.marcusschiesser.de/tag/handler/' class='tag-link-58' title='2 topics' style='font-size: 8pt;'>handler</a>
-<a href='http://www.marcusschiesser.de/tag/html/' class='tag-link-94' title='2 topics' style='font-size: 8pt;'>html</a>
-<a href='http://www.marcusschiesser.de/tag/ideen/' class='tag-link-19' title='3 topics' style='font-size: 10.333333333333pt;'>Ideen</a>
-<a href='http://www.marcusschiesser.de/tag/info/' class='tag-link-78' title='2 topics' style='font-size: 8pt;'>info</a>
-<a href='http://www.marcusschiesser.de/tag/java/' class='tag-link-250' title='6 topics' style='font-size: 15.194444444444pt;'>Java</a>
-<a href='http://www.marcusschiesser.de/tag/javascript/' class='tag-link-101' title='4 topics' style='font-size: 12.277777777778pt;'>javascript</a>
-<a href='http://www.marcusschiesser.de/tag/jboss-2/' class='tag-link-186' title='2 topics' style='font-size: 8pt;'>jboss</a>
-<a href='http://www.marcusschiesser.de/tag/jersey/' class='tag-link-175' title='3 topics' style='font-size: 10.333333333333pt;'>jersey</a>
-<a href='http://www.marcusschiesser.de/tag/job/' class='tag-link-39' title='2 topics' style='font-size: 8pt;'>job</a>
-<a href='http://www.marcusschiesser.de/tag/json/' class='tag-link-72' title='3 topics' style='font-size: 10.333333333333pt;'>json</a>
-<a href='http://www.marcusschiesser.de/tag/map/' class='tag-link-70' title='3 topics' style='font-size: 10.333333333333pt;'>map</a>
-<a href='http://www.marcusschiesser.de/tag/mashup/' class='tag-link-11' title='5 topics' style='font-size: 13.833333333333pt;'>Mashup</a>
-<a href='http://www.marcusschiesser.de/tag/message/' class='tag-link-103' title='2 topics' style='font-size: 8pt;'>message</a>
-<a href='http://www.marcusschiesser.de/tag/sonstiges/' class='tag-link-243' title='3 topics' style='font-size: 10.333333333333pt;'>Other</a>
-<a href='http://www.marcusschiesser.de/tag/pictures/' class='tag-link-66' title='2 topics' style='font-size: 8pt;'>pictures</a>
-<a href='http://www.marcusschiesser.de/tag/pojo/' class='tag-link-99' title='2 topics' style='font-size: 8pt;'>pojo</a>
-<a href='http://www.marcusschiesser.de/tag/presse/' class='tag-link-8' title='2 topics' style='font-size: 8pt;'>Presse</a>
-<a href='http://www.marcusschiesser.de/tag/programmierung/' class='tag-link-4' title='3 topics' style='font-size: 10.333333333333pt;'>Programmierung</a>
-<a href='http://www.marcusschiesser.de/tag/proxy/' class='tag-link-118' title='2 topics' style='font-size: 8pt;'>proxy</a>
-<a href='http://www.marcusschiesser.de/tag/rails/' class='tag-link-247' title='2 topics' style='font-size: 8pt;'>Rails</a>
-<a href='http://www.marcusschiesser.de/tag/rest/' class='tag-link-180' title='2 topics' style='font-size: 8pt;'>rest</a>
-<a href='http://www.marcusschiesser.de/tag/selector/' class='tag-link-130' title='4 topics' style='font-size: 12.277777777778pt;'>selector</a>
-<a href='http://www.marcusschiesser.de/tag/web-20/' class='tag-link-6' title='4 topics' style='font-size: 12.277777777778pt;'>Web 2.0</a>
-<a href='http://www.marcusschiesser.de/tag/wordpress/' class='tag-link-246' title='2 topics' style='font-size: 8pt;'>Wordpress</a></div>
+				<aside id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widget-title">Topics</h2><div class="tagcloud"><a href='/tag/actionscript/' class='tag-link-56' title='2 topics' style='font-size: 8pt;'>actionscript</a>
+<a href='/tag/axis2/' class='tag-link-97' title='2 topics' style='font-size: 8pt;'>axis2</a>
+<a href='/tag/backend/' class='tag-link-198' title='2 topics' style='font-size: 8pt;'>backend</a>
+<a href='/tag/bewerbung/' class='tag-link-38' title='2 topics' style='font-size: 8pt;'>bewerbung</a>
+<a href='/tag/button/' class='tag-link-155' title='2 topics' style='font-size: 8pt;'>button</a>
+<a href='/tag/combo/' class='tag-link-126' title='3 topics' style='font-size: 10.333333333333pt;'>combo</a>
+<a href='/tag/component/' class='tag-link-248' title='3 topics' style='font-size: 10.333333333333pt;'>Component</a>
+<a href='/tag/country/' class='tag-link-129' title='2 topics' style='font-size: 8pt;'>country</a>
+<a href='/tag/effekt/' class='tag-link-15' title='2 topics' style='font-size: 8pt;'>Effekt</a>
+<a href='/tag/error/' class='tag-link-107' title='2 topics' style='font-size: 8pt;'>error</a>
+<a href='/tag/ext/' class='tag-link-115' title='7 topics' style='font-size: 16.166666666667pt;'>ext</a>
+<a href='/tag/extjs/' class='tag-link-249' title='15 topics' style='font-size: 22pt;'>ExtJS</a>
+<a href='/tag/facebook/' class='tag-link-23' title='2 topics' style='font-size: 8pt;'>facebook</a>
+<a href='/tag/feed/' class='tag-link-25' title='2 topics' style='font-size: 8pt;'>feed</a>
+<a href='/tag/field/' class='tag-link-137' title='3 topics' style='font-size: 10.333333333333pt;'>field</a>
+<a href='/tag/flash/' class='tag-link-71' title='2 topics' style='font-size: 8pt;'>flash</a>
+<a href='/tag/flex/' class='tag-link-14' title='15 topics' style='font-size: 22pt;'>Flex</a>
+<a href='/tag/form/' class='tag-link-128' title='2 topics' style='font-size: 8pt;'>form</a>
+<a href='/tag/spas/' class='tag-link-244' title='4 topics' style='font-size: 12.277777777778pt;'>Fun</a>
+<a href='/tag/google/' class='tag-link-69' title='2 topics' style='font-size: 8pt;'>google</a>
+<a href='/tag/grid/' class='tag-link-113' title='3 topics' style='font-size: 10.333333333333pt;'>grid</a>
+<a href='/tag/handler/' class='tag-link-58' title='2 topics' style='font-size: 8pt;'>handler</a>
+<a href='/tag/html/' class='tag-link-94' title='2 topics' style='font-size: 8pt;'>html</a>
+<a href='/tag/ideen/' class='tag-link-19' title='3 topics' style='font-size: 10.333333333333pt;'>Ideen</a>
+<a href='/tag/info/' class='tag-link-78' title='2 topics' style='font-size: 8pt;'>info</a>
+<a href='/tag/java/' class='tag-link-250' title='6 topics' style='font-size: 15.194444444444pt;'>Java</a>
+<a href='/tag/javascript/' class='tag-link-101' title='4 topics' style='font-size: 12.277777777778pt;'>javascript</a>
+<a href='/tag/jboss-2/' class='tag-link-186' title='2 topics' style='font-size: 8pt;'>jboss</a>
+<a href='/tag/jersey/' class='tag-link-175' title='3 topics' style='font-size: 10.333333333333pt;'>jersey</a>
+<a href='/tag/job/' class='tag-link-39' title='2 topics' style='font-size: 8pt;'>job</a>
+<a href='/tag/json/' class='tag-link-72' title='3 topics' style='font-size: 10.333333333333pt;'>json</a>
+<a href='/tag/map/' class='tag-link-70' title='3 topics' style='font-size: 10.333333333333pt;'>map</a>
+<a href='/tag/mashup/' class='tag-link-11' title='5 topics' style='font-size: 13.833333333333pt;'>Mashup</a>
+<a href='/tag/message/' class='tag-link-103' title='2 topics' style='font-size: 8pt;'>message</a>
+<a href='/tag/sonstiges/' class='tag-link-243' title='3 topics' style='font-size: 10.333333333333pt;'>Other</a>
+<a href='/tag/pictures/' class='tag-link-66' title='2 topics' style='font-size: 8pt;'>pictures</a>
+<a href='/tag/pojo/' class='tag-link-99' title='2 topics' style='font-size: 8pt;'>pojo</a>
+<a href='/tag/presse/' class='tag-link-8' title='2 topics' style='font-size: 8pt;'>Presse</a>
+<a href='/tag/programmierung/' class='tag-link-4' title='3 topics' style='font-size: 10.333333333333pt;'>Programmierung</a>
+<a href='/tag/proxy/' class='tag-link-118' title='2 topics' style='font-size: 8pt;'>proxy</a>
+<a href='/tag/rails/' class='tag-link-247' title='2 topics' style='font-size: 8pt;'>Rails</a>
+<a href='/tag/rest/' class='tag-link-180' title='2 topics' style='font-size: 8pt;'>rest</a>
+<a href='/tag/selector/' class='tag-link-130' title='4 topics' style='font-size: 12.277777777778pt;'>selector</a>
+<a href='/tag/web-20/' class='tag-link-6' title='4 topics' style='font-size: 12.277777777778pt;'>Web 2.0</a>
+<a href='/tag/wordpress/' class='tag-link-246' title='2 topics' style='font-size: 8pt;'>Wordpress</a></div>
 </aside><aside id="linkcat-2" class="widget widget_links"><h2 class="widget-title">Blogroll</h2>
 	<ul class='xoxo blogroll'>
 <li><a href="http://pdf.venedo.com/" rel="friend met" title="A blog about PDFs without barriers">Accessible PDFs</a></li>
@@ -244,7 +244,7 @@ fields.forEach(function(field){
 
 	
 	<footer class="entry-footer">
-		<span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="http://www.marcusschiesser.de/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/" rel="bookmark"><time class="entry-date published updated" datetime="2009-04-07T16:54:45+00:00">April 7, 2009</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Author </span><a class="url fn n" href="http://www.marcusschiesser.de/author/admin/">Marcus Schiesser</a></span></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="http://www.marcusschiesser.de/category/technologie/extjs/" rel="category tag">ExtJS</a></span><span class="tags-links"><span class="screen-reader-text">Tags </span><a href="http://www.marcusschiesser.de/tag/combo/" rel="tag">combo</a>, <a href="http://www.marcusschiesser.de/tag/ext/" rel="tag">ext</a>, <a href="http://www.marcusschiesser.de/tag/form/" rel="tag">form</a>, <a href="http://www.marcusschiesser.de/tag/values/" rel="tag">values</a></span>			</footer><!-- .entry-footer -->
+		<span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/" rel="bookmark"><time class="entry-date published updated" datetime="2009-04-07T16:54:45+00:00">April 7, 2009</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Author </span><a class="url fn n" href="/author/admin/">Marcus Schiesser</a></span></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="/category/technologie/extjs/" rel="category tag">ExtJS</a></span><span class="tags-links"><span class="screen-reader-text">Tags </span><a href="/tag/combo/" rel="tag">combo</a>, <a href="/tag/ext/" rel="tag">ext</a>, <a href="/tag/form/" rel="tag">form</a>, <a href="/tag/values/" rel="tag">values</a></span>			</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->
 
@@ -287,7 +287,7 @@ fields.forEach(function(field){
 
 	<nav class="navigation post-navigation" role="navigation">
 		<h2 class="screen-reader-text">Post navigation</h2>
-		<div class="nav-links"><div class="nav-previous"><a href="http://www.marcusschiesser.de/2009/04/01/country-selector-with-flag-images-in-extjs/" rel="prev"><span class="meta-nav" aria-hidden="true">Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">Country selector with flag images in ExtJS</span></a></div><div class="nav-next"><a href="http://www.marcusschiesser.de/2009/04/08/component-for-selecting-multiple-items-in-ext/" rel="next"><span class="meta-nav" aria-hidden="true">Next</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">Component for selecting multiple items in Ext</span></a></div></div>
+		<div class="nav-links"><div class="nav-previous"><a href="/2009/04/01/country-selector-with-flag-images-in-extjs/" rel="prev"><span class="meta-nav" aria-hidden="true">Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">Country selector with flag images in ExtJS</span></a></div><div class="nav-next"><a href="/2009/04/08/component-for-selecting-multiple-items-in-ext/" rel="next"><span class="meta-nav" aria-hidden="true">Next</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">Component for selecting multiple items in Ext</span></a></div></div>
 	</nav>
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
@@ -303,25 +303,25 @@ fields.forEach(function(field){
 
 </div><!-- .site -->
 
-<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js?ver=20141010'></script>
+<script type='text/javascript' src='/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js?ver=20141010'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/themes/twentyfifteen/js/functions.js?ver=20150330'></script>
+<script type='text/javascript' src='/wp-content/themes/twentyfifteen/js/functions.js?ver=20150330'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var embedVars = {"disqusConfig":{"platform":"wordpress@4.3.1","language":""},"disqusIdentifier":"219 http:\/\/www.marcusschiesser.de\/?p=219","disqusShortname":"marcusschiesser","disqusTitle":"Getting values from a form containing combos in Ext","disqusUrl":"http:\/\/www.marcusschiesser.de\/2009\/04\/07\/getting-values-from-a-form-containing-combos-in-ext\/","options":{"manualSync":false},"postId":"219"};
+var embedVars = {"disqusConfig":{"platform":"wordpress@4.3.1","language":""},"disqusIdentifier":"219 \/?p=219","disqusShortname":"marcusschiesser","disqusTitle":"Getting values from a form containing combos in Ext","disqusUrl":"\/2009\/04\/07\/getting-values-from-a-form-containing-combos-in-ext\/","options":{"manualSync":false},"postId":"219"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/plugins/disqus-comment-system/media/js/disqus.js?ver=4.3.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/disqus-comment-system/media/js/disqus.js?ver=4.3.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var countVars = {"disqusShortname":"marcusschiesser"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.marcusschiesser.de/wp-content/plugins/disqus-comment-system/media/js/count.js?ver=4.3.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/disqus-comment-system/media/js/count.js?ver=4.3.1'></script>
 
 </body>
 </html>

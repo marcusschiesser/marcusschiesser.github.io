@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Marcus Schiesser &#187; web service</title>
-	<atom:link href="http://marcusschiesser.de/tag/web-service/feed/" rel="self" type="application/rss+xml" />
-	<link>http://marcusschiesser.de</link>
+	<atom:link href="/tag/web-service/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description>Enterprise Software Development with JavaScript and Java</description>
 	<lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -19,8 +19,8 @@
 	<generator>http://wordpress.org/?v=4.3.1</generator>
 	<item>
 		<title>Building a JSON web service with Java and Axis2</title>
-		<link>http://marcusschiesser.de/2009/01/23/building-a-json-web-service-with-java-and-axis2/</link>
-		<comments>http://marcusschiesser.de/2009/01/23/building-a-json-web-service-with-java-and-axis2/#comments</comments>
+		<link>/2009/01/23/building-a-json-web-service-with-java-and-axis2/</link>
+		<comments>/2009/01/23/building-a-json-web-service-with-java-and-axis2/#comments</comments>
 		<pubDate>Fri, 23 Jan 2009 15:05:04 +0000</pubDate>
 		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
 				<category><![CDATA[Java]]></category>
@@ -31,14 +31,14 @@
 		<category><![CDATA[pojo]]></category>
 		<category><![CDATA[web service]]></category>
 
-		<guid isPermaLink="false">http://www.marcusschiesser.de/?p=130</guid>
-		<description><![CDATA[It is said that in Java usually the easiest things are the hardest. The following is a nice example as it took me some time to figure out how to do it. I wanted to build a simple URL request based web service in Java that returns an JSON object. Yes, you can do that &#8230; <a href="http://marcusschiesser.de/2009/01/23/building-a-json-web-service-with-java-and-axis2/" class="more-link">Continue reading <span class="screen-reader-text">Building a JSON web service with Java and Axis2</span></a>]]></description>
+		<guid isPermaLink="false">/?p=130</guid>
+		<description><![CDATA[It is said that in Java usually the easiest things are the hardest. The following is a nice example as it took me some time to figure out how to do it. I wanted to build a simple URL request based web service in Java that returns an JSON object. Yes, you can do that &#8230; <a href="/2009/01/23/building-a-json-web-service-with-java-and-axis2/" class="more-link">Continue reading <span class="screen-reader-text">Building a JSON web service with Java and Axis2</span></a>]]></description>
 				<content:encoded><![CDATA[<p>It is said that in Java usually the easiest things are the hardest. The following is a nice example as it took me some time to figure out how to do it.<br />
 I wanted to build a simple URL request based web service in Java that returns an JSON object. Yes, you can do that with a simple Servlet too, the advantage of using <a href="http://ws.apache.org/axis2/">Axis2</a> is that you can also call your deployed services using SOAP without any configuration changes. </p>
 <ol>
 <li><a href="http://apache.autinity.de/ws/axis2/1_4_1/axis2-1.4.1-war.zip">Download Axis2 as WAR</a> and install it in your servlet container</li>
 <li><a href="http://dist.wso2.org/maven2/org/wso2/dynamicresponse/wso2dynamic-response/SNAPSHOT/wso2dynamic-response-20080916.170559-241.mar">Download the DynamicResponseHandler module</a> and add it to Axis by copying it to WEB-INF/modules</li>
-<li><a href="http://markmail.org/message/cu2tw43qnrqgqgwp">Patch Jettison</a> or <a href='http://www.marcusschiesser.de/wp-content/uploads/2009/01/jettison-11-snapshot.jar'>download my patched version</a> and replace it with the one installed in WEB-INF/lib</li>
+<li><a href="http://markmail.org/message/cu2tw43qnrqgqgwp">Patch Jettison</a> or <a href='/wp-content/uploads/2009/01/jettison-11-snapshot.jar'>download my patched version</a> and replace it with the one installed in WEB-INF/lib</li>
 <li>Add the DynamicResponseHandler module reference to the axis2.xml configuration (located in WEB-INF/conf):<br />
 <pre class="crayon-plain-tag">&lt;module ref=&quot;DynamicResponseHandler&quot;/&gt;</pre></li>
 <li>Add the JSON Message formatters to the axis2.xml:<br />
@@ -52,9 +52,9 @@ I wanted to build a simple URL request based web service in Java that returns an
 <a href="http://localhost:8080/axis2/services/Version/getVersion?response=application/json">http://localhost:8080/axis2/services/Version/getVersion?response=application/json</a></li>
 </ol>
 <p>Now you are ready to add your own web services. Here you can find an example <a href="http://ws.apache.org/axis2/1_1/pojoguide.html">how to deploy a simple POJO service</a>. Have fun!</p>
-<p><strong>Update</strong>: Zeno (see comments) sent me <a href='http://www.marcusschiesser.de/wp-content/uploads/2009/01/jettison-1.2-patch.zip.zip'>patch</a> for usage with Jettison 1.2 &#8211; otherwise he received a NullPointerException. I haven&#8217;t checked it, but I hope it helps you! Thanks Zeno!</p>
+<p><strong>Update</strong>: Zeno (see comments) sent me <a href='/wp-content/uploads/2009/01/jettison-1.2-patch.zip.zip'>patch</a> for usage with Jettison 1.2 &#8211; otherwise he received a NullPointerException. I haven&#8217;t checked it, but I hope it helps you! Thanks Zeno!</p>
 ]]></content:encoded>
-			<wfw:commentRss>http://marcusschiesser.de/2009/01/23/building-a-json-web-service-with-java-and-axis2/feed/</wfw:commentRss>
+			<wfw:commentRss>/2009/01/23/building-a-json-web-service-with-java-and-axis2/feed/</wfw:commentRss>
 		<slash:comments>22</slash:comments>
 		</item>
 	</channel>
