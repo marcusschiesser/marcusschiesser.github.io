@@ -1,0 +1,82 @@
+---
+author: admin
+date: 2009-02-27 17:15:03+00:00
+draft: false
+title: Building Mockups in ExtJS 4.1
+type: post
+url: /2009/02/27/167/
+categories:
+- ExtJS
+tags:
+- ext
+- ExtJS
+- grid
+- httpproxy
+- memoryproxy
+- mockup
+- proxy
+- store
+---
+
+**Note:** This post has been updated for ExtJS 4.1
+
+In the early development phase it is usually a good idea to provide a mockup that is not using real data but some dummy data from memory. To do that for a grid in ExtJS we need to create a record class first. For a person this might look like this:
+
+
+    
+    
+    Ext.define('Person', {
+        extend: 'Ext.data.Model',
+        fields: ['firstName', 'lastName']
+    });
+    
+
+
+
+Then we need a store where instances of the `Person` class will be stored:
+
+
+    
+    
+    var people = Ext.create('Ext.data.Store', {
+        model: 'Person',
+        proxy: {
+            type: 'memory',
+            reader: {
+                type: 'json',
+                root: 'root'
+            }
+        }
+    });
+    people.load();
+    
+
+
+
+The store is initially loaded with data from `peopleProxy` which must be defined previously like this:
+
+    
+    
+    var peopleProxy = new Ext.data.MemoryProxy({
+        root: [{
+            firstName: 'Homer',
+            lastName: 'Simpson'}]
+    });
+    
+
+
+
+If we want to replace this in a later development phase with real data, we simply replace this proxy with an `HttpProxy`, which might look like this:
+
+    
+    
+    var peopleProxy = new Ext.data.HttpProxy({
+        url: '/people.xml'
+    }),
+    
+
+
+
+If we finally connect the store to a data grid, it looks like this:
+
+<iframe src="http://jsfiddle.net/marcusschiesser/5QRcB/5/embedded/" style="width: 100%; height: 300px" allowfullscreen="allowfullscreen" frameborder="0"></iframe>

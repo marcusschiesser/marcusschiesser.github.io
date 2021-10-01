@@ -1,0 +1,68 @@
+---
+author: admin
+date: 2009-02-20 17:25:42+00:00
+draft: false
+title: Validator for ExtJS Checkbox
+type: post
+url: /2009/02/20/151/
+categories:
+- ExtJS
+tags:
+- checkbox
+- error
+- ExtJS
+- message
+- valid
+- validator
+---
+
+Very unfortunately ExtJS doesn't offer a validator for its checkbox component. 
+Normally a validator checks whether a field is valid and takes care of displaying an error message if not. For a checkbox we would like that to happen if the checkbox is not selected.
+Overriding the `validate` function of the checkbox we can provide such a functionality for all checkbox instances we are about to create:
+
+
+    
+    
+        Ext.form.Checkbox.prototype.validate = function(){
+            if (this.validateField) {
+                // other values as 'under' do not work
+                this.msgTarget = 'under';
+                if (this.checked) {
+                    Ext.form.Field.prototype.clearInvalid.call(this); // use implementation from Field as function is deactivated for Checkbox
+                }
+                else {
+                    Ext.form.Field.prototype.markInvalid.call(this, this.validateMessage);  // use implementation from Field as function is deactivated for Checkbox
+                }
+            }
+        };
+    
+
+
+
+The validator can be customized using the properties `validateField` and `validateMessage`. 
+
+Here's a small code example:
+
+
+    
+    
+    Ext.onReady(function(){
+       var panel = new Ext.FormPanel({
+            hideLabels: true,
+            border: false,
+            header: false,
+            width: 200,
+            
+            items: [{
+                xtype: 'checkbox',
+                boxLabel: 'Yes, I like to do it',
+                validateMessage: 'You really should do it.',
+                validateField: true
+            }]
+        });
+        panel.addButton('Check', function(){
+            panel.getForm().isValid();
+        });
+        panel.render(Ext.get('output'));
+    });
+    
