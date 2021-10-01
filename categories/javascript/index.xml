@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>JavaScript on Marcus Schiesser</title>
-    <link>/categories/javascript/</link>
+    <link>https://marcusschiesser.github.io/categories/javascript/</link>
     <description>Recent content in JavaScript on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate><atom:link href="/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Disqus without any plugins</title>
-      <link>/2015/10/17/using-disqus-without-any-plugins/</link>
+      <link>https://marcusschiesser.github.io/2015/10/17/using-disqus-without-any-plugins/</link>
       <pubDate>Sat, 17 Oct 2015 03:30:44 +0000</pubDate>
       
-      <guid>/2015/10/17/using-disqus-without-any-plugins/</guid>
+      <guid>https://marcusschiesser.github.io/2015/10/17/using-disqus-without-any-plugins/</guid>
       <description>At TurnGeek we recently had the task to include Disqus (which is great by the way) into our site, so readers of our books can leave comments for each chapter.
 For a couple of reasons we couldn&amp;rsquo;t use their Wordpress plugin although the site is running on Wordpress. If you&amp;rsquo;re running in the same issue or you just don&amp;rsquo;t want the dependency of another plugin, you can paste the following snippet in your Wordpress posts (by the way, this also works with non WordPress sites):</description>
     </item>
     
     <item>
       <title>Proxy Your Requests With Grunt</title>
-      <link>/2015/03/13/proxy-your-requests-with-grunt/</link>
+      <link>https://marcusschiesser.github.io/2015/03/13/proxy-your-requests-with-grunt/</link>
       <pubDate>Fri, 13 Mar 2015 06:30:30 +0000</pubDate>
       
-      <guid>/2015/03/13/proxy-your-requests-with-grunt/</guid>
+      <guid>https://marcusschiesser.github.io/2015/03/13/proxy-your-requests-with-grunt/</guid>
       <description>Probably you&amp;rsquo;re already using grunt to serve your local frontend code. Everything is fine, but if you&amp;rsquo;re developing your backend with something different than JavaScript (Being a Java developer I heard that might happen), you will have problems accessing this backend while running grunt server. With grunt-connect-proxy there exists a grunt module to help you out. It basically delegates requests that match a given URL to a different backend of your choice.</description>
     </item>
     

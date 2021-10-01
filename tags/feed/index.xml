@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>feed on Marcus Schiesser</title>
-    <link>/tags/feed/</link>
+    <link>https://marcusschiesser.github.io/tags/feed/</link>
     <description>Recent content in feed on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 03 Jan 2013 13:49:30 +0000</lastBuildDate><atom:link href="/tags/feed/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Jan 2013 13:49:30 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/feed/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using the Facebook Graph API from your GWT application</title>
-      <link>/2013/01/03/using-the-facebook-graph-api-from-your-gwt-application/</link>
+      <link>https://marcusschiesser.github.io/2013/01/03/using-the-facebook-graph-api-from-your-gwt-application/</link>
       <pubDate>Thu, 03 Jan 2013 13:49:30 +0000</pubDate>
       
-      <guid>/2013/01/03/using-the-facebook-graph-api-from-your-gwt-application/</guid>
+      <guid>https://marcusschiesser.github.io/2013/01/03/using-the-facebook-graph-api-from-your-gwt-application/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mobile Aktivitäten oder noch mehr Gezwitscher</title>
-      <link>/2008/03/25/idee-mobile-aktivitaten-oder-noch-mehr-gezwitscher/</link>
+      <link>https://marcusschiesser.github.io/2008/03/25/idee-mobile-aktivitaten-oder-noch-mehr-gezwitscher/</link>
       <pubDate>Tue, 25 Mar 2008 17:16:17 +0000</pubDate>
       
-      <guid>/2008/03/25/idee-mobile-aktivitaten-oder-noch-mehr-gezwitscher/</guid>
+      <guid>https://marcusschiesser.github.io/2008/03/25/idee-mobile-aktivitaten-oder-noch-mehr-gezwitscher/</guid>
       <description>Das wäre eine praktische Sache: Die letzten Aktivitäten der Freunde und Bekannte jederzeit abrufbar auf dem Mobiltelefon. Natürlich inklusive optionaler Benachrichtigung sobald eine neue Aktivität stattfindet.
 Was sind in diesem Zusammenhang letzte Aktivitäten? Soziale Netzwerke wie Facebook, Xing und Konsorten liefern jeweils einen News-Feed mit den letzten Aktivitäten, die meine Kontakte auf diesen Seiten getätigt haben. Beispiel: Ein Kontakt von mir hat einen neuen Kontakt in seine Freundschaftsliste hinzugefügt.
 Schön wäre es, wenn wie bei Twitter auch ein Foto des Kontakts angezeigt wird (a propos Twitter: wäre übrigens auch nett, wenn Twittermeldungen integriert wären).</description>

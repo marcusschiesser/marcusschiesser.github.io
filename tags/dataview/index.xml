@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>dataview on Marcus Schiesser</title>
-    <link>/tags/dataview/</link>
+    <link>https://marcusschiesser.github.io/tags/dataview/</link>
     <description>Recent content in dataview on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 10 Jun 2013 22:12:58 +0000</lastBuildDate><atom:link href="/tags/dataview/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Jun 2013 22:12:58 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/dataview/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adding Buttons in a Dataview using ExtJS 4.2</title>
-      <link>/2013/06/10/adding-buttons-in-a-dataview-using-extjs-4-2/</link>
+      <link>https://marcusschiesser.github.io/2013/06/10/adding-buttons-in-a-dataview-using-extjs-4-2/</link>
       <pubDate>Mon, 10 Jun 2013 22:12:58 +0000</pubDate>
       
-      <guid>/2013/06/10/adding-buttons-in-a-dataview-using-extjs-4-2/</guid>
+      <guid>https://marcusschiesser.github.io/2013/06/10/adding-buttons-in-a-dataview-using-extjs-4-2/</guid>
       <description>If you have a dataview in your ExtJS application, it might be possible that you want to add some action buttons for each of its items. With some good old Javascript this is actually quite easy. You just have to create a template that contains the HTML markup for the button and give it a distinguishable class name. In the itemmousedown listener of the dataview you later check for the class name.</description>
     </item>
     

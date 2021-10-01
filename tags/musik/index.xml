@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Musik on Marcus Schiesser</title>
-    <link>/tags/musik/</link>
+    <link>https://marcusschiesser.github.io/tags/musik/</link>
     <description>Recent content in Musik on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 16 Feb 2007 09:57:00 +0000</lastBuildDate><atom:link href="/tags/musik/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Feb 2007 09:57:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/musik/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>was man so hört...</title>
-      <link>/2007/02/16/was-man-so-hort/</link>
+      <link>https://marcusschiesser.github.io/2007/02/16/was-man-so-hort/</link>
       <pubDate>Fri, 16 Feb 2007 09:57:00 +0000</pubDate>
       
-      <guid>/2007/02/16/was-man-so-hort/</guid>
+      <guid>https://marcusschiesser.github.io/2007/02/16/was-man-so-hort/</guid>
       <description>&amp;hellip;während dem programmieren: Eric Jordan - Beyond - entspannende elektronische Musik, praktischerweise freier Download und außerdem über eine Stunde lang, so muss man a) nicht andauernd das Lied wechseln und b) bei dieser Länge fällt wohl auch erst nach einem Arbeitstag auf, wenn man es andauernd wiederholt (jedenfalls ist dies bei mir der Fall).</description>
     </item>
     

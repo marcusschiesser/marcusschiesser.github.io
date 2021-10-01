@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>httpproxy on Marcus Schiesser</title>
-    <link>/tags/httpproxy/</link>
+    <link>https://marcusschiesser.github.io/tags/httpproxy/</link>
     <description>Recent content in httpproxy on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 27 Feb 2009 17:15:03 +0000</lastBuildDate><atom:link href="/tags/httpproxy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Feb 2009 17:15:03 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/httpproxy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building Mockups in ExtJS 4.1</title>
-      <link>/2009/02/27/167/</link>
+      <link>https://marcusschiesser.github.io/2009/02/27/167/</link>
       <pubDate>Fri, 27 Feb 2009 17:15:03 +0000</pubDate>
       
-      <guid>/2009/02/27/167/</guid>
+      <guid>https://marcusschiesser.github.io/2009/02/27/167/</guid>
       <description>Note: This post has been updated for ExtJS 4.1
 In the early development phase it is usually a good idea to provide a mockup that is not using real data but some dummy data from memory. To do that for a grid in ExtJS we need to create a record class first. For a person this might look like this:
 Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;firstName&#39;, &#39;lastName&#39;] });  Then we need a store where instances of the Person class will be stored:</description>

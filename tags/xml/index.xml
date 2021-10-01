@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>xml on Marcus Schiesser</title>
-    <link>/tags/xml/</link>
+    <link>https://marcusschiesser.github.io/tags/xml/</link>
     <description>Recent content in xml on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 27 Jan 2009 17:15:13 +0000</lastBuildDate><atom:link href="/tags/xml/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Jan 2009 17:15:13 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/xml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Axis2 services from Javascript (by removing the XML namespaces)</title>
-      <link>/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/</link>
+      <link>https://marcusschiesser.github.io/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/</link>
       <pubDate>Tue, 27 Jan 2009 17:15:13 +0000</pubDate>
       
-      <guid>/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/</guid>
+      <guid>https://marcusschiesser.github.io/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/</guid>
       <description>If you want to call an Axis2 service from Javascript you will face the problem that the XML response of an Axis2 service call contains XML namespaces - something Javascript doesn&amp;rsquo;t like in cross-browser-friendly way. The idea to fix this issue is to make an XSLT transformation directly from Axis2 that removes the unnecessary namespaces.
 First we need an XSLT transformation that will do the job:
 &amp;lt;xsl:stylesheet version=&amp;quot;1.0&amp;quot; xmlns:xsl=&amp;quot;http://www.w3.org/1999/XSL/Transform&amp;quot;&amp;gt; &amp;lt;xsl:output indent=&amp;quot;no&amp;quot; method=&amp;quot;xml&amp;quot;&amp;gt;&amp;lt;/xsl:output&amp;gt; &amp;lt;xsl:template match=&amp;quot;/|comment()|processing-instruction()&amp;quot;&amp;gt; &amp;lt;xsl:copy&amp;gt; &amp;lt;xsl:apply-templates&amp;gt;&amp;lt;/xsl:apply-templates&amp;gt; &amp;lt;/xsl:copy&amp;gt; &amp;lt;/xsl:template&amp;gt; &amp;lt;xsl:template match=&amp;quot;*&amp;quot;&amp;gt; &amp;lt;xsl:element name=&amp;quot;{local-name()}&amp;quot;&amp;gt; &amp;lt;xsl:apply-templates select=&amp;quot;@*|node()&amp;quot;&amp;gt;&amp;lt;/xsl:apply-templates&amp;gt; &amp;lt;/xsl:element&amp;gt; &amp;lt;/xsl:template&amp;gt; &amp;lt;xsl:template match=&amp;quot;@*&amp;quot;&amp;gt; &amp;lt;xsl:attribute name=&amp;quot;{local-name()}&amp;quot;&amp;gt; &amp;lt;xsl:value-of select=&amp;quot;.</description>

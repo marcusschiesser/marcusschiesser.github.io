@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>jettison on Marcus Schiesser</title>
-    <link>/tags/jettison/</link>
+    <link>https://marcusschiesser.github.io/tags/jettison/</link>
     <description>Recent content in jettison on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 23 Jan 2009 15:05:04 +0000</lastBuildDate><atom:link href="/tags/jettison/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Jan 2009 15:05:04 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/jettison/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building a JSON web service with Java and Axis2</title>
-      <link>/2009/01/23/building-a-json-web-service-with-java-and-axis2/</link>
+      <link>https://marcusschiesser.github.io/2009/01/23/building-a-json-web-service-with-java-and-axis2/</link>
       <pubDate>Fri, 23 Jan 2009 15:05:04 +0000</pubDate>
       
-      <guid>/2009/01/23/building-a-json-web-service-with-java-and-axis2/</guid>
+      <guid>https://marcusschiesser.github.io/2009/01/23/building-a-json-web-service-with-java-and-axis2/</guid>
       <description>It is said that in Java usually the easiest things are the hardest. The following is a nice example as it took me some time to figure out how to do it. I wanted to build a simple URL request based web service in Java that returns an JSON object. Yes, you can do that with a simple Servlet too, the advantage of using Axis2 is that you can also call your deployed services using SOAP without any configuration changes.</description>
     </item>
     

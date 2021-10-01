@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>render on Marcus Schiesser</title>
-    <link>/tags/render/</link>
+    <link>https://marcusschiesser.github.io/tags/render/</link>
     <description>Recent content in render on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 14 Jan 2009 14:23:43 +0000</lastBuildDate><atom:link href="/tags/render/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Jan 2009 14:23:43 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/render/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3 Ways to render HTML inside of a ExtJS container</title>
-      <link>/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/</link>
+      <link>https://marcusschiesser.github.io/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/</link>
       <pubDate>Wed, 14 Jan 2009 14:23:43 +0000</pubDate>
       
-      <guid>/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/</guid>
+      <guid>https://marcusschiesser.github.io/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/</guid>
       <description>It has been a while since my last blog post. The main reason is that I am now having a nice new job at efiport which leads to the situation that I am doing now good old Javascript (mainly ExtJS) instead of Flex. So I think in the future there will be more posts about ExtJS then Flex. Sorry Flex folks.
 To tribute the change a bit, I start with the problem of adding HTML code inside of a ExtJS container.</description>
     </item>

@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Presse on Marcus Schiesser</title>
-    <link>/tags/presse/</link>
+    <link>https://marcusschiesser.github.io/tags/presse/</link>
     <description>Recent content in Presse on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 22 Feb 2008 21:31:36 +0000</lastBuildDate><atom:link href="/tags/presse/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Feb 2008 21:31:36 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/presse/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iX Artikel über Flex 3.0</title>
-      <link>/2008/02/22/ix-artikel-uber-flex-30/</link>
+      <link>https://marcusschiesser.github.io/2008/02/22/ix-artikel-uber-flex-30/</link>
       <pubDate>Fri, 22 Feb 2008 21:31:36 +0000</pubDate>
       
-      <guid>/2008/02/22/ix-artikel-uber-flex-30/</guid>
+      <guid>https://marcusschiesser.github.io/2008/02/22/ix-artikel-uber-flex-30/</guid>
       <description>In der aktuellen iX (Ausgabe März 2008) findet sich ab S.72 ein Artikel über Flex 3.0 von mir.
 Wer möchte kann hier gerne Fragen stellen und Kommentare abgeben.</description>
     </item>
     
     <item>
       <title>Blogging analog oder die erste Pressemitteilung</title>
-      <link>/2007/01/04/blogging-analog-oder-die-erste-pressemitteilung/</link>
+      <link>https://marcusschiesser.github.io/2007/01/04/blogging-analog-oder-die-erste-pressemitteilung/</link>
       <pubDate>Thu, 04 Jan 2007 15:49:00 +0000</pubDate>
       
-      <guid>/2007/01/04/blogging-analog-oder-die-erste-pressemitteilung/</guid>
+      <guid>https://marcusschiesser.github.io/2007/01/04/blogging-analog-oder-die-erste-pressemitteilung/</guid>
       <description>Eine interessante Feststellung machte ich gestern, als ich die Kommunikationsmethoden des Blogging (jedenfalls soweit sie mir nach den paar Einträgen schon bekannt sind), auf die gute alte reale Welt übertrug:
 Als ich nämlich auf das Editorial (so ne Art Blogeintrag) einer Zeitschrift antwortete (also den Blogeintrag kommentierte) und dabei indirekt auf die Internehmerseite hinwies, wurde ich gleich darauf vom Chefredakteur angerufen und um eine Pressemitteilung gebeten.
 Freue mich ja immer, wenn sich jemand für meine Ideen interessiert - also habe ich gleich mal eine geschrieben: Internehmer - Soziales Netzwerk für Internet-Unternehmer</description>

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>flickr on Marcus Schiesser</title>
-    <link>/tags/flickr/</link>
+    <link>https://marcusschiesser.github.io/tags/flickr/</link>
     <description>Recent content in flickr on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 28 Aug 2008 22:11:42 +0000</lastBuildDate><atom:link href="/tags/flickr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Aug 2008 22:11:42 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/flickr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JSON generator for picture data from Flickr</title>
-      <link>/2008/08/28/json-generator-fur-bilddaten-von-flickr/</link>
+      <link>https://marcusschiesser.github.io/2008/08/28/json-generator-fur-bilddaten-von-flickr/</link>
       <pubDate>Thu, 28 Aug 2008 22:11:42 +0000</pubDate>
       
-      <guid>/2008/08/28/json-generator-fur-bilddaten-von-flickr/</guid>
+      <guid>https://marcusschiesser.github.io/2008/08/28/json-generator-fur-bilddaten-von-flickr/</guid>
       <description>Probably a few other guys did this before, but I had a boring train journey without any internet connection, so I used the bits from my 3D album example and made a JSON generator for Flickr data. What does that mean? Just enter a search term and the program finds matching pictures on Flickr. If pictures have been found, a click on &amp;lsquo;JSON&amp;rsquo; displays a JSON-encoded array with the URLs and labels of the pictures found.</description>
     </item>
     

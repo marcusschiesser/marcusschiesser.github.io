@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>handler on Marcus Schiesser</title>
-    <link>/tags/handler/</link>
+    <link>https://marcusschiesser.github.io/tags/handler/</link>
     <description>Recent content in handler on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 Feb 2009 10:40:08 +0000</lastBuildDate><atom:link href="/tags/handler/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Feb 2009 10:40:08 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/handler/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Generic error handler for ExtJS</title>
-      <link>/2009/02/09/generic-error-handler-for-extjs/</link>
+      <link>https://marcusschiesser.github.io/2009/02/09/generic-error-handler-for-extjs/</link>
       <pubDate>Mon, 09 Feb 2009 10:40:08 +0000</pubDate>
       
-      <guid>/2009/02/09/generic-error-handler-for-extjs/</guid>
+      <guid>https://marcusschiesser.github.io/2009/02/09/generic-error-handler-for-extjs/</guid>
       <description>When you are doing client/server communication with ExtJS you probably run into the problem that you want to handle server side errors in a generic way. A solution that I found is to override the handleFailure function in the Ext.data.Connection class:
 Ext.data.Connection.prototype._handleFailure = Ext.data.Connection.prototype.handleFailure; Ext.data.Connection.prototype.handleFailure = function(response, e) { var errorText = Ext.DomQuery.selectValue(&amp;quot;Reason/Text&amp;quot;, response.responseXML, &amp;quot;Unknown Error&amp;quot;); Ext.Msg.alert(&#39;Error&#39;, errorText); Ext.data.Connection.prototype._handleFailure.call(this, response, e); };  This handler simply is called whenever a server side failure occurs.</description>
     </item>
     
     <item>
       <title>Factories für Event-Handler in AS3</title>
-      <link>/2008/07/10/factories-fur-event-handler-in-as3/</link>
+      <link>https://marcusschiesser.github.io/2008/07/10/factories-fur-event-handler-in-as3/</link>
       <pubDate>Thu, 10 Jul 2008 19:55:46 +0000</pubDate>
       
-      <guid>/2008/07/10/factories-fur-event-handler-in-as3/</guid>
+      <guid>https://marcusschiesser.github.io/2008/07/10/factories-fur-event-handler-in-as3/</guid>
       <description>In meinem letzten Projekt ist mir ein nettes Pattern für die Verwendung von Closures in Actionscript 3 eingefallen: Factories für Event-Handler.
 Hier ein sehr einfaches Beispiel für einen Handler, der einen Alert anzeigt:
 public static function createAlertHandler(text:String, title:String):Function { return function():void { Alert.show(text, title); } }	 Das Ganze kann man sich nun in der Praxis noch mit weiteren Parametern und natürlich einer komplexeren Handlerfunktion vorstellen. Der Vorteil an diesem Pattern ist, das über die Parameter der Factorymethode verschiedene Handler erstellt werden können, d.</description>

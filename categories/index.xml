@@ -2,164 +2,164 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Marcus Schiesser</title>
-    <link>/categories/</link>
+    <link>https://marcusschiesser.github.io/categories/</link>
     <description>Recent content in Categories on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JavaScript</title>
-      <link>/categories/javascript/</link>
+      <link>https://marcusschiesser.github.io/categories/javascript/</link>
       <pubDate>Sat, 17 Oct 2015 03:30:44 +0000</pubDate>
       
-      <guid>/categories/javascript/</guid>
+      <guid>https://marcusschiesser.github.io/categories/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Other</title>
-      <link>/categories/other/</link>
+      <link>https://marcusschiesser.github.io/categories/other/</link>
       <pubDate>Sat, 17 Oct 2015 03:30:44 +0000</pubDate>
       
-      <guid>/categories/other/</guid>
+      <guid>https://marcusschiesser.github.io/categories/other/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ExtJS</title>
-      <link>/categories/extjs/</link>
+      <link>https://marcusschiesser.github.io/categories/extjs/</link>
       <pubDate>Fri, 22 Aug 2014 11:45:10 +0000</pubDate>
       
-      <guid>/categories/extjs/</guid>
+      <guid>https://marcusschiesser.github.io/categories/extjs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>/categories/java/</link>
+      <link>https://marcusschiesser.github.io/categories/java/</link>
       <pubDate>Thu, 17 Jan 2013 00:17:11 +0000</pubDate>
       
-      <guid>/categories/java/</guid>
+      <guid>https://marcusschiesser.github.io/categories/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Android</title>
-      <link>/categories/android/</link>
+      <link>https://marcusschiesser.github.io/categories/android/</link>
       <pubDate>Fri, 02 Dec 2011 17:40:57 +0000</pubDate>
       
-      <guid>/categories/android/</guid>
+      <guid>https://marcusschiesser.github.io/categories/android/</guid>
       <description></description>
     </item>
     
     <item>
       <title>JBoss</title>
-      <link>/categories/jboss/</link>
+      <link>https://marcusschiesser.github.io/categories/jboss/</link>
       <pubDate>Fri, 18 Nov 2011 15:29:22 +0000</pubDate>
       
-      <guid>/categories/jboss/</guid>
+      <guid>https://marcusschiesser.github.io/categories/jboss/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Technology</title>
-      <link>/categories/technology/</link>
+      <link>https://marcusschiesser.github.io/categories/technology/</link>
       <pubDate>Fri, 18 Nov 2011 14:36:15 +0000</pubDate>
       
-      <guid>/categories/technology/</guid>
+      <guid>https://marcusschiesser.github.io/categories/technology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Articles</title>
-      <link>/categories/articles/</link>
+      <link>https://marcusschiesser.github.io/categories/articles/</link>
       <pubDate>Wed, 22 Jun 2011 20:13:17 +0000</pubDate>
       
-      <guid>/categories/articles/</guid>
+      <guid>https://marcusschiesser.github.io/categories/articles/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Idea</title>
-      <link>/categories/idea/</link>
+      <link>https://marcusschiesser.github.io/categories/idea/</link>
       <pubDate>Wed, 22 Jun 2011 20:13:17 +0000</pubDate>
       
-      <guid>/categories/idea/</guid>
+      <guid>https://marcusschiesser.github.io/categories/idea/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Component</title>
-      <link>/categories/component/</link>
+      <link>https://marcusschiesser.github.io/categories/component/</link>
       <pubDate>Wed, 05 Aug 2009 13:31:29 +0000</pubDate>
       
-      <guid>/categories/component/</guid>
+      <guid>https://marcusschiesser.github.io/categories/component/</guid>
       <description></description>
     </item>
     
     <item>
       <title>YUI</title>
-      <link>/categories/yui/</link>
+      <link>https://marcusschiesser.github.io/categories/yui/</link>
       <pubDate>Wed, 05 Aug 2009 13:31:29 +0000</pubDate>
       
-      <guid>/categories/yui/</guid>
+      <guid>https://marcusschiesser.github.io/categories/yui/</guid>
       <description></description>
     </item>
     
     <item>
       <title>UX</title>
-      <link>/categories/ux/</link>
+      <link>https://marcusschiesser.github.io/categories/ux/</link>
       <pubDate>Sat, 13 Jun 2009 20:14:17 +0000</pubDate>
       
-      <guid>/categories/ux/</guid>
+      <guid>https://marcusschiesser.github.io/categories/ux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Flex</title>
-      <link>/categories/flex/</link>
+      <link>https://marcusschiesser.github.io/categories/flex/</link>
       <pubDate>Tue, 21 Oct 2008 22:02:51 +0000</pubDate>
       
-      <guid>/categories/flex/</guid>
+      <guid>https://marcusschiesser.github.io/categories/flex/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rails</title>
-      <link>/categories/rails/</link>
+      <link>https://marcusschiesser.github.io/categories/rails/</link>
       <pubDate>Tue, 22 Jul 2008 17:36:03 +0000</pubDate>
       
-      <guid>/categories/rails/</guid>
+      <guid>https://marcusschiesser.github.io/categories/rails/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wordpress</title>
-      <link>/categories/wordpress/</link>
+      <link>https://marcusschiesser.github.io/categories/wordpress/</link>
       <pubDate>Wed, 09 Jul 2008 18:38:58 +0000</pubDate>
       
-      <guid>/categories/wordpress/</guid>
+      <guid>https://marcusschiesser.github.io/categories/wordpress/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Prototype</title>
-      <link>/categories/prototype/</link>
+      <link>https://marcusschiesser.github.io/categories/prototype/</link>
       <pubDate>Wed, 05 Mar 2008 10:28:14 +0000</pubDate>
       
-      <guid>/categories/prototype/</guid>
+      <guid>https://marcusschiesser.github.io/categories/prototype/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fun</title>
-      <link>/categories/fun/</link>
+      <link>https://marcusschiesser.github.io/categories/fun/</link>
       <pubDate>Sat, 06 Jan 2007 13:35:00 +0000</pubDate>
       
-      <guid>/categories/fun/</guid>
+      <guid>https://marcusschiesser.github.io/categories/fun/</guid>
       <description></description>
     </item>
     

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>how to on Marcus Schiesser</title>
-    <link>/tags/how-to/</link>
+    <link>https://marcusschiesser.github.io/tags/how-to/</link>
     <description>Recent content in how to on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 17 Jan 2013 00:17:11 +0000</lastBuildDate><atom:link href="/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Jan 2013 00:17:11 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to use JSF 2.2 with JBoss 7.1</title>
-      <link>/2013/01/17/how-to-use-jsf-2-2-with-jboss-7-1/</link>
+      <link>https://marcusschiesser.github.io/2013/01/17/how-to-use-jsf-2-2-with-jboss-7-1/</link>
       <pubDate>Thu, 17 Jan 2013 00:17:11 +0000</pubDate>
       
-      <guid>/2013/01/17/how-to-use-jsf-2-2-with-jboss-7-1/</guid>
+      <guid>https://marcusschiesser.github.io/2013/01/17/how-to-use-jsf-2-2-with-jboss-7-1/</guid>
       <description>As the new JSF 2.2 is nearly finished, we all want to play with the new features of it.
 Markus Eisele has shown in his blog post Testdriving Mojarra 2.2.0-m08 how to do this with Glassfish 3. He&amp;rsquo;s German too, I begin to wonder if only we guys are that curious or no one else is using JSF any more ;)
 Unfortunately with JBoss 7 we face the same problem he had: We can not just add the new libraries to our WAR archive as they will clash with the JSF 2.</description>

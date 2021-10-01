@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>samples on Marcus Schiesser</title>
-    <link>/tags/samples/</link>
+    <link>https://marcusschiesser.github.io/tags/samples/</link>
     <description>Recent content in samples on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 27 Dec 2013 15:04:49 +0000</lastBuildDate><atom:link href="/tags/samples/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Dec 2013 15:04:49 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/samples/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Codenvy (Online IDE) to run Ext JS 4.2.1 Samples</title>
-      <link>/2013/12/27/using-codenvy-online-ide-to-run-ext-js-4-2-1-samples/</link>
+      <link>https://marcusschiesser.github.io/2013/12/27/using-codenvy-online-ide-to-run-ext-js-4-2-1-samples/</link>
       <pubDate>Fri, 27 Dec 2013 15:04:49 +0000</pubDate>
       
-      <guid>/2013/12/27/using-codenvy-online-ide-to-run-ext-js-4-2-1-samples/</guid>
+      <guid>https://marcusschiesser.github.io/2013/12/27/using-codenvy-online-ide-to-run-ext-js-4-2-1-samples/</guid>
       <description>Reader&amp;rsquo;s of my blog (are there any?) know I love JSFiddle. With it you can easily embed a running example of your JavaScript snippet. This is fine for single-file examples but it gets a bit complicated for more complex ones. To showcase them, Codenvy is a very nice solution. It is an Online IDE that has a very nice feature called Codenvy Factory. This one lets you share the actual state of your workspace by distributing a simple link.</description>
     </item>
     

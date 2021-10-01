@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>text on Marcus Schiesser</title>
-    <link>/tags/text/</link>
+    <link>https://marcusschiesser.github.io/tags/text/</link>
     <description>Recent content in text on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 12 Jun 2009 09:18:02 +0000</lastBuildDate><atom:link href="/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Jun 2009 09:18:02 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Display an info text in a HTML input field if its focus is lost</title>
-      <link>/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</link>
+      <link>https://marcusschiesser.github.io/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</link>
       <pubDate>Fri, 12 Jun 2009 09:18:02 +0000</pubDate>
       
-      <guid>/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</guid>
+      <guid>https://marcusschiesser.github.io/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</guid>
       <description>Now that with Ext Core a light-weight version (just 25kB) of ExtJS has been released, I thought it&amp;rsquo;s time to build a nice example with it.
 The result is something very useful that you can see in actually a lot of web sites: Display a info text inside of a input text field if it is empty and does not have the focus.
 Here&amp;rsquo;s how it looks like:

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>frontend on Marcus Schiesser</title>
-    <link>/tags/frontend/</link>
+    <link>https://marcusschiesser.github.io/tags/frontend/</link>
     <description>Recent content in frontend on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 13 Mar 2015 06:30:30 +0000</lastBuildDate><atom:link href="/tags/frontend/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Mar 2015 06:30:30 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/frontend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Proxy Your Requests With Grunt</title>
-      <link>/2015/03/13/proxy-your-requests-with-grunt/</link>
+      <link>https://marcusschiesser.github.io/2015/03/13/proxy-your-requests-with-grunt/</link>
       <pubDate>Fri, 13 Mar 2015 06:30:30 +0000</pubDate>
       
-      <guid>/2015/03/13/proxy-your-requests-with-grunt/</guid>
+      <guid>https://marcusschiesser.github.io/2015/03/13/proxy-your-requests-with-grunt/</guid>
       <description>Probably you&amp;rsquo;re already using grunt to serve your local frontend code. Everything is fine, but if you&amp;rsquo;re developing your backend with something different than JavaScript (Being a Java developer I heard that might happen), you will have problems accessing this backend while running grunt server. With grunt-connect-proxy there exists a grunt module to help you out. It basically delegates requests that match a given URL to a different backend of your choice.</description>
     </item>
     

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>marker on Marcus Schiesser</title>
-    <link>/tags/marker/</link>
+    <link>https://marcusschiesser.github.io/tags/marker/</link>
     <description>Recent content in marker on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 30 Sep 2008 17:47:05 +0000</lastBuildDate><atom:link href="/tags/marker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Sep 2008 17:47:05 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/marker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multi-level markers using Google Maps for Flash</title>
-      <link>/2008/09/30/multi-level-markers-using-google-maps-for-flash/</link>
+      <link>https://marcusschiesser.github.io/2008/09/30/multi-level-markers-using-google-maps-for-flash/</link>
       <pubDate>Tue, 30 Sep 2008 17:47:05 +0000</pubDate>
       
-      <guid>/2008/09/30/multi-level-markers-using-google-maps-for-flash/</guid>
+      <guid>https://marcusschiesser.github.io/2008/09/30/multi-level-markers-using-google-maps-for-flash/</guid>
       <description></description>
     </item>
     

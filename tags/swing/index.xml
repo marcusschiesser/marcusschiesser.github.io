@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>swing on Marcus Schiesser</title>
-    <link>/tags/swing/</link>
+    <link>https://marcusschiesser.github.io/tags/swing/</link>
     <description>Recent content in swing on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 18 Nov 2011 14:36:15 +0000</lastBuildDate><atom:link href="/tags/swing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Nov 2011 14:36:15 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/swing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Let the user change the column order in Java/Swing</title>
-      <link>/2011/11/18/let-the-user-change-the-column-order-in-javaswing/</link>
+      <link>https://marcusschiesser.github.io/2011/11/18/let-the-user-change-the-column-order-in-javaswing/</link>
       <pubDate>Fri, 18 Nov 2011 14:36:15 +0000</pubDate>
       
-      <guid>/2011/11/18/let-the-user-change-the-column-order-in-javaswing/</guid>
+      <guid>https://marcusschiesser.github.io/2011/11/18/let-the-user-change-the-column-order-in-javaswing/</guid>
       <description>Do you have the requirement to let the user of your application change the order of his columns and your app is based on Swing?
 Then you should read further. Below you find a [TableColumnModel](http://download.oracle.com/javase/1.4.2/docs/api/javax/swing/table/TableColumnModel.html) that has two states: STANDARD and USERDEFINED. In the STANDARD state the user may not change the order of the columns by drag&amp;rsquo;n&amp;rsquo;drop, in USERDEFINED he may. The good thing: If you toogle the state the column order is restored.</description>
     </item>

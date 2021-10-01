@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Wordpress on Marcus Schiesser</title>
-    <link>/categories/wordpress/</link>
+    <link>https://marcusschiesser.github.io/categories/wordpress/</link>
     <description>Recent content in Wordpress on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 09 Jul 2008 18:38:58 +0000</lastBuildDate><atom:link href="/categories/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Jul 2008 18:38:58 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/categories/wordpress/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ning-Theme for Wordpress</title>
-      <link>/2008/07/09/wordpress-theme-fur-ning/</link>
+      <link>https://marcusschiesser.github.io/2008/07/09/wordpress-theme-fur-ning/</link>
       <pubDate>Wed, 09 Jul 2008 18:38:58 +0000</pubDate>
       
-      <guid>/2008/07/09/wordpress-theme-fur-ning/</guid>
+      <guid>https://marcusschiesser.github.io/2008/07/09/wordpress-theme-fur-ning/</guid>
       <description>I&amp;rsquo;ve written a small Ning-Theme for Wordpress, for all the people who want to use a Wordpress blog with Ning. After installation the blog automatically uses the same Look&amp;amp;Feel as the site created with Ning.
 For installation you firstly must copy the ning folder to /wp-content/themes and activate the theme as usually. Afterwards you must modify the config.php file to fit the needs of your Ning site.
 Right now, the theme is only available in German language, but on demand I&amp;rsquo;m happy to help with the development of a multilingual theme.</description>

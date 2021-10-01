@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>item on Marcus Schiesser</title>
-    <link>/tags/item/</link>
+    <link>https://marcusschiesser.github.io/tags/item/</link>
     <description>Recent content in item on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 05 Aug 2009 13:31:29 +0000</lastBuildDate><atom:link href="/tags/item/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Aug 2009 13:31:29 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/item/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Let the user select an item in a modal dialog</title>
-      <link>/2009/08/05/selecting-an-item-in-javascript/</link>
+      <link>https://marcusschiesser.github.io/2009/08/05/selecting-an-item-in-javascript/</link>
       <pubDate>Wed, 05 Aug 2009 13:31:29 +0000</pubDate>
       
-      <guid>/2009/08/05/selecting-an-item-in-javascript/</guid>
+      <guid>https://marcusschiesser.github.io/2009/08/05/selecting-an-item-in-javascript/</guid>
       <description>After having used the shiny new YUI3 library for a project, it&amp;rsquo;s about time to share my YUI3 experiences with you. For the project I built an item selector: A modal dialog is openend and the user has to select an item. After selection the dialog is closed and the selected item is passed to a callback function.
 Here you can find the full source for the item selector. An example to use the selector can be as simple as this:</description>
     </item>

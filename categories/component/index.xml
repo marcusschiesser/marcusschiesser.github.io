@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Component on Marcus Schiesser</title>
-    <link>/categories/component/</link>
+    <link>https://marcusschiesser.github.io/categories/component/</link>
     <description>Recent content in Component on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 05 Aug 2009 13:31:29 +0000</lastBuildDate><atom:link href="/categories/component/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Aug 2009 13:31:29 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/categories/component/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Let the user select an item in a modal dialog</title>
-      <link>/2009/08/05/selecting-an-item-in-javascript/</link>
+      <link>https://marcusschiesser.github.io/2009/08/05/selecting-an-item-in-javascript/</link>
       <pubDate>Wed, 05 Aug 2009 13:31:29 +0000</pubDate>
       
-      <guid>/2009/08/05/selecting-an-item-in-javascript/</guid>
+      <guid>https://marcusschiesser.github.io/2009/08/05/selecting-an-item-in-javascript/</guid>
       <description>After having used the shiny new YUI3 library for a project, it&amp;rsquo;s about time to share my YUI3 experiences with you. For the project I built an item selector: A modal dialog is openend and the user has to select an item. After selection the dialog is closed and the selected item is passed to a callback function.
 Here you can find the full source for the item selector. An example to use the selector can be as simple as this:</description>
     </item>
     
     <item>
       <title>Add a delete button in each row of an ExtJS data grid</title>
-      <link>/2009/06/13/add-a-delete-button-in-each-row-of-an-extjs-data-grid/</link>
+      <link>https://marcusschiesser.github.io/2009/06/13/add-a-delete-button-in-each-row-of-an-extjs-data-grid/</link>
       <pubDate>Sat, 13 Jun 2009 19:53:56 +0000</pubDate>
       
-      <guid>/2009/06/13/add-a-delete-button-in-each-row-of-an-extjs-data-grid/</guid>
+      <guid>https://marcusschiesser.github.io/2009/06/13/add-a-delete-button-in-each-row-of-an-extjs-data-grid/</guid>
       <description>For usability reasons it is usually a good idea to add a delete button to each row of a data grid. If the user clicks on such a button, the whole row that contained the button will be deleted.
 The data grid of ExtJS does not contain such a feature by default, but it could be implemented by adding a special column to the column model. Using this extension, it could be easily done like this:</description>
     </item>
     
     <item>
       <title>Display an info text in a HTML input field if its focus is lost</title>
-      <link>/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</link>
+      <link>https://marcusschiesser.github.io/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</link>
       <pubDate>Fri, 12 Jun 2009 09:18:02 +0000</pubDate>
       
-      <guid>/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</guid>
+      <guid>https://marcusschiesser.github.io/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</guid>
       <description>Now that with Ext Core a light-weight version (just 25kB) of ExtJS has been released, I thought it&amp;rsquo;s time to build a nice example with it.
 The result is something very useful that you can see in actually a lot of web sites: Display a info text inside of a input text field if it is empty and does not have the focus.
 Here&amp;rsquo;s how it looks like:

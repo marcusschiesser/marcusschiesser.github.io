@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>ExtJS on Marcus Schiesser</title>
-    <link>/tags/extjs/</link>
+    <link>https://marcusschiesser.github.io/tags/extjs/</link>
     <description>Recent content in ExtJS on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 22 Aug 2014 11:45:10 +0000</lastBuildDate><atom:link href="/tags/extjs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Aug 2014 11:45:10 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/extjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Restart a ExtJS 4.2 Application by recreating the Viewport</title>
-      <link>/2014/08/22/restart-a-extjs-4-2-application-by-recreating-the-viewport/</link>
+      <link>https://marcusschiesser.github.io/2014/08/22/restart-a-extjs-4-2-application-by-recreating-the-viewport/</link>
       <pubDate>Fri, 22 Aug 2014 11:45:10 +0000</pubDate>
       
-      <guid>/2014/08/22/restart-a-extjs-4-2-application-by-recreating-the-viewport/</guid>
+      <guid>https://marcusschiesser.github.io/2014/08/22/restart-a-extjs-4-2-application-by-recreating-the-viewport/</guid>
       <description>If you are debugging your ExtJS application, it could be helpful from time to time to restart the application. Sure, simply pressing F5 usually does the trick, but it might happen that you want to keep the state of the application and just restart the viewport.
 This is simply done by typing the following lines in your favorite JavaScript console:
  1. Remove existing viewport with a ComponentQuery Ext.ComponentQuery.query(&#39;viewport&#39;)[0].removeAll(); 2. Recreate viewport, here the viewport&#39;s class name is _myApp.</description>
@@ -23,57 +23,57 @@ This is simply done by typing the following lines in your favorite JavaScript co
     
     <item>
       <title>Using Codenvy (Online IDE) to run Ext JS 4.2.1 Samples</title>
-      <link>/2013/12/27/using-codenvy-online-ide-to-run-ext-js-4-2-1-samples/</link>
+      <link>https://marcusschiesser.github.io/2013/12/27/using-codenvy-online-ide-to-run-ext-js-4-2-1-samples/</link>
       <pubDate>Fri, 27 Dec 2013 15:04:49 +0000</pubDate>
       
-      <guid>/2013/12/27/using-codenvy-online-ide-to-run-ext-js-4-2-1-samples/</guid>
+      <guid>https://marcusschiesser.github.io/2013/12/27/using-codenvy-online-ide-to-run-ext-js-4-2-1-samples/</guid>
       <description>Reader&amp;rsquo;s of my blog (are there any?) know I love JSFiddle. With it you can easily embed a running example of your JavaScript snippet. This is fine for single-file examples but it gets a bit complicated for more complex ones. To showcase them, Codenvy is a very nice solution. It is an Online IDE that has a very nice feature called Codenvy Factory. This one lets you share the actual state of your workspace by distributing a simple link.</description>
     </item>
     
     <item>
       <title>Dynamically Changing the Structure of a Grid in ExtJS 4.2</title>
-      <link>/2013/12/21/dynamically-changing-the-structure-of-a-grid-in-extjs-4-2/</link>
+      <link>https://marcusschiesser.github.io/2013/12/21/dynamically-changing-the-structure-of-a-grid-in-extjs-4-2/</link>
       <pubDate>Sat, 21 Dec 2013 07:39:51 +0000</pubDate>
       
-      <guid>/2013/12/21/dynamically-changing-the-structure-of-a-grid-in-extjs-4-2/</guid>
+      <guid>https://marcusschiesser.github.io/2013/12/21/dynamically-changing-the-structure-of-a-grid-in-extjs-4-2/</guid>
       <description>If you have a grid in ExtJS, it might happen that you want to change the columns of the grid depending on the data you receive from the server. In my new pet project Bulks I was facing this exact problem, so I thought it might be worth sharing the solution with you. In the example below we try to render differently structured JSON arrays in the same grid. The function getKeysFromJson retrieves the keys from such an array.</description>
     </item>
     
     <item>
       <title>Adding Buttons in a Dataview using ExtJS 4.2</title>
-      <link>/2013/06/10/adding-buttons-in-a-dataview-using-extjs-4-2/</link>
+      <link>https://marcusschiesser.github.io/2013/06/10/adding-buttons-in-a-dataview-using-extjs-4-2/</link>
       <pubDate>Mon, 10 Jun 2013 22:12:58 +0000</pubDate>
       
-      <guid>/2013/06/10/adding-buttons-in-a-dataview-using-extjs-4-2/</guid>
+      <guid>https://marcusschiesser.github.io/2013/06/10/adding-buttons-in-a-dataview-using-extjs-4-2/</guid>
       <description>If you have a dataview in your ExtJS application, it might be possible that you want to add some action buttons for each of its items. With some good old Javascript this is actually quite easy. You just have to create a template that contains the HTML markup for the button and give it a distinguishable class name. In the itemmousedown listener of the dataview you later check for the class name.</description>
     </item>
     
     <item>
       <title>Add a delete button in each row of an ExtJS data grid</title>
-      <link>/2009/06/13/add-a-delete-button-in-each-row-of-an-extjs-data-grid/</link>
+      <link>https://marcusschiesser.github.io/2009/06/13/add-a-delete-button-in-each-row-of-an-extjs-data-grid/</link>
       <pubDate>Sat, 13 Jun 2009 19:53:56 +0000</pubDate>
       
-      <guid>/2009/06/13/add-a-delete-button-in-each-row-of-an-extjs-data-grid/</guid>
+      <guid>https://marcusschiesser.github.io/2009/06/13/add-a-delete-button-in-each-row-of-an-extjs-data-grid/</guid>
       <description>For usability reasons it is usually a good idea to add a delete button to each row of a data grid. If the user clicks on such a button, the whole row that contained the button will be deleted.
 The data grid of ExtJS does not contain such a feature by default, but it could be implemented by adding a special column to the column model. Using this extension, it could be easily done like this:</description>
     </item>
     
     <item>
       <title>Learn how to build a web application with ExtJS</title>
-      <link>/2009/06/13/learn-how-to-build-a-web-application-with-extjs/</link>
+      <link>https://marcusschiesser.github.io/2009/06/13/learn-how-to-build-a-web-application-with-extjs/</link>
       <pubDate>Sat, 13 Jun 2009 18:28:09 +0000</pubDate>
       
-      <guid>/2009/06/13/learn-how-to-build-a-web-application-with-extjs/</guid>
+      <guid>https://marcusschiesser.github.io/2009/06/13/learn-how-to-build-a-web-application-with-extjs/</guid>
       <description>If you&amp;rsquo;re interested in learning ExtJS and by accident know some German, I can recommend you read an article I wrote together with my colleague Stefan Botzenhart. The article is called &amp;lsquo;Kombiniert: Ruby on Rails und Ext JS&amp;rsquo; and is published in the famous German IT magazine iX in their actual special edition called Web on Rails.
 In the article we explain the implementation of meinkabinett, a web application where people can vote celebrities for the European government.</description>
     </item>
     
     <item>
       <title>Display an info text in a HTML input field if its focus is lost</title>
-      <link>/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</link>
+      <link>https://marcusschiesser.github.io/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</link>
       <pubDate>Fri, 12 Jun 2009 09:18:02 +0000</pubDate>
       
-      <guid>/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</guid>
+      <guid>https://marcusschiesser.github.io/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</guid>
       <description>Now that with Ext Core a light-weight version (just 25kB) of ExtJS has been released, I thought it&amp;rsquo;s time to build a nice example with it.
 The result is something very useful that you can see in actually a lot of web sites: Display a info text inside of a input text field if it is empty and does not have the focus.
 Here&amp;rsquo;s how it looks like:
@@ -83,19 +83,19 @@ To add this behaviour to a input field you just have to call this single line:</
     
     <item>
       <title>Mark Required Fields in a ExtJS Form</title>
-      <link>/2009/05/04/mark-required-fields-in-a-extjs-form/</link>
+      <link>https://marcusschiesser.github.io/2009/05/04/mark-required-fields-in-a-extjs-form/</link>
       <pubDate>Mon, 04 May 2009 12:12:48 +0000</pubDate>
       
-      <guid>/2009/05/04/mark-required-fields-in-a-extjs-form/</guid>
+      <guid>https://marcusschiesser.github.io/2009/05/04/mark-required-fields-in-a-extjs-form/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Phone number selector in ExtJS</title>
-      <link>/2009/04/08/phone-number-selector-in-extjs/</link>
+      <link>https://marcusschiesser.github.io/2009/04/08/phone-number-selector-in-extjs/</link>
       <pubDate>Wed, 08 Apr 2009 17:10:42 +0000</pubDate>
       
-      <guid>/2009/04/08/phone-number-selector-in-extjs/</guid>
+      <guid>https://marcusschiesser.github.io/2009/04/08/phone-number-selector-in-extjs/</guid>
       <description>Wouldn&amp;rsquo;t it be nice to use a combo box of flag images to select the country code of phone numbers?
 If you use a country selection component that&amp;rsquo;s quite easy. Just wrap it in a re-usable component together with a textfield for the local number and the result looks like this:
 And here&amp;rsquo;s the example&amp;rsquo;s source:
@@ -104,10 +104,10 @@ Ext.onReady(function(){ var panel = new Ext.FormPanel({ style: &#39;padding: 10p
     
     <item>
       <title>Putting ExtJS templates in separate files</title>
-      <link>/2009/03/11/putting-extjs-templates-in-separate-files/</link>
+      <link>https://marcusschiesser.github.io/2009/03/11/putting-extjs-templates-in-separate-files/</link>
       <pubDate>Wed, 11 Mar 2009 10:37:40 +0000</pubDate>
       
-      <guid>/2009/03/11/putting-extjs-templates-in-separate-files/</guid>
+      <guid>https://marcusschiesser.github.io/2009/03/11/putting-extjs-templates-in-separate-files/</guid>
       <description>To create a template in ExtJS you usually have to put the template code inline in your javascript. That could lead to problems if you want to edit your code and the designer wants to change the template. Therefore it&amp;rsquo;s a good idea to put the template in a separate file.
 For that reason I built this loader singleton that is capable of lazy loading ExtJS templates:
 Ext.ns(&#39;templates&#39;); templates.Loader = function(){ var that = {}; var map = {}; that.</description>
@@ -115,10 +115,10 @@ Ext.ns(&#39;templates&#39;); templates.Loader = function(){ var that = {}; var m
     
     <item>
       <title>Adding Rows to a Grid in ExtJS 4.1</title>
-      <link>/2009/02/27/adding-rows-to-a-grid-in-extjs/</link>
+      <link>https://marcusschiesser.github.io/2009/02/27/adding-rows-to-a-grid-in-extjs/</link>
       <pubDate>Fri, 27 Feb 2009 18:38:59 +0000</pubDate>
       
-      <guid>/2009/02/27/adding-rows-to-a-grid-in-extjs/</guid>
+      <guid>https://marcusschiesser.github.io/2009/02/27/adding-rows-to-a-grid-in-extjs/</guid>
       <description>Note: Has been updated for ExtJS 4.1
 In the last article we built a data grid mockup in ExtJS 4.1. Now we want to add some rows to the grid. Firstly we need to create a model class to store a data. We&amp;rsquo;ve done that also in the previously article, but for the better understanding, here&amp;rsquo;s it again:
 Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;firstName&#39;, &#39;lastName&#39;] });  Having the Person class we can simply add new rows to the store (people in our case) by calling the add function with new instances of that class:</description>
@@ -126,10 +126,10 @@ Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;f
     
     <item>
       <title>Building Mockups in ExtJS 4.1</title>
-      <link>/2009/02/27/167/</link>
+      <link>https://marcusschiesser.github.io/2009/02/27/167/</link>
       <pubDate>Fri, 27 Feb 2009 17:15:03 +0000</pubDate>
       
-      <guid>/2009/02/27/167/</guid>
+      <guid>https://marcusschiesser.github.io/2009/02/27/167/</guid>
       <description>Note: This post has been updated for ExtJS 4.1
 In the early development phase it is usually a good idea to provide a mockup that is not using real data but some dummy data from memory. To do that for a grid in ExtJS we need to create a record class first. For a person this might look like this:
 Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;firstName&#39;, &#39;lastName&#39;] });  Then we need a store where instances of the Person class will be stored:</description>
@@ -137,30 +137,30 @@ Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;f
     
     <item>
       <title>Validator for ExtJS Checkbox</title>
-      <link>/2009/02/20/151/</link>
+      <link>https://marcusschiesser.github.io/2009/02/20/151/</link>
       <pubDate>Fri, 20 Feb 2009 17:25:42 +0000</pubDate>
       
-      <guid>/2009/02/20/151/</guid>
+      <guid>https://marcusschiesser.github.io/2009/02/20/151/</guid>
       <description>Very unfortunately ExtJS doesn&amp;rsquo;t offer a validator for its checkbox component. Normally a validator checks whether a field is valid and takes care of displaying an error message if not. For a checkbox we would like that to happen if the checkbox is not selected. Overriding the validate function of the checkbox we can provide such a functionality for all checkbox instances we are about to create:
  Ext.form.Checkbox.prototype.validate = function(){ if (this.</description>
     </item>
     
     <item>
       <title>Generic error handler for ExtJS</title>
-      <link>/2009/02/09/generic-error-handler-for-extjs/</link>
+      <link>https://marcusschiesser.github.io/2009/02/09/generic-error-handler-for-extjs/</link>
       <pubDate>Mon, 09 Feb 2009 10:40:08 +0000</pubDate>
       
-      <guid>/2009/02/09/generic-error-handler-for-extjs/</guid>
+      <guid>https://marcusschiesser.github.io/2009/02/09/generic-error-handler-for-extjs/</guid>
       <description>When you are doing client/server communication with ExtJS you probably run into the problem that you want to handle server side errors in a generic way. A solution that I found is to override the handleFailure function in the Ext.data.Connection class:
 Ext.data.Connection.prototype._handleFailure = Ext.data.Connection.prototype.handleFailure; Ext.data.Connection.prototype.handleFailure = function(response, e) { var errorText = Ext.DomQuery.selectValue(&amp;quot;Reason/Text&amp;quot;, response.responseXML, &amp;quot;Unknown Error&amp;quot;); Ext.Msg.alert(&#39;Error&#39;, errorText); Ext.data.Connection.prototype._handleFailure.call(this, response, e); };  This handler simply is called whenever a server side failure occurs.</description>
     </item>
     
     <item>
       <title>3 Ways to render HTML inside of a ExtJS container</title>
-      <link>/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/</link>
+      <link>https://marcusschiesser.github.io/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/</link>
       <pubDate>Wed, 14 Jan 2009 14:23:43 +0000</pubDate>
       
-      <guid>/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/</guid>
+      <guid>https://marcusschiesser.github.io/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/</guid>
       <description>It has been a while since my last blog post. The main reason is that I am now having a nice new job at efiport which leads to the situation that I am doing now good old Javascript (mainly ExtJS) instead of Flex. So I think in the future there will be more posts about ExtJS then Flex. Sorry Flex folks.
 To tribute the change a bit, I start with the problem of adding HTML code inside of a ExtJS container.</description>
     </item>

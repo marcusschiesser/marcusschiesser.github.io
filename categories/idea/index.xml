@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Idea on Marcus Schiesser</title>
-    <link>/categories/idea/</link>
+    <link>https://marcusschiesser.github.io/categories/idea/</link>
     <description>Recent content in Idea on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 22 Jun 2011 20:13:17 +0000</lastBuildDate><atom:link href="/categories/idea/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Jun 2011 20:13:17 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/categories/idea/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Openbahn-API – Bahn-Webseite als Webservice</title>
-      <link>/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/</link>
+      <link>https://marcusschiesser.github.io/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/</link>
       <pubDate>Wed, 22 Jun 2011 20:13:17 +0000</pubDate>
       
-      <guid>/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/</guid>
+      <guid>https://marcusschiesser.github.io/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/</guid>
       <description>As this is only of interest for German users - this article is in German only. It&amp;rsquo;s about a new project of mine. Sorry folks.
 Ich bin gerade dabei eine Android-App zu entwickeln, mit der es möglich ist Fahrkarten für Bahn-Pendler einfacher zu buchen. Bei der Entwicklung ist mir aufgefallen, dass die Bahn leider keine Webservices nach außen zur Verfügung stellt – die Webseite www.bahn.de ist zusammen mit der mobilen Variante m.</description>
     </item>
     
     <item>
       <title>Klassenbuch für soziale Netzwerke</title>
-      <link>/2008/06/21/klassenbuch-fur-soziale-netzwerke/</link>
+      <link>https://marcusschiesser.github.io/2008/06/21/klassenbuch-fur-soziale-netzwerke/</link>
       <pubDate>Sat, 21 Jun 2008 19:46:03 +0000</pubDate>
       
-      <guid>/2008/06/21/klassenbuch-fur-soziale-netzwerke/</guid>
+      <guid>https://marcusschiesser.github.io/2008/06/21/klassenbuch-fur-soziale-netzwerke/</guid>
       <description>Bastele gerade mit Adobe AIR an einer Desktop-Anwendung für das StudiVZ. Dies hat mich in Zusammenhang mit dem Trend eigene Bücher drucken zu lassen auf folgende Idee gebracht:
 Erinnert Ihr euch noch an die alten Klassenbücher, in denen jeder Schulfreund auf einer Seite vorgestellt wurde? So etwas könnte man ja auch über einen Online-Service erstellen und über ein soziales Netzwerk wie StudiVZ hätte man gleich alle notwendigen Daten zusammen: die Profile aller Freunde, Fotos - lediglich ein paar redaktionelle Beiträge müsste man zusammen mit einer geeigneten Buchvorlage auswählen.</description>
     </item>
     
     <item>
       <title>Spezialisierter Homepage-Baukasten - Beispiel Bewerbung</title>
-      <link>/2008/04/27/spezialisierter-homepage-baukasten-beispiel-bewerbung/</link>
+      <link>https://marcusschiesser.github.io/2008/04/27/spezialisierter-homepage-baukasten-beispiel-bewerbung/</link>
       <pubDate>Sun, 27 Apr 2008 21:16:11 +0000</pubDate>
       
-      <guid>/2008/04/27/spezialisierter-homepage-baukasten-beispiel-bewerbung/</guid>
+      <guid>https://marcusschiesser.github.io/2008/04/27/spezialisierter-homepage-baukasten-beispiel-bewerbung/</guid>
       <description>Es gibt ja mittlerweile eine Menge von sogenannten Homepage-Baukästen, mit deren Hilfe man einfach und ohne Programmierkenntnisse eine eigene Homepage erstellen kann.
 Schnell kann man somit eine Seite für seinen Verein, seine Bewerbung oder ähnliches erstellen. Da stellt sich sich mir die Frage, wieso gibt es keine speziellen Homepage-Baukästen nur für einen Zweck, z.B. um eine perfekte Bewerbung online zu stellen?
 Mit einigen interessanten Zusatzfunktionen könnten sich diese gut von ihren Wettbewerbern differenzieren.</description>
@@ -43,10 +43,10 @@ Mit einigen interessanten Zusatzfunktionen könnten sich diese gut von ihren Wet
     
     <item>
       <title>Bewerbung mit Persönlichkeit</title>
-      <link>/2008/04/19/bewerbung-mit-personlichkeit/</link>
+      <link>https://marcusschiesser.github.io/2008/04/19/bewerbung-mit-personlichkeit/</link>
       <pubDate>Sat, 19 Apr 2008 15:04:57 +0000</pubDate>
       
-      <guid>/2008/04/19/bewerbung-mit-personlichkeit/</guid>
+      <guid>https://marcusschiesser.github.io/2008/04/19/bewerbung-mit-personlichkeit/</guid>
       <description>Über bestehende Jobportale lässt sich in sekundenschnelle eine Vielzahl von ausgeschriebenen Stellen finden.
 Als Entscheidungskriterien werden dabei aus Arbeitgebersicht Erfahrungen und Ausbildung und aus Bewerbersicht die Entlohnung berücksichtigt.
 Dies geht meiner Meinung nach nicht weit genug - stellt denn niemand die Frage, ob die Persönlichkeit des Bewerbers zu der Stelle passt? Also mal abgesehen von der utopischen Standardanforderung, dass nach Möglichkeit alle sogenannten Soft Skills erfüllt sein müssen?
@@ -55,19 +55,19 @@ Dabei gibt es doch wirklich eine Menge guter Persönlichkeitstests: Myers-Briggs
     
     <item>
       <title>Wohnungsmarktplatz Nr. 989235</title>
-      <link>/2008/04/07/wohnungsmarktplatz-nr-989235/</link>
+      <link>https://marcusschiesser.github.io/2008/04/07/wohnungsmarktplatz-nr-989235/</link>
       <pubDate>Mon, 07 Apr 2008 16:20:24 +0000</pubDate>
       
-      <guid>/2008/04/07/wohnungsmarktplatz-nr-989235/</guid>
+      <guid>https://marcusschiesser.github.io/2008/04/07/wohnungsmarktplatz-nr-989235/</guid>
       <description>Vor kurzem habe ich mir eine neue Wohnung gesucht – fündig wurde ich über eine ganz normale Kleinanzeige in einer Tageszeitung. Wieso nicht über das Internet? Irgendwie schade, aber dort finden sich fast ausschließlich Anzeigen von Maklern. Warum eigentlich? Das ist einfach: Der Vermieter hat keinen Nachteil und zusätzlich sogar den Vorteil, dass die Menge der Interessenten nach seinen Kriterien (Solvenz, langfristiges Mietverhältnis) gefiltert wird. Eine Lösung scheint mir ein Marktplatz, der für den Vermieter Anreize schafft, die Wohnung direkt einzustellen – zum Beispiel:</description>
     </item>
     
     <item>
       <title>Video-On-Demand Aggregator</title>
-      <link>/2008/03/27/video-on-demand-aggregator/</link>
+      <link>https://marcusschiesser.github.io/2008/03/27/video-on-demand-aggregator/</link>
       <pubDate>Thu, 27 Mar 2008 09:58:11 +0000</pubDate>
       
-      <guid>/2008/03/27/video-on-demand-aggregator/</guid>
+      <guid>https://marcusschiesser.github.io/2008/03/27/video-on-demand-aggregator/</guid>
       <description>Mittlerweile gibt es ja eine Menge Video-On-Demand Dienste (Hulu, Maxdome, Videoload um nur einige zu nennen).
 Das Problem aus meiner Sicht: Es mangelt an einer einheitlichen Oberfläche über die man die Filme aller Anbieter finden und natürlich dann auch sehen kann.
 Auch habe ich immer das Problem, unter der großen Auswahl einen guten Film zu finden - daher muss ich vorher jedesmal bei der Imdb vorbeischauen. Diese Bewertungen (selbstredend mit Stimmabgabe) sollten daher auch in diese einheitliche Oberfläche integriert werden.</description>
@@ -75,10 +75,10 @@ Auch habe ich immer das Problem, unter der großen Auswahl einen guten Film zu f
     
     <item>
       <title>Mobile Aktivitäten oder noch mehr Gezwitscher</title>
-      <link>/2008/03/25/idee-mobile-aktivitaten-oder-noch-mehr-gezwitscher/</link>
+      <link>https://marcusschiesser.github.io/2008/03/25/idee-mobile-aktivitaten-oder-noch-mehr-gezwitscher/</link>
       <pubDate>Tue, 25 Mar 2008 17:16:17 +0000</pubDate>
       
-      <guid>/2008/03/25/idee-mobile-aktivitaten-oder-noch-mehr-gezwitscher/</guid>
+      <guid>https://marcusschiesser.github.io/2008/03/25/idee-mobile-aktivitaten-oder-noch-mehr-gezwitscher/</guid>
       <description>Das wäre eine praktische Sache: Die letzten Aktivitäten der Freunde und Bekannte jederzeit abrufbar auf dem Mobiltelefon. Natürlich inklusive optionaler Benachrichtigung sobald eine neue Aktivität stattfindet.
 Was sind in diesem Zusammenhang letzte Aktivitäten? Soziale Netzwerke wie Facebook, Xing und Konsorten liefern jeweils einen News-Feed mit den letzten Aktivitäten, die meine Kontakte auf diesen Seiten getätigt haben. Beispiel: Ein Kontakt von mir hat einen neuen Kontakt in seine Freundschaftsliste hinzugefügt.
 Schön wäre es, wenn wie bei Twitter auch ein Foto des Kontakts angezeigt wird (a propos Twitter: wäre übrigens auch nett, wenn Twittermeldungen integriert wären).</description>
@@ -86,10 +86,10 @@ Schön wäre es, wenn wie bei Twitter auch ein Foto des Kontakts angezeigt wird 
     
     <item>
       <title>Ab jetzt ein paar Softwareideen</title>
-      <link>/2008/03/25/ab-jetzt-ein-paar-softwareideen/</link>
+      <link>https://marcusschiesser.github.io/2008/03/25/ab-jetzt-ein-paar-softwareideen/</link>
       <pubDate>Tue, 25 Mar 2008 17:01:29 +0000</pubDate>
       
-      <guid>/2008/03/25/ab-jetzt-ein-paar-softwareideen/</guid>
+      <guid>https://marcusschiesser.github.io/2008/03/25/ab-jetzt-ein-paar-softwareideen/</guid>
       <description>Wie wohl vielen passiert es mir recht häufig, dass ich eine Idee für eine neue Software habe. Leider und verständlicherweise habe ich selten Zeit diese Ideen weiter zu verfolgen oder sogar einen kleinen Prototypen zu entwickeln. Damit diese Ideen jedoch nicht vollends verloren gehen, sammele ich sie ab jetzt einfach in diesem Blog.
 Ich hoffe, es findet sich etwas brauchbares, das jemand entwickeln möchte – soweit ich kann helfe ich dabei gerne weiter.</description>
     </item>

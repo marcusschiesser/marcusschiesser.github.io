@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Widget on Marcus Schiesser</title>
-    <link>/tags/widget/</link>
+    <link>https://marcusschiesser.github.io/tags/widget/</link>
     <description>Recent content in Widget on Marcus Schiesser</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 30 Aug 2007 22:30:00 +0000</lastBuildDate><atom:link href="/tags/widget/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Aug 2007 22:30:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/widget/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unc - Goo jetzt auch als Widget</title>
-      <link>/2007/08/30/unc-goo-jetzt-auch-als-widget/</link>
+      <link>https://marcusschiesser.github.io/2007/08/30/unc-goo-jetzt-auch-als-widget/</link>
       <pubDate>Thu, 30 Aug 2007 22:30:00 +0000</pubDate>
       
-      <guid>/2007/08/30/unc-goo-jetzt-auch-als-widget/</guid>
+      <guid>https://marcusschiesser.github.io/2007/08/30/unc-goo-jetzt-auch-als-widget/</guid>
       <description>Unc, das nette Image-Tool mit dem Goo-Effekt gibt es jetzt auch als Widget (man muss ja jeden Web-Trend mal ausprobieren). Wer also auch in seinen Blog, MySpace oder ganz Oldskool auf seiner Homepage so einen Effekt einbauen möchte, der gehe doch einfach auf die entsprechende Seite bei Widgipedia</description>
     </item>
     
