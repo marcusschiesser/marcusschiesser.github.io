@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ideen on Marcus Schiesser</title>
+    <link>/tags/ideen/</link>
+    <description>Recent content in Ideen on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 27 Mar 2008 09:58:11 +0000</lastBuildDate><atom:link href="/tags/ideen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Video-On-Demand Aggregator</title>
+      <link>/2008/03/27/video-on-demand-aggregator/</link>
+      <pubDate>Thu, 27 Mar 2008 09:58:11 +0000</pubDate>
+      
+      <guid>/2008/03/27/video-on-demand-aggregator/</guid>
+      <description>Mittlerweile gibt es ja eine Menge Video-On-Demand Dienste (Hulu, Maxdome, Videoload um nur einige zu nennen).
+Das Problem aus meiner Sicht: Es mangelt an einer einheitlichen Oberfläche über die man die Filme aller Anbieter finden und natürlich dann auch sehen kann.
+Auch habe ich immer das Problem, unter der großen Auswahl einen guten Film zu finden - daher muss ich vorher jedesmal bei der Imdb vorbeischauen. Diese Bewertungen (selbstredend mit Stimmabgabe) sollten daher auch in diese einheitliche Oberfläche integriert werden.</description>
+    </item>
+    
+    <item>
+      <title>Mobile Aktivitäten oder noch mehr Gezwitscher</title>
+      <link>/2008/03/25/idee-mobile-aktivitaten-oder-noch-mehr-gezwitscher/</link>
+      <pubDate>Tue, 25 Mar 2008 17:16:17 +0000</pubDate>
+      
+      <guid>/2008/03/25/idee-mobile-aktivitaten-oder-noch-mehr-gezwitscher/</guid>
+      <description>Das wäre eine praktische Sache: Die letzten Aktivitäten der Freunde und Bekannte jederzeit abrufbar auf dem Mobiltelefon. Natürlich inklusive optionaler Benachrichtigung sobald eine neue Aktivität stattfindet.
+Was sind in diesem Zusammenhang letzte Aktivitäten? Soziale Netzwerke wie Facebook, Xing und Konsorten liefern jeweils einen News-Feed mit den letzten Aktivitäten, die meine Kontakte auf diesen Seiten getätigt haben. Beispiel: Ein Kontakt von mir hat einen neuen Kontakt in seine Freundschaftsliste hinzugefügt.
+Schön wäre es, wenn wie bei Twitter auch ein Foto des Kontakts angezeigt wird (a propos Twitter: wäre übrigens auch nett, wenn Twittermeldungen integriert wären).</description>
+    </item>
+    
+    <item>
+      <title>Ab jetzt ein paar Softwareideen</title>
+      <link>/2008/03/25/ab-jetzt-ein-paar-softwareideen/</link>
+      <pubDate>Tue, 25 Mar 2008 17:01:29 +0000</pubDate>
+      
+      <guid>/2008/03/25/ab-jetzt-ein-paar-softwareideen/</guid>
+      <description>Wie wohl vielen passiert es mir recht häufig, dass ich eine Idee für eine neue Software habe. Leider und verständlicherweise habe ich selten Zeit diese Ideen weiter zu verfolgen oder sogar einen kleinen Prototypen zu entwickeln. Damit diese Ideen jedoch nicht vollends verloren gehen, sammele ich sie ab jetzt einfach in diesem Blog.
+Ich hoffe, es findet sich etwas brauchbares, das jemand entwickeln möchte – soweit ich kann helfe ich dabei gerne weiter.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>rows on Marcus Schiesser</title>
+    <link>/tags/rows/</link>
+    <description>Recent content in rows on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 27 Feb 2009 18:38:59 +0000</lastBuildDate><atom:link href="/tags/rows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding Rows to a Grid in ExtJS 4.1</title>
+      <link>/2009/02/27/adding-rows-to-a-grid-in-extjs/</link>
+      <pubDate>Fri, 27 Feb 2009 18:38:59 +0000</pubDate>
+      
+      <guid>/2009/02/27/adding-rows-to-a-grid-in-extjs/</guid>
+      <description>Note: Has been updated for ExtJS 4.1
+In the last article we built a data grid mockup in ExtJS 4.1. Now we want to add some rows to the grid. Firstly we need to create a model class to store a data. We&amp;rsquo;ve done that also in the previously article, but for the better understanding, here&amp;rsquo;s it again:
+Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;firstName&#39;, &#39;lastName&#39;] });  Having the Person class we can simply add new rows to the store (people in our case) by calling the add function with new instances of that class:</description>
+    </item>
+    
+  </channel>
+</rss>

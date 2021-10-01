@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>transactions on Marcus Schiesser</title>
+    <link>/tags/transactions/</link>
+    <description>Recent content in transactions on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 05 Jan 2013 12:10:03 +0000</lastBuildDate><atom:link href="/tags/transactions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Doing EJB-like transactions with Google App Engine</title>
+      <link>/2013/01/05/doing-ejb-like-transactions-with-google-app-engine/</link>
+      <pubDate>Sat, 05 Jan 2013 12:10:03 +0000</pubDate>
+      
+      <guid>/2013/01/05/doing-ejb-like-transactions-with-google-app-engine/</guid>
+      <description>Using Google App Engine you can&amp;rsquo;t define a method as transactional with a simple annotation as you can in EJB. You always need to call some boilerplate code which gets quite annoying. Therefore the following utility class comes handy, which takes care of the transaction handling for you:
+https://gist.github.com/marcusschiesser/5474348
+To make use of it, you have to set the same persistence unit as in your persistence.xml configuration file first. Do this by changing the parameter of the method createEntityManagerFactory.</description>
+    </item>
+    
+  </channel>
+</rss>

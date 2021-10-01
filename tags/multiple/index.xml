@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>multiple on Marcus Schiesser</title>
+    <link>/tags/multiple/</link>
+    <description>Recent content in multiple on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 08 Apr 2009 16:52:08 +0000</lastBuildDate><atom:link href="/tags/multiple/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Component for selecting multiple items in Ext</title>
+      <link>/2009/04/08/component-for-selecting-multiple-items-in-ext/</link>
+      <pubDate>Wed, 08 Apr 2009 16:52:08 +0000</pubDate>
+      
+      <guid>/2009/04/08/component-for-selecting-multiple-items-in-ext/</guid>
+      <description>Ext already provides a component to select multiple items. The thing I do not like about it is that it covers too much space on the screen. Therefore I thought of a component that initially looks like a combo box and then opens a new window to let the user select the items.
+As a nice example tells more than thousand words - here it is:
+As you can see, it is actually based on the component provided by the Ext examples.</description>
+    </item>
+    
+  </channel>
+</rss>

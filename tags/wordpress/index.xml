@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Wordpress on Marcus Schiesser</title>
+    <link>/tags/wordpress/</link>
+    <description>Recent content in Wordpress on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate><atom:link href="/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Disqus without any plugins</title>
+      <link>/2015/10/17/using-disqus-without-any-plugins/</link>
+      <pubDate>Sat, 17 Oct 2015 03:30:44 +0000</pubDate>
+      
+      <guid>/2015/10/17/using-disqus-without-any-plugins/</guid>
+      <description>At TurnGeek we recently had the task to include Disqus (which is great by the way) into our site, so readers of our books can leave comments for each chapter.
+For a couple of reasons we couldn&amp;rsquo;t use their Wordpress plugin although the site is running on Wordpress. If you&amp;rsquo;re running in the same issue or you just don&amp;rsquo;t want the dependency of another plugin, you can paste the following snippet in your Wordpress posts (by the way, this also works with non WordPress sites):</description>
+    </item>
+    
+    <item>
+      <title>Ning-Theme for Wordpress</title>
+      <link>/2008/07/09/wordpress-theme-fur-ning/</link>
+      <pubDate>Wed, 09 Jul 2008 18:38:58 +0000</pubDate>
+      
+      <guid>/2008/07/09/wordpress-theme-fur-ning/</guid>
+      <description>I&amp;rsquo;ve written a small Ning-Theme for Wordpress, for all the people who want to use a Wordpress blog with Ning. After installation the blog automatically uses the same Look&amp;amp;Feel as the site created with Ning.
+For installation you firstly must copy the ning folder to /wp-content/themes and activate the theme as usually. Afterwards you must modify the config.php file to fit the needs of your Ning site.
+Right now, the theme is only available in German language, but on demand I&amp;rsquo;m happy to help with the development of a multilingual theme.</description>
+    </item>
+    
+  </channel>
+</rss>

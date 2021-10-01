@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>app engine on Marcus Schiesser</title>
+    <link>/tags/app-engine/</link>
+    <description>Recent content in app engine on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 05 Jan 2013 12:10:03 +0000</lastBuildDate><atom:link href="/tags/app-engine/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Doing EJB-like transactions with Google App Engine</title>
+      <link>/2013/01/05/doing-ejb-like-transactions-with-google-app-engine/</link>
+      <pubDate>Sat, 05 Jan 2013 12:10:03 +0000</pubDate>
+      
+      <guid>/2013/01/05/doing-ejb-like-transactions-with-google-app-engine/</guid>
+      <description>Using Google App Engine you can&amp;rsquo;t define a method as transactional with a simple annotation as you can in EJB. You always need to call some boilerplate code which gets quite annoying. Therefore the following utility class comes handy, which takes care of the transaction handling for you:
+https://gist.github.com/marcusschiesser/5474348
+To make use of it, you have to set the same persistence unit as in your persistence.xml configuration file first. Do this by changing the parameter of the method createEntityManagerFactory.</description>
+    </item>
+    
+    <item>
+      <title>Using Google App Engine as Backend for Android</title>
+      <link>/2011/12/02/using-google-app-engine-as-backend-for-android/</link>
+      <pubDate>Fri, 02 Dec 2011 17:40:57 +0000</pubDate>
+      
+      <guid>/2011/12/02/using-google-app-engine-as-backend-for-android/</guid>
+      <description>If you&amp;rsquo;re looking for a way to create a backend for your Android application, Google App Engine looks like the perfect choice: You can use Java as you can do for Android and you don&amp;rsquo;t need to think too much about hosting, as it is all stored in the cloud.
+Another benefit is that you can reuse your transfer objects on the client and on server side. But as it is often there are some problems doing this in practice.</description>
+    </item>
+    
+  </channel>
+</rss>

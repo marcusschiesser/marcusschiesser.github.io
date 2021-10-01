@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>netzwerk on Marcus Schiesser</title>
+    <link>/tags/netzwerk/</link>
+    <description>Recent content in netzwerk on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 21 Jun 2008 19:46:03 +0000</lastBuildDate><atom:link href="/tags/netzwerk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Klassenbuch für soziale Netzwerke</title>
+      <link>/2008/06/21/klassenbuch-fur-soziale-netzwerke/</link>
+      <pubDate>Sat, 21 Jun 2008 19:46:03 +0000</pubDate>
+      
+      <guid>/2008/06/21/klassenbuch-fur-soziale-netzwerke/</guid>
+      <description>Bastele gerade mit Adobe AIR an einer Desktop-Anwendung für das StudiVZ. Dies hat mich in Zusammenhang mit dem Trend eigene Bücher drucken zu lassen auf folgende Idee gebracht:
+Erinnert Ihr euch noch an die alten Klassenbücher, in denen jeder Schulfreund auf einer Seite vorgestellt wurde? So etwas könnte man ja auch über einen Online-Service erstellen und über ein soziales Netzwerk wie StudiVZ hätte man gleich alle notwendigen Daten zusammen: die Profile aller Freunde, Fotos - lediglich ein paar redaktionelle Beiträge müsste man zusammen mit einer geeigneten Buchvorlage auswählen.</description>
+    </item>
+    
+  </channel>
+</rss>

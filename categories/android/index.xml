@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Android on Marcus Schiesser</title>
+    <link>/categories/android/</link>
+    <description>Recent content in Android on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 02 Dec 2011 17:40:57 +0000</lastBuildDate><atom:link href="/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Google App Engine as Backend for Android</title>
+      <link>/2011/12/02/using-google-app-engine-as-backend-for-android/</link>
+      <pubDate>Fri, 02 Dec 2011 17:40:57 +0000</pubDate>
+      
+      <guid>/2011/12/02/using-google-app-engine-as-backend-for-android/</guid>
+      <description>If you&amp;rsquo;re looking for a way to create a backend for your Android application, Google App Engine looks like the perfect choice: You can use Java as you can do for Android and you don&amp;rsquo;t need to think too much about hosting, as it is all stored in the cloud.
+Another benefit is that you can reuse your transfer objects on the client and on server side. But as it is often there are some problems doing this in practice.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Rails on Marcus Schiesser</title>
+    <link>/tags/rails/</link>
+    <description>Recent content in Rails on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 13 Jun 2009 18:28:09 +0000</lastBuildDate><atom:link href="/tags/rails/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learn how to build a web application with ExtJS</title>
+      <link>/2009/06/13/learn-how-to-build-a-web-application-with-extjs/</link>
+      <pubDate>Sat, 13 Jun 2009 18:28:09 +0000</pubDate>
+      
+      <guid>/2009/06/13/learn-how-to-build-a-web-application-with-extjs/</guid>
+      <description>If you&amp;rsquo;re interested in learning ExtJS and by accident know some German, I can recommend you read an article I wrote together with my colleague Stefan Botzenhart. The article is called &amp;lsquo;Kombiniert: Ruby on Rails und Ext JS&amp;rsquo; and is published in the famous German IT magazine iX in their actual special edition called Web on Rails.
+In the article we explain the implementation of meinkabinett, a web application where people can vote celebrities for the European government.</description>
+    </item>
+    
+    <item>
+      <title>Vendor Gems in Rake-Tasks verwenden</title>
+      <link>/2008/07/22/vendor-gems-in-rake-tasks-verwenden/</link>
+      <pubDate>Tue, 22 Jul 2008 17:36:03 +0000</pubDate>
+      
+      <guid>/2008/07/22/vendor-gems-in-rake-tasks-verwenden/</guid>
+      <description>Für das Deployment einer Rails-Anwendung ist es eine gute Sache, die für die Anwendung benötigten Gems in das Verzeichnis /vendor/gems zu kopieren. Der Hintergrund ist einfach - so wird sichergestellt, dass der Server dieselbe Version des Gems referenziert wie vom Entwickler vorgesehen.
+Damit Rails diese zur Laufzeit findet wird in der environment.rb folgender Code eingefügt:
+config.load_paths += Dir[&amp;quot;#{RAILS_ROOT}/vendor/gems/**&amp;quot;].map do |dir| File.directory?(lib = &amp;quot;#{dir}/lib&amp;quot;) ? lib : dir end  Das Problem dabei ist nun, dass die Vendor-Gems nicht von den Rake-Tasks gefunden werden.</description>
+    </item>
+    
+  </channel>
+</rss>

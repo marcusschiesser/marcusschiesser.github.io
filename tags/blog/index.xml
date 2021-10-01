@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog on Marcus Schiesser</title>
+    <link>/tags/blog/</link>
+    <description>Recent content in Blog on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 04 Jan 2007 15:49:00 +0000</lastBuildDate><atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blogging analog oder die erste Pressemitteilung</title>
+      <link>/2007/01/04/blogging-analog-oder-die-erste-pressemitteilung/</link>
+      <pubDate>Thu, 04 Jan 2007 15:49:00 +0000</pubDate>
+      
+      <guid>/2007/01/04/blogging-analog-oder-die-erste-pressemitteilung/</guid>
+      <description>Eine interessante Feststellung machte ich gestern, als ich die Kommunikationsmethoden des Blogging (jedenfalls soweit sie mir nach den paar Einträgen schon bekannt sind), auf die gute alte reale Welt übertrug:
+Als ich nämlich auf das Editorial (so ne Art Blogeintrag) einer Zeitschrift antwortete (also den Blogeintrag kommentierte) und dabei indirekt auf die Internehmerseite hinwies, wurde ich gleich darauf vom Chefredakteur angerufen und um eine Pressemitteilung gebeten.
+Freue mich ja immer, wenn sich jemand für meine Ideen interessiert - also habe ich gleich mal eine geschrieben: Internehmer - Soziales Netzwerk für Internet-Unternehmer</description>
+    </item>
+    
+  </channel>
+</rss>

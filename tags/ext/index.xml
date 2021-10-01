@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ext on Marcus Schiesser</title>
+    <link>/tags/ext/</link>
+    <description>Recent content in ext on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 12 Jun 2009 09:18:02 +0000</lastBuildDate><atom:link href="/tags/ext/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Display an info text in a HTML input field if its focus is lost</title>
+      <link>/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</link>
+      <pubDate>Fri, 12 Jun 2009 09:18:02 +0000</pubDate>
+      
+      <guid>/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</guid>
+      <description>Now that with Ext Core a light-weight version (just 25kB) of ExtJS has been released, I thought it&amp;rsquo;s time to build a nice example with it.
+The result is something very useful that you can see in actually a lot of web sites: Display a info text inside of a input text field if it is empty and does not have the focus.
+Here&amp;rsquo;s how it looks like:
+E-Mail:
+To add this behaviour to a input field you just have to call this single line:</description>
+    </item>
+    
+    <item>
+      <title>Mark Required Fields in a ExtJS Form</title>
+      <link>/2009/05/04/mark-required-fields-in-a-extjs-form/</link>
+      <pubDate>Mon, 04 May 2009 12:12:48 +0000</pubDate>
+      
+      <guid>/2009/05/04/mark-required-fields-in-a-extjs-form/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phone number selector in ExtJS</title>
+      <link>/2009/04/08/phone-number-selector-in-extjs/</link>
+      <pubDate>Wed, 08 Apr 2009 17:10:42 +0000</pubDate>
+      
+      <guid>/2009/04/08/phone-number-selector-in-extjs/</guid>
+      <description>Wouldn&amp;rsquo;t it be nice to use a combo box of flag images to select the country code of phone numbers?
+If you use a country selection component that&amp;rsquo;s quite easy. Just wrap it in a re-usable component together with a textfield for the local number and the result looks like this:
+And here&amp;rsquo;s the example&amp;rsquo;s source:
+Ext.onReady(function(){ var panel = new Ext.FormPanel({ style: &#39;padding: 10px;&#39;, frame: true, labelWidth: 50, width: 400, items: [{ fieldLabel: &#39;Mobile&#39;, xtype: &#39;phonefield&#39;, anchor: &#39;100%&#39;, emptyText: &#39;(e.</description>
+    </item>
+    
+    <item>
+      <title>Component for selecting multiple items in Ext</title>
+      <link>/2009/04/08/component-for-selecting-multiple-items-in-ext/</link>
+      <pubDate>Wed, 08 Apr 2009 16:52:08 +0000</pubDate>
+      
+      <guid>/2009/04/08/component-for-selecting-multiple-items-in-ext/</guid>
+      <description>Ext already provides a component to select multiple items. The thing I do not like about it is that it covers too much space on the screen. Therefore I thought of a component that initially looks like a combo box and then opens a new window to let the user select the items.
+As a nice example tells more than thousand words - here it is:
+As you can see, it is actually based on the component provided by the Ext examples.</description>
+    </item>
+    
+    <item>
+      <title>Getting values from a form containing combos in Ext</title>
+      <link>/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/</link>
+      <pubDate>Tue, 07 Apr 2009 15:54:45 +0000</pubDate>
+      
+      <guid>/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/</guid>
+      <description>Actually it is pretty easy to get the values of all fields of a form in Ext: You just have to call the getValues() method of the BasicForm. The problem with that approach is that it just takes the values directly from the DOM and is not calling the getValue() for each field (Which I assumed). One consequence is that you don&amp;rsquo;t get the values of combo boxes, but their labels.</description>
+    </item>
+    
+    <item>
+      <title>Country selector with flag images in ExtJS</title>
+      <link>/2009/04/01/country-selector-with-flag-images-in-extjs/</link>
+      <pubDate>Wed, 01 Apr 2009 10:04:48 +0000</pubDate>
+      
+      <guid>/2009/04/01/country-selector-with-flag-images-in-extjs/</guid>
+      <description>Based on the ExtJS-Tutorial on how to build a combo box with an icon, I built a component that can be used as a country selector in ExtJS.
+Here you can find the code of the component:
+Ext.ns(&#39;Extreme.components&#39;); Extreme.components.CountryCombo = Ext.extend(Ext.form.ComboBox, { constructor: function(config){ var data; if (config.phoneLabels) { data = [[&#39;+49&#39;, &#39;+49&#39;, &#39;ux-flag-de&#39;], [&#39;+43&#39;, &#39;+43&#39;, &#39;ux-flag-at&#39;], [&#39;+41&#39;, &#39;+41&#39;, &#39;ux-flag-ch&#39;], [&#39;+352&#39;, &#39;+352&#39;, &#39;ux-flag-lu&#39;], [&#39;+432&#39;, &#39;+432&#39;, &#39;ux-flag-li&#39;]]; } else { data = [[&#39;DE&#39;, &#39;Deutschland&#39;, &#39;ux-flag-de&#39;], [&#39;AT&#39;, &#39;Österreich&#39;, &#39;ux-flag-at&#39;], [&#39;CH&#39;, &#39;Schweiz&#39;, &#39;ux-flag-ch&#39;], [&#39;LU&#39;, &#39;Luxemburg&#39;, &#39;ux-flag-lu&#39;], [&#39;LI&#39;, &#39;Lichtenstein&#39;, &#39;ux-flag-li&#39;]]; } Extreme.</description>
+    </item>
+    
+    <item>
+      <title>Building Mockups in ExtJS 4.1</title>
+      <link>/2009/02/27/167/</link>
+      <pubDate>Fri, 27 Feb 2009 17:15:03 +0000</pubDate>
+      
+      <guid>/2009/02/27/167/</guid>
+      <description>Note: This post has been updated for ExtJS 4.1
+In the early development phase it is usually a good idea to provide a mockup that is not using real data but some dummy data from memory. To do that for a grid in ExtJS we need to create a record class first. For a person this might look like this:
+Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;firstName&#39;, &#39;lastName&#39;] });  Then we need a store where instances of the Person class will be stored:</description>
+    </item>
+    
+  </channel>
+</rss>

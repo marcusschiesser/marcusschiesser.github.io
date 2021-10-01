@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>jaxb on Marcus Schiesser</title>
+    <link>/tags/jaxb/</link>
+    <description>Recent content in jaxb on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 01 Dec 2011 16:06:30 +0000</lastBuildDate><atom:link href="/tags/jaxb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using real POJOs (without JAXB Annotations) as transfer objects with JAX-RS </title>
+      <link>/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/</link>
+      <pubDate>Thu, 01 Dec 2011 16:06:30 +0000</pubDate>
+      
+      <guid>/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/</guid>
+      <description>Are you annoyed that you have to annotate your POJOs with @XmlRootElement, so they can be used with JAX-RS? If your using Jersey as JAX-RS implementation your lucky: Just add to the &amp;lt;servlet&amp;gt; tag in your web.xml the following snippet:
+&amp;lt;init-param&amp;gt; &amp;lt;param-name&amp;gt;com.sun.jersey.api.json.POJOMappingFeature&amp;lt;/param-name&amp;gt; &amp;lt;param-value&amp;gt;true&amp;lt;/param-value&amp;gt; &amp;lt;/init-param&amp;gt;  After restarting your servlet, your POJOs are marshalled to JSON as a charme. Enjoy!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>loading on Marcus Schiesser</title>
+    <link>/tags/loading/</link>
+    <description>Recent content in loading on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 11 Mar 2009 10:37:40 +0000</lastBuildDate><atom:link href="/tags/loading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Putting ExtJS templates in separate files</title>
+      <link>/2009/03/11/putting-extjs-templates-in-separate-files/</link>
+      <pubDate>Wed, 11 Mar 2009 10:37:40 +0000</pubDate>
+      
+      <guid>/2009/03/11/putting-extjs-templates-in-separate-files/</guid>
+      <description>To create a template in ExtJS you usually have to put the template code inline in your javascript. That could lead to problems if you want to edit your code and the designer wants to change the template. Therefore it&amp;rsquo;s a good idea to put the template in a separate file.
+For that reason I built this loader singleton that is capable of lazy loading ExtJS templates:
+Ext.ns(&#39;templates&#39;); templates.Loader = function(){ var that = {}; var map = {}; that.</description>
+    </item>
+    
+  </channel>
+</rss>

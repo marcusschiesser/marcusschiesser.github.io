@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Programmierung on Marcus Schiesser</title>
+    <link>/tags/programmierung/</link>
+    <description>Recent content in Programmierung on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 05 Mar 2008 10:28:14 +0000</lastBuildDate><atom:link href="/tags/programmierung/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zugang zum 1&amp;1 Control-Center mit Adobe AIR</title>
+      <link>/2008/03/05/zugang-zum-11-control-center-mit-adobe-air/</link>
+      <pubDate>Wed, 05 Mar 2008 10:28:14 +0000</pubDate>
+      
+      <guid>/2008/03/05/zugang-zum-11-control-center-mit-adobe-air/</guid>
+      <description>Am Wochenende habe ich mal ein wenig mit Adobe AIR herumgespielt. Wer noch nichts davon gehört hat, mit Adobe AIR kann man Desktopanwendungen mit den üblichen Webtechnologien (HTML, Ajax, Flex) entwicklen - klingt erstmal nicht so prickelnd, ist aber eine tolle Sache. Warum? Beispielsweise kann man damit sehr einfach bestehende Webanwendungen um Desktopfunktionalitäten erweitern.
+Heraus kam dabei eine Desktopanwendung, die das Control-Center von 1&amp;amp;1 um folgende nette Funktionen erweitert:
+ * lokale Speicherung von mehreren Zugangsdaten * Beim Aufruf des SSH-Zugangs wird in die Zwischenablage eine Kommandozeile eingefügt, die einen SSH-Client startet * Schließen der Anwendung, wenn auf den Logout-Button gedrückt wird  Zum Installieren einfach auf &amp;ldquo;INSTALL NOW&amp;rdquo; drücken:</description>
+    </item>
+    
+    <item>
+      <title>Source von UNC online</title>
+      <link>/2008/02/23/source-von-unc-online/</link>
+      <pubDate>Sat, 23 Feb 2008 15:46:04 +0000</pubDate>
+      
+      <guid>/2008/02/23/source-von-unc-online/</guid>
+      <description>Habe nach meinem Serverumzug das Bilderverzerrungstool UNC mal wieder online gestellt. Mit einer kleinen Änderung: Der komplette Source ist nun ebenfalls online (Lizenz ist die GPL). In der Anwendung kann er wie bei Flex üblich über Rechtsklick und dann Klick auf &amp;lsquo;View Source&amp;rsquo; aufgerufen werden.</description>
+    </item>
+    
+    <item>
+      <title>Ning - die Internehmerspielwiese</title>
+      <link>/2006/12/30/ning-die-internehmerspielwiese/</link>
+      <pubDate>Sat, 30 Dec 2006 22:04:00 +0000</pubDate>
+      
+      <guid>/2006/12/30/ning-die-internehmerspielwiese/</guid>
+      <description>Unter Ning findet der angehende Internehmer eine interessante Plattform, um schnell Social Applications (wir unterlassen mal die akute Versionierungsmanie für das Wort Web) zu erstellen. Praktisch ist, dass nicht nur eine komplette API und Vorlagen zur Verfügung gestellt werden, sondern dass auch das komplette Hosting übernommen wird. Um das Ganze einmal auszuprobieren habe ich gleich eine Internehmer-Seite angelegt - mit dem Ziel Kontakt zwischen einzelnen Internehmern zu fördern.</description>
+    </item>
+    
+  </channel>
+</rss>

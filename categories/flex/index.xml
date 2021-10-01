@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Flex on Marcus Schiesser</title>
+    <link>/categories/flex/</link>
+    <description>Recent content in Flex on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 21 Oct 2008 22:02:51 +0000</lastBuildDate><atom:link href="/categories/flex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Splitting CSVs in Actionscript (the Excel way)</title>
+      <link>/2008/10/21/splitting-csvs-in-actionscript-the-excel-way/</link>
+      <pubDate>Tue, 21 Oct 2008 22:02:51 +0000</pubDate>
+      
+      <guid>/2008/10/21/splitting-csvs-in-actionscript-the-excel-way/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi-level markers using Google Maps for Flash</title>
+      <link>/2008/09/30/multi-level-markers-using-google-maps-for-flash/</link>
+      <pubDate>Tue, 30 Sep 2008 17:47:05 +0000</pubDate>
+      
+      <guid>/2008/09/30/multi-level-markers-using-google-maps-for-flash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Maps API for Flex</title>
+      <link>/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/</link>
+      <pubDate>Tue, 09 Sep 2008 12:33:01 +0000</pubDate>
+      
+      <guid>/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/</guid>
+      <description>As I pointed out before, it&amp;rsquo;s unfortunately not possible to use Flex components as info windows for Google Maps. Another issue is that the map is not available as a Flex component itself, therefore it&amp;rsquo;s a bit complicated to use it in Flex. So I thought to address these issues in a little Google Maps API for Flex that you can download here under BSD license. With openFlexInfoWindows I also added a method that allows you to use multiple Flex components as info window at once - nicely seperated in tabs.</description>
+    </item>
+    
+    <item>
+      <title>JSON generator for picture data from Flickr</title>
+      <link>/2008/08/28/json-generator-fur-bilddaten-von-flickr/</link>
+      <pubDate>Thu, 28 Aug 2008 22:11:42 +0000</pubDate>
+      
+      <guid>/2008/08/28/json-generator-fur-bilddaten-von-flickr/</guid>
+      <description>Probably a few other guys did this before, but I had a boring train journey without any internet connection, so I used the bits from my 3D album example and made a JSON generator for Flickr data. What does that mean? Just enter a search term and the program finds matching pictures on Flickr. If pictures have been found, a click on &amp;lsquo;JSON&amp;rsquo; displays a JSON-encoded array with the URLs and labels of the pictures found.</description>
+    </item>
+    
+    <item>
+      <title>Adding custom info windows to Google Maps in Flex</title>
+      <link>/2008/08/20/eigene-info-fenster-einer-google-map-in-flash-hinzufugen/</link>
+      <pubDate>Wed, 20 Aug 2008 11:37:29 +0000</pubDate>
+      
+      <guid>/2008/08/20/eigene-info-fenster-einer-google-map-in-flash-hinzufugen/</guid>
+      <description>I just tried to create a custom info window for a Google Map using the Google Maps API For Flash. Unfortunately it does not seem to work as expected by setting the customContent property in an object of type InfoWindowOptions. Therefore I wrote this little workaround that creates a popup window:
+private function createInfoWindow(map:Map, marker:Marker, infoWindow:Class):IFlexDisplayObject { var popup:IFlexDisplayObject = PopUpManager.createPopUp(map, infoWindow); var globalPos:Point = map.localToGlobal(map.fromLatLngToViewport(marker.getLatLng())); popup.move(globalPos.x - popup.width/2, globalPos.y - popup.</description>
+    </item>
+    
+    <item>
+      <title>3D-Album component for Adobe Flex</title>
+      <link>/2008/08/18/3d-album-komponente-fur-adobe-flex/</link>
+      <pubDate>Mon, 18 Aug 2008 18:51:51 +0000</pubDate>
+      
+      <guid>/2008/08/18/3d-album-komponente-fur-adobe-flex/</guid>
+      <description>You know PicLens? If not I highly recommend taking a look at that marvelous picture search tool.
+Especially interesting is the 3D view of the pictures - you can easily navigate through a whole bunch of pictures by using your mouse.
+I thought it would be nice to integrate such a picture view in your own Flex application, so I played around a bit with the 3D album tutorial from Bartek Drozdz and after a couple of days finished a nice little component that could be easily embedded in your own applications.</description>
+    </item>
+    
+    <item>
+      <title>Factories für Event-Handler in AS3</title>
+      <link>/2008/07/10/factories-fur-event-handler-in-as3/</link>
+      <pubDate>Thu, 10 Jul 2008 19:55:46 +0000</pubDate>
+      
+      <guid>/2008/07/10/factories-fur-event-handler-in-as3/</guid>
+      <description>In meinem letzten Projekt ist mir ein nettes Pattern für die Verwendung von Closures in Actionscript 3 eingefallen: Factories für Event-Handler.
+Hier ein sehr einfaches Beispiel für einen Handler, der einen Alert anzeigt:
+public static function createAlertHandler(text:String, title:String):Function { return function():void { Alert.show(text, title); } }	 Das Ganze kann man sich nun in der Praxis noch mit weiteren Parametern und natürlich einer komplexeren Handlerfunktion vorstellen. Der Vorteil an diesem Pattern ist, das über die Parameter der Factorymethode verschiedene Handler erstellt werden können, d.</description>
+    </item>
+    
+    <item>
+      <title>ItemRenderer in Flex typsicher hinzufügen</title>
+      <link>/2008/06/26/itemrenderer-in-flex-typsicher-hinzufugen/</link>
+      <pubDate>Thu, 26 Jun 2008 17:41:22 +0000</pubDate>
+      
+      <guid>/2008/06/26/itemrenderer-in-flex-typsicher-hinzufugen/</guid>
+      <description>Da ich es gerade mal wieder gebraucht habe (und mich nicht sofort daran erinnern konnte):
+Die Antwort auf die Frage, wie man in Flex einen ItemRenderer in MXML typsicher hinzufügt (Dies ist die etwas einfachere Variante von einem Flex Cookbook-Artikel von mir).
+Normalerweise fügt man in Flex einen ItemRenderer folgendermassen hinzu: Man schreibt den Fully Qualified Name des ItemRenderers (also den Klassennamen mit Package) in das Attribut itemRenderer.
+Verwendet man beispielsweise die Klasse MyItemRenderer im Package itemrenders , so sieht das dann bei einer TileList so aus:</description>
+    </item>
+    
+    <item>
+      <title>Ein paar Beiträge zum Adobe Flex Cookbook</title>
+      <link>/2007/09/29/ein-paar-beitrage-zum-adobe-flex-cookbook/</link>
+      <pubDate>Sat, 29 Sep 2007 17:19:00 +0000</pubDate>
+      
+      <guid>/2007/09/29/ein-paar-beitrage-zum-adobe-flex-cookbook/</guid>
+      <description>Habe gerade ein paar Beiträge für das Adobe Flex Cookbook erstellt:
+ * [Setting the properties of an itemRenderer from MXML](http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&amp;amp;postId=5762&amp;amp;productId=2&amp;amp;loc=en_US) * [Selecting a view in a ViewStack just by its Class](http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&amp;amp;postId=5782&amp;amp;productId=2&amp;amp;loc=en_US)  Viel Spaß beim voten ;-)</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>auftrag on Marcus Schiesser</title>
+    <link>/tags/auftrag/</link>
+    <description>Recent content in auftrag on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 29 Sep 2007 17:07:00 +0000</lastBuildDate><atom:link href="/tags/auftrag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Auftrag bei dmc</title>
+      <link>/2007/09/29/auftrag-bei-dmc/</link>
+      <pubDate>Sat, 29 Sep 2007 17:07:00 +0000</pubDate>
+      
+      <guid>/2007/09/29/auftrag-bei-dmc/</guid>
+      <description>Know-How in Adobe Flex aufzubauen, hat sich nun endlich bezahlt gemacht: Arbeite seit circa zwei Wochen an einem interessanten Auftrag bei dmc zur Entwicklung eines Frontends in Flex. Nach den USA gibt es nun also auch im Ländle Bedarf nach Rich-Internet-Applications. Zum Kunden darf ich leider nicht so viel sagen, hier aber ein paar Worte zur Technik: Die Architektur habe ich nach Cairngorm aufgebaut - zur Generierung der Patterns verwende ich cairngem.</description>
+    </item>
+    
+  </channel>
+</rss>

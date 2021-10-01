@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Fun on Marcus Schiesser</title>
+    <link>/tags/fun/</link>
+    <description>Recent content in Fun on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 30 Aug 2007 22:30:00 +0000</lastBuildDate><atom:link href="/tags/fun/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unc - Goo jetzt auch als Widget</title>
+      <link>/2007/08/30/unc-goo-jetzt-auch-als-widget/</link>
+      <pubDate>Thu, 30 Aug 2007 22:30:00 +0000</pubDate>
+      
+      <guid>/2007/08/30/unc-goo-jetzt-auch-als-widget/</guid>
+      <description>Unc, das nette Image-Tool mit dem Goo-Effekt gibt es jetzt auch als Widget (man muss ja jeden Web-Trend mal ausprobieren). Wer also auch in seinen Blog, MySpace oder ganz Oldskool auf seiner Homepage so einen Effekt einbauen möchte, der gehe doch einfach auf die entsprechende Seite bei Widgipedia</description>
+    </item>
+    
+    <item>
+      <title>UNC - Das Goo-Revival</title>
+      <link>/2007/07/27/unc-das-goo-revival/</link>
+      <pubDate>Fri, 27 Jul 2007 16:50:00 +0000</pubDate>
+      
+      <guid>/2007/07/27/unc-das-goo-revival/</guid>
+      <description>Erinnert Ihr Euch noch an Kai&amp;rsquo;s PowerGoo? Damit konnte man eigene Bilder beliebig verzerren - ähnlich wie mit einem Zerrspiegel. Verwendete man den Effekt mit Portraits konnte das unter Umständen ziemlich lustig aussehen (oder total bescheuert, so wie oben). Als ich in der Doku von Flex vom DisplacementMapFilter las, dachte ich mir damit müsste das doch prima gehen. Gesagt getan - ein paar Wochen später ist daraus UNC entstanden. Mit UNC könnt Ihr nun eigene Bilder hochladen (momentan max.</description>
+    </item>
+    
+    <item>
+      <title>Neue Seite und ein wenig Goo</title>
+      <link>/2007/06/20/neue-seite-und-ein-wenig-goo/</link>
+      <pubDate>Wed, 20 Jun 2007 10:18:00 +0000</pubDate>
+      
+      <guid>/2007/06/20/neue-seite-und-ein-wenig-goo/</guid>
+      <description>So, es wurde mal wieder Zeit für eine neue Seite: www.marcusschiesser.de. Habe mich ja in letzter Zeit ziemlich viel mit Adobe Flex beschäftigt - daher dachte ich, warum dies nicht mal als Dienstleistung anbieten. Sind ein paar nette Effekte enthalten, insbesondere wenn man auf &amp;ldquo;Über mich&amp;rdquo; klickt - vielleicht erinnert sich der eine oder andere noch an Kai&amp;rsquo;s Power Goo. Mit diesem Effekt kann man Gesichter verzerren und genau dies kann man auf der &amp;ldquo;Über mich&amp;rdquo; Seite mit dem Bild von mir tun.</description>
+    </item>
+    
+    <item>
+      <title>Und wieder einmal...</title>
+      <link>/2007/01/06/und-wieder-einmal/</link>
+      <pubDate>Sat, 06 Jan 2007 13:35:00 +0000</pubDate>
+      
+      <guid>/2007/01/06/und-wieder-einmal/</guid>
+      <description>sind die Informatiker auf dem letzten Platz. Es wird wohl Zeit, dass ich mal wieder ein paar Bücher lese.
+gefunden im Basic Thinking Blog</description>
+    </item>
+    
+    <item>
+      <title>Lust 50 Topmodels zu küssen?</title>
+      <link>/2007/01/03/lust-50-topmodels-zu-kussen/</link>
+      <pubDate>Wed, 03 Jan 2007 11:20:00 +0000</pubDate>
+      
+      <guid>/2007/01/03/lust-50-topmodels-zu-kussen/</guid>
+      <description>Wer würde nicht gerne einmal 50 Topmodels küssen?
+(Übrigens der Post ist nicht sexistisch - der Trick klappt sowohl für Männer als auch für Frauen)
+Die Sache hat nur einen Haken (musste ja so sein&amp;hellip;) - man muss bei &amp;lsquo;Wetten dass?&amp;rsquo; auftreten.
+Wie das? Einfach folgende Wette abgeben:
+&amp;lsquo;Ich wette, dass ich durch bloßes Küssen von 50 Topmodels herausfinde, welche Zigarettenmarke diese rauchen.&amp;rsquo;
+Setzt natürlich voraus, dass die teilnehmenden Models Raucher sind, aber davon kann man ja mal ausgehen, so dünn wie die immer sind.</description>
+    </item>
+    
+  </channel>
+</rss>

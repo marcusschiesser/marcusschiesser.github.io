@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ticket on Marcus Schiesser</title>
+    <link>/tags/ticket/</link>
+    <description>Recent content in ticket on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 22 Jun 2011 20:13:17 +0000</lastBuildDate><atom:link href="/tags/ticket/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Openbahn-API – Bahn-Webseite als Webservice</title>
+      <link>/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/</link>
+      <pubDate>Wed, 22 Jun 2011 20:13:17 +0000</pubDate>
+      
+      <guid>/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/</guid>
+      <description>As this is only of interest for German users - this article is in German only. It&amp;rsquo;s about a new project of mine. Sorry folks.
+Ich bin gerade dabei eine Android-App zu entwickeln, mit der es möglich ist Fahrkarten für Bahn-Pendler einfacher zu buchen. Bei der Entwicklung ist mir aufgefallen, dass die Bahn leider keine Webservices nach außen zur Verfügung stellt – die Webseite www.bahn.de ist zusammen mit der mobilen Variante m.</description>
+    </item>
+    
+  </channel>
+</rss>

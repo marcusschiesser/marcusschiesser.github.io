@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>jboss on Marcus Schiesser</title>
+    <link>/tags/jboss/</link>
+    <description>Recent content in jboss on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 17 Jan 2013 00:17:11 +0000</lastBuildDate><atom:link href="/tags/jboss/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to use JSF 2.2 with JBoss 7.1</title>
+      <link>/2013/01/17/how-to-use-jsf-2-2-with-jboss-7-1/</link>
+      <pubDate>Thu, 17 Jan 2013 00:17:11 +0000</pubDate>
+      
+      <guid>/2013/01/17/how-to-use-jsf-2-2-with-jboss-7-1/</guid>
+      <description>As the new JSF 2.2 is nearly finished, we all want to play with the new features of it.
+Markus Eisele has shown in his blog post Testdriving Mojarra 2.2.0-m08 how to do this with Glassfish 3. He&amp;rsquo;s German too, I begin to wonder if only we guys are that curious or no one else is using JSF any more ;)
+Unfortunately with JBoss 7 we face the same problem he had: We can not just add the new libraries to our WAR archive as they will clash with the JSF 2.</description>
+    </item>
+    
+    <item>
+      <title>JBoss-Migration: Von 4 über 5 nach 7</title>
+      <link>/2011/11/18/jboss-migration/</link>
+      <pubDate>Fri, 18 Nov 2011 15:29:22 +0000</pubDate>
+      
+      <guid>/2011/11/18/jboss-migration/</guid>
+      <description>Die Migration einer Java Enterprise-Anwendung auf eine höhere JBoss-Version ist nicht an einem Nachmittag erledigt. Auf welche Probleme man stoßen kann, beschreibe ich in meinem Erfahrungsbericht: Von 4 über 5 nach 7, erschienen im JavaMagazin 10/2011.
+Behandelt wird die Migration einer J2EE-1.4-Anwendung von JBoss 4 bis 7.
+Vielen Dank an den Verlag (Software &amp;amp; Support Media GmbH), dass ich das PDF in meinem Blog nun zur Verfügung stellen darf.</description>
+    </item>
+    
+  </channel>
+</rss>

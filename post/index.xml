@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Marcus Schiesser</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 17 Oct 2015 03:30:44 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Disqus without any plugins</title>
+      <link>/2015/10/17/using-disqus-without-any-plugins/</link>
+      <pubDate>Sat, 17 Oct 2015 03:30:44 +0000</pubDate>
+      
+      <guid>/2015/10/17/using-disqus-without-any-plugins/</guid>
+      <description>At TurnGeek we recently had the task to include Disqus (which is great by the way) into our site, so readers of our books can leave comments for each chapter.
+For a couple of reasons we couldn&amp;rsquo;t use their Wordpress plugin although the site is running on Wordpress. If you&amp;rsquo;re running in the same issue or you just don&amp;rsquo;t want the dependency of another plugin, you can paste the following snippet in your Wordpress posts (by the way, this also works with non WordPress sites):</description>
+    </item>
+    
+    <item>
+      <title>Cloud Tutorial - Java EE</title>
+      <link>/2015/08/22/cloud-tutorial-java-ee/</link>
+      <pubDate>Sat, 22 Aug 2015 02:03:20 +0000</pubDate>
+      
+      <guid>/2015/08/22/cloud-tutorial-java-ee/</guid>
+      <description>If you know standard Java and want to quickly learn something more about the core components of the Java Enterprise Edition (Servlets, JSP, JSF, CDI and EJB), you should have a look at this new tutorial I have written with Martin called Cloud Tutorial - Java EE.
+We call it a cloud tutorial, because you learn everything step by step using an Online IDE. That way you don&amp;rsquo;t have to struggle with any software configuration and you can directly start learning.</description>
+    </item>
+    
+    <item>
+      <title>Proxy Your Requests With Grunt</title>
+      <link>/2015/03/13/proxy-your-requests-with-grunt/</link>
+      <pubDate>Fri, 13 Mar 2015 06:30:30 +0000</pubDate>
+      
+      <guid>/2015/03/13/proxy-your-requests-with-grunt/</guid>
+      <description>Probably you&amp;rsquo;re already using grunt to serve your local frontend code. Everything is fine, but if you&amp;rsquo;re developing your backend with something different than JavaScript (Being a Java developer I heard that might happen), you will have problems accessing this backend while running grunt server. With grunt-connect-proxy there exists a grunt module to help you out. It basically delegates requests that match a given URL to a different backend of your choice.</description>
+    </item>
+    
+    <item>
+      <title>Restart a ExtJS 4.2 Application by recreating the Viewport</title>
+      <link>/2014/08/22/restart-a-extjs-4-2-application-by-recreating-the-viewport/</link>
+      <pubDate>Fri, 22 Aug 2014 11:45:10 +0000</pubDate>
+      
+      <guid>/2014/08/22/restart-a-extjs-4-2-application-by-recreating-the-viewport/</guid>
+      <description>If you are debugging your ExtJS application, it could be helpful from time to time to restart the application. Sure, simply pressing F5 usually does the trick, but it might happen that you want to keep the state of the application and just restart the viewport.
+This is simply done by typing the following lines in your favorite JavaScript console:
+ 1. Remove existing viewport with a ComponentQuery Ext.ComponentQuery.query(&#39;viewport&#39;)[0].removeAll(); 2. Recreate viewport, here the viewport&#39;s class name is _myApp.</description>
+    </item>
+    
+    <item>
+      <title>Using Codenvy (Online IDE) to run Ext JS 4.2.1 Samples</title>
+      <link>/2013/12/27/using-codenvy-online-ide-to-run-ext-js-4-2-1-samples/</link>
+      <pubDate>Fri, 27 Dec 2013 15:04:49 +0000</pubDate>
+      
+      <guid>/2013/12/27/using-codenvy-online-ide-to-run-ext-js-4-2-1-samples/</guid>
+      <description>Reader&amp;rsquo;s of my blog (are there any?) know I love JSFiddle. With it you can easily embed a running example of your JavaScript snippet. This is fine for single-file examples but it gets a bit complicated for more complex ones. To showcase them, Codenvy is a very nice solution. It is an Online IDE that has a very nice feature called Codenvy Factory. This one lets you share the actual state of your workspace by distributing a simple link.</description>
+    </item>
+    
+    <item>
+      <title>Dynamically Changing the Structure of a Grid in ExtJS 4.2</title>
+      <link>/2013/12/21/dynamically-changing-the-structure-of-a-grid-in-extjs-4-2/</link>
+      <pubDate>Sat, 21 Dec 2013 07:39:51 +0000</pubDate>
+      
+      <guid>/2013/12/21/dynamically-changing-the-structure-of-a-grid-in-extjs-4-2/</guid>
+      <description>If you have a grid in ExtJS, it might happen that you want to change the columns of the grid depending on the data you receive from the server. In my new pet project Bulks I was facing this exact problem, so I thought it might be worth sharing the solution with you. In the example below we try to render differently structured JSON arrays in the same grid. The function getKeysFromJson retrieves the keys from such an array.</description>
+    </item>
+    
+    <item>
+      <title>Adding Buttons in a Dataview using ExtJS 4.2</title>
+      <link>/2013/06/10/adding-buttons-in-a-dataview-using-extjs-4-2/</link>
+      <pubDate>Mon, 10 Jun 2013 22:12:58 +0000</pubDate>
+      
+      <guid>/2013/06/10/adding-buttons-in-a-dataview-using-extjs-4-2/</guid>
+      <description>If you have a dataview in your ExtJS application, it might be possible that you want to add some action buttons for each of its items. With some good old Javascript this is actually quite easy. You just have to create a template that contains the HTML markup for the button and give it a distinguishable class name. In the itemmousedown listener of the dataview you later check for the class name.</description>
+    </item>
+    
+    <item>
+      <title>Securing Your Play 2.1.1 Web Application Using a Filter</title>
+      <link>/2013/04/27/securing-your-play-2-1-1-web-application-using-a-filter/</link>
+      <pubDate>Sat, 27 Apr 2013 18:56:46 +0000</pubDate>
+      
+      <guid>/2013/04/27/securing-your-play-2-1-1-web-application-using-a-filter/</guid>
+      <description>After deploying my Play 2.1.1 based application to Cloudbees, I had the problem that everyone could access it. Not very ideal if you want to restrict your program to only a single audience.
+To solve the problem you would usually write a complicated user-based authentication system. Slightly an overkill, if you don&amp;rsquo;t need different users accessing your program at all. My idea was more that the user has to add an URL parameter with a secret key, the first time the application is called.</description>
+    </item>
+    
+    <item>
+      <title>How to use JSF 2.2 with JBoss 7.1</title>
+      <link>/2013/01/17/how-to-use-jsf-2-2-with-jboss-7-1/</link>
+      <pubDate>Thu, 17 Jan 2013 00:17:11 +0000</pubDate>
+      
+      <guid>/2013/01/17/how-to-use-jsf-2-2-with-jboss-7-1/</guid>
+      <description>As the new JSF 2.2 is nearly finished, we all want to play with the new features of it.
+Markus Eisele has shown in his blog post Testdriving Mojarra 2.2.0-m08 how to do this with Glassfish 3. He&amp;rsquo;s German too, I begin to wonder if only we guys are that curious or no one else is using JSF any more ;)
+Unfortunately with JBoss 7 we face the same problem he had: We can not just add the new libraries to our WAR archive as they will clash with the JSF 2.</description>
+    </item>
+    
+    <item>
+      <title>Doing EJB-like transactions with Google App Engine</title>
+      <link>/2013/01/05/doing-ejb-like-transactions-with-google-app-engine/</link>
+      <pubDate>Sat, 05 Jan 2013 12:10:03 +0000</pubDate>
+      
+      <guid>/2013/01/05/doing-ejb-like-transactions-with-google-app-engine/</guid>
+      <description>Using Google App Engine you can&amp;rsquo;t define a method as transactional with a simple annotation as you can in EJB. You always need to call some boilerplate code which gets quite annoying. Therefore the following utility class comes handy, which takes care of the transaction handling for you:
+https://gist.github.com/marcusschiesser/5474348
+To make use of it, you have to set the same persistence unit as in your persistence.xml configuration file first. Do this by changing the parameter of the method createEntityManagerFactory.</description>
+    </item>
+    
+    <item>
+      <title>Using the Facebook Graph API from your GWT application</title>
+      <link>/2013/01/03/using-the-facebook-graph-api-from-your-gwt-application/</link>
+      <pubDate>Thu, 03 Jan 2013 13:49:30 +0000</pubDate>
+      
+      <guid>/2013/01/03/using-the-facebook-graph-api-from-your-gwt-application/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using Google App Engine as Backend for Android</title>
+      <link>/2011/12/02/using-google-app-engine-as-backend-for-android/</link>
+      <pubDate>Fri, 02 Dec 2011 17:40:57 +0000</pubDate>
+      
+      <guid>/2011/12/02/using-google-app-engine-as-backend-for-android/</guid>
+      <description>If you&amp;rsquo;re looking for a way to create a backend for your Android application, Google App Engine looks like the perfect choice: You can use Java as you can do for Android and you don&amp;rsquo;t need to think too much about hosting, as it is all stored in the cloud.
+Another benefit is that you can reuse your transfer objects on the client and on server side. But as it is often there are some problems doing this in practice.</description>
+    </item>
+    
+    <item>
+      <title>Storing large images RESTful in the cloud using Google App Engine</title>
+      <link>/2011/12/01/storing-large-images-restful-in-the-cloud-using-google-app-engine/</link>
+      <pubDate>Thu, 01 Dec 2011 17:27:36 +0000</pubDate>
+      
+      <guid>/2011/12/01/storing-large-images-restful-in-the-cloud-using-google-app-engine/</guid>
+      <description>In my last article I showed how to store files in the cloud using Google app engine. Problem there was that the maximum size of the files was 1MB. Not that much for images.
+To improve the situation, we just shrink the images with this very simple algorithm by factor 0.9 until the size is less than 1MB:
+public class FileTransformer { public static final Logger log = Logger.getLogger(FileTransformer.class.getName()); private static final int JPEG_QUALITY = 90; private static final int MAX_FILE_SIZE = 1024*1024; public byte[] transform(byte[] ba, String mediaType) { if(mediaType.</description>
+    </item>
+    
+    <item>
+      <title>Storing files RESTful in the cloud using Google App Engine</title>
+      <link>/2011/12/01/storing-files-restful-in-the-cloud-using-google-app-engine/</link>
+      <pubDate>Thu, 01 Dec 2011 17:09:27 +0000</pubDate>
+      
+      <guid>/2011/12/01/storing-files-restful-in-the-cloud-using-google-app-engine/</guid>
+      <description>Do you want to store files RESTful in the cloud? Why not use the Google App Engine for it?
+Firstly you will need a entity class that is storing the file in the data store:
+@Entity public class FileEntity { @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Long key; private Blob content; private String mediaType; public Long getKey() { return key; } public Blob getContent() { return content; } public void setContent(Blob content) { this.</description>
+    </item>
+    
+    <item>
+      <title>Using real POJOs (without JAXB Annotations) as transfer objects with JAX-RS </title>
+      <link>/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/</link>
+      <pubDate>Thu, 01 Dec 2011 16:06:30 +0000</pubDate>
+      
+      <guid>/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/</guid>
+      <description>Are you annoyed that you have to annotate your POJOs with @XmlRootElement, so they can be used with JAX-RS? If your using Jersey as JAX-RS implementation your lucky: Just add to the &amp;lt;servlet&amp;gt; tag in your web.xml the following snippet:
+&amp;lt;init-param&amp;gt; &amp;lt;param-name&amp;gt;com.sun.jersey.api.json.POJOMappingFeature&amp;lt;/param-name&amp;gt; &amp;lt;param-value&amp;gt;true&amp;lt;/param-value&amp;gt; &amp;lt;/init-param&amp;gt;  After restarting your servlet, your POJOs are marshalled to JSON as a charme. Enjoy!</description>
+    </item>
+    
+    <item>
+      <title>JBoss-Migration: Von 4 über 5 nach 7</title>
+      <link>/2011/11/18/jboss-migration/</link>
+      <pubDate>Fri, 18 Nov 2011 15:29:22 +0000</pubDate>
+      
+      <guid>/2011/11/18/jboss-migration/</guid>
+      <description>Die Migration einer Java Enterprise-Anwendung auf eine höhere JBoss-Version ist nicht an einem Nachmittag erledigt. Auf welche Probleme man stoßen kann, beschreibe ich in meinem Erfahrungsbericht: Von 4 über 5 nach 7, erschienen im JavaMagazin 10/2011.
+Behandelt wird die Migration einer J2EE-1.4-Anwendung von JBoss 4 bis 7.
+Vielen Dank an den Verlag (Software &amp;amp; Support Media GmbH), dass ich das PDF in meinem Blog nun zur Verfügung stellen darf.</description>
+    </item>
+    
+    <item>
+      <title>Let the user change the column order in Java/Swing</title>
+      <link>/2011/11/18/let-the-user-change-the-column-order-in-javaswing/</link>
+      <pubDate>Fri, 18 Nov 2011 14:36:15 +0000</pubDate>
+      
+      <guid>/2011/11/18/let-the-user-change-the-column-order-in-javaswing/</guid>
+      <description>Do you have the requirement to let the user of your application change the order of his columns and your app is based on Swing?
+Then you should read further. Below you find a [TableColumnModel](http://download.oracle.com/javase/1.4.2/docs/api/javax/swing/table/TableColumnModel.html) that has two states: STANDARD and USERDEFINED. In the STANDARD state the user may not change the order of the columns by drag&amp;rsquo;n&amp;rsquo;drop, in USERDEFINED he may. The good thing: If you toogle the state the column order is restored.</description>
+    </item>
+    
+    <item>
+      <title>Openbahn-API – Bahn-Webseite als Webservice</title>
+      <link>/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/</link>
+      <pubDate>Wed, 22 Jun 2011 20:13:17 +0000</pubDate>
+      
+      <guid>/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/</guid>
+      <description>As this is only of interest for German users - this article is in German only. It&amp;rsquo;s about a new project of mine. Sorry folks.
+Ich bin gerade dabei eine Android-App zu entwickeln, mit der es möglich ist Fahrkarten für Bahn-Pendler einfacher zu buchen. Bei der Entwicklung ist mir aufgefallen, dass die Bahn leider keine Webservices nach außen zur Verfügung stellt – die Webseite www.bahn.de ist zusammen mit der mobilen Variante m.</description>
+    </item>
+    
+    <item>
+      <title>How to detect whether an element is in a scrollable parent </title>
+      <link>/2009/11/02/how-to-detect-whether-an-element-is-in-a-scrollable-parent/</link>
+      <pubDate>Mon, 02 Nov 2009 20:54:28 +0000</pubDate>
+      
+      <guid>/2009/11/02/how-to-detect-whether-an-element-is-in-a-scrollable-parent/</guid>
+      <description>Just think of having an element in a scrollable parent (the CSS property overflow is set to scroll) and you want to test whether the element is visible or not.
+Using this little function you can do the trick:
+function isInView(node){ var offsetParent = node.offsetParent; var top = offsetParent.scrollTop; var height = offsetParent.offsetHeight; var y = node.offsetTop; return y &amp;gt;= top &amp;amp;&amp;amp; y &amp;lt;= (top + height); }  And here&amp;rsquo;s a small use case - this one scrolls the element into the visible region, if it is not already in the view:</description>
+    </item>
+    
+    <item>
+      <title>Let the user select an item in a modal dialog</title>
+      <link>/2009/08/05/selecting-an-item-in-javascript/</link>
+      <pubDate>Wed, 05 Aug 2009 13:31:29 +0000</pubDate>
+      
+      <guid>/2009/08/05/selecting-an-item-in-javascript/</guid>
+      <description>After having used the shiny new YUI3 library for a project, it&amp;rsquo;s about time to share my YUI3 experiences with you. For the project I built an item selector: A modal dialog is openend and the user has to select an item. After selection the dialog is closed and the selected item is passed to a callback function.
+Here you can find the full source for the item selector. An example to use the selector can be as simple as this:</description>
+    </item>
+    
+    <item>
+      <title>Quince: UX Pattern Explorer</title>
+      <link>/2009/06/13/quince-ux-pattern-explorer/</link>
+      <pubDate>Sat, 13 Jun 2009 20:14:17 +0000</pubDate>
+      
+      <guid>/2009/06/13/quince-ux-pattern-explorer/</guid>
+      <description>Just in case you don&amp;rsquo;t already know it: Quince - calls itself an UX Patterns Explorer and that&amp;rsquo;s just what it is.
+You want to improve the user experience of your applications? Just take a look at this marble. It contains a large number of design patterns for creating great user interfaces.
+Even the exploration part of this tool is innovative: The patterns are not only ordered alphabetically by name but can be found by the tasks the user wants to accomplish.</description>
+    </item>
+    
+    <item>
+      <title>Add a delete button in each row of an ExtJS data grid</title>
+      <link>/2009/06/13/add-a-delete-button-in-each-row-of-an-extjs-data-grid/</link>
+      <pubDate>Sat, 13 Jun 2009 19:53:56 +0000</pubDate>
+      
+      <guid>/2009/06/13/add-a-delete-button-in-each-row-of-an-extjs-data-grid/</guid>
+      <description>For usability reasons it is usually a good idea to add a delete button to each row of a data grid. If the user clicks on such a button, the whole row that contained the button will be deleted.
+The data grid of ExtJS does not contain such a feature by default, but it could be implemented by adding a special column to the column model. Using this extension, it could be easily done like this:</description>
+    </item>
+    
+    <item>
+      <title>Learn how to build a web application with ExtJS</title>
+      <link>/2009/06/13/learn-how-to-build-a-web-application-with-extjs/</link>
+      <pubDate>Sat, 13 Jun 2009 18:28:09 +0000</pubDate>
+      
+      <guid>/2009/06/13/learn-how-to-build-a-web-application-with-extjs/</guid>
+      <description>If you&amp;rsquo;re interested in learning ExtJS and by accident know some German, I can recommend you read an article I wrote together with my colleague Stefan Botzenhart. The article is called &amp;lsquo;Kombiniert: Ruby on Rails und Ext JS&amp;rsquo; and is published in the famous German IT magazine iX in their actual special edition called Web on Rails.
+In the article we explain the implementation of meinkabinett, a web application where people can vote celebrities for the European government.</description>
+    </item>
+    
+    <item>
+      <title>Display an info text in a HTML input field if its focus is lost</title>
+      <link>/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</link>
+      <pubDate>Fri, 12 Jun 2009 09:18:02 +0000</pubDate>
+      
+      <guid>/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/</guid>
+      <description>Now that with Ext Core a light-weight version (just 25kB) of ExtJS has been released, I thought it&amp;rsquo;s time to build a nice example with it.
+The result is something very useful that you can see in actually a lot of web sites: Display a info text inside of a input text field if it is empty and does not have the focus.
+Here&amp;rsquo;s how it looks like:
+E-Mail:
+To add this behaviour to a input field you just have to call this single line:</description>
+    </item>
+    
+    <item>
+      <title>Mark Required Fields in a ExtJS Form</title>
+      <link>/2009/05/04/mark-required-fields-in-a-extjs-form/</link>
+      <pubDate>Mon, 04 May 2009 12:12:48 +0000</pubDate>
+      
+      <guid>/2009/05/04/mark-required-fields-in-a-extjs-form/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phone number selector in ExtJS</title>
+      <link>/2009/04/08/phone-number-selector-in-extjs/</link>
+      <pubDate>Wed, 08 Apr 2009 17:10:42 +0000</pubDate>
+      
+      <guid>/2009/04/08/phone-number-selector-in-extjs/</guid>
+      <description>Wouldn&amp;rsquo;t it be nice to use a combo box of flag images to select the country code of phone numbers?
+If you use a country selection component that&amp;rsquo;s quite easy. Just wrap it in a re-usable component together with a textfield for the local number and the result looks like this:
+And here&amp;rsquo;s the example&amp;rsquo;s source:
+Ext.onReady(function(){ var panel = new Ext.FormPanel({ style: &#39;padding: 10px;&#39;, frame: true, labelWidth: 50, width: 400, items: [{ fieldLabel: &#39;Mobile&#39;, xtype: &#39;phonefield&#39;, anchor: &#39;100%&#39;, emptyText: &#39;(e.</description>
+    </item>
+    
+    <item>
+      <title>Component for selecting multiple items in Ext</title>
+      <link>/2009/04/08/component-for-selecting-multiple-items-in-ext/</link>
+      <pubDate>Wed, 08 Apr 2009 16:52:08 +0000</pubDate>
+      
+      <guid>/2009/04/08/component-for-selecting-multiple-items-in-ext/</guid>
+      <description>Ext already provides a component to select multiple items. The thing I do not like about it is that it covers too much space on the screen. Therefore I thought of a component that initially looks like a combo box and then opens a new window to let the user select the items.
+As a nice example tells more than thousand words - here it is:
+As you can see, it is actually based on the component provided by the Ext examples.</description>
+    </item>
+    
+    <item>
+      <title>Getting values from a form containing combos in Ext</title>
+      <link>/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/</link>
+      <pubDate>Tue, 07 Apr 2009 15:54:45 +0000</pubDate>
+      
+      <guid>/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/</guid>
+      <description>Actually it is pretty easy to get the values of all fields of a form in Ext: You just have to call the getValues() method of the BasicForm. The problem with that approach is that it just takes the values directly from the DOM and is not calling the getValue() for each field (Which I assumed). One consequence is that you don&amp;rsquo;t get the values of combo boxes, but their labels.</description>
+    </item>
+    
+    <item>
+      <title>Country selector with flag images in ExtJS</title>
+      <link>/2009/04/01/country-selector-with-flag-images-in-extjs/</link>
+      <pubDate>Wed, 01 Apr 2009 10:04:48 +0000</pubDate>
+      
+      <guid>/2009/04/01/country-selector-with-flag-images-in-extjs/</guid>
+      <description>Based on the ExtJS-Tutorial on how to build a combo box with an icon, I built a component that can be used as a country selector in ExtJS.
+Here you can find the code of the component:
+Ext.ns(&#39;Extreme.components&#39;); Extreme.components.CountryCombo = Ext.extend(Ext.form.ComboBox, { constructor: function(config){ var data; if (config.phoneLabels) { data = [[&#39;+49&#39;, &#39;+49&#39;, &#39;ux-flag-de&#39;], [&#39;+43&#39;, &#39;+43&#39;, &#39;ux-flag-at&#39;], [&#39;+41&#39;, &#39;+41&#39;, &#39;ux-flag-ch&#39;], [&#39;+352&#39;, &#39;+352&#39;, &#39;ux-flag-lu&#39;], [&#39;+432&#39;, &#39;+432&#39;, &#39;ux-flag-li&#39;]]; } else { data = [[&#39;DE&#39;, &#39;Deutschland&#39;, &#39;ux-flag-de&#39;], [&#39;AT&#39;, &#39;Österreich&#39;, &#39;ux-flag-at&#39;], [&#39;CH&#39;, &#39;Schweiz&#39;, &#39;ux-flag-ch&#39;], [&#39;LU&#39;, &#39;Luxemburg&#39;, &#39;ux-flag-lu&#39;], [&#39;LI&#39;, &#39;Lichtenstein&#39;, &#39;ux-flag-li&#39;]]; } Extreme.</description>
+    </item>
+    
+    <item>
+      <title>Putting ExtJS templates in separate files</title>
+      <link>/2009/03/11/putting-extjs-templates-in-separate-files/</link>
+      <pubDate>Wed, 11 Mar 2009 10:37:40 +0000</pubDate>
+      
+      <guid>/2009/03/11/putting-extjs-templates-in-separate-files/</guid>
+      <description>To create a template in ExtJS you usually have to put the template code inline in your javascript. That could lead to problems if you want to edit your code and the designer wants to change the template. Therefore it&amp;rsquo;s a good idea to put the template in a separate file.
+For that reason I built this loader singleton that is capable of lazy loading ExtJS templates:
+Ext.ns(&#39;templates&#39;); templates.Loader = function(){ var that = {}; var map = {}; that.</description>
+    </item>
+    
+    <item>
+      <title>Adding Rows to a Grid in ExtJS 4.1</title>
+      <link>/2009/02/27/adding-rows-to-a-grid-in-extjs/</link>
+      <pubDate>Fri, 27 Feb 2009 18:38:59 +0000</pubDate>
+      
+      <guid>/2009/02/27/adding-rows-to-a-grid-in-extjs/</guid>
+      <description>Note: Has been updated for ExtJS 4.1
+In the last article we built a data grid mockup in ExtJS 4.1. Now we want to add some rows to the grid. Firstly we need to create a model class to store a data. We&amp;rsquo;ve done that also in the previously article, but for the better understanding, here&amp;rsquo;s it again:
+Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;firstName&#39;, &#39;lastName&#39;] });  Having the Person class we can simply add new rows to the store (people in our case) by calling the add function with new instances of that class:</description>
+    </item>
+    
+    <item>
+      <title>Building Mockups in ExtJS 4.1</title>
+      <link>/2009/02/27/167/</link>
+      <pubDate>Fri, 27 Feb 2009 17:15:03 +0000</pubDate>
+      
+      <guid>/2009/02/27/167/</guid>
+      <description>Note: This post has been updated for ExtJS 4.1
+In the early development phase it is usually a good idea to provide a mockup that is not using real data but some dummy data from memory. To do that for a grid in ExtJS we need to create a record class first. For a person this might look like this:
+Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;firstName&#39;, &#39;lastName&#39;] });  Then we need a store where instances of the Person class will be stored:</description>
+    </item>
+    
+    <item>
+      <title>Validator for ExtJS Checkbox</title>
+      <link>/2009/02/20/151/</link>
+      <pubDate>Fri, 20 Feb 2009 17:25:42 +0000</pubDate>
+      
+      <guid>/2009/02/20/151/</guid>
+      <description>Very unfortunately ExtJS doesn&amp;rsquo;t offer a validator for its checkbox component. Normally a validator checks whether a field is valid and takes care of displaying an error message if not. For a checkbox we would like that to happen if the checkbox is not selected. Overriding the validate function of the checkbox we can provide such a functionality for all checkbox instances we are about to create:
+ Ext.form.Checkbox.prototype.validate = function(){ if (this.</description>
+    </item>
+    
+    <item>
+      <title>Generic error handler for ExtJS</title>
+      <link>/2009/02/09/generic-error-handler-for-extjs/</link>
+      <pubDate>Mon, 09 Feb 2009 10:40:08 +0000</pubDate>
+      
+      <guid>/2009/02/09/generic-error-handler-for-extjs/</guid>
+      <description>When you are doing client/server communication with ExtJS you probably run into the problem that you want to handle server side errors in a generic way. A solution that I found is to override the handleFailure function in the Ext.data.Connection class:
+Ext.data.Connection.prototype._handleFailure = Ext.data.Connection.prototype.handleFailure; Ext.data.Connection.prototype.handleFailure = function(response, e) { var errorText = Ext.DomQuery.selectValue(&amp;quot;Reason/Text&amp;quot;, response.responseXML, &amp;quot;Unknown Error&amp;quot;); Ext.Msg.alert(&#39;Error&#39;, errorText); Ext.data.Connection.prototype._handleFailure.call(this, response, e); };  This handler simply is called whenever a server side failure occurs.</description>
+    </item>
+    
+    <item>
+      <title>Using Axis2 services from Javascript (by removing the XML namespaces)</title>
+      <link>/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/</link>
+      <pubDate>Tue, 27 Jan 2009 17:15:13 +0000</pubDate>
+      
+      <guid>/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/</guid>
+      <description>If you want to call an Axis2 service from Javascript you will face the problem that the XML response of an Axis2 service call contains XML namespaces - something Javascript doesn&amp;rsquo;t like in cross-browser-friendly way. The idea to fix this issue is to make an XSLT transformation directly from Axis2 that removes the unnecessary namespaces.
+First we need an XSLT transformation that will do the job:
+&amp;lt;xsl:stylesheet version=&amp;quot;1.0&amp;quot; xmlns:xsl=&amp;quot;http://www.w3.org/1999/XSL/Transform&amp;quot;&amp;gt; &amp;lt;xsl:output indent=&amp;quot;no&amp;quot; method=&amp;quot;xml&amp;quot;&amp;gt;&amp;lt;/xsl:output&amp;gt; &amp;lt;xsl:template match=&amp;quot;/|comment()|processing-instruction()&amp;quot;&amp;gt; &amp;lt;xsl:copy&amp;gt; &amp;lt;xsl:apply-templates&amp;gt;&amp;lt;/xsl:apply-templates&amp;gt; &amp;lt;/xsl:copy&amp;gt; &amp;lt;/xsl:template&amp;gt; &amp;lt;xsl:template match=&amp;quot;*&amp;quot;&amp;gt; &amp;lt;xsl:element name=&amp;quot;{local-name()}&amp;quot;&amp;gt; &amp;lt;xsl:apply-templates select=&amp;quot;@*|node()&amp;quot;&amp;gt;&amp;lt;/xsl:apply-templates&amp;gt; &amp;lt;/xsl:element&amp;gt; &amp;lt;/xsl:template&amp;gt; &amp;lt;xsl:template match=&amp;quot;@*&amp;quot;&amp;gt; &amp;lt;xsl:attribute name=&amp;quot;{local-name()}&amp;quot;&amp;gt; &amp;lt;xsl:value-of select=&amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>Building a JSON web service with Java and Axis2</title>
+      <link>/2009/01/23/building-a-json-web-service-with-java-and-axis2/</link>
+      <pubDate>Fri, 23 Jan 2009 15:05:04 +0000</pubDate>
+      
+      <guid>/2009/01/23/building-a-json-web-service-with-java-and-axis2/</guid>
+      <description>It is said that in Java usually the easiest things are the hardest. The following is a nice example as it took me some time to figure out how to do it. I wanted to build a simple URL request based web service in Java that returns an JSON object. Yes, you can do that with a simple Servlet too, the advantage of using Axis2 is that you can also call your deployed services using SOAP without any configuration changes.</description>
+    </item>
+    
+    <item>
+      <title>3 Ways to render HTML inside of a ExtJS container</title>
+      <link>/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/</link>
+      <pubDate>Wed, 14 Jan 2009 14:23:43 +0000</pubDate>
+      
+      <guid>/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/</guid>
+      <description>It has been a while since my last blog post. The main reason is that I am now having a nice new job at efiport which leads to the situation that I am doing now good old Javascript (mainly ExtJS) instead of Flex. So I think in the future there will be more posts about ExtJS then Flex. Sorry Flex folks.
+To tribute the change a bit, I start with the problem of adding HTML code inside of a ExtJS container.</description>
+    </item>
+    
+    <item>
+      <title>Splitting CSVs in Actionscript (the Excel way)</title>
+      <link>/2008/10/21/splitting-csvs-in-actionscript-the-excel-way/</link>
+      <pubDate>Tue, 21 Oct 2008 22:02:51 +0000</pubDate>
+      
+      <guid>/2008/10/21/splitting-csvs-in-actionscript-the-excel-way/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi-level markers using Google Maps for Flash</title>
+      <link>/2008/09/30/multi-level-markers-using-google-maps-for-flash/</link>
+      <pubDate>Tue, 30 Sep 2008 17:47:05 +0000</pubDate>
+      
+      <guid>/2008/09/30/multi-level-markers-using-google-maps-for-flash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Maps API for Flex</title>
+      <link>/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/</link>
+      <pubDate>Tue, 09 Sep 2008 12:33:01 +0000</pubDate>
+      
+      <guid>/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/</guid>
+      <description>As I pointed out before, it&amp;rsquo;s unfortunately not possible to use Flex components as info windows for Google Maps. Another issue is that the map is not available as a Flex component itself, therefore it&amp;rsquo;s a bit complicated to use it in Flex. So I thought to address these issues in a little Google Maps API for Flex that you can download here under BSD license. With openFlexInfoWindows I also added a method that allows you to use multiple Flex components as info window at once - nicely seperated in tabs.</description>
+    </item>
+    
+    <item>
+      <title>JSON generator for picture data from Flickr</title>
+      <link>/2008/08/28/json-generator-fur-bilddaten-von-flickr/</link>
+      <pubDate>Thu, 28 Aug 2008 22:11:42 +0000</pubDate>
+      
+      <guid>/2008/08/28/json-generator-fur-bilddaten-von-flickr/</guid>
+      <description>Probably a few other guys did this before, but I had a boring train journey without any internet connection, so I used the bits from my 3D album example and made a JSON generator for Flickr data. What does that mean? Just enter a search term and the program finds matching pictures on Flickr. If pictures have been found, a click on &amp;lsquo;JSON&amp;rsquo; displays a JSON-encoded array with the URLs and labels of the pictures found.</description>
+    </item>
+    
+    <item>
+      <title>Adding custom info windows to Google Maps in Flex</title>
+      <link>/2008/08/20/eigene-info-fenster-einer-google-map-in-flash-hinzufugen/</link>
+      <pubDate>Wed, 20 Aug 2008 11:37:29 +0000</pubDate>
+      
+      <guid>/2008/08/20/eigene-info-fenster-einer-google-map-in-flash-hinzufugen/</guid>
+      <description>I just tried to create a custom info window for a Google Map using the Google Maps API For Flash. Unfortunately it does not seem to work as expected by setting the customContent property in an object of type InfoWindowOptions. Therefore I wrote this little workaround that creates a popup window:
+private function createInfoWindow(map:Map, marker:Marker, infoWindow:Class):IFlexDisplayObject { var popup:IFlexDisplayObject = PopUpManager.createPopUp(map, infoWindow); var globalPos:Point = map.localToGlobal(map.fromLatLngToViewport(marker.getLatLng())); popup.move(globalPos.x - popup.width/2, globalPos.y - popup.</description>
+    </item>
+    
+    <item>
+      <title>3D-Album component for Adobe Flex</title>
+      <link>/2008/08/18/3d-album-komponente-fur-adobe-flex/</link>
+      <pubDate>Mon, 18 Aug 2008 18:51:51 +0000</pubDate>
+      
+      <guid>/2008/08/18/3d-album-komponente-fur-adobe-flex/</guid>
+      <description>You know PicLens? If not I highly recommend taking a look at that marvelous picture search tool.
+Especially interesting is the 3D view of the pictures - you can easily navigate through a whole bunch of pictures by using your mouse.
+I thought it would be nice to integrate such a picture view in your own Flex application, so I played around a bit with the 3D album tutorial from Bartek Drozdz and after a couple of days finished a nice little component that could be easily embedded in your own applications.</description>
+    </item>
+    
+    <item>
+      <title>Vendor Gems in Rake-Tasks verwenden</title>
+      <link>/2008/07/22/vendor-gems-in-rake-tasks-verwenden/</link>
+      <pubDate>Tue, 22 Jul 2008 17:36:03 +0000</pubDate>
+      
+      <guid>/2008/07/22/vendor-gems-in-rake-tasks-verwenden/</guid>
+      <description>Für das Deployment einer Rails-Anwendung ist es eine gute Sache, die für die Anwendung benötigten Gems in das Verzeichnis /vendor/gems zu kopieren. Der Hintergrund ist einfach - so wird sichergestellt, dass der Server dieselbe Version des Gems referenziert wie vom Entwickler vorgesehen.
+Damit Rails diese zur Laufzeit findet wird in der environment.rb folgender Code eingefügt:
+config.load_paths += Dir[&amp;quot;#{RAILS_ROOT}/vendor/gems/**&amp;quot;].map do |dir| File.directory?(lib = &amp;quot;#{dir}/lib&amp;quot;) ? lib : dir end  Das Problem dabei ist nun, dass die Vendor-Gems nicht von den Rake-Tasks gefunden werden.</description>
+    </item>
+    
+    <item>
+      <title>Factories für Event-Handler in AS3</title>
+      <link>/2008/07/10/factories-fur-event-handler-in-as3/</link>
+      <pubDate>Thu, 10 Jul 2008 19:55:46 +0000</pubDate>
+      
+      <guid>/2008/07/10/factories-fur-event-handler-in-as3/</guid>
+      <description>In meinem letzten Projekt ist mir ein nettes Pattern für die Verwendung von Closures in Actionscript 3 eingefallen: Factories für Event-Handler.
+Hier ein sehr einfaches Beispiel für einen Handler, der einen Alert anzeigt:
+public static function createAlertHandler(text:String, title:String):Function { return function():void { Alert.show(text, title); } }	 Das Ganze kann man sich nun in der Praxis noch mit weiteren Parametern und natürlich einer komplexeren Handlerfunktion vorstellen. Der Vorteil an diesem Pattern ist, das über die Parameter der Factorymethode verschiedene Handler erstellt werden können, d.</description>
+    </item>
+    
+    <item>
+      <title>Ning-Theme for Wordpress</title>
+      <link>/2008/07/09/wordpress-theme-fur-ning/</link>
+      <pubDate>Wed, 09 Jul 2008 18:38:58 +0000</pubDate>
+      
+      <guid>/2008/07/09/wordpress-theme-fur-ning/</guid>
+      <description>I&amp;rsquo;ve written a small Ning-Theme for Wordpress, for all the people who want to use a Wordpress blog with Ning. After installation the blog automatically uses the same Look&amp;amp;Feel as the site created with Ning.
+For installation you firstly must copy the ning folder to /wp-content/themes and activate the theme as usually. Afterwards you must modify the config.php file to fit the needs of your Ning site.
+Right now, the theme is only available in German language, but on demand I&amp;rsquo;m happy to help with the development of a multilingual theme.</description>
+    </item>
+    
+    <item>
+      <title>ItemRenderer in Flex typsicher hinzufügen</title>
+      <link>/2008/06/26/itemrenderer-in-flex-typsicher-hinzufugen/</link>
+      <pubDate>Thu, 26 Jun 2008 17:41:22 +0000</pubDate>
+      
+      <guid>/2008/06/26/itemrenderer-in-flex-typsicher-hinzufugen/</guid>
+      <description>Da ich es gerade mal wieder gebraucht habe (und mich nicht sofort daran erinnern konnte):
+Die Antwort auf die Frage, wie man in Flex einen ItemRenderer in MXML typsicher hinzufügt (Dies ist die etwas einfachere Variante von einem Flex Cookbook-Artikel von mir).
+Normalerweise fügt man in Flex einen ItemRenderer folgendermassen hinzu: Man schreibt den Fully Qualified Name des ItemRenderers (also den Klassennamen mit Package) in das Attribut itemRenderer.
+Verwendet man beispielsweise die Klasse MyItemRenderer im Package itemrenders , so sieht das dann bei einer TileList so aus:</description>
+    </item>
+    
+    <item>
+      <title>Klassenbuch für soziale Netzwerke</title>
+      <link>/2008/06/21/klassenbuch-fur-soziale-netzwerke/</link>
+      <pubDate>Sat, 21 Jun 2008 19:46:03 +0000</pubDate>
+      
+      <guid>/2008/06/21/klassenbuch-fur-soziale-netzwerke/</guid>
+      <description>Bastele gerade mit Adobe AIR an einer Desktop-Anwendung für das StudiVZ. Dies hat mich in Zusammenhang mit dem Trend eigene Bücher drucken zu lassen auf folgende Idee gebracht:
+Erinnert Ihr euch noch an die alten Klassenbücher, in denen jeder Schulfreund auf einer Seite vorgestellt wurde? So etwas könnte man ja auch über einen Online-Service erstellen und über ein soziales Netzwerk wie StudiVZ hätte man gleich alle notwendigen Daten zusammen: die Profile aller Freunde, Fotos - lediglich ein paar redaktionelle Beiträge müsste man zusammen mit einer geeigneten Buchvorlage auswählen.</description>
+    </item>
+    
+    <item>
+      <title>Spezialisierter Homepage-Baukasten - Beispiel Bewerbung</title>
+      <link>/2008/04/27/spezialisierter-homepage-baukasten-beispiel-bewerbung/</link>
+      <pubDate>Sun, 27 Apr 2008 21:16:11 +0000</pubDate>
+      
+      <guid>/2008/04/27/spezialisierter-homepage-baukasten-beispiel-bewerbung/</guid>
+      <description>Es gibt ja mittlerweile eine Menge von sogenannten Homepage-Baukästen, mit deren Hilfe man einfach und ohne Programmierkenntnisse eine eigene Homepage erstellen kann.
+Schnell kann man somit eine Seite für seinen Verein, seine Bewerbung oder ähnliches erstellen. Da stellt sich sich mir die Frage, wieso gibt es keine speziellen Homepage-Baukästen nur für einen Zweck, z.B. um eine perfekte Bewerbung online zu stellen?
+Mit einigen interessanten Zusatzfunktionen könnten sich diese gut von ihren Wettbewerbern differenzieren.</description>
+    </item>
+    
+    <item>
+      <title>Bewerbung mit Persönlichkeit</title>
+      <link>/2008/04/19/bewerbung-mit-personlichkeit/</link>
+      <pubDate>Sat, 19 Apr 2008 15:04:57 +0000</pubDate>
+      
+      <guid>/2008/04/19/bewerbung-mit-personlichkeit/</guid>
+      <description>Über bestehende Jobportale lässt sich in sekundenschnelle eine Vielzahl von ausgeschriebenen Stellen finden.
+Als Entscheidungskriterien werden dabei aus Arbeitgebersicht Erfahrungen und Ausbildung und aus Bewerbersicht die Entlohnung berücksichtigt.
+Dies geht meiner Meinung nach nicht weit genug - stellt denn niemand die Frage, ob die Persönlichkeit des Bewerbers zu der Stelle passt? Also mal abgesehen von der utopischen Standardanforderung, dass nach Möglichkeit alle sogenannten Soft Skills erfüllt sein müssen?
+Dabei gibt es doch wirklich eine Menge guter Persönlichkeitstests: Myers-Briggs, Big Five und mein persönlicher Favorit: Dueck&amp;rsquo;s Omnisophie.</description>
+    </item>
+    
+    <item>
+      <title>Vorstellung bei Best-Practice-Business.....</title>
+      <link>/2008/04/19/vorstellung-bei-best-practice-business/</link>
+      <pubDate>Sat, 19 Apr 2008 14:17:40 +0000</pubDate>
+      
+      <guid>/2008/04/19/vorstellung-bei-best-practice-business/</guid>
+      <description>Nachdem mein Blog nun bei best-practice-business vorgestellt wurde, ist schlagartig die Anzahl der Seitenaufrufe von 1 auf 43 gestiegen. Dadurch komme ich natürlich nun etwas mehr unter Druck neue Artikel zu schreiben - werde wohl gleich einmal damit anfangen&amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>Wohnungsmarktplatz Nr. 989235</title>
+      <link>/2008/04/07/wohnungsmarktplatz-nr-989235/</link>
+      <pubDate>Mon, 07 Apr 2008 16:20:24 +0000</pubDate>
+      
+      <guid>/2008/04/07/wohnungsmarktplatz-nr-989235/</guid>
+      <description>Vor kurzem habe ich mir eine neue Wohnung gesucht – fündig wurde ich über eine ganz normale Kleinanzeige in einer Tageszeitung. Wieso nicht über das Internet? Irgendwie schade, aber dort finden sich fast ausschließlich Anzeigen von Maklern. Warum eigentlich? Das ist einfach: Der Vermieter hat keinen Nachteil und zusätzlich sogar den Vorteil, dass die Menge der Interessenten nach seinen Kriterien (Solvenz, langfristiges Mietverhältnis) gefiltert wird. Eine Lösung scheint mir ein Marktplatz, der für den Vermieter Anreize schafft, die Wohnung direkt einzustellen – zum Beispiel:</description>
+    </item>
+    
+    <item>
+      <title>Video-On-Demand Aggregator</title>
+      <link>/2008/03/27/video-on-demand-aggregator/</link>
+      <pubDate>Thu, 27 Mar 2008 09:58:11 +0000</pubDate>
+      
+      <guid>/2008/03/27/video-on-demand-aggregator/</guid>
+      <description>Mittlerweile gibt es ja eine Menge Video-On-Demand Dienste (Hulu, Maxdome, Videoload um nur einige zu nennen).
+Das Problem aus meiner Sicht: Es mangelt an einer einheitlichen Oberfläche über die man die Filme aller Anbieter finden und natürlich dann auch sehen kann.
+Auch habe ich immer das Problem, unter der großen Auswahl einen guten Film zu finden - daher muss ich vorher jedesmal bei der Imdb vorbeischauen. Diese Bewertungen (selbstredend mit Stimmabgabe) sollten daher auch in diese einheitliche Oberfläche integriert werden.</description>
+    </item>
+    
+    <item>
+      <title>Mobile Aktivitäten oder noch mehr Gezwitscher</title>
+      <link>/2008/03/25/idee-mobile-aktivitaten-oder-noch-mehr-gezwitscher/</link>
+      <pubDate>Tue, 25 Mar 2008 17:16:17 +0000</pubDate>
+      
+      <guid>/2008/03/25/idee-mobile-aktivitaten-oder-noch-mehr-gezwitscher/</guid>
+      <description>Das wäre eine praktische Sache: Die letzten Aktivitäten der Freunde und Bekannte jederzeit abrufbar auf dem Mobiltelefon. Natürlich inklusive optionaler Benachrichtigung sobald eine neue Aktivität stattfindet.
+Was sind in diesem Zusammenhang letzte Aktivitäten? Soziale Netzwerke wie Facebook, Xing und Konsorten liefern jeweils einen News-Feed mit den letzten Aktivitäten, die meine Kontakte auf diesen Seiten getätigt haben. Beispiel: Ein Kontakt von mir hat einen neuen Kontakt in seine Freundschaftsliste hinzugefügt.
+Schön wäre es, wenn wie bei Twitter auch ein Foto des Kontakts angezeigt wird (a propos Twitter: wäre übrigens auch nett, wenn Twittermeldungen integriert wären).</description>
+    </item>
+    
+    <item>
+      <title>Ab jetzt ein paar Softwareideen</title>
+      <link>/2008/03/25/ab-jetzt-ein-paar-softwareideen/</link>
+      <pubDate>Tue, 25 Mar 2008 17:01:29 +0000</pubDate>
+      
+      <guid>/2008/03/25/ab-jetzt-ein-paar-softwareideen/</guid>
+      <description>Wie wohl vielen passiert es mir recht häufig, dass ich eine Idee für eine neue Software habe. Leider und verständlicherweise habe ich selten Zeit diese Ideen weiter zu verfolgen oder sogar einen kleinen Prototypen zu entwickeln. Damit diese Ideen jedoch nicht vollends verloren gehen, sammele ich sie ab jetzt einfach in diesem Blog.
+Ich hoffe, es findet sich etwas brauchbares, das jemand entwickeln möchte – soweit ich kann helfe ich dabei gerne weiter.</description>
+    </item>
+    
+    <item>
+      <title>Zugang zum 1&amp;1 Control-Center mit Adobe AIR</title>
+      <link>/2008/03/05/zugang-zum-11-control-center-mit-adobe-air/</link>
+      <pubDate>Wed, 05 Mar 2008 10:28:14 +0000</pubDate>
+      
+      <guid>/2008/03/05/zugang-zum-11-control-center-mit-adobe-air/</guid>
+      <description>Am Wochenende habe ich mal ein wenig mit Adobe AIR herumgespielt. Wer noch nichts davon gehört hat, mit Adobe AIR kann man Desktopanwendungen mit den üblichen Webtechnologien (HTML, Ajax, Flex) entwicklen - klingt erstmal nicht so prickelnd, ist aber eine tolle Sache. Warum? Beispielsweise kann man damit sehr einfach bestehende Webanwendungen um Desktopfunktionalitäten erweitern.
+Heraus kam dabei eine Desktopanwendung, die das Control-Center von 1&amp;amp;1 um folgende nette Funktionen erweitert:
+ * lokale Speicherung von mehreren Zugangsdaten * Beim Aufruf des SSH-Zugangs wird in die Zwischenablage eine Kommandozeile eingefügt, die einen SSH-Client startet * Schließen der Anwendung, wenn auf den Logout-Button gedrückt wird  Zum Installieren einfach auf &amp;ldquo;INSTALL NOW&amp;rdquo; drücken:</description>
+    </item>
+    
+    <item>
+      <title>Source von UNC online</title>
+      <link>/2008/02/23/source-von-unc-online/</link>
+      <pubDate>Sat, 23 Feb 2008 15:46:04 +0000</pubDate>
+      
+      <guid>/2008/02/23/source-von-unc-online/</guid>
+      <description>Habe nach meinem Serverumzug das Bilderverzerrungstool UNC mal wieder online gestellt. Mit einer kleinen Änderung: Der komplette Source ist nun ebenfalls online (Lizenz ist die GPL). In der Anwendung kann er wie bei Flex üblich über Rechtsklick und dann Klick auf &amp;lsquo;View Source&amp;rsquo; aufgerufen werden.</description>
+    </item>
+    
+    <item>
+      <title>iX Artikel über Flex 3.0</title>
+      <link>/2008/02/22/ix-artikel-uber-flex-30/</link>
+      <pubDate>Fri, 22 Feb 2008 21:31:36 +0000</pubDate>
+      
+      <guid>/2008/02/22/ix-artikel-uber-flex-30/</guid>
+      <description>In der aktuellen iX (Ausgabe März 2008) findet sich ab S.72 ein Artikel über Flex 3.0 von mir.
+Wer möchte kann hier gerne Fragen stellen und Kommentare abgeben.</description>
+    </item>
+    
+    <item>
+      <title>Ein paar Beiträge zum Adobe Flex Cookbook</title>
+      <link>/2007/09/29/ein-paar-beitrage-zum-adobe-flex-cookbook/</link>
+      <pubDate>Sat, 29 Sep 2007 17:19:00 +0000</pubDate>
+      
+      <guid>/2007/09/29/ein-paar-beitrage-zum-adobe-flex-cookbook/</guid>
+      <description>Habe gerade ein paar Beiträge für das Adobe Flex Cookbook erstellt:
+ * [Setting the properties of an itemRenderer from MXML](http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&amp;amp;postId=5762&amp;amp;productId=2&amp;amp;loc=en_US) * [Selecting a view in a ViewStack just by its Class](http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&amp;amp;postId=5782&amp;amp;productId=2&amp;amp;loc=en_US)  Viel Spaß beim voten ;-)</description>
+    </item>
+    
+    <item>
+      <title>Auftrag bei dmc</title>
+      <link>/2007/09/29/auftrag-bei-dmc/</link>
+      <pubDate>Sat, 29 Sep 2007 17:07:00 +0000</pubDate>
+      
+      <guid>/2007/09/29/auftrag-bei-dmc/</guid>
+      <description>Know-How in Adobe Flex aufzubauen, hat sich nun endlich bezahlt gemacht: Arbeite seit circa zwei Wochen an einem interessanten Auftrag bei dmc zur Entwicklung eines Frontends in Flex. Nach den USA gibt es nun also auch im Ländle Bedarf nach Rich-Internet-Applications. Zum Kunden darf ich leider nicht so viel sagen, hier aber ein paar Worte zur Technik: Die Architektur habe ich nach Cairngorm aufgebaut - zur Generierung der Patterns verwende ich cairngem.</description>
+    </item>
+    
+    <item>
+      <title>Unc - Goo jetzt auch als Widget</title>
+      <link>/2007/08/30/unc-goo-jetzt-auch-als-widget/</link>
+      <pubDate>Thu, 30 Aug 2007 22:30:00 +0000</pubDate>
+      
+      <guid>/2007/08/30/unc-goo-jetzt-auch-als-widget/</guid>
+      <description>Unc, das nette Image-Tool mit dem Goo-Effekt gibt es jetzt auch als Widget (man muss ja jeden Web-Trend mal ausprobieren). Wer also auch in seinen Blog, MySpace oder ganz Oldskool auf seiner Homepage so einen Effekt einbauen möchte, der gehe doch einfach auf die entsprechende Seite bei Widgipedia</description>
+    </item>
+    
+    <item>
+      <title>UNC - Das Goo-Revival</title>
+      <link>/2007/07/27/unc-das-goo-revival/</link>
+      <pubDate>Fri, 27 Jul 2007 16:50:00 +0000</pubDate>
+      
+      <guid>/2007/07/27/unc-das-goo-revival/</guid>
+      <description>Erinnert Ihr Euch noch an Kai&amp;rsquo;s PowerGoo? Damit konnte man eigene Bilder beliebig verzerren - ähnlich wie mit einem Zerrspiegel. Verwendete man den Effekt mit Portraits konnte das unter Umständen ziemlich lustig aussehen (oder total bescheuert, so wie oben). Als ich in der Doku von Flex vom DisplacementMapFilter las, dachte ich mir damit müsste das doch prima gehen. Gesagt getan - ein paar Wochen später ist daraus UNC entstanden. Mit UNC könnt Ihr nun eigene Bilder hochladen (momentan max.</description>
+    </item>
+    
+    <item>
+      <title>Neue Seite und ein wenig Goo</title>
+      <link>/2007/06/20/neue-seite-und-ein-wenig-goo/</link>
+      <pubDate>Wed, 20 Jun 2007 10:18:00 +0000</pubDate>
+      
+      <guid>/2007/06/20/neue-seite-und-ein-wenig-goo/</guid>
+      <description>So, es wurde mal wieder Zeit für eine neue Seite: www.marcusschiesser.de. Habe mich ja in letzter Zeit ziemlich viel mit Adobe Flex beschäftigt - daher dachte ich, warum dies nicht mal als Dienstleistung anbieten. Sind ein paar nette Effekte enthalten, insbesondere wenn man auf &amp;ldquo;Über mich&amp;rdquo; klickt - vielleicht erinnert sich der eine oder andere noch an Kai&amp;rsquo;s Power Goo. Mit diesem Effekt kann man Gesichter verzerren und genau dies kann man auf der &amp;ldquo;Über mich&amp;rdquo; Seite mit dem Bild von mir tun.</description>
+    </item>
+    
+    <item>
+      <title>Prozess-Mashup mit Adobe Flex</title>
+      <link>/2007/04/10/prozess-mashup-mit-adobe-flex/</link>
+      <pubDate>Tue, 10 Apr 2007 18:50:00 +0000</pubDate>
+      
+      <guid>/2007/04/10/prozess-mashup-mit-adobe-flex/</guid>
+      <description>was mir gerade einfällt - habe ja in einem früheren Post von Adobe Flex geredet - hier das was dabei herausgekommen ist: &amp;ldquo;Beschaffung einer Anlage oder die Nutzung externer Dienste&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>IMDB Mobile: zu Ostern sucht man nicht nur Eier - sondern auch Filme!</title>
+      <link>/2007/04/10/imdb-mobile-zu-ostern-sucht-man-nicht-nur-eier-sondern-auch-filme/</link>
+      <pubDate>Tue, 10 Apr 2007 11:50:00 +0000</pubDate>
+      
+      <guid>/2007/04/10/imdb-mobile-zu-ostern-sucht-man-nicht-nur-eier-sondern-auch-filme/</guid>
+      <description>Was macht man zu Ostern, wenn man zu lange in der Sonne lag? Man schaut sich einen Film an! Dumm nur, wenn man unterwegs ist und daher keinen Zugriff auf die IMDB hat. Wie soll man ohne IMDB wissen, ob einem der Film überhaupt gefallen könnte? Ein echtes Problem. Da ich für mein schickes Handy (Nokia E61) schon immer mal etwas programmieren wollte, dachte ich mir warum nicht einen mobilen IMDB client.</description>
+    </item>
+    
+    <item>
+      <title>was man so hört...</title>
+      <link>/2007/02/16/was-man-so-hort/</link>
+      <pubDate>Fri, 16 Feb 2007 09:57:00 +0000</pubDate>
+      
+      <guid>/2007/02/16/was-man-so-hort/</guid>
+      <description>&amp;hellip;während dem programmieren: Eric Jordan - Beyond - entspannende elektronische Musik, praktischerweise freier Download und außerdem über eine Stunde lang, so muss man a) nicht andauernd das Lied wechseln und b) bei dieser Länge fällt wohl auch erst nach einem Arbeitstag auf, wenn man es andauernd wiederholt (jedenfalls ist dies bei mir der Fall).</description>
+    </item>
+    
+    <item>
+      <title>Mashups sind für Natürliche</title>
+      <link>/2007/02/15/mashups-sind-fur-naturliche/</link>
+      <pubDate>Thu, 15 Feb 2007 09:31:00 +0000</pubDate>
+      
+      <guid>/2007/02/15/mashups-sind-fur-naturliche/</guid>
+      <description>Für mein aktuelles Projekt erstelle ich gerade ein Enterprise Mashup (wenn es fertig ist dazu mehr) mit Adobe Flex und Kapow. Eine tolle Sache - schon lange hat mir Programmieren nicht mehr soviel Spaß gemacht: Kein stundenlanges nerviges Deployen, man sieht sofort etwas mit dem man Herumspielen kann und dazu ist es noch kreativ. Erinnert mich an die gute alte Zeit als Democoder (hab ich vor 10 Jahren auch mal gemacht).</description>
+    </item>
+    
+    <item>
+      <title>Let it Spreed...</title>
+      <link>/2007/02/15/let-it-spreed/</link>
+      <pubDate>Thu, 15 Feb 2007 08:37:00 +0000</pubDate>
+      
+      <guid>/2007/02/15/let-it-spreed/</guid>
+      <description>es wird mal wieder Zeit für ein paar Posts (nun nachdem ich auf einer Party von einem guten Freund erfahren habe, dass er auch den Blog liest).
+Vor kurzem habe ich mir mal mit spreed.com ein vielversprechendes Münchner Startup angeschaut. Mit Spreed kann man ohne Client-Installation Online-Konferenzen abhalten. D.h. alle möglichen Chat-Flavours (Video, Voice und auch die Tastatur ist würdig vertreten) werden unterstützt. Abgerundet wird das Ganze durch die Möglichkeit Präsentationen zu halten (PowerPoint lässt grüssen) und Kreative können sich mittels eines Whiteboards auch als Nachwuchspicasso betätigen.</description>
+    </item>
+    
+    <item>
+      <title>Mehr Profil bitte</title>
+      <link>/2007/01/19/mehr-profil-bitte/</link>
+      <pubDate>Fri, 19 Jan 2007 12:32:00 +0000</pubDate>
+      
+      <guid>/2007/01/19/mehr-profil-bitte/</guid>
+      <description>Der Held aller Internehmer, Guy Kawasaki, beschreibt in seinem Blog, wie man sein Profil für erfolgreiches Netzwerken verbessert - er verwendet in seinem Beispiel zwar noch LinkedIn, aber das liegt natürlich nur daran, dass Internehmer noch nicht auf englisch verfügbar ist&amp;hellip;
+Mein Tipp übrigens, um die für uns Dienstleister wichtigen Empfehlungen zu handhaben: iKarma sieht diesbezüglich sehr vielversprechend aus. Wer mir ein paar gute Bewertungen geben möchte, hier mein aktuelles Internet-Karma&amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>Big Money leicht gemacht</title>
+      <link>/2007/01/06/big-money-leicht-gemacht/</link>
+      <pubDate>Sat, 06 Jan 2007 16:07:00 +0000</pubDate>
+      
+      <guid>/2007/01/06/big-money-leicht-gemacht/</guid>
+      <description>Ich stelle mal die Behauptung auf, dass Big Money allein nur selten der Grund für eine Unternehmensgründung ist. Sicherlich hat man nichts dagegen reich zu werden, aber nur wenige Startups werden erfolgreich sein, wenn sie alleine mit dieser Intention an den Start gehen (kenne ich aus eigener Erfahrung). Wem es jedoch wirklich nur ums Geld geht, dem liefert das Best-Practice-Business Blog eine passende Erfolgsanleitung. Hmm, jetzt fehlt nur noch das passende Internetprojekt, das es bei uns noch nicht gibt.</description>
+    </item>
+    
+    <item>
+      <title>Und wieder einmal...</title>
+      <link>/2007/01/06/und-wieder-einmal/</link>
+      <pubDate>Sat, 06 Jan 2007 13:35:00 +0000</pubDate>
+      
+      <guid>/2007/01/06/und-wieder-einmal/</guid>
+      <description>sind die Informatiker auf dem letzten Platz. Es wird wohl Zeit, dass ich mal wieder ein paar Bücher lese.
+gefunden im Basic Thinking Blog</description>
+    </item>
+    
+    <item>
+      <title>Pageflakes - Das Do-It-Yourself Portal</title>
+      <link>/2007/01/05/pageflakes-das-do-it-yourself-portal/</link>
+      <pubDate>Fri, 05 Jan 2007 11:35:00 +0000</pubDate>
+      
+      <guid>/2007/01/05/pageflakes-das-do-it-yourself-portal/</guid>
+      <description>Unter der Rubrik &amp;lsquo;Dinge die uns Internehmern helfen&amp;rsquo; fällt der Dienst Pageflakes. Eigentlich kann man mit Pageflakes eine personalisierte Startseite erstellen und andere Internetdienste (z.B. Feeds, Mail, Videos) sehr einfach in diese integrieren. Hierzu stellt Pageflake sogenannte Flakes zur Verfügung - kleine Webmodule, die den jeweiligen einzubindenden Service repräsentieren (Javaleuten ist das Konzept unter dem Begriff Portlet bekannt). Netterweise (und hier wird die Sache auch für Internehmer spannend) kann man diese Flakes auch in seine eigene Seite einbinden - hierzu ein Beispiel (die Auswahl wurde etwas von der Bubble 2.</description>
+    </item>
+    
+    <item>
+      <title>Blogging analog oder die erste Pressemitteilung</title>
+      <link>/2007/01/04/blogging-analog-oder-die-erste-pressemitteilung/</link>
+      <pubDate>Thu, 04 Jan 2007 15:49:00 +0000</pubDate>
+      
+      <guid>/2007/01/04/blogging-analog-oder-die-erste-pressemitteilung/</guid>
+      <description>Eine interessante Feststellung machte ich gestern, als ich die Kommunikationsmethoden des Blogging (jedenfalls soweit sie mir nach den paar Einträgen schon bekannt sind), auf die gute alte reale Welt übertrug:
+Als ich nämlich auf das Editorial (so ne Art Blogeintrag) einer Zeitschrift antwortete (also den Blogeintrag kommentierte) und dabei indirekt auf die Internehmerseite hinwies, wurde ich gleich darauf vom Chefredakteur angerufen und um eine Pressemitteilung gebeten.
+Freue mich ja immer, wenn sich jemand für meine Ideen interessiert - also habe ich gleich mal eine geschrieben: Internehmer - Soziales Netzwerk für Internet-Unternehmer</description>
+    </item>
+    
+    <item>
+      <title>Lust 50 Topmodels zu küssen?</title>
+      <link>/2007/01/03/lust-50-topmodels-zu-kussen/</link>
+      <pubDate>Wed, 03 Jan 2007 11:20:00 +0000</pubDate>
+      
+      <guid>/2007/01/03/lust-50-topmodels-zu-kussen/</guid>
+      <description>Wer würde nicht gerne einmal 50 Topmodels küssen?
+(Übrigens der Post ist nicht sexistisch - der Trick klappt sowohl für Männer als auch für Frauen)
+Die Sache hat nur einen Haken (musste ja so sein&amp;hellip;) - man muss bei &amp;lsquo;Wetten dass?&amp;rsquo; auftreten.
+Wie das? Einfach folgende Wette abgeben:
+&amp;lsquo;Ich wette, dass ich durch bloßes Küssen von 50 Topmodels herausfinde, welche Zigarettenmarke diese rauchen.&amp;rsquo;
+Setzt natürlich voraus, dass die teilnehmenden Models Raucher sind, aber davon kann man ja mal ausgehen, so dünn wie die immer sind.</description>
+    </item>
+    
+    <item>
+      <title>Dapper - und Programmieren wird zur Kunst</title>
+      <link>/2007/01/03/dapper-und-programmieren-wird-zur-kunst/</link>
+      <pubDate>Wed, 03 Jan 2007 10:50:00 +0000</pubDate>
+      
+      <guid>/2007/01/03/dapper-und-programmieren-wird-zur-kunst/</guid>
+      <description>Für diejenigen unter Euch, die es noch nicht kennen sollten: Mit Dapper erstellt man ohne Programmierung (auch keine regulären Ausdrücke, oder sonstige Dinge, die nur Informatiker verstehen) durch ein paar Klicks Webservices, die Daten aus beliebigen Webseiten extrahieren. Da das natürlich manchmal auch noch zuviel Arbeit darstellt, werden die Services (die heissen dann Dapps) unter den Benutzern geshared. Sehr praktisch für Mashups (so ne Art Collage für faule Programmierer wie mich) - Hier eine Demo.</description>
+    </item>
+    
+    <item>
+      <title>Ning - die Internehmerspielwiese</title>
+      <link>/2006/12/30/ning-die-internehmerspielwiese/</link>
+      <pubDate>Sat, 30 Dec 2006 22:04:00 +0000</pubDate>
+      
+      <guid>/2006/12/30/ning-die-internehmerspielwiese/</guid>
+      <description>Unter Ning findet der angehende Internehmer eine interessante Plattform, um schnell Social Applications (wir unterlassen mal die akute Versionierungsmanie für das Wort Web) zu erstellen. Praktisch ist, dass nicht nur eine komplette API und Vorlagen zur Verfügung gestellt werden, sondern dass auch das komplette Hosting übernommen wird. Um das Ganze einmal auszuprobieren habe ich gleich eine Internehmer-Seite angelegt - mit dem Ziel Kontakt zwischen einzelnen Internehmern zu fördern.</description>
+    </item>
+    
+    <item>
+      <title>Was ist ein Internehmer?</title>
+      <link>/2006/12/30/was-ist-ein-internehmer/</link>
+      <pubDate>Sat, 30 Dec 2006 21:17:00 +0000</pubDate>
+      
+      <guid>/2006/12/30/was-ist-ein-internehmer/</guid>
+      <description>Das Wort Internehmer setzt sich aus den Begriffen Internet und Unternehmer zusammen und steht für den Gründer eines Internet-Startups.
+Da die Internet-Branche risikoreicher als die meisten anderen Branchen ist, ist der Internehmer noch höheren Risiken ausgesetzt, als bei einer Unternehmensgründung sowieso üblich sind. (Meiner Meinung nach übrigens eine gute Erklärung, warum in dem risikoarmen Deutschland trotz seiner Wirtschaftsmacht so wenige gute Internet-Startups entstehen).
+Meine Strategie als Internehmer diesem Risiko zu begegnen, besteht darin zwischen den bisher leider finanziell erfolglosen Gründungen (aktuell ist GNUTH) als IT-Freiberufler zu arbeiten und mich somit über Wasser zu halten - Internehmer aus Leidenschaft halt.</description>
+    </item>
+    
+    <item>
+      <title>Wie es dazu kam...</title>
+      <link>/2006/12/30/wie-es-dazu-kam/</link>
+      <pubDate>Sat, 30 Dec 2006 20:29:00 +0000</pubDate>
+      
+      <guid>/2006/12/30/wie-es-dazu-kam/</guid>
+      <description>Die Lektüre des Buches Wir nennen es Arbeit hat mich schließlich überzeugt: ein Blog ist doch mehr als eine Ansammlung nichtiger Meinungen von Selbstdarstellern mit chronischem Aufmerksamkeitsdefizit (wobei ich nicht ausschließen will, zu dieser Gruppe zu gehören).
+Vielmehr definiert das Phänomen ein neues Medium, das den schnellen globalen Meinungsaustausch anregt und sogar zur Kommunikation dient.
+Dies setzt natürlich voraus, dass einzelne Blogbeiträge miteinander verlinkt sind. Von der Technik eigentlich recht simpel - der soziale Aspekt ist mir bis dato jedoch nicht so richtig bewußt geworden.</description>
+    </item>
+    
+  </channel>
+</rss>

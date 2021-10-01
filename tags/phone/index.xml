@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>phone on Marcus Schiesser</title>
+    <link>/tags/phone/</link>
+    <description>Recent content in phone on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 08 Apr 2009 17:10:42 +0000</lastBuildDate><atom:link href="/tags/phone/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Phone number selector in ExtJS</title>
+      <link>/2009/04/08/phone-number-selector-in-extjs/</link>
+      <pubDate>Wed, 08 Apr 2009 17:10:42 +0000</pubDate>
+      
+      <guid>/2009/04/08/phone-number-selector-in-extjs/</guid>
+      <description>Wouldn&amp;rsquo;t it be nice to use a combo box of flag images to select the country code of phone numbers?
+If you use a country selection component that&amp;rsquo;s quite easy. Just wrap it in a re-usable component together with a textfield for the local number and the result looks like this:
+And here&amp;rsquo;s the example&amp;rsquo;s source:
+Ext.onReady(function(){ var panel = new Ext.FormPanel({ style: &#39;padding: 10px;&#39;, frame: true, labelWidth: 50, width: 400, items: [{ fieldLabel: &#39;Mobile&#39;, xtype: &#39;phonefield&#39;, anchor: &#39;100%&#39;, emptyText: &#39;(e.</description>
+    </item>
+    
+  </channel>
+</rss>

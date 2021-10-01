@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>maps on Marcus Schiesser</title>
+    <link>/tags/maps/</link>
+    <description>Recent content in maps on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 09 Sep 2008 12:33:01 +0000</lastBuildDate><atom:link href="/tags/maps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Maps API for Flex</title>
+      <link>/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/</link>
+      <pubDate>Tue, 09 Sep 2008 12:33:01 +0000</pubDate>
+      
+      <guid>/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/</guid>
+      <description>As I pointed out before, it&amp;rsquo;s unfortunately not possible to use Flex components as info windows for Google Maps. Another issue is that the map is not available as a Flex component itself, therefore it&amp;rsquo;s a bit complicated to use it in Flex. So I thought to address these issues in a little Google Maps API for Flex that you can download here under BSD license. With openFlexInfoWindows I also added a method that allows you to use multiple Flex components as info window at once - nicely seperated in tabs.</description>
+    </item>
+    
+  </channel>
+</rss>

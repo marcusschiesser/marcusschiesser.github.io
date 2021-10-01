@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>play on Marcus Schiesser</title>
+    <link>/tags/play/</link>
+    <description>Recent content in play on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 27 Apr 2013 18:56:46 +0000</lastBuildDate><atom:link href="/tags/play/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Securing Your Play 2.1.1 Web Application Using a Filter</title>
+      <link>/2013/04/27/securing-your-play-2-1-1-web-application-using-a-filter/</link>
+      <pubDate>Sat, 27 Apr 2013 18:56:46 +0000</pubDate>
+      
+      <guid>/2013/04/27/securing-your-play-2-1-1-web-application-using-a-filter/</guid>
+      <description>After deploying my Play 2.1.1 based application to Cloudbees, I had the problem that everyone could access it. Not very ideal if you want to restrict your program to only a single audience.
+To solve the problem you would usually write a complicated user-based authentication system. Slightly an overkill, if you don&amp;rsquo;t need different users accessing your program at all. My idea was more that the user has to add an URL parameter with a secret key, the first time the application is called.</description>
+    </item>
+    
+  </channel>
+</rss>

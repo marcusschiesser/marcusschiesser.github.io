@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>flash on Marcus Schiesser</title>
+    <link>/tags/flash/</link>
+    <description>Recent content in flash on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 30 Sep 2008 17:47:05 +0000</lastBuildDate><atom:link href="/tags/flash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multi-level markers using Google Maps for Flash</title>
+      <link>/2008/09/30/multi-level-markers-using-google-maps-for-flash/</link>
+      <pubDate>Tue, 30 Sep 2008 17:47:05 +0000</pubDate>
+      
+      <guid>/2008/09/30/multi-level-markers-using-google-maps-for-flash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adding custom info windows to Google Maps in Flex</title>
+      <link>/2008/08/20/eigene-info-fenster-einer-google-map-in-flash-hinzufugen/</link>
+      <pubDate>Wed, 20 Aug 2008 11:37:29 +0000</pubDate>
+      
+      <guid>/2008/08/20/eigene-info-fenster-einer-google-map-in-flash-hinzufugen/</guid>
+      <description>I just tried to create a custom info window for a Google Map using the Google Maps API For Flash. Unfortunately it does not seem to work as expected by setting the customContent property in an object of type InfoWindowOptions. Therefore I wrote this little workaround that creates a popup window:
+private function createInfoWindow(map:Map, marker:Marker, infoWindow:Class):IFlexDisplayObject { var popup:IFlexDisplayObject = PopUpManager.createPopUp(map, infoWindow); var globalPos:Point = map.localToGlobal(map.fromLatLngToViewport(marker.getLatLng())); popup.move(globalPos.x - popup.width/2, globalPos.y - popup.</description>
+    </item>
+    
+  </channel>
+</rss>

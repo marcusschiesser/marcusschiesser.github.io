@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>itemrenderer on Marcus Schiesser</title>
+    <link>/tags/itemrenderer/</link>
+    <description>Recent content in itemrenderer on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 26 Jun 2008 17:41:22 +0000</lastBuildDate><atom:link href="/tags/itemrenderer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ItemRenderer in Flex typsicher hinzufügen</title>
+      <link>/2008/06/26/itemrenderer-in-flex-typsicher-hinzufugen/</link>
+      <pubDate>Thu, 26 Jun 2008 17:41:22 +0000</pubDate>
+      
+      <guid>/2008/06/26/itemrenderer-in-flex-typsicher-hinzufugen/</guid>
+      <description>Da ich es gerade mal wieder gebraucht habe (und mich nicht sofort daran erinnern konnte):
+Die Antwort auf die Frage, wie man in Flex einen ItemRenderer in MXML typsicher hinzufügt (Dies ist die etwas einfachere Variante von einem Flex Cookbook-Artikel von mir).
+Normalerweise fügt man in Flex einen ItemRenderer folgendermassen hinzu: Man schreibt den Fully Qualified Name des ItemRenderers (also den Klassennamen mit Package) in das Attribut itemRenderer.
+Verwendet man beispielsweise die Klasse MyItemRenderer im Package itemrenders , so sieht das dann bei einer TileList so aus:</description>
+    </item>
+    
+  </channel>
+</rss>

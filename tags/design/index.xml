@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>design on Marcus Schiesser</title>
+    <link>/tags/design/</link>
+    <description>Recent content in design on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 13 Jun 2009 20:14:17 +0000</lastBuildDate><atom:link href="/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quince: UX Pattern Explorer</title>
+      <link>/2009/06/13/quince-ux-pattern-explorer/</link>
+      <pubDate>Sat, 13 Jun 2009 20:14:17 +0000</pubDate>
+      
+      <guid>/2009/06/13/quince-ux-pattern-explorer/</guid>
+      <description>Just in case you don&amp;rsquo;t already know it: Quince - calls itself an UX Patterns Explorer and that&amp;rsquo;s just what it is.
+You want to improve the user experience of your applications? Just take a look at this marble. It contains a large number of design patterns for creating great user interfaces.
+Even the exploration part of this tool is innovative: The patterns are not only ordered alphabetically by name but can be found by the tasks the user wants to accomplish.</description>
+    </item>
+    
+  </channel>
+</rss>

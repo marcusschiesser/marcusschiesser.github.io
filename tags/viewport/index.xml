@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>viewport on Marcus Schiesser</title>
+    <link>/tags/viewport/</link>
+    <description>Recent content in viewport on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 22 Aug 2014 11:45:10 +0000</lastBuildDate><atom:link href="/tags/viewport/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Restart a ExtJS 4.2 Application by recreating the Viewport</title>
+      <link>/2014/08/22/restart-a-extjs-4-2-application-by-recreating-the-viewport/</link>
+      <pubDate>Fri, 22 Aug 2014 11:45:10 +0000</pubDate>
+      
+      <guid>/2014/08/22/restart-a-extjs-4-2-application-by-recreating-the-viewport/</guid>
+      <description>If you are debugging your ExtJS application, it could be helpful from time to time to restart the application. Sure, simply pressing F5 usually does the trick, but it might happen that you want to keep the state of the application and just restart the viewport.
+This is simply done by typing the following lines in your favorite JavaScript console:
+ 1. Remove existing viewport with a ComponentQuery Ext.ComponentQuery.query(&#39;viewport&#39;)[0].removeAll(); 2. Recreate viewport, here the viewport&#39;s class name is _myApp.</description>
+    </item>
+    
+  </channel>
+</rss>

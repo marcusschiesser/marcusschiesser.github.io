@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>album on Marcus Schiesser</title>
+    <link>/tags/album/</link>
+    <description>Recent content in album on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 18 Aug 2008 18:51:51 +0000</lastBuildDate><atom:link href="/tags/album/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3D-Album component for Adobe Flex</title>
+      <link>/2008/08/18/3d-album-komponente-fur-adobe-flex/</link>
+      <pubDate>Mon, 18 Aug 2008 18:51:51 +0000</pubDate>
+      
+      <guid>/2008/08/18/3d-album-komponente-fur-adobe-flex/</guid>
+      <description>You know PicLens? If not I highly recommend taking a look at that marvelous picture search tool.
+Especially interesting is the 3D view of the pictures - you can easily navigate through a whole bunch of pictures by using your mouse.
+I thought it would be nice to integrate such a picture view in your own Flex application, so I played around a bit with the 3D album tutorial from Bartek Drozdz and after a couple of days finished a nice little component that could be easily embedded in your own applications.</description>
+    </item>
+    
+  </channel>
+</rss>

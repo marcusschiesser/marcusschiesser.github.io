@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>factory on Marcus Schiesser</title>
+    <link>/tags/factory/</link>
+    <description>Recent content in factory on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 10 Jul 2008 19:55:46 +0000</lastBuildDate><atom:link href="/tags/factory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Factories für Event-Handler in AS3</title>
+      <link>/2008/07/10/factories-fur-event-handler-in-as3/</link>
+      <pubDate>Thu, 10 Jul 2008 19:55:46 +0000</pubDate>
+      
+      <guid>/2008/07/10/factories-fur-event-handler-in-as3/</guid>
+      <description>In meinem letzten Projekt ist mir ein nettes Pattern für die Verwendung von Closures in Actionscript 3 eingefallen: Factories für Event-Handler.
+Hier ein sehr einfaches Beispiel für einen Handler, der einen Alert anzeigt:
+public static function createAlertHandler(text:String, title:String):Function { return function():void { Alert.show(text, title); } }	 Das Ganze kann man sich nun in der Praxis noch mit weiteren Parametern und natürlich einer komplexeren Handlerfunktion vorstellen. Der Vorteil an diesem Pattern ist, das über die Parameter der Factorymethode verschiedene Handler erstellt werden können, d.</description>
+    </item>
+    
+  </channel>
+</rss>

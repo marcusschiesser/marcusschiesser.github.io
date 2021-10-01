@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>7 on Marcus Schiesser</title>
+    <link>/tags/7/</link>
+    <description>Recent content in 7 on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 18 Nov 2011 15:29:22 +0000</lastBuildDate><atom:link href="/tags/7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JBoss-Migration: Von 4 über 5 nach 7</title>
+      <link>/2011/11/18/jboss-migration/</link>
+      <pubDate>Fri, 18 Nov 2011 15:29:22 +0000</pubDate>
+      
+      <guid>/2011/11/18/jboss-migration/</guid>
+      <description>Die Migration einer Java Enterprise-Anwendung auf eine höhere JBoss-Version ist nicht an einem Nachmittag erledigt. Auf welche Probleme man stoßen kann, beschreibe ich in meinem Erfahrungsbericht: Von 4 über 5 nach 7, erschienen im JavaMagazin 10/2011.
+Behandelt wird die Migration einer J2EE-1.4-Anwendung von JBoss 4 bis 7.
+Vielen Dank an den Verlag (Software &amp;amp; Support Media GmbH), dass ich das PDF in meinem Blog nun zur Verfügung stellen darf.</description>
+    </item>
+    
+  </channel>
+</rss>

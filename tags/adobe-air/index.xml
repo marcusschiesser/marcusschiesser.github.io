@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Adobe Air on Marcus Schiesser</title>
+    <link>/tags/adobe-air/</link>
+    <description>Recent content in Adobe Air on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 27 Mar 2008 09:58:11 +0000</lastBuildDate><atom:link href="/tags/adobe-air/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Video-On-Demand Aggregator</title>
+      <link>/2008/03/27/video-on-demand-aggregator/</link>
+      <pubDate>Thu, 27 Mar 2008 09:58:11 +0000</pubDate>
+      
+      <guid>/2008/03/27/video-on-demand-aggregator/</guid>
+      <description>Mittlerweile gibt es ja eine Menge Video-On-Demand Dienste (Hulu, Maxdome, Videoload um nur einige zu nennen).
+Das Problem aus meiner Sicht: Es mangelt an einer einheitlichen Oberfläche über die man die Filme aller Anbieter finden und natürlich dann auch sehen kann.
+Auch habe ich immer das Problem, unter der großen Auswahl einen guten Film zu finden - daher muss ich vorher jedesmal bei der Imdb vorbeischauen. Diese Bewertungen (selbstredend mit Stimmabgabe) sollten daher auch in diese einheitliche Oberfläche integriert werden.</description>
+    </item>
+    
+  </channel>
+</rss>

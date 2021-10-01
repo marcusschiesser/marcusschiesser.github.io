@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mashup on Marcus Schiesser</title>
+    <link>/tags/mashup/</link>
+    <description>Recent content in Mashup on Marcus Schiesser</description>
+    <image>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 27 Mar 2008 09:58:11 +0000</lastBuildDate><atom:link href="/tags/mashup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Video-On-Demand Aggregator</title>
+      <link>/2008/03/27/video-on-demand-aggregator/</link>
+      <pubDate>Thu, 27 Mar 2008 09:58:11 +0000</pubDate>
+      
+      <guid>/2008/03/27/video-on-demand-aggregator/</guid>
+      <description>Mittlerweile gibt es ja eine Menge Video-On-Demand Dienste (Hulu, Maxdome, Videoload um nur einige zu nennen).
+Das Problem aus meiner Sicht: Es mangelt an einer einheitlichen Oberfläche über die man die Filme aller Anbieter finden und natürlich dann auch sehen kann.
+Auch habe ich immer das Problem, unter der großen Auswahl einen guten Film zu finden - daher muss ich vorher jedesmal bei der Imdb vorbeischauen. Diese Bewertungen (selbstredend mit Stimmabgabe) sollten daher auch in diese einheitliche Oberfläche integriert werden.</description>
+    </item>
+    
+    <item>
+      <title>Zugang zum 1&amp;1 Control-Center mit Adobe AIR</title>
+      <link>/2008/03/05/zugang-zum-11-control-center-mit-adobe-air/</link>
+      <pubDate>Wed, 05 Mar 2008 10:28:14 +0000</pubDate>
+      
+      <guid>/2008/03/05/zugang-zum-11-control-center-mit-adobe-air/</guid>
+      <description>Am Wochenende habe ich mal ein wenig mit Adobe AIR herumgespielt. Wer noch nichts davon gehört hat, mit Adobe AIR kann man Desktopanwendungen mit den üblichen Webtechnologien (HTML, Ajax, Flex) entwicklen - klingt erstmal nicht so prickelnd, ist aber eine tolle Sache. Warum? Beispielsweise kann man damit sehr einfach bestehende Webanwendungen um Desktopfunktionalitäten erweitern.
+Heraus kam dabei eine Desktopanwendung, die das Control-Center von 1&amp;amp;1 um folgende nette Funktionen erweitert:
+ * lokale Speicherung von mehreren Zugangsdaten * Beim Aufruf des SSH-Zugangs wird in die Zwischenablage eine Kommandozeile eingefügt, die einen SSH-Client startet * Schließen der Anwendung, wenn auf den Logout-Button gedrückt wird  Zum Installieren einfach auf &amp;ldquo;INSTALL NOW&amp;rdquo; drücken:</description>
+    </item>
+    
+    <item>
+      <title>Prozess-Mashup mit Adobe Flex</title>
+      <link>/2007/04/10/prozess-mashup-mit-adobe-flex/</link>
+      <pubDate>Tue, 10 Apr 2007 18:50:00 +0000</pubDate>
+      
+      <guid>/2007/04/10/prozess-mashup-mit-adobe-flex/</guid>
+      <description>was mir gerade einfällt - habe ja in einem früheren Post von Adobe Flex geredet - hier das was dabei herausgekommen ist: &amp;ldquo;Beschaffung einer Anlage oder die Nutzung externer Dienste&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>IMDB Mobile: zu Ostern sucht man nicht nur Eier - sondern auch Filme!</title>
+      <link>/2007/04/10/imdb-mobile-zu-ostern-sucht-man-nicht-nur-eier-sondern-auch-filme/</link>
+      <pubDate>Tue, 10 Apr 2007 11:50:00 +0000</pubDate>
+      
+      <guid>/2007/04/10/imdb-mobile-zu-ostern-sucht-man-nicht-nur-eier-sondern-auch-filme/</guid>
+      <description>Was macht man zu Ostern, wenn man zu lange in der Sonne lag? Man schaut sich einen Film an! Dumm nur, wenn man unterwegs ist und daher keinen Zugriff auf die IMDB hat. Wie soll man ohne IMDB wissen, ob einem der Film überhaupt gefallen könnte? Ein echtes Problem. Da ich für mein schickes Handy (Nokia E61) schon immer mal etwas programmieren wollte, dachte ich mir warum nicht einen mobilen IMDB client.</description>
+    </item>
+    
+    <item>
+      <title>Mashups sind für Natürliche</title>
+      <link>/2007/02/15/mashups-sind-fur-naturliche/</link>
+      <pubDate>Thu, 15 Feb 2007 09:31:00 +0000</pubDate>
+      
+      <guid>/2007/02/15/mashups-sind-fur-naturliche/</guid>
+      <description>Für mein aktuelles Projekt erstelle ich gerade ein Enterprise Mashup (wenn es fertig ist dazu mehr) mit Adobe Flex und Kapow. Eine tolle Sache - schon lange hat mir Programmieren nicht mehr soviel Spaß gemacht: Kein stundenlanges nerviges Deployen, man sieht sofort etwas mit dem man Herumspielen kann und dazu ist es noch kreativ. Erinnert mich an die gute alte Zeit als Democoder (hab ich vor 10 Jahren auch mal gemacht).</description>
+    </item>
+    
+  </channel>
+</rss>
