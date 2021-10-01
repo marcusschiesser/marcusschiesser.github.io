@@ -1,3 +1,4 @@
+baseURL: https://marcusschiesser.github.io/
 title: Marcus Schiesser
 paginate: 5
 theme: PaperMod
