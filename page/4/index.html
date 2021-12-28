@@ -15,7 +15,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.91.2">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/index.xml>
 <link rel=alternate type=application/json href=https://marcusschiesser.github.io/index.json>
 <noscript>
@@ -69,65 +69,63 @@
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
-<h2>JBoss-Migration: Von 4 über 5 nach 7
+<h2>Adding Buttons in a Dataview using ExtJS 4.2
 </h2>
 </header>
 <section class=entry-content>
-<p>Die Migration einer Java Enterprise-Anwendung auf eine höhere JBoss-Version ist nicht an einem Nachmittag erledigt. Auf welche Probleme man stoßen kann, beschreibe ich in meinem Erfahrungsbericht: Von 4 über 5 nach 7, erschienen im JavaMagazin 10/2011.
-Behandelt wird die Migration einer J2EE-1.4-Anwendung von JBoss 4 bis 7.
-Vielen Dank an den Verlag (Software & Support Media GmbH), dass ich das PDF in meinem Blog nun zur Verfügung stellen darf.</p>
+<p>If you have a dataview in your ExtJS application, it might be possible that you want to add some action buttons for each of its items. With some good old Javascript this is actually quite easy. You just have to create a template that contains the HTML markup for the button and give it a distinguishable class name. In the itemmousedown listener of the dataview you later check for the class name....</p>
 </section>
-<footer class=entry-footer>November 18, 2011&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to JBoss-Migration: Von 4 über 5 nach 7" href=https://marcusschiesser.github.io/2011/11/18/jboss-migration/></a>
+<footer class=entry-footer>June 10, 2013&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Adding Buttons in a Dataview using ExtJS 4.2" href=https://marcusschiesser.github.io/2013/06/10/adding-buttons-in-a-dataview-using-extjs-4-2/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Let the user change the column order in Java/Swing
+<h2>Securing Your Play 2.1.1 Web Application Using a Filter
 </h2>
 </header>
 <section class=entry-content>
-<p>Do you have the requirement to let the user of your application change the order of his columns and your app is based on Swing?
-Then you should read further. Below you find a [TableColumnModel](http://download.oracle.com/javase/1.4.2/docs/api/javax/swing/table/TableColumnModel.html) that has two states: STANDARD and USERDEFINED. In the STANDARD state the user may not change the order of the columns by drag’n’drop, in USERDEFINED he may. The good thing: If you toogle the state the column order is restored....</p>
+<p>After deploying my Play 2.1.1 based application to Cloudbees, I had the problem that everyone could access it. Not very ideal if you want to restrict your program to only a single audience.
+To solve the problem you would usually write a complicated user-based authentication system. Slightly an overkill, if you don’t need different users accessing your program at all. My idea was more that the user has to add an URL parameter with a secret key, the first time the application is called....</p>
 </section>
-<footer class=entry-footer>November 18, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Let the user change the column order in Java/Swing" href=https://marcusschiesser.github.io/2011/11/18/let-the-user-change-the-column-order-in-javaswing/></a>
+<footer class=entry-footer>April 27, 2013&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Securing Your Play 2.1.1 Web Application Using a Filter" href=https://marcusschiesser.github.io/2013/04/27/securing-your-play-2-1-1-web-application-using-a-filter/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Openbahn-API – Bahn-Webseite als Webservice
+<h2>How to use JSF 2.2 with JBoss 7.1
 </h2>
 </header>
 <section class=entry-content>
-<p>As this is only of interest for German users - this article is in German only. It’s about a new project of mine. Sorry folks.
-Ich bin gerade dabei eine Android-App zu entwickeln, mit der es möglich ist Fahrkarten für Bahn-Pendler einfacher zu buchen. Bei der Entwicklung ist mir aufgefallen, dass die Bahn leider keine Webservices nach außen zur Verfügung stellt – die Webseite www.bahn.de ist zusammen mit der mobilen Variante m....</p>
+<p>As the new JSF 2.2 is nearly finished, we all want to play with the new features of it.
+Markus Eisele has shown in his blog post Testdriving Mojarra 2.2.0-m08 how to do this with Glassfish 3. He’s German too, I begin to wonder if only we guys are that curious or no one else is using JSF any more ;)
+Unfortunately with JBoss 7 we face the same problem he had: We can not just add the new libraries to our WAR archive as they will clash with the JSF 2....</p>
 </section>
-<footer class=entry-footer>June 22, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Openbahn-API – Bahn-Webseite als Webservice" href=https://marcusschiesser.github.io/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/></a>
+<footer class=entry-footer>January 17, 2013&nbsp;·&nbsp;3 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to How to use JSF 2.2 with JBoss 7.1" href=https://marcusschiesser.github.io/2013/01/17/how-to-use-jsf-2-2-with-jboss-7-1/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>How to detect whether an element is in a scrollable parent
+<h2>Doing EJB-like transactions with Google App Engine
 </h2>
 </header>
 <section class=entry-content>
-<p>Just think of having an element in a scrollable parent (the CSS property overflow is set to scroll) and you want to test whether the element is visible or not.
-Using this little function you can do the trick:
-function isInView(node){ var offsetParent = node.offsetParent; var top = offsetParent.scrollTop; var height = offsetParent.offsetHeight; var y = node.offsetTop; return y >= top && y &lt;= (top + height); } And here’s a small use case - this one scrolls the element into the visible region, if it is not already in the view:...</p>
+<p>Using Google App Engine you can’t define a method as transactional with a simple annotation as you can in EJB. You always need to call some boilerplate code which gets quite annoying. Therefore the following utility class comes handy, which takes care of the transaction handling for you:
+https://gist.github.com/marcusschiesser/5474348
+To make use of it, you have to set the same persistence unit as in your persistence.xml configuration file first. Do this by changing the parameter of the method createEntityManagerFactory....</p>
 </section>
-<footer class=entry-footer>November 2, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to How to detect whether an element is in a scrollable parent " href=https://marcusschiesser.github.io/2009/11/02/how-to-detect-whether-an-element-is-in-a-scrollable-parent/></a>
+<footer class=entry-footer>January 5, 2013&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Doing EJB-like transactions with Google App Engine" href=https://marcusschiesser.github.io/2013/01/05/doing-ejb-like-transactions-with-google-app-engine/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Let the user select an item in a modal dialog
+<h2>Using the Facebook Graph API from your GWT application
 </h2>
 </header>
 <section class=entry-content>
-<p>After having used the shiny new YUI3 library for a project, it’s about time to share my YUI3 experiences with you. For the project I built an item selector: A modal dialog is openend and the user has to select an item. After selection the dialog is closed and the selected item is passed to a callback function.
-Here you can find the full source for the item selector. An example to use the selector can be as simple as this:...</p>
+<p></p>
 </section>
-<footer class=entry-footer>August 5, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Let the user select an item in a modal dialog" href=https://marcusschiesser.github.io/2009/08/05/selecting-an-item-in-javascript/></a>
+<footer class=entry-footer>January 3, 2013&nbsp;·&nbsp;0 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Using the Facebook Graph API from your GWT application" href=https://marcusschiesser.github.io/2013/01/03/using-the-facebook-graph-api-from-your-gwt-application/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

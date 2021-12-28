@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Python on Marcus Schiesser</title>
+    <link>https://marcusschiesser.github.io/categories/python/</link>
+    <description>Recent content in Python on Marcus Schiesser</description>
+    <image>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 21 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using URL path parameters in Splunk REST endpoints</title>
+      <link>https://marcusschiesser.github.io/2021/12/21/using-url-path-parameters-in-splunk-rest-endpoints/</link>
+      <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/12/21/using-url-path-parameters-in-splunk-rest-endpoints/</guid>
+      <description>If you wonder how to pass an URL path parameter to your custom REST endpoint in Splunk, please have a look:
+ </description>
+    </item>
+    
+    <item>
+      <title>Enforce arrays for multi-values in Splunk searches</title>
+      <link>https://marcusschiesser.github.io/2021/12/20/enforce-arrays-for-multi-values-in-splunk/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/12/20/enforce-arrays-for-multi-values-in-splunk/</guid>
+      <description>The Splunk SDK for Python is returning for multi-values that only have one entry a string instead of an array. To enforce arrays, you can do the following workaround:
+ </description>
+    </item>
+    
+  </channel>
+</rss>

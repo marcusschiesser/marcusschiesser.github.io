@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>visualization on Marcus Schiesser</title>
+    <link>https://marcusschiesser.github.io/tags/visualization/</link>
+    <description>Recent content in visualization on Marcus Schiesser</description>
+    <image>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 25 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using the Dashboard API from a Splunk visualization</title>
+      <link>https://marcusschiesser.github.io/2021/11/25/using-the-dashboard-api-from-a-splunk-visualization/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/11/25/using-the-dashboard-api-from-a-splunk-visualization/</guid>
+      <description>How to use the Dashboard API from a Splunk visualization (e.g. to reload the datasource):
+ </description>
+    </item>
+    
+    <item>
+      <title>Connect a datasource to a Splunk visualization</title>
+      <link>https://marcusschiesser.github.io/2021/11/24/connect-a-datasource-to-a-splunk-visualization/</link>
+      <pubDate>Wed, 24 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/11/24/connect-a-datasource-to-a-splunk-visualization/</guid>
+      <description>How to programmatically connect a search datasource to a Splunk visualization (without using the dashboard):
+ </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -16,7 +16,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.91.2">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/post/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
@@ -72,66 +72,66 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Quince: UX Pattern Explorer
+<h2>Using Google App Engine as Backend for Android
 </h2>
 </header>
 <section class=entry-content>
-<p>Just in case you don’t already know it: Quince - calls itself an UX Patterns Explorer and that’s just what it is.
-You want to improve the user experience of your applications? Just take a look at this marble. It contains a large number of design patterns for creating great user interfaces.
-Even the exploration part of this tool is innovative: The patterns are not only ordered alphabetically by name but can be found by the tasks the user wants to accomplish....</p>
+<p>If you’re looking for a way to create a backend for your Android application, Google App Engine looks like the perfect choice: You can use Java as you can do for Android and you don’t need to think too much about hosting, as it is all stored in the cloud.
+Another benefit is that you can reuse your transfer objects on the client and on server side. But as it is often there are some problems doing this in practice....</p>
 </section>
-<footer class=entry-footer>June 13, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Quince: UX Pattern Explorer" href=https://marcusschiesser.github.io/2009/06/13/quince-ux-pattern-explorer/></a>
+<footer class=entry-footer>December 2, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Using Google App Engine as Backend for Android" href=https://marcusschiesser.github.io/2011/12/02/using-google-app-engine-as-backend-for-android/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Add a delete button in each row of an ExtJS data grid
+<h2>Storing large images RESTful in the cloud using Google App Engine
 </h2>
 </header>
 <section class=entry-content>
-<p>For usability reasons it is usually a good idea to add a delete button to each row of a data grid. If the user clicks on such a button, the whole row that contained the button will be deleted.
-The data grid of ExtJS does not contain such a feature by default, but it could be implemented by adding a special column to the column model. Using this extension, it could be easily done like this:...</p>
+<p>In my last article I showed how to store files in the cloud using Google app engine. Problem there was that the maximum size of the files was 1MB. Not that much for images.
+To improve the situation, we just shrink the images with this very simple algorithm by factor 0.9 until the size is less than 1MB:
+public class FileTransformer { public static final Logger log = Logger.getLogger(FileTransformer.class.getName()); private static final int JPEG_QUALITY = 90; private static final int MAX_FILE_SIZE = 1024*1024; public byte[] transform(byte[] ba, String mediaType) { if(mediaType....</p>
 </section>
-<footer class=entry-footer>June 13, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Add a delete button in each row of an ExtJS data grid" href=https://marcusschiesser.github.io/2009/06/13/add-a-delete-button-in-each-row-of-an-extjs-data-grid/></a>
+<footer class=entry-footer>December 1, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Storing large images RESTful in the cloud using Google App Engine" href=https://marcusschiesser.github.io/2011/12/01/storing-large-images-restful-in-the-cloud-using-google-app-engine/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Learn how to build a web application with ExtJS
+<h2>Storing files RESTful in the cloud using Google App Engine
 </h2>
 </header>
 <section class=entry-content>
-<p>If you’re interested in learning ExtJS and by accident know some German, I can recommend you read an article I wrote together with my colleague Stefan Botzenhart. The article is called ‘Kombiniert: Ruby on Rails und Ext JS’ and is published in the famous German IT magazine iX in their actual special edition called Web on Rails.
-In the article we explain the implementation of meinkabinett, a web application where people can vote celebrities for the European government....</p>
+<p>Do you want to store files RESTful in the cloud? Why not use the Google App Engine for it?
+Firstly you will need a entity class that is storing the file in the data store:
+@Entity public class FileEntity { @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Long key; private Blob content; private String mediaType; public Long getKey() { return key; } public Blob getContent() { return content; } public void setContent(Blob content) { this....</p>
 </section>
-<footer class=entry-footer>June 13, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Learn how to build a web application with ExtJS" href=https://marcusschiesser.github.io/2009/06/13/learn-how-to-build-a-web-application-with-extjs/></a>
+<footer class=entry-footer>December 1, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Storing files RESTful in the cloud using Google App Engine" href=https://marcusschiesser.github.io/2011/12/01/storing-files-restful-in-the-cloud-using-google-app-engine/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Display an info text in a HTML input field if its focus is lost
+<h2>Using real POJOs (without JAXB Annotations) as transfer objects with JAX-RS
 </h2>
 </header>
 <section class=entry-content>
-<p>Now that with Ext Core a light-weight version (just 25kB) of ExtJS has been released, I thought it’s time to build a nice example with it.
-The result is something very useful that you can see in actually a lot of web sites: Display a info text inside of a input text field if it is empty and does not have the focus.
-Here’s how it looks like:
-E-Mail:
-To add this behaviour to a input field you just have to call this single line:...</p>
+<p>Are you annoyed that you have to annotate your POJOs with @XmlRootElement, so they can be used with JAX-RS? If your using Jersey as JAX-RS implementation your lucky: Just add to the &lt;servlet> tag in your web.xml the following snippet:
+&lt;init-param> &lt;param-name>com.sun.jersey.api.json.POJOMappingFeature&lt;/param-name> &lt;param-value>true&lt;/param-value> &lt;/init-param> After restarting your servlet, your POJOs are marshalled to JSON as a charme. Enjoy!</p>
 </section>
-<footer class=entry-footer>June 12, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Display an info text in a HTML input field if its focus is lost" href=https://marcusschiesser.github.io/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/></a>
+<footer class=entry-footer>December 1, 2011&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Using real POJOs (without JAXB Annotations) as transfer objects with JAX-RS " href=https://marcusschiesser.github.io/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Mark Required Fields in a ExtJS Form
+<h2>JBoss-Migration: Von 4 über 5 nach 7
 </h2>
 </header>
 <section class=entry-content>
-<p></p>
+<p>Die Migration einer Java Enterprise-Anwendung auf eine höhere JBoss-Version ist nicht an einem Nachmittag erledigt. Auf welche Probleme man stoßen kann, beschreibe ich in meinem Erfahrungsbericht: Von 4 über 5 nach 7, erschienen im JavaMagazin 10/2011.
+Behandelt wird die Migration einer J2EE-1.4-Anwendung von JBoss 4 bis 7.
+Vielen Dank an den Verlag (Software & Support Media GmbH), dass ich das PDF in meinem Blog nun zur Verfügung stellen darf.</p>
 </section>
-<footer class=entry-footer>May 4, 2009&nbsp;·&nbsp;0 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Mark Required Fields in a ExtJS Form" href=https://marcusschiesser.github.io/2009/05/04/mark-required-fields-in-a-extjs-form/></a>
+<footer class=entry-footer>November 18, 2011&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to JBoss-Migration: Von 4 über 5 nach 7" href=https://marcusschiesser.github.io/2011/11/18/jboss-migration/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

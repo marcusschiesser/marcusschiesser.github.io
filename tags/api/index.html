@@ -16,7 +16,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.91.2">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/tags/api/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
@@ -69,6 +69,42 @@
 <header class=page-header><div class=breadcrumbs><a href=https://marcusschiesser.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://marcusschiesser.github.io/tags/>Tags</a></div>
 <h1>api</h1>
 </header>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>More than 100 results using the search-job API in Splunk
+</h2>
+</header>
+<section class=entry-content>
+<p>If you’re using the @splunk/search-job API and want to return more than the 100 results (the default value), you’ll have to pass count to the getResults function, e.g.:
+new SearchJob.create({ search: myQuery, }).getResults({ count: 500 }); </p>
+</section>
+<footer class=entry-footer>December 14, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to More than 100 results using the search-job API in Splunk" href=https://marcusschiesser.github.io/2021/12/14/more-than-100-results-using-the-search-job-api/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Mapping types using the Splunk search-job API
+</h2>
+</header>
+<section class=entry-content>
+<p>In case you’re using the @splunk/search-job API you might find it annoying that the properties of the returned objects are all of type string. To fix this, I wrote a little type mapper (The unit test shows how to use it):
+</p>
+</section>
+<footer class=entry-footer>December 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Mapping types using the Splunk search-job API" href=https://marcusschiesser.github.io/2021/12/09/mapping-types-using-the-splunk-search-job-api/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Using the Dashboard API from a Splunk visualization
+</h2>
+</header>
+<section class=entry-content>
+<p>How to use the Dashboard API from a Splunk visualization (e.g. to reload the datasource):
+</p>
+</section>
+<footer class=entry-footer>November 25, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Using the Dashboard API from a Splunk visualization" href=https://marcusschiesser.github.io/2021/11/25/using-the-dashboard-api-from-a-splunk-visualization/></a>
+</article>
 <article class="post-entry tag-entry">
 <header class=entry-header>
 <h2>Google Maps API for Flex

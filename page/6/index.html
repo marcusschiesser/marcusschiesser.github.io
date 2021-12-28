@@ -15,7 +15,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.91.2">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/index.xml>
 <link rel=alternate type=application/json href=https://marcusschiesser.github.io/index.json>
 <noscript>
@@ -69,67 +69,65 @@
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Phone number selector in ExtJS
+<h2>Let the user change the column order in Java/Swing
 </h2>
 </header>
 <section class=entry-content>
-<p>Wouldn’t it be nice to use a combo box of flag images to select the country code of phone numbers?
-If you use a country selection component that’s quite easy. Just wrap it in a re-usable component together with a textfield for the local number and the result looks like this:
-And here’s the example’s source:
-Ext.onReady(function(){ var panel = new Ext.FormPanel({ style: 'padding: 10px;', frame: true, labelWidth: 50, width: 400, items: [{ fieldLabel: 'Mobile', xtype: 'phonefield', anchor: '100%', emptyText: '(e....</p>
+<p>Do you have the requirement to let the user of your application change the order of his columns and your app is based on Swing?
+Then you should read further. Below you find a [TableColumnModel](http://download.oracle.com/javase/1.4.2/docs/api/javax/swing/table/TableColumnModel.html) that has two states: STANDARD and USERDEFINED. In the STANDARD state the user may not change the order of the columns by drag’n’drop, in USERDEFINED he may. The good thing: If you toogle the state the column order is restored....</p>
 </section>
-<footer class=entry-footer>April 8, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Phone number selector in ExtJS" href=https://marcusschiesser.github.io/2009/04/08/phone-number-selector-in-extjs/></a>
+<footer class=entry-footer>November 18, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Let the user change the column order in Java/Swing" href=https://marcusschiesser.github.io/2011/11/18/let-the-user-change-the-column-order-in-javaswing/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Component for selecting multiple items in Ext
+<h2>Openbahn-API – Bahn-Webseite als Webservice
 </h2>
 </header>
 <section class=entry-content>
-<p>Ext already provides a component to select multiple items. The thing I do not like about it is that it covers too much space on the screen. Therefore I thought of a component that initially looks like a combo box and then opens a new window to let the user select the items.
-As a nice example tells more than thousand words - here it is:
-As you can see, it is actually based on the component provided by the Ext examples....</p>
+<p>As this is only of interest for German users - this article is in German only. It’s about a new project of mine. Sorry folks.
+Ich bin gerade dabei eine Android-App zu entwickeln, mit der es möglich ist Fahrkarten für Bahn-Pendler einfacher zu buchen. Bei der Entwicklung ist mir aufgefallen, dass die Bahn leider keine Webservices nach außen zur Verfügung stellt – die Webseite www.bahn.de ist zusammen mit der mobilen Variante m....</p>
 </section>
-<footer class=entry-footer>April 8, 2009&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Component for selecting multiple items in Ext" href=https://marcusschiesser.github.io/2009/04/08/component-for-selecting-multiple-items-in-ext/></a>
+<footer class=entry-footer>June 22, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Openbahn-API – Bahn-Webseite als Webservice" href=https://marcusschiesser.github.io/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Getting values from a form containing combos in Ext
+<h2>How to detect whether an element is in a scrollable parent
 </h2>
 </header>
 <section class=entry-content>
-<p>Actually it is pretty easy to get the values of all fields of a form in Ext: You just have to call the getValues() method of the BasicForm. The problem with that approach is that it just takes the values directly from the DOM and is not calling the getValue() for each field (Which I assumed). One consequence is that you don’t get the values of combo boxes, but their labels....</p>
+<p>Just think of having an element in a scrollable parent (the CSS property overflow is set to scroll) and you want to test whether the element is visible or not.
+Using this little function you can do the trick:
+function isInView(node){ var offsetParent = node.offsetParent; var top = offsetParent.scrollTop; var height = offsetParent.offsetHeight; var y = node.offsetTop; return y >= top && y &lt;= (top + height); } And here’s a small use case - this one scrolls the element into the visible region, if it is not already in the view:...</p>
 </section>
-<footer class=entry-footer>April 7, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Getting values from a form containing combos in Ext" href=https://marcusschiesser.github.io/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/></a>
+<footer class=entry-footer>November 2, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to How to detect whether an element is in a scrollable parent " href=https://marcusschiesser.github.io/2009/11/02/how-to-detect-whether-an-element-is-in-a-scrollable-parent/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Country selector with flag images in ExtJS
+<h2>Let the user select an item in a modal dialog
 </h2>
 </header>
 <section class=entry-content>
-<p>Based on the ExtJS-Tutorial on how to build a combo box with an icon, I built a component that can be used as a country selector in ExtJS.
-Here you can find the code of the component:
-Ext.ns('Extreme.components'); Extreme.components.CountryCombo = Ext.extend(Ext.form.ComboBox, { constructor: function(config){ var data; if (config.phoneLabels) { data = [['+49', '+49', 'ux-flag-de'], ['+43', '+43', 'ux-flag-at'], ['+41', '+41', 'ux-flag-ch'], ['+352', '+352', 'ux-flag-lu'], ['+432', '+432', 'ux-flag-li']]; } else { data = [['DE', 'Deutschland', 'ux-flag-de'], ['AT', 'Österreich', 'ux-flag-at'], ['CH', 'Schweiz', 'ux-flag-ch'], ['LU', 'Luxemburg', 'ux-flag-lu'], ['LI', 'Lichtenstein', 'ux-flag-li']]; } Extreme....</p>
+<p>After having used the shiny new YUI3 library for a project, it’s about time to share my YUI3 experiences with you. For the project I built an item selector: A modal dialog is openend and the user has to select an item. After selection the dialog is closed and the selected item is passed to a callback function.
+Here you can find the full source for the item selector. An example to use the selector can be as simple as this:...</p>
 </section>
-<footer class=entry-footer>April 1, 2009&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Country selector with flag images in ExtJS" href=https://marcusschiesser.github.io/2009/04/01/country-selector-with-flag-images-in-extjs/></a>
+<footer class=entry-footer>August 5, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Let the user select an item in a modal dialog" href=https://marcusschiesser.github.io/2009/08/05/selecting-an-item-in-javascript/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Putting ExtJS templates in separate files
+<h2>Quince: UX Pattern Explorer
 </h2>
 </header>
 <section class=entry-content>
-<p>To create a template in ExtJS you usually have to put the template code inline in your javascript. That could lead to problems if you want to edit your code and the designer wants to change the template. Therefore it’s a good idea to put the template in a separate file.
-For that reason I built this loader singleton that is capable of lazy loading ExtJS templates:
-Ext.ns('templates'); templates.Loader = function(){ var that = {}; var map = {}; that....</p>
+<p>Just in case you don’t already know it: Quince - calls itself an UX Patterns Explorer and that’s just what it is.
+You want to improve the user experience of your applications? Just take a look at this marble. It contains a large number of design patterns for creating great user interfaces.
+Even the exploration part of this tool is innovative: The patterns are not only ordered alphabetically by name but can be found by the tasks the user wants to accomplish....</p>
 </section>
-<footer class=entry-footer>March 11, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Putting ExtJS templates in separate files" href=https://marcusschiesser.github.io/2009/03/11/putting-extjs-templates-in-separate-files/></a>
+<footer class=entry-footer>June 13, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Quince: UX Pattern Explorer" href=https://marcusschiesser.github.io/2009/06/13/quince-ux-pattern-explorer/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

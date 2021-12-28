@@ -16,7 +16,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.91.2">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/post/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
@@ -72,65 +72,64 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
-<h2>JSON generator for picture data from Flickr
+<h2>Building Mockups in ExtJS 4.1
 </h2>
 </header>
 <section class=entry-content>
-<p>Probably a few other guys did this before, but I had a boring train journey without any internet connection, so I used the bits from my 3D album example and made a JSON generator for Flickr data. What does that mean? Just enter a search term and the program finds matching pictures on Flickr. If pictures have been found, a click on ‘JSON’ displays a JSON-encoded array with the URLs and labels of the pictures found....</p>
+<p>Note: This post has been updated for ExtJS 4.1
+In the early development phase it is usually a good idea to provide a mockup that is not using real data but some dummy data from memory. To do that for a grid in ExtJS we need to create a record class first. For a person this might look like this:
+Ext.define('Person', { extend: 'Ext.data.Model', fields: ['firstName', 'lastName'] }); Then we need a store where instances of the Person class will be stored:...</p>
 </section>
-<footer class=entry-footer>August 28, 2008&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to JSON generator for picture data from Flickr" href=https://marcusschiesser.github.io/2008/08/28/json-generator-fur-bilddaten-von-flickr/></a>
+<footer class=entry-footer>February 27, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Building Mockups in ExtJS 4.1" href=https://marcusschiesser.github.io/2009/02/27/167/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Adding custom info windows to Google Maps in Flex
+<h2>Validator for ExtJS Checkbox
 </h2>
 </header>
 <section class=entry-content>
-<p>I just tried to create a custom info window for a Google Map using the Google Maps API For Flash. Unfortunately it does not seem to work as expected by setting the customContent property in an object of type InfoWindowOptions. Therefore I wrote this little workaround that creates a popup window:
-private function createInfoWindow(map:Map, marker:Marker, infoWindow:Class):IFlexDisplayObject { var popup:IFlexDisplayObject = PopUpManager.createPopUp(map, infoWindow); var globalPos:Point = map.localToGlobal(map.fromLatLngToViewport(marker.getLatLng())); popup.move(globalPos.x - popup.width/2, globalPos.y - popup....</p>
+<p>Very unfortunately ExtJS doesn’t offer a validator for its checkbox component. Normally a validator checks whether a field is valid and takes care of displaying an error message if not. For a checkbox we would like that to happen if the checkbox is not selected. Overriding the validate function of the checkbox we can provide such a functionality for all checkbox instances we are about to create:
+Ext.form.Checkbox.prototype.validate = function(){ if (this....</p>
 </section>
-<footer class=entry-footer>August 20, 2008&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Adding custom info windows to Google Maps in Flex" href=https://marcusschiesser.github.io/2008/08/20/eigene-info-fenster-einer-google-map-in-flash-hinzufugen/></a>
+<footer class=entry-footer>February 20, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Validator for ExtJS Checkbox" href=https://marcusschiesser.github.io/2009/02/20/151/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>3D-Album component for Adobe Flex
+<h2>Generic error handler for ExtJS
 </h2>
 </header>
 <section class=entry-content>
-<p>You know PicLens? If not I highly recommend taking a look at that marvelous picture search tool.
-Especially interesting is the 3D view of the pictures - you can easily navigate through a whole bunch of pictures by using your mouse.
-I thought it would be nice to integrate such a picture view in your own Flex application, so I played around a bit with the 3D album tutorial from Bartek Drozdz and after a couple of days finished a nice little component that could be easily embedded in your own applications....</p>
+<p>When you are doing client/server communication with ExtJS you probably run into the problem that you want to handle server side errors in a generic way. A solution that I found is to override the handleFailure function in the Ext.data.Connection class:
+Ext.data.Connection.prototype._handleFailure = Ext.data.Connection.prototype.handleFailure; Ext.data.Connection.prototype.handleFailure = function(response, e) { var errorText = Ext.DomQuery.selectValue("Reason/Text", response.responseXML, "Unknown Error"); Ext.Msg.alert('Error', errorText); Ext.data.Connection.prototype._handleFailure.call(this, response, e); }; This handler simply is called whenever a server side failure occurs....</p>
 </section>
-<footer class=entry-footer>August 18, 2008&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to 3D-Album component for Adobe Flex" href=https://marcusschiesser.github.io/2008/08/18/3d-album-komponente-fur-adobe-flex/></a>
+<footer class=entry-footer>February 9, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Generic error handler for ExtJS" href=https://marcusschiesser.github.io/2009/02/09/generic-error-handler-for-extjs/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Vendor Gems in Rake-Tasks verwenden
+<h2>Using Axis2 services from Javascript (by removing the XML namespaces)
 </h2>
 </header>
 <section class=entry-content>
-<p>Für das Deployment einer Rails-Anwendung ist es eine gute Sache, die für die Anwendung benötigten Gems in das Verzeichnis /vendor/gems zu kopieren. Der Hintergrund ist einfach - so wird sichergestellt, dass der Server dieselbe Version des Gems referenziert wie vom Entwickler vorgesehen.
-Damit Rails diese zur Laufzeit findet wird in der environment.rb folgender Code eingefügt:
-config.load_paths += Dir["#{RAILS_ROOT}/vendor/gems/**"].map do |dir| File.directory?(lib = "#{dir}/lib") ? lib : dir end Das Problem dabei ist nun, dass die Vendor-Gems nicht von den Rake-Tasks gefunden werden....</p>
+<p>If you want to call an Axis2 service from Javascript you will face the problem that the XML response of an Axis2 service call contains XML namespaces - something Javascript doesn’t like in cross-browser-friendly way. The idea to fix this issue is to make an XSLT transformation directly from Axis2 that removes the unnecessary namespaces.
+First we need an XSLT transformation that will do the job:
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> &lt;xsl:output indent="no" method="xml">&lt;/xsl:output> &lt;xsl:template match="/|comment()|processing-instruction()"> &lt;xsl:copy> &lt;xsl:apply-templates>&lt;/xsl:apply-templates> &lt;/xsl:copy> &lt;/xsl:template> &lt;xsl:template match="*"> &lt;xsl:element name="{local-name()}"> &lt;xsl:apply-templates select="@*|node()">&lt;/xsl:apply-templates> &lt;/xsl:element> &lt;/xsl:template> &lt;xsl:template match="@*"> &lt;xsl:attribute name="{local-name()}"> &lt;xsl:value-of select="....</p>
 </section>
-<footer class=entry-footer>July 22, 2008&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Vendor Gems in Rake-Tasks verwenden" href=https://marcusschiesser.github.io/2008/07/22/vendor-gems-in-rake-tasks-verwenden/></a>
+<footer class=entry-footer>January 27, 2009&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Using Axis2 services from Javascript (by removing the XML namespaces)" href=https://marcusschiesser.github.io/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Factories für Event-Handler in AS3
+<h2>Building a JSON web service with Java and Axis2
 </h2>
 </header>
 <section class=entry-content>
-<p>In meinem letzten Projekt ist mir ein nettes Pattern für die Verwendung von Closures in Actionscript 3 eingefallen: Factories für Event-Handler.
-Hier ein sehr einfaches Beispiel für einen Handler, der einen Alert anzeigt:
-public static function createAlertHandler(text:String, title:String):Function { return function():void { Alert.show(text, title); } } Das Ganze kann man sich nun in der Praxis noch mit weiteren Parametern und natürlich einer komplexeren Handlerfunktion vorstellen. Der Vorteil an diesem Pattern ist, das über die Parameter der Factorymethode verschiedene Handler erstellt werden können, d....</p>
+<p>It is said that in Java usually the easiest things are the hardest. The following is a nice example as it took me some time to figure out how to do it. I wanted to build a simple URL request based web service in Java that returns an JSON object. Yes, you can do that with a simple Servlet too, the advantage of using Axis2 is that you can also call your deployed services using SOAP without any configuration changes....</p>
 </section>
-<footer class=entry-footer>July 10, 2008&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Factories für Event-Handler in AS3" href=https://marcusschiesser.github.io/2008/07/10/factories-fur-event-handler-in-as3/></a>
+<footer class=entry-footer>January 23, 2009&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Building a JSON web service with Java and Axis2" href=https://marcusschiesser.github.io/2009/01/23/building-a-json-web-service-with-java-and-axis2/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

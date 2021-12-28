@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>key-value on Marcus Schiesser</title>
+    <link>https://marcusschiesser.github.io/tags/key-value/</link>
+    <description>Recent content in key-value on Marcus Schiesser</description>
+    <image>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 09 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/key-value/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Key Value Editor for Splunk</title>
+      <link>https://marcusschiesser.github.io/2021/11/09/key-value-editor-for-splunk/</link>
+      <pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/11/09/key-value-editor-for-splunk/</guid>
+      <description>I wrote a Splunk app using the new React UI framework for editing KV stores, see https://github.com/zepdev/kveditor - feedback welcome!</description>
+    </item>
+    
+  </channel>
+</rss>

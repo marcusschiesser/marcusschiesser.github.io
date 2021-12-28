@@ -15,7 +15,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.91.2">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/index.xml>
 <link rel=alternate type=application/json href=https://marcusschiesser.github.io/index.json>
 <noscript>
@@ -69,64 +69,61 @@
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Using the Facebook Graph API from your GWT application
+<h2>Cloud Tutorial - Java EE
 </h2>
 </header>
 <section class=entry-content>
-<p></p>
+<p>If you know standard Java and want to quickly learn something more about the core components of the Java Enterprise Edition (Servlets, JSP, JSF, CDI and EJB), you should have a look at this new tutorial I have written with Martin called Cloud Tutorial - Java EE.
+We call it a cloud tutorial, because you learn everything step by step using an Online IDE. That way you don’t have to struggle with any software configuration and you can directly start learning....</p>
 </section>
-<footer class=entry-footer>January 3, 2013&nbsp;·&nbsp;0 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Using the Facebook Graph API from your GWT application" href=https://marcusschiesser.github.io/2013/01/03/using-the-facebook-graph-api-from-your-gwt-application/></a>
+<footer class=entry-footer>August 22, 2015&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Cloud Tutorial - Java EE" href=https://marcusschiesser.github.io/2015/08/22/cloud-tutorial-java-ee/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Using Google App Engine as Backend for Android
+<h2>Proxy Your Requests With Grunt
 </h2>
 </header>
 <section class=entry-content>
-<p>If you’re looking for a way to create a backend for your Android application, Google App Engine looks like the perfect choice: You can use Java as you can do for Android and you don’t need to think too much about hosting, as it is all stored in the cloud.
-Another benefit is that you can reuse your transfer objects on the client and on server side. But as it is often there are some problems doing this in practice....</p>
+<p>Probably you’re already using grunt to serve your local frontend code. Everything is fine, but if you’re developing your backend with something different than JavaScript (Being a Java developer I heard that might happen), you will have problems accessing this backend while running grunt server. With grunt-connect-proxy there exists a grunt module to help you out. It basically delegates requests that match a given URL to a different backend of your choice....</p>
 </section>
-<footer class=entry-footer>December 2, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Using Google App Engine as Backend for Android" href=https://marcusschiesser.github.io/2011/12/02/using-google-app-engine-as-backend-for-android/></a>
+<footer class=entry-footer>March 13, 2015&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Proxy Your Requests With Grunt" href=https://marcusschiesser.github.io/2015/03/13/proxy-your-requests-with-grunt/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Storing large images RESTful in the cloud using Google App Engine
+<h2>Restart a ExtJS 4.2 Application by recreating the Viewport
 </h2>
 </header>
 <section class=entry-content>
-<p>In my last article I showed how to store files in the cloud using Google app engine. Problem there was that the maximum size of the files was 1MB. Not that much for images.
-To improve the situation, we just shrink the images with this very simple algorithm by factor 0.9 until the size is less than 1MB:
-public class FileTransformer { public static final Logger log = Logger.getLogger(FileTransformer.class.getName()); private static final int JPEG_QUALITY = 90; private static final int MAX_FILE_SIZE = 1024*1024; public byte[] transform(byte[] ba, String mediaType) { if(mediaType....</p>
+<p>If you are debugging your ExtJS application, it could be helpful from time to time to restart the application. Sure, simply pressing F5 usually does the trick, but it might happen that you want to keep the state of the application and just restart the viewport.
+This is simply done by typing the following lines in your favorite JavaScript console:
+1. Remove existing viewport with a ComponentQuery Ext.ComponentQuery.query('viewport')[0].removeAll(); 2. Recreate viewport, here the viewport's class name is _myApp....</p>
 </section>
-<footer class=entry-footer>December 1, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Storing large images RESTful in the cloud using Google App Engine" href=https://marcusschiesser.github.io/2011/12/01/storing-large-images-restful-in-the-cloud-using-google-app-engine/></a>
+<footer class=entry-footer>August 22, 2014&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Restart a ExtJS 4.2 Application by recreating the Viewport" href=https://marcusschiesser.github.io/2014/08/22/restart-a-extjs-4-2-application-by-recreating-the-viewport/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Storing files RESTful in the cloud using Google App Engine
+<h2>Using Codenvy (Online IDE) to run Ext JS 4.2.1 Samples
 </h2>
 </header>
 <section class=entry-content>
-<p>Do you want to store files RESTful in the cloud? Why not use the Google App Engine for it?
-Firstly you will need a entity class that is storing the file in the data store:
-@Entity public class FileEntity { @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Long key; private Blob content; private String mediaType; public Long getKey() { return key; } public Blob getContent() { return content; } public void setContent(Blob content) { this....</p>
+<p>Reader’s of my blog (are there any?) know I love JSFiddle. With it you can easily embed a running example of your JavaScript snippet. This is fine for single-file examples but it gets a bit complicated for more complex ones. To showcase them, Codenvy is a very nice solution. It is an Online IDE that has a very nice feature called Codenvy Factory. This one lets you share the actual state of your workspace by distributing a simple link....</p>
 </section>
-<footer class=entry-footer>December 1, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Storing files RESTful in the cloud using Google App Engine" href=https://marcusschiesser.github.io/2011/12/01/storing-files-restful-in-the-cloud-using-google-app-engine/></a>
+<footer class=entry-footer>December 27, 2013&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Using Codenvy (Online IDE) to run Ext JS 4.2.1 Samples" href=https://marcusschiesser.github.io/2013/12/27/using-codenvy-online-ide-to-run-ext-js-4-2-1-samples/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Using real POJOs (without JAXB Annotations) as transfer objects with JAX-RS
+<h2>Dynamically Changing the Structure of a Grid in ExtJS 4.2
 </h2>
 </header>
 <section class=entry-content>
-<p>Are you annoyed that you have to annotate your POJOs with @XmlRootElement, so they can be used with JAX-RS? If your using Jersey as JAX-RS implementation your lucky: Just add to the &lt;servlet> tag in your web.xml the following snippet:
-&lt;init-param> &lt;param-name>com.sun.jersey.api.json.POJOMappingFeature&lt;/param-name> &lt;param-value>true&lt;/param-value> &lt;/init-param> After restarting your servlet, your POJOs are marshalled to JSON as a charme. Enjoy!</p>
+<p>If you have a grid in ExtJS, it might happen that you want to change the columns of the grid depending on the data you receive from the server. In my new pet project Bulks I was facing this exact problem, so I thought it might be worth sharing the solution with you. In the example below we try to render differently structured JSON arrays in the same grid. The function getKeysFromJson retrieves the keys from such an array....</p>
 </section>
-<footer class=entry-footer>December 1, 2011&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Using real POJOs (without JAXB Annotations) as transfer objects with JAX-RS " href=https://marcusschiesser.github.io/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/></a>
+<footer class=entry-footer>December 21, 2013&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Dynamically Changing the Structure of a Grid in ExtJS 4.2" href=https://marcusschiesser.github.io/2013/12/21/dynamically-changing-the-structure-of-a-grid-in-extjs-4-2/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

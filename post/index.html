@@ -16,7 +16,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.91.2">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/post/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
@@ -72,62 +72,63 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Using Disqus without any plugins
+<h2>Using URL path parameters in Splunk REST endpoints
 </h2>
 </header>
 <section class=entry-content>
-<p>At TurnGeek we recently had the task to include Disqus (which is great by the way) into our site, so readers of our books can leave comments for each chapter.
-For a couple of reasons we couldn’t use their Wordpress plugin although the site is running on Wordpress. If you’re running in the same issue or you just don’t want the dependency of another plugin, you can paste the following snippet in your Wordpress posts (by the way, this also works with non WordPress sites):...</p>
+<p>If you wonder how to pass an URL path parameter to your custom REST endpoint in Splunk, please have a look:
+</p>
 </section>
-<footer class=entry-footer>October 17, 2015&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Using Disqus without any plugins" href=https://marcusschiesser.github.io/2015/10/17/using-disqus-without-any-plugins/></a>
+<footer class=entry-footer>December 21, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Using URL path parameters in Splunk REST endpoints" href=https://marcusschiesser.github.io/2021/12/21/using-url-path-parameters-in-splunk-rest-endpoints/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Cloud Tutorial - Java EE
+<h2>Enforce arrays for multi-values in Splunk searches
 </h2>
 </header>
 <section class=entry-content>
-<p>If you know standard Java and want to quickly learn something more about the core components of the Java Enterprise Edition (Servlets, JSP, JSF, CDI and EJB), you should have a look at this new tutorial I have written with Martin called Cloud Tutorial - Java EE.
-We call it a cloud tutorial, because you learn everything step by step using an Online IDE. That way you don’t have to struggle with any software configuration and you can directly start learning....</p>
+<p>The Splunk SDK for Python is returning for multi-values that only have one entry a string instead of an array. To enforce arrays, you can do the following workaround:
+</p>
 </section>
-<footer class=entry-footer>August 22, 2015&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Cloud Tutorial - Java EE" href=https://marcusschiesser.github.io/2015/08/22/cloud-tutorial-java-ee/></a>
+<footer class=entry-footer>December 20, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Enforce arrays for multi-values in Splunk searches" href=https://marcusschiesser.github.io/2021/12/20/enforce-arrays-for-multi-values-in-splunk/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Proxy Your Requests With Grunt
+<h2>More than 100 results using the search-job API in Splunk
 </h2>
 </header>
 <section class=entry-content>
-<p>Probably you’re already using grunt to serve your local frontend code. Everything is fine, but if you’re developing your backend with something different than JavaScript (Being a Java developer I heard that might happen), you will have problems accessing this backend while running grunt server. With grunt-connect-proxy there exists a grunt module to help you out. It basically delegates requests that match a given URL to a different backend of your choice....</p>
+<p>If you’re using the @splunk/search-job API and want to return more than the 100 results (the default value), you’ll have to pass count to the getResults function, e.g.:
+new SearchJob.create({ search: myQuery, }).getResults({ count: 500 }); </p>
 </section>
-<footer class=entry-footer>March 13, 2015&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Proxy Your Requests With Grunt" href=https://marcusschiesser.github.io/2015/03/13/proxy-your-requests-with-grunt/></a>
+<footer class=entry-footer>December 14, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to More than 100 results using the search-job API in Splunk" href=https://marcusschiesser.github.io/2021/12/14/more-than-100-results-using-the-search-job-api/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Restart a ExtJS 4.2 Application by recreating the Viewport
+<h2>Mapping types using the Splunk search-job API
 </h2>
 </header>
 <section class=entry-content>
-<p>If you are debugging your ExtJS application, it could be helpful from time to time to restart the application. Sure, simply pressing F5 usually does the trick, but it might happen that you want to keep the state of the application and just restart the viewport.
-This is simply done by typing the following lines in your favorite JavaScript console:
-1. Remove existing viewport with a ComponentQuery Ext.ComponentQuery.query('viewport')[0].removeAll(); 2. Recreate viewport, here the viewport's class name is _myApp....</p>
+<p>In case you’re using the @splunk/search-job API you might find it annoying that the properties of the returned objects are all of type string. To fix this, I wrote a little type mapper (The unit test shows how to use it):
+</p>
 </section>
-<footer class=entry-footer>August 22, 2014&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Restart a ExtJS 4.2 Application by recreating the Viewport" href=https://marcusschiesser.github.io/2014/08/22/restart-a-extjs-4-2-application-by-recreating-the-viewport/></a>
+<footer class=entry-footer>December 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Mapping types using the Splunk search-job API" href=https://marcusschiesser.github.io/2021/12/09/mapping-types-using-the-splunk-search-job-api/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Using Codenvy (Online IDE) to run Ext JS 4.2.1 Samples
+<h2>Using the Dashboard API from a Splunk visualization
 </h2>
 </header>
 <section class=entry-content>
-<p>Reader’s of my blog (are there any?) know I love JSFiddle. With it you can easily embed a running example of your JavaScript snippet. This is fine for single-file examples but it gets a bit complicated for more complex ones. To showcase them, Codenvy is a very nice solution. It is an Online IDE that has a very nice feature called Codenvy Factory. This one lets you share the actual state of your workspace by distributing a simple link....</p>
+<p>How to use the Dashboard API from a Splunk visualization (e.g. to reload the datasource):
+</p>
 </section>
-<footer class=entry-footer>December 27, 2013&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Using Codenvy (Online IDE) to run Ext JS 4.2.1 Samples" href=https://marcusschiesser.github.io/2013/12/27/using-codenvy-online-ide-to-run-ext-js-4-2-1-samples/></a>
+<footer class=entry-footer>November 25, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Using the Dashboard API from a Splunk visualization" href=https://marcusschiesser.github.io/2021/11/25/using-the-dashboard-api-from-a-splunk-visualization/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

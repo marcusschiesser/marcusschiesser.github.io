@@ -16,7 +16,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.91.2">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/post/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
@@ -72,66 +72,67 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Adding Rows to a Grid in ExtJS 4.1
+<h2>Add a delete button in each row of an ExtJS data grid
 </h2>
 </header>
 <section class=entry-content>
-<p>Note: Has been updated for ExtJS 4.1
-In the last article we built a data grid mockup in ExtJS 4.1. Now we want to add some rows to the grid. Firstly we need to create a model class to store a data. We’ve done that also in the previously article, but for the better understanding, here’s it again:
-Ext.define('Person', { extend: 'Ext.data.Model', fields: ['firstName', 'lastName'] }); Having the Person class we can simply add new rows to the store (people in our case) by calling the add function with new instances of that class:...</p>
+<p>For usability reasons it is usually a good idea to add a delete button to each row of a data grid. If the user clicks on such a button, the whole row that contained the button will be deleted.
+The data grid of ExtJS does not contain such a feature by default, but it could be implemented by adding a special column to the column model. Using this extension, it could be easily done like this:...</p>
 </section>
-<footer class=entry-footer>February 27, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Adding Rows to a Grid in ExtJS 4.1" href=https://marcusschiesser.github.io/2009/02/27/adding-rows-to-a-grid-in-extjs/></a>
+<footer class=entry-footer>June 13, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Add a delete button in each row of an ExtJS data grid" href=https://marcusschiesser.github.io/2009/06/13/add-a-delete-button-in-each-row-of-an-extjs-data-grid/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Building Mockups in ExtJS 4.1
+<h2>Learn how to build a web application with ExtJS
 </h2>
 </header>
 <section class=entry-content>
-<p>Note: This post has been updated for ExtJS 4.1
-In the early development phase it is usually a good idea to provide a mockup that is not using real data but some dummy data from memory. To do that for a grid in ExtJS we need to create a record class first. For a person this might look like this:
-Ext.define('Person', { extend: 'Ext.data.Model', fields: ['firstName', 'lastName'] }); Then we need a store where instances of the Person class will be stored:...</p>
+<p>If you’re interested in learning ExtJS and by accident know some German, I can recommend you read an article I wrote together with my colleague Stefan Botzenhart. The article is called ‘Kombiniert: Ruby on Rails und Ext JS’ and is published in the famous German IT magazine iX in their actual special edition called Web on Rails.
+In the article we explain the implementation of meinkabinett, a web application where people can vote celebrities for the European government....</p>
 </section>
-<footer class=entry-footer>February 27, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Building Mockups in ExtJS 4.1" href=https://marcusschiesser.github.io/2009/02/27/167/></a>
+<footer class=entry-footer>June 13, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Learn how to build a web application with ExtJS" href=https://marcusschiesser.github.io/2009/06/13/learn-how-to-build-a-web-application-with-extjs/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Validator for ExtJS Checkbox
+<h2>Display an info text in a HTML input field if its focus is lost
 </h2>
 </header>
 <section class=entry-content>
-<p>Very unfortunately ExtJS doesn’t offer a validator for its checkbox component. Normally a validator checks whether a field is valid and takes care of displaying an error message if not. For a checkbox we would like that to happen if the checkbox is not selected. Overriding the validate function of the checkbox we can provide such a functionality for all checkbox instances we are about to create:
-Ext.form.Checkbox.prototype.validate = function(){ if (this....</p>
+<p>Now that with Ext Core a light-weight version (just 25kB) of ExtJS has been released, I thought it’s time to build a nice example with it.
+The result is something very useful that you can see in actually a lot of web sites: Display a info text inside of a input text field if it is empty and does not have the focus.
+Here’s how it looks like:
+E-Mail:
+To add this behaviour to a input field you just have to call this single line:...</p>
 </section>
-<footer class=entry-footer>February 20, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Validator for ExtJS Checkbox" href=https://marcusschiesser.github.io/2009/02/20/151/></a>
+<footer class=entry-footer>June 12, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Display an info text in a HTML input field if its focus is lost" href=https://marcusschiesser.github.io/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Generic error handler for ExtJS
+<h2>Mark Required Fields in a ExtJS Form
 </h2>
 </header>
 <section class=entry-content>
-<p>When you are doing client/server communication with ExtJS you probably run into the problem that you want to handle server side errors in a generic way. A solution that I found is to override the handleFailure function in the Ext.data.Connection class:
-Ext.data.Connection.prototype._handleFailure = Ext.data.Connection.prototype.handleFailure; Ext.data.Connection.prototype.handleFailure = function(response, e) { var errorText = Ext.DomQuery.selectValue("Reason/Text", response.responseXML, "Unknown Error"); Ext.Msg.alert('Error', errorText); Ext.data.Connection.prototype._handleFailure.call(this, response, e); }; This handler simply is called whenever a server side failure occurs....</p>
+<p></p>
 </section>
-<footer class=entry-footer>February 9, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Generic error handler for ExtJS" href=https://marcusschiesser.github.io/2009/02/09/generic-error-handler-for-extjs/></a>
+<footer class=entry-footer>May 4, 2009&nbsp;·&nbsp;0 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Mark Required Fields in a ExtJS Form" href=https://marcusschiesser.github.io/2009/05/04/mark-required-fields-in-a-extjs-form/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Using Axis2 services from Javascript (by removing the XML namespaces)
+<h2>Phone number selector in ExtJS
 </h2>
 </header>
 <section class=entry-content>
-<p>If you want to call an Axis2 service from Javascript you will face the problem that the XML response of an Axis2 service call contains XML namespaces - something Javascript doesn’t like in cross-browser-friendly way. The idea to fix this issue is to make an XSLT transformation directly from Axis2 that removes the unnecessary namespaces.
-First we need an XSLT transformation that will do the job:
-&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> &lt;xsl:output indent="no" method="xml">&lt;/xsl:output> &lt;xsl:template match="/|comment()|processing-instruction()"> &lt;xsl:copy> &lt;xsl:apply-templates>&lt;/xsl:apply-templates> &lt;/xsl:copy> &lt;/xsl:template> &lt;xsl:template match="*"> &lt;xsl:element name="{local-name()}"> &lt;xsl:apply-templates select="@*|node()">&lt;/xsl:apply-templates> &lt;/xsl:element> &lt;/xsl:template> &lt;xsl:template match="@*"> &lt;xsl:attribute name="{local-name()}"> &lt;xsl:value-of select="....</p>
+<p>Wouldn’t it be nice to use a combo box of flag images to select the country code of phone numbers?
+If you use a country selection component that’s quite easy. Just wrap it in a re-usable component together with a textfield for the local number and the result looks like this:
+And here’s the example’s source:
+Ext.onReady(function(){ var panel = new Ext.FormPanel({ style: 'padding: 10px;', frame: true, labelWidth: 50, width: 400, items: [{ fieldLabel: 'Mobile', xtype: 'phonefield', anchor: '100%', emptyText: '(e....</p>
 </section>
-<footer class=entry-footer>January 27, 2009&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Using Axis2 services from Javascript (by removing the XML namespaces)" href=https://marcusschiesser.github.io/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/></a>
+<footer class=entry-footer>April 8, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Phone number selector in ExtJS" href=https://marcusschiesser.github.io/2009/04/08/phone-number-selector-in-extjs/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

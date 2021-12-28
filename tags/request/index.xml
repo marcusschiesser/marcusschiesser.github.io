@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>request on Marcus Schiesser</title>
+    <link>https://marcusschiesser.github.io/tags/request/</link>
+    <description>Recent content in request on Marcus Schiesser</description>
+    <image>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 08 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/request/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>POST request from a Splunk app using the @splunk/splunk-utils package</title>
+      <link>https://marcusschiesser.github.io/2021/11/08/post-request-from-a-splunk-app/</link>
+      <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/11/08/post-request-from-a-splunk-app/</guid>
+      <description>This snippet shows how to use the handleError and handleResponse functions from the splunk-utils package to send a POST request from a Splunk app:
+ </description>
+    </item>
+    
+  </channel>
+</rss>

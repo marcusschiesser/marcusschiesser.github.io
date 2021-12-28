@@ -16,7 +16,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.91.2">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/post/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
@@ -72,59 +72,66 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Building a JSON web service with Java and Axis2
+<h2>Component for selecting multiple items in Ext
 </h2>
 </header>
 <section class=entry-content>
-<p>It is said that in Java usually the easiest things are the hardest. The following is a nice example as it took me some time to figure out how to do it. I wanted to build a simple URL request based web service in Java that returns an JSON object. Yes, you can do that with a simple Servlet too, the advantage of using Axis2 is that you can also call your deployed services using SOAP without any configuration changes....</p>
+<p>Ext already provides a component to select multiple items. The thing I do not like about it is that it covers too much space on the screen. Therefore I thought of a component that initially looks like a combo box and then opens a new window to let the user select the items.
+As a nice example tells more than thousand words - here it is:
+As you can see, it is actually based on the component provided by the Ext examples....</p>
 </section>
-<footer class=entry-footer>January 23, 2009&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Building a JSON web service with Java and Axis2" href=https://marcusschiesser.github.io/2009/01/23/building-a-json-web-service-with-java-and-axis2/></a>
+<footer class=entry-footer>April 8, 2009&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Component for selecting multiple items in Ext" href=https://marcusschiesser.github.io/2009/04/08/component-for-selecting-multiple-items-in-ext/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>3 Ways to render HTML inside of a ExtJS container
+<h2>Getting values from a form containing combos in Ext
 </h2>
 </header>
 <section class=entry-content>
-<p>It has been a while since my last blog post. The main reason is that I am now having a nice new job at efiport which leads to the situation that I am doing now good old Javascript (mainly ExtJS) instead of Flex. So I think in the future there will be more posts about ExtJS then Flex. Sorry Flex folks.
-To tribute the change a bit, I start with the problem of adding HTML code inside of a ExtJS container....</p>
+<p>Actually it is pretty easy to get the values of all fields of a form in Ext: You just have to call the getValues() method of the BasicForm. The problem with that approach is that it just takes the values directly from the DOM and is not calling the getValue() for each field (Which I assumed). One consequence is that you don’t get the values of combo boxes, but their labels....</p>
 </section>
-<footer class=entry-footer>January 14, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to 3 Ways to render HTML inside of a ExtJS container" href=https://marcusschiesser.github.io/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/></a>
+<footer class=entry-footer>April 7, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Getting values from a form containing combos in Ext" href=https://marcusschiesser.github.io/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Splitting CSVs in Actionscript (the Excel way)
+<h2>Country selector with flag images in ExtJS
 </h2>
 </header>
 <section class=entry-content>
-<p></p>
+<p>Based on the ExtJS-Tutorial on how to build a combo box with an icon, I built a component that can be used as a country selector in ExtJS.
+Here you can find the code of the component:
+Ext.ns('Extreme.components'); Extreme.components.CountryCombo = Ext.extend(Ext.form.ComboBox, { constructor: function(config){ var data; if (config.phoneLabels) { data = [['+49', '+49', 'ux-flag-de'], ['+43', '+43', 'ux-flag-at'], ['+41', '+41', 'ux-flag-ch'], ['+352', '+352', 'ux-flag-lu'], ['+432', '+432', 'ux-flag-li']]; } else { data = [['DE', 'Deutschland', 'ux-flag-de'], ['AT', 'Österreich', 'ux-flag-at'], ['CH', 'Schweiz', 'ux-flag-ch'], ['LU', 'Luxemburg', 'ux-flag-lu'], ['LI', 'Lichtenstein', 'ux-flag-li']]; } Extreme....</p>
 </section>
-<footer class=entry-footer>October 21, 2008&nbsp;·&nbsp;0 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Splitting CSVs in Actionscript (the Excel way)" href=https://marcusschiesser.github.io/2008/10/21/splitting-csvs-in-actionscript-the-excel-way/></a>
+<footer class=entry-footer>April 1, 2009&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Country selector with flag images in ExtJS" href=https://marcusschiesser.github.io/2009/04/01/country-selector-with-flag-images-in-extjs/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Multi-level markers using Google Maps for Flash
+<h2>Putting ExtJS templates in separate files
 </h2>
 </header>
 <section class=entry-content>
-<p></p>
+<p>To create a template in ExtJS you usually have to put the template code inline in your javascript. That could lead to problems if you want to edit your code and the designer wants to change the template. Therefore it’s a good idea to put the template in a separate file.
+For that reason I built this loader singleton that is capable of lazy loading ExtJS templates:
+Ext.ns('templates'); templates.Loader = function(){ var that = {}; var map = {}; that....</p>
 </section>
-<footer class=entry-footer>September 30, 2008&nbsp;·&nbsp;0 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Multi-level markers using Google Maps for Flash" href=https://marcusschiesser.github.io/2008/09/30/multi-level-markers-using-google-maps-for-flash/></a>
+<footer class=entry-footer>March 11, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Putting ExtJS templates in separate files" href=https://marcusschiesser.github.io/2009/03/11/putting-extjs-templates-in-separate-files/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Google Maps API for Flex
+<h2>Adding Rows to a Grid in ExtJS 4.1
 </h2>
 </header>
 <section class=entry-content>
-<p>As I pointed out before, it’s unfortunately not possible to use Flex components as info windows for Google Maps. Another issue is that the map is not available as a Flex component itself, therefore it’s a bit complicated to use it in Flex. So I thought to address these issues in a little Google Maps API for Flex that you can download here under BSD license. With openFlexInfoWindows I also added a method that allows you to use multiple Flex components as info window at once - nicely seperated in tabs....</p>
+<p>Note: Has been updated for ExtJS 4.1
+In the last article we built a data grid mockup in ExtJS 4.1. Now we want to add some rows to the grid. Firstly we need to create a model class to store a data. We’ve done that also in the previously article, but for the better understanding, here’s it again:
+Ext.define('Person', { extend: 'Ext.data.Model', fields: ['firstName', 'lastName'] }); Having the Person class we can simply add new rows to the store (people in our case) by calling the add function with new instances of that class:...</p>
 </section>
-<footer class=entry-footer>September 9, 2008&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Google Maps API for Flex" href=https://marcusschiesser.github.io/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/></a>
+<footer class=entry-footer>February 27, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Adding Rows to a Grid in ExtJS 4.1" href=https://marcusschiesser.github.io/2009/02/27/adding-rows-to-a-grid-in-extjs/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

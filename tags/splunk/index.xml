@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Splunk on Marcus Schiesser</title>
+    <link>https://marcusschiesser.github.io/tags/splunk/</link>
+    <description>Recent content in Splunk on Marcus Schiesser</description>
+    <image>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 21 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/splunk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using URL path parameters in Splunk REST endpoints</title>
+      <link>https://marcusschiesser.github.io/2021/12/21/using-url-path-parameters-in-splunk-rest-endpoints/</link>
+      <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/12/21/using-url-path-parameters-in-splunk-rest-endpoints/</guid>
+      <description>If you wonder how to pass an URL path parameter to your custom REST endpoint in Splunk, please have a look:
+ </description>
+    </item>
+    
+    <item>
+      <title>Enforce arrays for multi-values in Splunk searches</title>
+      <link>https://marcusschiesser.github.io/2021/12/20/enforce-arrays-for-multi-values-in-splunk/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/12/20/enforce-arrays-for-multi-values-in-splunk/</guid>
+      <description>The Splunk SDK for Python is returning for multi-values that only have one entry a string instead of an array. To enforce arrays, you can do the following workaround:
+ </description>
+    </item>
+    
+    <item>
+      <title>More than 100 results using the search-job API in Splunk</title>
+      <link>https://marcusschiesser.github.io/2021/12/14/more-than-100-results-using-the-search-job-api/</link>
+      <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/12/14/more-than-100-results-using-the-search-job-api/</guid>
+      <description>If you’re using the @splunk/search-job API and want to return more than the 100 results (the default value), you’ll have to pass count to the getResults function, e.g.:
+new SearchJob.create({ search: myQuery, }).getResults({ count: 500 }); </description>
+    </item>
+    
+    <item>
+      <title>Mapping types using the Splunk search-job API</title>
+      <link>https://marcusschiesser.github.io/2021/12/09/mapping-types-using-the-splunk-search-job-api/</link>
+      <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/12/09/mapping-types-using-the-splunk-search-job-api/</guid>
+      <description>In case you’re using the @splunk/search-job API you might find it annoying that the properties of the returned objects are all of type string. To fix this, I wrote a little type mapper (The unit test shows how to use it):
+ </description>
+    </item>
+    
+    <item>
+      <title>Using the Dashboard API from a Splunk visualization</title>
+      <link>https://marcusschiesser.github.io/2021/11/25/using-the-dashboard-api-from-a-splunk-visualization/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/11/25/using-the-dashboard-api-from-a-splunk-visualization/</guid>
+      <description>How to use the Dashboard API from a Splunk visualization (e.g. to reload the datasource):
+ </description>
+    </item>
+    
+    <item>
+      <title>Connect a datasource to a Splunk visualization</title>
+      <link>https://marcusschiesser.github.io/2021/11/24/connect-a-datasource-to-a-splunk-visualization/</link>
+      <pubDate>Wed, 24 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/11/24/connect-a-datasource-to-a-splunk-visualization/</guid>
+      <description>How to programmatically connect a search datasource to a Splunk visualization (without using the dashboard):
+ </description>
+    </item>
+    
+    <item>
+      <title>Run any React app as a Splunk app</title>
+      <link>https://marcusschiesser.github.io/2021/11/23/run-any-react-app-as-a-splunk-app/</link>
+      <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/11/23/run-any-react-app-as-a-splunk-app/</guid>
+      <description>If you want to run any React app (any React version, any toolkit) as a Splunk app, have a look at this gist:
+ </description>
+    </item>
+    
+    <item>
+      <title>Key Value Editor for Splunk</title>
+      <link>https://marcusschiesser.github.io/2021/11/09/key-value-editor-for-splunk/</link>
+      <pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/11/09/key-value-editor-for-splunk/</guid>
+      <description>I wrote a Splunk app using the new React UI framework for editing KV stores, see https://github.com/zepdev/kveditor - feedback welcome!</description>
+    </item>
+    
+    <item>
+      <title>POST request from a Splunk app using the @splunk/splunk-utils package</title>
+      <link>https://marcusschiesser.github.io/2021/11/08/post-request-from-a-splunk-app/</link>
+      <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/11/08/post-request-from-a-splunk-app/</guid>
+      <description>This snippet shows how to use the handleError and handleResponse functions from the splunk-utils package to send a POST request from a Splunk app:
+ </description>
+    </item>
+    
+  </channel>
+</rss>

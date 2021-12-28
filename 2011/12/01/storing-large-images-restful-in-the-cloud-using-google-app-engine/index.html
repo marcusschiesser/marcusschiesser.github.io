@@ -19,7 +19,7 @@ public class FileTransformer { public static final Logger log = Logger.getLogger
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.91.2">
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
@@ -96,32 +96,32 @@ Problem there was that the maximum size of the files was 1MB. Not that much for 
 	private static final int MAX_FILE_SIZE = 1024*1024;
 
 	public byte[] transform(byte[] ba, String mediaType) {
-        if(mediaType.equalsIgnoreCase(&quot;image/jpeg&quot;)
-                || mediaType.equalsIgnoreCase(&quot;image/jpg&quot;)) {
-            return imageTransform(ba);
-        }
-        throw new IllegalArgumentException(&quot;Unsupported media type: &quot; + mediaType + &quot; for this transformer&quot;);
+		if(mediaType.equalsIgnoreCase(&quot;image/jpeg&quot;)
+				|| mediaType.equalsIgnoreCase(&quot;image/jpg&quot;)) {
+			return imageTransform(ba);
+		}
+		throw new IllegalArgumentException(&quot;Unsupported media type: &quot; + mediaType + &quot; for this transformer&quot;);
 	}
 
 	private byte[] imageTransform(final byte[] ba) {
-        byte[] result = ba;
-        while(result.length&gt;MAX_FILE_SIZE) {
-            final Image origImage = ImagesServiceFactory.makeImage(result);
-            final Image newImage = shrinkImage(origImage, 0.9f);
-            result = newImage.getImageData();
-        }
-        return result;
+		byte[] result = ba;
+		while(result.length&gt;MAX_FILE_SIZE) {
+			final Image origImage = ImagesServiceFactory.makeImage(result);
+			final Image newImage = shrinkImage(origImage, 0.9f);
+			result = newImage.getImageData();
+		}
+		return result;
 	}
 
 	private Image shrinkImage(final Image origImage, final float percent) {
-        final ImagesService imagesService = ImagesServiceFactory.getImagesService();
-        log.fine(&quot;orig dimensions is &quot; + origImage.getWidth() + &quot; X &quot; + origImage.getHeight());
-        final OutputSettings settings = new OutputSettings(OutputEncoding.JPEG);
-        settings.setQuality(JPEG_QUALITY);
+		final ImagesService imagesService = ImagesServiceFactory.getImagesService();
+		log.fine(&quot;orig dimensions is &quot; + origImage.getWidth() + &quot; X &quot; + origImage.getHeight());
+		final OutputSettings settings = new OutputSettings(OutputEncoding.JPEG);
+		settings.setQuality(JPEG_QUALITY);
 		
-        final Transform resize = ImagesServiceFactory.makeResize(Math.round(origImage.getWidth()*percent), Math.round(origImage.getHeight()*percent));
-        final Image newImage = imagesService.applyTransform(resize, origImage, settings);
-        return newImage;
+		final Transform resize = ImagesServiceFactory.makeResize(Math.round(origImage.getWidth()*percent), Math.round(origImage.getHeight()*percent));
+		final Image newImage = imagesService.applyTransform(resize, origImage, settings);
+		return newImage;
 	}
 
 }

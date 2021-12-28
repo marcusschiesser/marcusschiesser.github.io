@@ -9,7 +9,37 @@
       <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 09 Sep 2008 12:33:01 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>More than 100 results using the search-job API in Splunk</title>
+      <link>https://marcusschiesser.github.io/2021/12/14/more-than-100-results-using-the-search-job-api/</link>
+      <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/12/14/more-than-100-results-using-the-search-job-api/</guid>
+      <description>If you’re using the @splunk/search-job API and want to return more than the 100 results (the default value), you’ll have to pass count to the getResults function, e.g.:
+new SearchJob.create({ search: myQuery, }).getResults({ count: 500 }); </description>
+    </item>
+    
+    <item>
+      <title>Mapping types using the Splunk search-job API</title>
+      <link>https://marcusschiesser.github.io/2021/12/09/mapping-types-using-the-splunk-search-job-api/</link>
+      <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/12/09/mapping-types-using-the-splunk-search-job-api/</guid>
+      <description>In case you’re using the @splunk/search-job API you might find it annoying that the properties of the returned objects are all of type string. To fix this, I wrote a little type mapper (The unit test shows how to use it):
+ </description>
+    </item>
+    
+    <item>
+      <title>Using the Dashboard API from a Splunk visualization</title>
+      <link>https://marcusschiesser.github.io/2021/11/25/using-the-dashboard-api-from-a-splunk-visualization/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/11/25/using-the-dashboard-api-from-a-splunk-visualization/</guid>
+      <description>How to use the Dashboard API from a Splunk visualization (e.g. to reload the datasource):
+ </description>
+    </item>
+    
     <item>
       <title>Google Maps API for Flex</title>
       <link>https://marcusschiesser.github.io/2008/09/09/google-maps-api-fur-flexgoogle-maps-api-for-flex/</link>

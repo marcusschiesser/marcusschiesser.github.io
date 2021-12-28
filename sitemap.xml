@@ -3,15 +3,135 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://marcusschiesser.github.io/categories/</loc>
-    <lastmod>2015-10-17T03:30:44+00:00</lastmod>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://marcusschiesser.github.io/tags/disqus/</loc>
-    <lastmod>2015-10-17T03:30:44+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/categories/javascript/</loc>
-    <lastmod>2015-10-17T03:30:44+00:00</lastmod>
+    <loc>https://marcusschiesser.github.io/tags/custom/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/parameters/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/path/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/post/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/python/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/categories/python/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/rest/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/splunk/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/categories/splunk/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/url/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/2021/12/21/using-url-path-parameters-in-splunk-rest-endpoints/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/array/</loc>
+    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/2021/12/20/enforce-arrays-for-multi-values-in-splunk/</loc>
+    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/multi-values/</loc>
+    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/search/</loc>
+    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/string/</loc>
+    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/api/</loc>
+    <lastmod>2021-12-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/categories/javascript/</loc>
+    <lastmod>2021-12-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/2021/12/14/more-than-100-results-using-the-search-job-api/</loc>
+    <lastmod>2021-12-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/react/</loc>
+    <lastmod>2021-12-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/results/</loc>
+    <lastmod>2021-12-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/search-job/</loc>
+    <lastmod>2021-12-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/mapper/</loc>
+    <lastmod>2021-12-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/2021/12/09/mapping-types-using-the-splunk-search-job-api/</loc>
+    <lastmod>2021-12-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/type/</loc>
+    <lastmod>2021-12-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/dashboard/</loc>
+    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/2021/11/25/using-the-dashboard-api-from-a-splunk-visualization/</loc>
+    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/visualization/</loc>
+    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/2021/11/24/connect-a-datasource-to-a-splunk-visualization/</loc>
+    <lastmod>2021-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/datasource/</loc>
+    <lastmod>2021-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/app/</loc>
+    <lastmod>2021-11-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/convert/</loc>
+    <lastmod>2021-11-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/run/</loc>
+    <lastmod>2021-11-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/2021/11/23/run-any-react-app-as-a-splunk-app/</loc>
+    <lastmod>2021-11-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/editor/</loc>
+    <lastmod>2021-11-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/2021/11/09/key-value-editor-for-splunk/</loc>
+    <lastmod>2021-11-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/key-value/</loc>
+    <lastmod>2021-11-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/post/</loc>
+    <lastmod>2021-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/2021/11/08/post-request-from-a-splunk-app/</loc>
+    <lastmod>2021-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/request/</loc>
+    <lastmod>2021-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/disqus/</loc>
     <lastmod>2015-10-17T03:30:44+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/categories/other/</loc>
@@ -20,16 +140,10 @@
     <loc>https://marcusschiesser.github.io/tags/plugin/</loc>
     <lastmod>2015-10-17T03:30:44+00:00</lastmod>
   </url><url>
-    <loc>https://marcusschiesser.github.io/post/</loc>
-    <lastmod>2015-10-17T03:30:44+00:00</lastmod>
-  </url><url>
     <loc>https://marcusschiesser.github.io/tags/shortname/</loc>
     <lastmod>2015-10-17T03:30:44+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/snippet/</loc>
-    <lastmod>2015-10-17T03:30:44+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/tags/</loc>
     <lastmod>2015-10-17T03:30:44+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/2015/10/17/using-disqus-without-any-plugins/</loc>
@@ -252,9 +366,6 @@
     <lastmod>2011-12-01T16:06:30+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/pojo/</loc>
-    <lastmod>2011-12-01T16:06:30+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/tags/rest/</loc>
     <lastmod>2011-12-01T16:06:30+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/serialize/</loc>
@@ -656,9 +767,6 @@
     <loc>https://marcusschiesser.github.io/2008/10/21/splitting-csvs-in-actionscript-the-excel-way/</loc>
     <lastmod>2008-10-21T22:02:51+00:00</lastmod>
   </url><url>
-    <loc>https://marcusschiesser.github.io/tags/string/</loc>
-    <lastmod>2008-10-21T22:02:51+00:00</lastmod>
-  </url><url>
     <loc>https://marcusschiesser.github.io/tags/flash/</loc>
     <lastmod>2008-09-30T17:47:05+00:00</lastmod>
   </url><url>
@@ -677,9 +785,6 @@
     <loc>https://marcusschiesser.github.io/2008/09/30/multi-level-markers-using-google-maps-for-flash/</loc>
     <lastmod>2008-09-30T17:47:05+00:00</lastmod>
   </url><url>
-    <loc>https://marcusschiesser.github.io/tags/api/</loc>
-    <lastmod>2008-09-09T12:33:01+00:00</lastmod>
-  </url><url>
     <loc>https://marcusschiesser.github.io/tags/google/</loc>
     <lastmod>2008-09-09T12:33:01+00:00</lastmod>
   </url><url>
@@ -691,9 +796,6 @@
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/window/</loc>
     <lastmod>2008-09-09T12:33:01+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/tags/array/</loc>
-    <lastmod>2008-08-28T22:11:42+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/flickr/</loc>
     <lastmod>2008-08-28T22:11:42+00:00</lastmod>

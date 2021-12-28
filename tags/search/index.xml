@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>search on Marcus Schiesser</title>
+    <link>https://marcusschiesser.github.io/tags/search/</link>
+    <description>Recent content in search on Marcus Schiesser</description>
+    <image>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Enforce arrays for multi-values in Splunk searches</title>
+      <link>https://marcusschiesser.github.io/2021/12/20/enforce-arrays-for-multi-values-in-splunk/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/12/20/enforce-arrays-for-multi-values-in-splunk/</guid>
+      <description>The Splunk SDK for Python is returning for multi-values that only have one entry a string instead of an array. To enforce arrays, you can do the following workaround:
+ </description>
+    </item>
+    
+    <item>
+      <title>More than 100 results using the search-job API in Splunk</title>
+      <link>https://marcusschiesser.github.io/2021/12/14/more-than-100-results-using-the-search-job-api/</link>
+      <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/12/14/more-than-100-results-using-the-search-job-api/</guid>
+      <description>If you’re using the @splunk/search-job API and want to return more than the 100 results (the default value), you’ll have to pass count to the getResults function, e.g.:
+new SearchJob.create({ search: myQuery, }).getResults({ count: 500 }); </description>
+    </item>
+    
+    <item>
+      <title>Mapping types using the Splunk search-job API</title>
+      <link>https://marcusschiesser.github.io/2021/12/09/mapping-types-using-the-splunk-search-job-api/</link>
+      <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/12/09/mapping-types-using-the-splunk-search-job-api/</guid>
+      <description>In case you’re using the @splunk/search-job API you might find it annoying that the properties of the returned objects are all of type string. To fix this, I wrote a little type mapper (The unit test shows how to use it):
+ </description>
+    </item>
+    
+    <item>
+      <title>Connect a datasource to a Splunk visualization</title>
+      <link>https://marcusschiesser.github.io/2021/11/24/connect-a-datasource-to-a-splunk-visualization/</link>
+      <pubDate>Wed, 24 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/11/24/connect-a-datasource-to-a-splunk-visualization/</guid>
+      <description>How to programmatically connect a search datasource to a Splunk visualization (without using the dashboard):
+ </description>
+    </item>
+    
+  </channel>
+</rss>

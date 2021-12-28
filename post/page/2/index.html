@@ -16,7 +16,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.91.2">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/post/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
@@ -72,63 +72,62 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Dynamically Changing the Structure of a Grid in ExtJS 4.2
+<h2>Connect a datasource to a Splunk visualization
 </h2>
 </header>
 <section class=entry-content>
-<p>If you have a grid in ExtJS, it might happen that you want to change the columns of the grid depending on the data you receive from the server. In my new pet project Bulks I was facing this exact problem, so I thought it might be worth sharing the solution with you. In the example below we try to render differently structured JSON arrays in the same grid. The function getKeysFromJson retrieves the keys from such an array....</p>
+<p>How to programmatically connect a search datasource to a Splunk visualization (without using the dashboard):
+</p>
 </section>
-<footer class=entry-footer>December 21, 2013&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Dynamically Changing the Structure of a Grid in ExtJS 4.2" href=https://marcusschiesser.github.io/2013/12/21/dynamically-changing-the-structure-of-a-grid-in-extjs-4-2/></a>
+<footer class=entry-footer>November 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Connect a datasource to a Splunk visualization" href=https://marcusschiesser.github.io/2021/11/24/connect-a-datasource-to-a-splunk-visualization/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Adding Buttons in a Dataview using ExtJS 4.2
+<h2>Run any React app as a Splunk app
 </h2>
 </header>
 <section class=entry-content>
-<p>If you have a dataview in your ExtJS application, it might be possible that you want to add some action buttons for each of its items. With some good old Javascript this is actually quite easy. You just have to create a template that contains the HTML markup for the button and give it a distinguishable class name. In the itemmousedown listener of the dataview you later check for the class name....</p>
+<p>If you want to run any React app (any React version, any toolkit) as a Splunk app, have a look at this gist:
+</p>
 </section>
-<footer class=entry-footer>June 10, 2013&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Adding Buttons in a Dataview using ExtJS 4.2" href=https://marcusschiesser.github.io/2013/06/10/adding-buttons-in-a-dataview-using-extjs-4-2/></a>
+<footer class=entry-footer>November 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Run any React app as a Splunk app" href=https://marcusschiesser.github.io/2021/11/23/run-any-react-app-as-a-splunk-app/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Securing Your Play 2.1.1 Web Application Using a Filter
+<h2>Key Value Editor for Splunk
 </h2>
 </header>
 <section class=entry-content>
-<p>After deploying my Play 2.1.1 based application to Cloudbees, I had the problem that everyone could access it. Not very ideal if you want to restrict your program to only a single audience.
-To solve the problem you would usually write a complicated user-based authentication system. Slightly an overkill, if you don’t need different users accessing your program at all. My idea was more that the user has to add an URL parameter with a secret key, the first time the application is called....</p>
+<p>I wrote a Splunk app using the new React UI framework for editing KV stores, see https://github.com/zepdev/kveditor - feedback welcome!</p>
 </section>
-<footer class=entry-footer>April 27, 2013&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Securing Your Play 2.1.1 Web Application Using a Filter" href=https://marcusschiesser.github.io/2013/04/27/securing-your-play-2-1-1-web-application-using-a-filter/></a>
+<footer class=entry-footer>November 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Key Value Editor for Splunk" href=https://marcusschiesser.github.io/2021/11/09/key-value-editor-for-splunk/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>How to use JSF 2.2 with JBoss 7.1
+<h2>POST request from a Splunk app using the @splunk/splunk-utils package
 </h2>
 </header>
 <section class=entry-content>
-<p>As the new JSF 2.2 is nearly finished, we all want to play with the new features of it.
-Markus Eisele has shown in his blog post Testdriving Mojarra 2.2.0-m08 how to do this with Glassfish 3. He’s German too, I begin to wonder if only we guys are that curious or no one else is using JSF any more ;)
-Unfortunately with JBoss 7 we face the same problem he had: We can not just add the new libraries to our WAR archive as they will clash with the JSF 2....</p>
+<p>This snippet shows how to use the handleError and handleResponse functions from the splunk-utils package to send a POST request from a Splunk app:
+</p>
 </section>
-<footer class=entry-footer>January 17, 2013&nbsp;·&nbsp;3 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to How to use JSF 2.2 with JBoss 7.1" href=https://marcusschiesser.github.io/2013/01/17/how-to-use-jsf-2-2-with-jboss-7-1/></a>
+<footer class=entry-footer>November 8, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to POST request from a Splunk app using the @splunk/splunk-utils package" href=https://marcusschiesser.github.io/2021/11/08/post-request-from-a-splunk-app/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Doing EJB-like transactions with Google App Engine
+<h2>Using Disqus without any plugins
 </h2>
 </header>
 <section class=entry-content>
-<p>Using Google App Engine you can’t define a method as transactional with a simple annotation as you can in EJB. You always need to call some boilerplate code which gets quite annoying. Therefore the following utility class comes handy, which takes care of the transaction handling for you:
-https://gist.github.com/marcusschiesser/5474348
-To make use of it, you have to set the same persistence unit as in your persistence.xml configuration file first. Do this by changing the parameter of the method createEntityManagerFactory....</p>
+<p>At TurnGeek we recently had the task to include Disqus (which is great by the way) into our site, so readers of our books can leave comments for each chapter.
+For a couple of reasons we couldn’t use their Wordpress plugin although the site is running on Wordpress. If you’re running in the same issue or you just don’t want the dependency of another plugin, you can paste the following snippet in your Wordpress posts (by the way, this also works with non WordPress sites):...</p>
 </section>
-<footer class=entry-footer>January 5, 2013&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Doing EJB-like transactions with Google App Engine" href=https://marcusschiesser.github.io/2013/01/05/doing-ejb-like-transactions-with-google-app-engine/></a>
+<footer class=entry-footer>October 17, 2015&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Using Disqus without any plugins" href=https://marcusschiesser.github.io/2015/10/17/using-disqus-without-any-plugins/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

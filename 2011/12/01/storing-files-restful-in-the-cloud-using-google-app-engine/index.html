@@ -19,7 +19,7 @@ Firstly you will need a entity class that is storing the file in the data store:
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.91.2">
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
@@ -97,23 +97,23 @@ public class FileEntity {
 	private String mediaType;
 
 	public Long getKey() {
-        return key;
+		return key;
 	}
 
 	public Blob getContent() {
-        return content;
+		return content;
 	}
 
 	public void setContent(Blob content) {
-        this.content = content;
+		this.content = content;
 	}
 
 	public String getMediaType() {
-        return mediaType;
+		return mediaType;
 	}
 
 	public void setMediaType(String mediaType) {
-        this.mediaType = mediaType;
+		this.mediaType = mediaType;
 	}	
 }
 </code></pre>
@@ -137,34 +137,34 @@ public class FileServerResource {
 	@Consumes({ MediaType.TEXT_PLAIN, &quot;image/jpeg&quot;, &quot;image/png&quot;, &quot;image/gif&quot;, &quot;application/zip&quot; })
 	@Produces({ MediaType.TEXT_PLAIN })
 	public String storeFile(final byte[] b) {
-        FileEntity file = EMF.doTransaction(new EMF.Closure&lt;fileentity&gt;() {
-            public FileEntity doit(EntityManager em) {
-                byte[] ba = b;
-                String mediaType = headers.getMediaType().toString();
-                FileEntity file = new FileEntity();
-                file.setContent(new Blob(ba));
-                file.setMediaType(mediaType);
-                em.persist(file);
-                return file;
-            }
-        });
-        UriBuilder ub = uriInfo.getBaseUriBuilder();
-        URI link = ub.path(&quot;/file/get/&quot; + file.getKey().toString()).build();
-        return link.toString();
+		FileEntity file = EMF.doTransaction(new EMF.Closure&lt;fileentity&gt;() {
+			public FileEntity doit(EntityManager em) {
+				byte[] ba = b;
+				String mediaType = headers.getMediaType().toString();
+				FileEntity file = new FileEntity();
+				file.setContent(new Blob(ba));
+				file.setMediaType(mediaType);
+				em.persist(file);
+				return file;
+			}
+		});
+		UriBuilder ub = uriInfo.getBaseUriBuilder();
+		URI link = ub.path(&quot;/file/get/&quot; + file.getKey().toString()).build();
+		return link.toString();
 	}
 
 	@GET
 	@Path(&quot;/get/{id}&quot;)
 	@Produces(&quot;*/*&quot;)
 	public Response getFile(@PathParam(&quot;id&quot;) final long id) {
-        return EMF.doTransaction(new EMF.Closure&lt;response&gt;() {
-            public Response doit(EntityManager em) {
-                FileEntity entity = em.find(FileEntity.class, id);
-                if (entity == null)
-                    throw new WebApplicationException(404);
-                return Response.ok(entity.getContent().getBytes(), entity.getMediaType()).build();
-            }
-        });
+		return EMF.doTransaction(new EMF.Closure&lt;response&gt;() {
+			public Response doit(EntityManager em) {
+				FileEntity entity = em.find(FileEntity.class, id);
+				if (entity == null)
+					throw new WebApplicationException(404);
+				return Response.ok(entity.getContent().getBytes(), entity.getMediaType()).build();
+			}
+		});
 	}
 }
 </code></pre>
