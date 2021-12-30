@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MFA on Marcus Schiesser</title>
+    <link>https://marcusschiesser.github.io/tags/mfa/</link>
+    <description>Recent content in MFA on Marcus Schiesser</description>
+    <image>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 30 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/mfa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Switching to an IAM role that requires MFA in AWS</title>
+      <link>https://marcusschiesser.github.io/2021/12/30/switching-to-an-iam-role-that-requires-mfa/</link>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/12/30/switching-to-an-iam-role-that-requires-mfa/</guid>
+      <description>IAM roles are a great way to increase security in AWS. A user can switch to a specific role and get a new set of permissions. The Switching to an IAM role article explains how to do this for the AWS CLI, but unfortunately leaves out how to switch to a role that requires MFA.
+The trick is to add a mfa_serial parameter to the profile in the ~/.aws/config file, e.</description>
+    </item>
+    
+  </channel>
+</rss>

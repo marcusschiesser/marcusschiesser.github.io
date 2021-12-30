@@ -69,6 +69,20 @@
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Phone number selector in ExtJS
+</h2>
+</header>
+<section class=entry-content>
+<p>Wouldn’t it be nice to use a combo box of flag images to select the country code of phone numbers?
+If you use a country selection component that’s quite easy. Just wrap it in a re-usable component together with a textfield for the local number and the result looks like this:
+And here’s the example’s source:
+Ext.onReady(function(){ var panel = new Ext.FormPanel({ style: 'padding: 10px;', frame: true, labelWidth: 50, width: 400, items: [{ fieldLabel: 'Mobile', xtype: 'phonefield', anchor: '100%', emptyText: '(e....</p>
+</section>
+<footer class=entry-footer>April 8, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Phone number selector in ExtJS" href=https://marcusschiesser.github.io/2009/04/08/phone-number-selector-in-extjs/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Component for selecting multiple items in Ext
 </h2>
 </header>
@@ -116,19 +130,6 @@ Ext.ns('templates'); templates.Loader = function(){ var that = {}; var map = {};
 </section>
 <footer class=entry-footer>March 11, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to Putting ExtJS templates in separate files" href=https://marcusschiesser.github.io/2009/03/11/putting-extjs-templates-in-separate-files/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Adding Rows to a Grid in ExtJS 4.1
-</h2>
-</header>
-<section class=entry-content>
-<p>Note: Has been updated for ExtJS 4.1
-In the last article we built a data grid mockup in ExtJS 4.1. Now we want to add some rows to the grid. Firstly we need to create a model class to store a data. We’ve done that also in the previously article, but for the better understanding, here’s it again:
-Ext.define('Person', { extend: 'Ext.data.Model', fields: ['firstName', 'lastName'] }); Having the Person class we can simply add new rows to the store (people in our case) by calling the add function with new instances of that class:...</p>
-</section>
-<footer class=entry-footer>February 27, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Adding Rows to a Grid in ExtJS 4.1" href=https://marcusschiesser.github.io/2009/02/27/adding-rows-to-a-grid-in-extjs/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

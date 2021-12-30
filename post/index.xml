@@ -9,7 +9,17 @@
       <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 21 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Switching to an IAM role that requires MFA in AWS</title>
+      <link>https://marcusschiesser.github.io/2021/12/30/switching-to-an-iam-role-that-requires-mfa/</link>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2021/12/30/switching-to-an-iam-role-that-requires-mfa/</guid>
+      <description>IAM roles are a great way to increase security in AWS. A user can switch to a specific role and get a new set of permissions. The Switching to an IAM role article explains how to do this for the AWS CLI, but unfortunately leaves out how to switch to a role that requires MFA.
+The trick is to add a mfa_serial parameter to the profile in the ~/.aws/config file, e.</description>
+    </item>
+    
     <item>
       <title>Using URL path parameters in Splunk REST endpoints</title>
       <link>https://marcusschiesser.github.io/2021/12/21/using-url-path-parameters-in-splunk-rest-endpoints/</link>
