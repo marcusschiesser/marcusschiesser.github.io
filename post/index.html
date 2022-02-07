@@ -16,7 +16,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.0">
+<meta name=generator content="Hugo 0.92.1">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/post/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
@@ -72,6 +72,19 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Latest 2022 EKS Cluster with Load Balancing Controller and External DNS
+</h2>
+</header>
+<section class=entry-content>
+<p>Need a terraform script to setup the latest 2022 EKS cluster including the best goodies like Helm, AWS Load Balancer Controller and External DNS?
+Then please have a look at my GitHub repository eks-cluster-with-lb-controller.
+The advantage of its configuration is that for the lifecycle of application specific resources (DNS entries, load balancers, target groups), Terraform is not needed. Kubernetes ingress resources with specific annotations are sufficient and can be checked into each application’s repository to fulfill IaC requirements....</p>
+</section>
+<footer class=entry-footer>February 7, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Marcus Schiesser</footer>
+<a class=entry-link aria-label="post link to Latest 2022 EKS Cluster with Load Balancing Controller and External DNS" href=https://marcusschiesser.github.io/2022/02/07/latest-eks-cluster-with-load-balancing-controller-and-external-dns/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Switching to an IAM role that requires MFA in AWS
 </h2>
 </header>
@@ -117,18 +130,6 @@ new SearchJob.create({ search: myQuery, }).getResults({ count: 500 }); </p>
 </section>
 <footer class=entry-footer>December 14, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to More than 100 results using the search-job API in Splunk" href=https://marcusschiesser.github.io/2021/12/14/more-than-100-results-using-the-search-job-api/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Mapping types using the Splunk search-job API
-</h2>
-</header>
-<section class=entry-content>
-<p>In case you’re using the @splunk/search-job API you might find it annoying that the properties of the returned objects are all of type string. To fix this, I wrote a little type mapper (The unit test shows how to use it):
-</p>
-</section>
-<footer class=entry-footer>December 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Mapping types using the Splunk search-job API" href=https://marcusschiesser.github.io/2021/12/09/mapping-types-using-the-splunk-search-job-api/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

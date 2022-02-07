@@ -15,7 +15,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.0">
+<meta name=generator content="Hugo 0.92.1">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/index.xml>
 <link rel=alternate type=application/json href=https://marcusschiesser.github.io/index.json>
 <noscript>
@@ -69,6 +69,19 @@
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Putting ExtJS templates in separate files
+</h2>
+</header>
+<section class=entry-content>
+<p>To create a template in ExtJS you usually have to put the template code inline in your javascript. That could lead to problems if you want to edit your code and the designer wants to change the template. Therefore it’s a good idea to put the template in a separate file.
+For that reason I built this loader singleton that is capable of lazy loading ExtJS templates:
+Ext.ns('templates'); templates.Loader = function(){ var that = {}; var map = {}; that....</p>
+</section>
+<footer class=entry-footer>March 11, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Putting ExtJS templates in separate files" href=https://marcusschiesser.github.io/2009/03/11/putting-extjs-templates-in-separate-files/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Adding Rows to a Grid in ExtJS 4.1
 </h2>
 </header>
@@ -116,19 +129,6 @@ Ext.data.Connection.prototype._handleFailure = Ext.data.Connection.prototype.han
 </section>
 <footer class=entry-footer>February 9, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to Generic error handler for ExtJS" href=https://marcusschiesser.github.io/2009/02/09/generic-error-handler-for-extjs/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Using Axis2 services from Javascript (by removing the XML namespaces)
-</h2>
-</header>
-<section class=entry-content>
-<p>If you want to call an Axis2 service from Javascript you will face the problem that the XML response of an Axis2 service call contains XML namespaces - something Javascript doesn’t like in cross-browser-friendly way. The idea to fix this issue is to make an XSLT transformation directly from Axis2 that removes the unnecessary namespaces.
-First we need an XSLT transformation that will do the job:
-&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> &lt;xsl:output indent="no" method="xml">&lt;/xsl:output> &lt;xsl:template match="/|comment()|processing-instruction()"> &lt;xsl:copy> &lt;xsl:apply-templates>&lt;/xsl:apply-templates> &lt;/xsl:copy> &lt;/xsl:template> &lt;xsl:template match="*"> &lt;xsl:element name="{local-name()}"> &lt;xsl:apply-templates select="@*|node()">&lt;/xsl:apply-templates> &lt;/xsl:element> &lt;/xsl:template> &lt;xsl:template match="@*"> &lt;xsl:attribute name="{local-name()}"> &lt;xsl:value-of select="....</p>
-</section>
-<footer class=entry-footer>January 27, 2009&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Using Axis2 services from Javascript (by removing the XML namespaces)" href=https://marcusschiesser.github.io/2009/01/27/using-axis2-services-from-javascript-by-removing-the-xml-namespaces/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

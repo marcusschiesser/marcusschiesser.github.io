@@ -16,7 +16,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.0">
+<meta name=generator content="Hugo 0.92.1">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/post/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
@@ -72,6 +72,19 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Doing EJB-like transactions with Google App Engine
+</h2>
+</header>
+<section class=entry-content>
+<p>Using Google App Engine you can’t define a method as transactional with a simple annotation as you can in EJB. You always need to call some boilerplate code which gets quite annoying. Therefore the following utility class comes handy, which takes care of the transaction handling for you:
+https://gist.github.com/marcusschiesser/5474348
+To make use of it, you have to set the same persistence unit as in your persistence.xml configuration file first. Do this by changing the parameter of the method createEntityManagerFactory....</p>
+</section>
+<footer class=entry-footer>January 5, 2013&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Doing EJB-like transactions with Google App Engine" href=https://marcusschiesser.github.io/2013/01/05/doing-ejb-like-transactions-with-google-app-engine/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Using the Facebook Graph API from your GWT application
 </h2>
 </header>
@@ -118,18 +131,6 @@ Firstly you will need a entity class that is storing the file in the data store:
 </section>
 <footer class=entry-footer>December 1, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to Storing files RESTful in the cloud using Google App Engine" href=https://marcusschiesser.github.io/2011/12/01/storing-files-restful-in-the-cloud-using-google-app-engine/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Using real POJOs (without JAXB Annotations) as transfer objects with JAX-RS
-</h2>
-</header>
-<section class=entry-content>
-<p>Are you annoyed that you have to annotate your POJOs with @XmlRootElement, so they can be used with JAX-RS? If your using Jersey as JAX-RS implementation your lucky: Just add to the &lt;servlet> tag in your web.xml the following snippet:
-&lt;init-param> &lt;param-name>com.sun.jersey.api.json.POJOMappingFeature&lt;/param-name> &lt;param-value>true&lt;/param-value> &lt;/init-param> After restarting your servlet, your POJOs are marshalled to JSON as a charme. Enjoy!</p>
-</section>
-<footer class=entry-footer>December 1, 2011&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Using real POJOs (without JAXB Annotations) as transfer objects with JAX-RS " href=https://marcusschiesser.github.io/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

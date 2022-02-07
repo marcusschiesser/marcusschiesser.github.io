@@ -9,13 +9,76 @@
       <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 30 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS</title>
       <link>https://marcusschiesser.github.io/tags/aws/</link>
-      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS Certificate Manager</title>
+      <link>https://marcusschiesser.github.io/tags/aws-certificate-manager/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/aws-certificate-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EKS</title>
+      <link>https://marcusschiesser.github.io/tags/eks/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/eks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>External DNS</title>
+      <link>https://marcusschiesser.github.io/tags/external-dns/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/external-dns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ingress</title>
+      <link>https://marcusschiesser.github.io/tags/ingress/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/ingress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Load Balancer Controller</title>
+      <link>https://marcusschiesser.github.io/tags/load-balancer-controller/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/load-balancer-controller/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Route 53</title>
+      <link>https://marcusschiesser.github.io/tags/route-53/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/route-53/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terraform</title>
+      <link>https://marcusschiesser.github.io/tags/terraform/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/terraform/</guid>
       <description></description>
     </item>
     

@@ -9,7 +9,18 @@
       <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 30 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Latest 2022 EKS Cluster with Load Balancing Controller and External DNS</title>
+      <link>https://marcusschiesser.github.io/2022/02/07/latest-eks-cluster-with-load-balancing-controller-and-external-dns/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2022/02/07/latest-eks-cluster-with-load-balancing-controller-and-external-dns/</guid>
+      <description>Need a terraform script to setup the latest 2022 EKS cluster including the best goodies like Helm, AWS Load Balancer Controller and External DNS?
+Then please have a look at my GitHub repository eks-cluster-with-lb-controller.
+The advantage of its configuration is that for the lifecycle of application specific resources (DNS entries, load balancers, target groups), Terraform is not needed. Kubernetes ingress resources with specific annotations are sufficient and can be checked into each application&amp;rsquo;s repository to fulfill IaC requirements.</description>
+    </item>
+    
     <item>
       <title>Switching to an IAM role that requires MFA in AWS</title>
       <link>https://marcusschiesser.github.io/2021/12/30/switching-to-an-iam-role-that-requires-mfa/</link>

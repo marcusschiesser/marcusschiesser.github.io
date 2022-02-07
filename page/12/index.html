@@ -15,7 +15,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.0">
+<meta name=generator content="Hugo 0.92.1">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/index.xml>
 <link rel=alternate type=application/json href=https://marcusschiesser.github.io/index.json>
 <noscript>
@@ -69,6 +69,19 @@
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Factories für Event-Handler in AS3
+</h2>
+</header>
+<section class=entry-content>
+<p>In meinem letzten Projekt ist mir ein nettes Pattern für die Verwendung von Closures in Actionscript 3 eingefallen: Factories für Event-Handler.
+Hier ein sehr einfaches Beispiel für einen Handler, der einen Alert anzeigt:
+public static function createAlertHandler(text:String, title:String):Function { return function():void { Alert.show(text, title); } } Das Ganze kann man sich nun in der Praxis noch mit weiteren Parametern und natürlich einer komplexeren Handlerfunktion vorstellen. Der Vorteil an diesem Pattern ist, das über die Parameter der Factorymethode verschiedene Handler erstellt werden können, d....</p>
+</section>
+<footer class=entry-footer>July 10, 2008&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Factories für Event-Handler in AS3" href=https://marcusschiesser.github.io/2008/07/10/factories-fur-event-handler-in-as3/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Ning-Theme for Wordpress
 </h2>
 </header>
@@ -118,20 +131,6 @@ Mit einigen interessanten Zusatzfunktionen könnten sich diese gut von ihren Wet
 </section>
 <footer class=entry-footer>April 27, 2008&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to Spezialisierter Homepage-Baukasten - Beispiel Bewerbung" href=https://marcusschiesser.github.io/2008/04/27/spezialisierter-homepage-baukasten-beispiel-bewerbung/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Bewerbung mit Persönlichkeit
-</h2>
-</header>
-<section class=entry-content>
-<p>Über bestehende Jobportale lässt sich in sekundenschnelle eine Vielzahl von ausgeschriebenen Stellen finden.
-Als Entscheidungskriterien werden dabei aus Arbeitgebersicht Erfahrungen und Ausbildung und aus Bewerbersicht die Entlohnung berücksichtigt.
-Dies geht meiner Meinung nach nicht weit genug - stellt denn niemand die Frage, ob die Persönlichkeit des Bewerbers zu der Stelle passt? Also mal abgesehen von der utopischen Standardanforderung, dass nach Möglichkeit alle sogenannten Soft Skills erfüllt sein müssen?
-Dabei gibt es doch wirklich eine Menge guter Persönlichkeitstests: Myers-Briggs, Big Five und mein persönlicher Favorit: Dueck’s Omnisophie....</p>
-</section>
-<footer class=entry-footer>April 19, 2008&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Bewerbung mit Persönlichkeit" href=https://marcusschiesser.github.io/2008/04/19/bewerbung-mit-personlichkeit/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

@@ -15,7 +15,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.0">
+<meta name=generator content="Hugo 0.92.1">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/index.xml>
 <link rel=alternate type=application/json href=https://marcusschiesser.github.io/index.json>
 <noscript>
@@ -69,6 +69,18 @@
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Using real POJOs (without JAXB Annotations) as transfer objects with JAX-RS
+</h2>
+</header>
+<section class=entry-content>
+<p>Are you annoyed that you have to annotate your POJOs with @XmlRootElement, so they can be used with JAX-RS? If your using Jersey as JAX-RS implementation your lucky: Just add to the &lt;servlet> tag in your web.xml the following snippet:
+&lt;init-param> &lt;param-name>com.sun.jersey.api.json.POJOMappingFeature&lt;/param-name> &lt;param-value>true&lt;/param-value> &lt;/init-param> After restarting your servlet, your POJOs are marshalled to JSON as a charme. Enjoy!</p>
+</section>
+<footer class=entry-footer>December 1, 2011&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Using real POJOs (without JAXB Annotations) as transfer objects with JAX-RS " href=https://marcusschiesser.github.io/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>JBoss-Migration: Von 4 über 5 nach 7
 </h2>
 </header>
@@ -116,18 +128,6 @@ function isInView(node){ var offsetParent = node.offsetParent; var top = offsetP
 </section>
 <footer class=entry-footer>November 2, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to How to detect whether an element is in a scrollable parent " href=https://marcusschiesser.github.io/2009/11/02/how-to-detect-whether-an-element-is-in-a-scrollable-parent/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Let the user select an item in a modal dialog
-</h2>
-</header>
-<section class=entry-content>
-<p>After having used the shiny new YUI3 library for a project, it’s about time to share my YUI3 experiences with you. For the project I built an item selector: A modal dialog is openend and the user has to select an item. After selection the dialog is closed and the selected item is passed to a callback function.
-Here you can find the full source for the item selector. An example to use the selector can be as simple as this:...</p>
-</section>
-<footer class=entry-footer>August 5, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Let the user select an item in a modal dialog" href=https://marcusschiesser.github.io/2009/08/05/selecting-an-item-in-javascript/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
