@@ -9,7 +9,18 @@
       <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 07 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using username or token authentication in Splunk from Python</title>
+      <link>https://marcusschiesser.github.io/2022/02/10/splunk-use-either-username-or-token-authentication/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2022/02/10/splunk-use-either-username-or-token-authentication/</guid>
+      <description>For either using username or token authentication in Splunk, I wrote a small wrapper for the connect function.
+The advantage compared to the existing connect function is that you can use the same line of code for both authentication methods depending on the parameters that you pass (here shown by using ENV variables):
+ </description>
+    </item>
+    
     <item>
       <title>Latest 2022 EKS Cluster with Load Balancing Controller and External DNS</title>
       <link>https://marcusschiesser.github.io/2022/02/07/latest-eks-cluster-with-load-balancing-controller-and-external-dns/</link>

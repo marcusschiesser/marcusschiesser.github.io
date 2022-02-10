@@ -69,6 +69,19 @@
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Vendor Gems in Rake-Tasks verwenden
+</h2>
+</header>
+<section class=entry-content>
+<p>Für das Deployment einer Rails-Anwendung ist es eine gute Sache, die für die Anwendung benötigten Gems in das Verzeichnis /vendor/gems zu kopieren. Der Hintergrund ist einfach - so wird sichergestellt, dass der Server dieselbe Version des Gems referenziert wie vom Entwickler vorgesehen.
+Damit Rails diese zur Laufzeit findet wird in der environment.rb folgender Code eingefügt:
+config.load_paths += Dir["#{RAILS_ROOT}/vendor/gems/**"].map do |dir| File.directory?(lib = "#{dir}/lib") ? lib : dir end Das Problem dabei ist nun, dass die Vendor-Gems nicht von den Rake-Tasks gefunden werden....</p>
+</section>
+<footer class=entry-footer>July 22, 2008&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Vendor Gems in Rake-Tasks verwenden" href=https://marcusschiesser.github.io/2008/07/22/vendor-gems-in-rake-tasks-verwenden/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Factories für Event-Handler in AS3
 </h2>
 </header>
@@ -118,19 +131,6 @@ Erinnert Ihr euch noch an die alten Klassenbücher, in denen jeder Schulfreund 
 </section>
 <footer class=entry-footer>June 21, 2008&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to Klassenbuch für soziale Netzwerke" href=https://marcusschiesser.github.io/2008/06/21/klassenbuch-fur-soziale-netzwerke/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Spezialisierter Homepage-Baukasten - Beispiel Bewerbung
-</h2>
-</header>
-<section class=entry-content>
-<p>Es gibt ja mittlerweile eine Menge von sogenannten Homepage-Baukästen, mit deren Hilfe man einfach und ohne Programmierkenntnisse eine eigene Homepage erstellen kann.
-Schnell kann man somit eine Seite für seinen Verein, seine Bewerbung oder ähnliches erstellen. Da stellt sich sich mir die Frage, wieso gibt es keine speziellen Homepage-Baukästen nur für einen Zweck, z.B. um eine perfekte Bewerbung online zu stellen?
-Mit einigen interessanten Zusatzfunktionen könnten sich diese gut von ihren Wettbewerbern differenzieren....</p>
-</section>
-<footer class=entry-footer>April 27, 2008&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Spezialisierter Homepage-Baukasten - Beispiel Bewerbung" href=https://marcusschiesser.github.io/2008/04/27/spezialisierter-homepage-baukasten-beispiel-bewerbung/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

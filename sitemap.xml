@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://marcusschiesser.github.io/tags/authentication/</loc>
+    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/categories/</loc>
+    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/connect/</loc>
+    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/</loc>
+    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/post/</loc>
+    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/categories/splunk/</loc>
+    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/</loc>
+    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/2022/02/10/splunk-use-either-username-or-token-authentication/</loc>
+    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://marcusschiesser.github.io/tags/aws/</loc>
     <lastmod>2022-02-07T00:00:00+00:00</lastmod>
   </url><url>
@@ -9,9 +33,6 @@
     <lastmod>2022-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/aws-certificate-manager/</loc>
-    <lastmod>2022-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/categories/</loc>
     <lastmod>2022-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/eks/</loc>
@@ -29,16 +50,7 @@
     <loc>https://marcusschiesser.github.io/tags/load-balancer-controller/</loc>
     <lastmod>2022-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://marcusschiesser.github.io/</loc>
-    <lastmod>2022-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/post/</loc>
-    <lastmod>2022-02-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://marcusschiesser.github.io/tags/route-53/</loc>
-    <lastmod>2022-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/tags/</loc>
     <lastmod>2022-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/terraform/</loc>
@@ -81,9 +93,6 @@
     <lastmod>2021-12-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/splunk/</loc>
-    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/categories/splunk/</loc>
     <lastmod>2021-12-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/url/</loc>
@@ -204,9 +213,6 @@
     <lastmod>2015-08-22T02:03:20+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/backend/</loc>
-    <lastmod>2015-03-13T06:30:30+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/tags/connect/</loc>
     <lastmod>2015-03-13T06:30:30+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/frontend/</loc>

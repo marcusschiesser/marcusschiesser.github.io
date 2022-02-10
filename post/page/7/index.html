@@ -72,6 +72,19 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>How to detect whether an element is in a scrollable parent
+</h2>
+</header>
+<section class=entry-content>
+<p>Just think of having an element in a scrollable parent (the CSS property overflow is set to scroll) and you want to test whether the element is visible or not.
+Using this little function you can do the trick:
+function isInView(node){ var offsetParent = node.offsetParent; var top = offsetParent.scrollTop; var height = offsetParent.offsetHeight; var y = node.offsetTop; return y >= top && y &lt;= (top + height); } And here’s a small use case - this one scrolls the element into the visible region, if it is not already in the view:...</p>
+</section>
+<footer class=entry-footer>November 2, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to How to detect whether an element is in a scrollable parent " href=https://marcusschiesser.github.io/2009/11/02/how-to-detect-whether-an-element-is-in-a-scrollable-parent/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Let the user select an item in a modal dialog
 </h2>
 </header>
@@ -118,21 +131,6 @@ In the article we explain the implementation of meinkabinett, a web application 
 </section>
 <footer class=entry-footer>June 13, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to Learn how to build a web application with ExtJS" href=https://marcusschiesser.github.io/2009/06/13/learn-how-to-build-a-web-application-with-extjs/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Display an info text in a HTML input field if its focus is lost
-</h2>
-</header>
-<section class=entry-content>
-<p>Now that with Ext Core a light-weight version (just 25kB) of ExtJS has been released, I thought it’s time to build a nice example with it.
-The result is something very useful that you can see in actually a lot of web sites: Display a info text inside of a input text field if it is empty and does not have the focus.
-Here’s how it looks like:
-E-Mail:
-To add this behaviour to a input field you just have to call this single line:...</p>
-</section>
-<footer class=entry-footer>June 12, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Display an info text in a HTML input field if its focus is lost" href=https://marcusschiesser.github.io/2009/06/12/display-an-info-text-in-a-html-input-field-if-its-focus-is-lost/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

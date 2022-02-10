@@ -72,6 +72,19 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Storing files RESTful in the cloud using Google App Engine
+</h2>
+</header>
+<section class=entry-content>
+<p>Do you want to store files RESTful in the cloud? Why not use the Google App Engine for it?
+Firstly you will need a entity class that is storing the file in the data store:
+@Entity public class FileEntity { @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Long key; private Blob content; private String mediaType; public Long getKey() { return key; } public Blob getContent() { return content; } public void setContent(Blob content) { this....</p>
+</section>
+<footer class=entry-footer>December 1, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Storing files RESTful in the cloud using Google App Engine" href=https://marcusschiesser.github.io/2011/12/01/storing-files-restful-in-the-cloud-using-google-app-engine/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Using real POJOs (without JAXB Annotations) as transfer objects with JAX-RS
 </h2>
 </header>
@@ -118,19 +131,6 @@ Ich bin gerade dabei eine Android-App zu entwickeln, mit der es möglich ist Fah
 </section>
 <footer class=entry-footer>June 22, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to Openbahn-API – Bahn-Webseite als Webservice" href=https://marcusschiesser.github.io/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>How to detect whether an element is in a scrollable parent
-</h2>
-</header>
-<section class=entry-content>
-<p>Just think of having an element in a scrollable parent (the CSS property overflow is set to scroll) and you want to test whether the element is visible or not.
-Using this little function you can do the trick:
-function isInView(node){ var offsetParent = node.offsetParent; var top = offsetParent.scrollTop; var height = offsetParent.offsetHeight; var y = node.offsetTop; return y >= top && y &lt;= (top + height); } And here’s a small use case - this one scrolls the element into the visible region, if it is not already in the view:...</p>
-</section>
-<footer class=entry-footer>November 2, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to How to detect whether an element is in a scrollable parent " href=https://marcusschiesser.github.io/2009/11/02/how-to-detect-whether-an-element-is-in-a-scrollable-parent/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

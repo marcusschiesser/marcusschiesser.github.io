@@ -72,6 +72,19 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Using username or token authentication in Splunk from Python
+</h2>
+</header>
+<section class=entry-content>
+<p>For either using username or token authentication in Splunk, I wrote a small wrapper for the connect function.
+The advantage compared to the existing connect function is that you can use the same line of code for both authentication methods depending on the parameters that you pass (here shown by using ENV variables):
+</p>
+</section>
+<footer class=entry-footer>February 10, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Marcus Schiesser</footer>
+<a class=entry-link aria-label="post link to Using username or token authentication in Splunk from Python" href=https://marcusschiesser.github.io/2022/02/10/splunk-use-either-username-or-token-authentication/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Latest 2022 EKS Cluster with Load Balancing Controller and External DNS
 </h2>
 </header>
@@ -118,18 +131,6 @@ The trick is to add a mfa_serial parameter to the profile in the ~/.aws/config f
 </section>
 <footer class=entry-footer>December 20, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to Enforce arrays for multi-values in Splunk searches" href=https://marcusschiesser.github.io/2021/12/20/enforce-arrays-for-multi-values-in-splunk/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>More than 100 results using the search-job API in Splunk
-</h2>
-</header>
-<section class=entry-content>
-<p>If you’re using the @splunk/search-job API and want to return more than the 100 results (the default value), you’ll have to pass count to the getResults function, e.g.:
-new SearchJob.create({ search: myQuery, }).getResults({ count: 500 }); </p>
-</section>
-<footer class=entry-footer>December 14, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to More than 100 results using the search-job API in Splunk" href=https://marcusschiesser.github.io/2021/12/14/more-than-100-results-using-the-search-job-api/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

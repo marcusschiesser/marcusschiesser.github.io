@@ -72,6 +72,19 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>How to use JSF 2.2 with JBoss 7.1
+</h2>
+</header>
+<section class=entry-content>
+<p>As the new JSF 2.2 is nearly finished, we all want to play with the new features of it.
+Markus Eisele has shown in his blog post Testdriving Mojarra 2.2.0-m08 how to do this with Glassfish 3. He’s German too, I begin to wonder if only we guys are that curious or no one else is using JSF any more ;)
+Unfortunately with JBoss 7 we face the same problem he had: We can not just add the new libraries to our WAR archive as they will clash with the JSF 2....</p>
+</section>
+<footer class=entry-footer>January 17, 2013&nbsp;·&nbsp;3 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to How to use JSF 2.2 with JBoss 7.1" href=https://marcusschiesser.github.io/2013/01/17/how-to-use-jsf-2-2-with-jboss-7-1/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Doing EJB-like transactions with Google App Engine
 </h2>
 </header>
@@ -118,19 +131,6 @@ public class FileTransformer { public static final Logger log = Logger.getLogger
 </section>
 <footer class=entry-footer>December 1, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to Storing large images RESTful in the cloud using Google App Engine" href=https://marcusschiesser.github.io/2011/12/01/storing-large-images-restful-in-the-cloud-using-google-app-engine/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Storing files RESTful in the cloud using Google App Engine
-</h2>
-</header>
-<section class=entry-content>
-<p>Do you want to store files RESTful in the cloud? Why not use the Google App Engine for it?
-Firstly you will need a entity class that is storing the file in the data store:
-@Entity public class FileEntity { @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Long key; private Blob content; private String mediaType; public Long getKey() { return key; } public Blob getContent() { return content; } public void setContent(Blob content) { this....</p>
-</section>
-<footer class=entry-footer>December 1, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Storing files RESTful in the cloud using Google App Engine" href=https://marcusschiesser.github.io/2011/12/01/storing-files-restful-in-the-cloud-using-google-app-engine/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

@@ -72,6 +72,19 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Country selector with flag images in ExtJS
+</h2>
+</header>
+<section class=entry-content>
+<p>Based on the ExtJS-Tutorial on how to build a combo box with an icon, I built a component that can be used as a country selector in ExtJS.
+Here you can find the code of the component:
+Ext.ns('Extreme.components'); Extreme.components.CountryCombo = Ext.extend(Ext.form.ComboBox, { constructor: function(config){ var data; if (config.phoneLabels) { data = [['+49', '+49', 'ux-flag-de'], ['+43', '+43', 'ux-flag-at'], ['+41', '+41', 'ux-flag-ch'], ['+352', '+352', 'ux-flag-lu'], ['+432', '+432', 'ux-flag-li']]; } else { data = [['DE', 'Deutschland', 'ux-flag-de'], ['AT', 'Österreich', 'ux-flag-at'], ['CH', 'Schweiz', 'ux-flag-ch'], ['LU', 'Luxemburg', 'ux-flag-lu'], ['LI', 'Lichtenstein', 'ux-flag-li']]; } Extreme....</p>
+</section>
+<footer class=entry-footer>April 1, 2009&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Country selector with flag images in ExtJS" href=https://marcusschiesser.github.io/2009/04/01/country-selector-with-flag-images-in-extjs/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Putting ExtJS templates in separate files
 </h2>
 </header>
@@ -120,18 +133,6 @@ Ext.form.Checkbox.prototype.validate = function(){ if (this....</p>
 </section>
 <footer class=entry-footer>February 20, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to Validator for ExtJS Checkbox" href=https://marcusschiesser.github.io/2009/02/20/151/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Generic error handler for ExtJS
-</h2>
-</header>
-<section class=entry-content>
-<p>When you are doing client/server communication with ExtJS you probably run into the problem that you want to handle server side errors in a generic way. A solution that I found is to override the handleFailure function in the Ext.data.Connection class:
-Ext.data.Connection.prototype._handleFailure = Ext.data.Connection.prototype.handleFailure; Ext.data.Connection.prototype.handleFailure = function(response, e) { var errorText = Ext.DomQuery.selectValue("Reason/Text", response.responseXML, "Unknown Error"); Ext.Msg.alert('Error', errorText); Ext.data.Connection.prototype._handleFailure.call(this, response, e); }; This handler simply is called whenever a server side failure occurs....</p>
-</section>
-<footer class=entry-footer>February 9, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Generic error handler for ExtJS" href=https://marcusschiesser.github.io/2009/02/09/generic-error-handler-for-extjs/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
