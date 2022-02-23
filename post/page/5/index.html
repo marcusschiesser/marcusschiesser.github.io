@@ -16,7 +16,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.1">
+<meta name=generator content="Hugo 0.92.2">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/post/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
@@ -72,6 +72,18 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Securing Your Play 2.1.1 Web Application Using a Filter
+</h2>
+</header>
+<section class=entry-content>
+<p>After deploying my Play 2.1.1 based application to Cloudbees, I had the problem that everyone could access it. Not very ideal if you want to restrict your program to only a single audience.
+To solve the problem you would usually write a complicated user-based authentication system. Slightly an overkill, if you don’t need different users accessing your program at all. My idea was more that the user has to add an URL parameter with a secret key, the first time the application is called....</p>
+</section>
+<footer class=entry-footer>April 27, 2013&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Securing Your Play 2.1.1 Web Application Using a Filter" href=https://marcusschiesser.github.io/2013/04/27/securing-your-play-2-1-1-web-application-using-a-filter/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>How to use JSF 2.2 with JBoss 7.1
 </h2>
 </header>
@@ -118,19 +130,6 @@ Another benefit is that you can reuse your transfer objects on the client and on
 </section>
 <footer class=entry-footer>December 2, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to Using Google App Engine as Backend for Android" href=https://marcusschiesser.github.io/2011/12/02/using-google-app-engine-as-backend-for-android/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Storing large images RESTful in the cloud using Google App Engine
-</h2>
-</header>
-<section class=entry-content>
-<p>In my last article I showed how to store files in the cloud using Google app engine. Problem there was that the maximum size of the files was 1MB. Not that much for images.
-To improve the situation, we just shrink the images with this very simple algorithm by factor 0.9 until the size is less than 1MB:
-public class FileTransformer { public static final Logger log = Logger.getLogger(FileTransformer.class.getName()); private static final int JPEG_QUALITY = 90; private static final int MAX_FILE_SIZE = 1024*1024; public byte[] transform(byte[] ba, String mediaType) { if(mediaType....</p>
-</section>
-<footer class=entry-footer>December 1, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Storing large images RESTful in the cloud using Google App Engine" href=https://marcusschiesser.github.io/2011/12/01/storing-large-images-restful-in-the-cloud-using-google-app-engine/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

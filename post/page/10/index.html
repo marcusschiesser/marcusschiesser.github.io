@@ -16,7 +16,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.1">
+<meta name=generator content="Hugo 0.92.2">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/post/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
@@ -72,6 +72,18 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Validator for ExtJS Checkbox
+</h2>
+</header>
+<section class=entry-content>
+<p>Very unfortunately ExtJS doesn’t offer a validator for its checkbox component. Normally a validator checks whether a field is valid and takes care of displaying an error message if not. For a checkbox we would like that to happen if the checkbox is not selected. Overriding the validate function of the checkbox we can provide such a functionality for all checkbox instances we are about to create:
+Ext.form.Checkbox.prototype.validate = function(){ if (this....</p>
+</section>
+<footer class=entry-footer>February 20, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Validator for ExtJS Checkbox" href=https://marcusschiesser.github.io/2009/02/20/151/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Generic error handler for ExtJS
 </h2>
 </header>
@@ -117,17 +129,6 @@ To tribute the change a bit, I start with the problem of adding HTML code inside
 </section>
 <footer class=entry-footer>January 14, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to 3 Ways to render HTML inside of a ExtJS container" href=https://marcusschiesser.github.io/2009/01/14/3-ways-to-render-html-inside-of-a-extjs-container/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Splitting CSVs in Actionscript (the Excel way)
-</h2>
-</header>
-<section class=entry-content>
-<p></p>
-</section>
-<footer class=entry-footer>October 21, 2008&nbsp;·&nbsp;0 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Splitting CSVs in Actionscript (the Excel way)" href=https://marcusschiesser.github.io/2008/10/21/splitting-csvs-in-actionscript-the-excel-way/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

@@ -16,7 +16,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.1">
+<meta name=generator content="Hugo 0.92.2">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/post/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
@@ -72,6 +72,17 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Getting values from a form containing combos in Ext
+</h2>
+</header>
+<section class=entry-content>
+<p>Actually it is pretty easy to get the values of all fields of a form in Ext: You just have to call the getValues() method of the BasicForm. The problem with that approach is that it just takes the values directly from the DOM and is not calling the getValue() for each field (Which I assumed). One consequence is that you don’t get the values of combo boxes, but their labels....</p>
+</section>
+<footer class=entry-footer>April 7, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Getting values from a form containing combos in Ext" href=https://marcusschiesser.github.io/2009/04/07/getting-values-from-a-form-containing-combos-in-ext/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Country selector with flag images in ExtJS
 </h2>
 </header>
@@ -121,18 +132,6 @@ Ext.define('Person', { extend: 'Ext.data.Model', fields: ['firstName', 'lastName
 </section>
 <footer class=entry-footer>February 27, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to Building Mockups in ExtJS 4.1" href=https://marcusschiesser.github.io/2009/02/27/167/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Validator for ExtJS Checkbox
-</h2>
-</header>
-<section class=entry-content>
-<p>Very unfortunately ExtJS doesn’t offer a validator for its checkbox component. Normally a validator checks whether a field is valid and takes care of displaying an error message if not. For a checkbox we would like that to happen if the checkbox is not selected. Overriding the validate function of the checkbox we can provide such a functionality for all checkbox instances we are about to create:
-Ext.form.Checkbox.prototype.validate = function(){ if (this....</p>
-</section>
-<footer class=entry-footer>February 20, 2009&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Validator for ExtJS Checkbox" href=https://marcusschiesser.github.io/2009/02/20/151/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

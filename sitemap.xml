@@ -3,24 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://marcusschiesser.github.io/tags/authentication/</loc>
-    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/categories/</loc>
-    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://marcusschiesser.github.io/tags/connect/</loc>
-    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+    <loc>https://marcusschiesser.github.io/tags/custom/</loc>
+    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/html/</loc>
+    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/login/</loc>
+    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/</loc>
-    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/page/</loc>
+    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/post/</loc>
-    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/categories/splunk/</loc>
-    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/splunk-web/</loc>
+    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/</loc>
+    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/2022/02/23/using-any-html-page-as-login-page-in-splunk/</loc>
+    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/connect/</loc>
     <lastmod>2022-02-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/2022/02/10/splunk-use-either-username-or-token-authentication/</loc>
@@ -73,9 +91,6 @@
   </url><url>
     <loc>https://marcusschiesser.github.io/2021/12/30/switching-to-an-iam-role-that-requires-mfa/</loc>
     <lastmod>2021-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/tags/custom/</loc>
-    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/parameters/</loc>
     <lastmod>2021-12-21T00:00:00+00:00</lastmod>
@@ -609,9 +624,6 @@
     <lastmod>2009-06-12T09:18:02+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/focus/</loc>
-    <lastmod>2009-06-12T09:18:02+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/tags/html/</loc>
     <lastmod>2009-06-12T09:18:02+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/info/</loc>

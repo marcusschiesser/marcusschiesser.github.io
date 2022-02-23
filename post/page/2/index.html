@@ -16,7 +16,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.1">
+<meta name=generator content="Hugo 0.92.2">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/post/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
@@ -72,6 +72,18 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Enforce arrays for multi-values in Splunk searches
+</h2>
+</header>
+<section class=entry-content>
+<p>The Splunk SDK for Python is returning for multi-values that only have one entry a string instead of an array. To enforce arrays, you can do the following workaround:
+</p>
+</section>
+<footer class=entry-footer>December 20, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Enforce arrays for multi-values in Splunk searches" href=https://marcusschiesser.github.io/2021/12/20/enforce-arrays-for-multi-values-in-splunk/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>More than 100 results using the search-job API in Splunk
 </h2>
 </header>
@@ -117,18 +129,6 @@ new SearchJob.create({ search: myQuery, }).getResults({ count: 500 }); </p>
 </section>
 <footer class=entry-footer>November 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to Connect a datasource to a Splunk visualization" href=https://marcusschiesser.github.io/2021/11/24/connect-a-datasource-to-a-splunk-visualization/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Run any React app as a Splunk app
-</h2>
-</header>
-<section class=entry-content>
-<p>If you want to run any React app (any React version, any toolkit) as a Splunk app, have a look at this gist:
-</p>
-</section>
-<footer class=entry-footer>November 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Run any React app as a Splunk app" href=https://marcusschiesser.github.io/2021/11/23/run-any-react-app-as-a-splunk-app/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

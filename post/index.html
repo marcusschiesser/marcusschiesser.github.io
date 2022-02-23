@@ -16,7 +16,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.1">
+<meta name=generator content="Hugo 0.92.2">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/post/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
@@ -72,6 +72,19 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Using Any Html Page As Login Page In Splunk
+</h2>
+</header>
+<section class=entry-content>
+<p>The configuration options in Splunk to customize the login page are not sufficient? You want to use an arbitrary HTML page?
+This static login page can be used to customize the login experience for Splunk (Tested with Enterprise 8.2.3):
+To activate it, you have to copy this file to $SPLUNK_HOME/share/search_mrsparkle/exposed/login.html (it will be served by Splunk Web as a static file) and add the following entry to the settings stanza in the web....</p>
+</section>
+<footer class=entry-footer>February 23, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Marcus Schiesser</footer>
+<a class=entry-link aria-label="post link to Using Any Html Page As Login Page In Splunk" href=https://marcusschiesser.github.io/2022/02/23/using-any-html-page-as-login-page-in-splunk/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Using username or token authentication in Splunk from Python
 </h2>
 </header>
@@ -119,18 +132,6 @@ The trick is to add a mfa_serial parameter to the profile in the ~/.aws/config f
 </section>
 <footer class=entry-footer>December 21, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to Using URL path parameters in Splunk REST endpoints" href=https://marcusschiesser.github.io/2021/12/21/using-url-path-parameters-in-splunk-rest-endpoints/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Enforce arrays for multi-values in Splunk searches
-</h2>
-</header>
-<section class=entry-content>
-<p>The Splunk SDK for Python is returning for multi-values that only have one entry a string instead of an array. To enforce arrays, you can do the following workaround:
-</p>
-</section>
-<footer class=entry-footer>December 20, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Enforce arrays for multi-values in Splunk searches" href=https://marcusschiesser.github.io/2021/12/20/enforce-arrays-for-multi-values-in-splunk/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

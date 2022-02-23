@@ -9,7 +9,18 @@
       <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/authentication/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/authentication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Any Html Page As Login Page In Splunk</title>
+      <link>https://marcusschiesser.github.io/2022/02/23/using-any-html-page-as-login-page-in-splunk/</link>
+      <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2022/02/23/using-any-html-page-as-login-page-in-splunk/</guid>
+      <description>The configuration options in Splunk to customize the login page are not sufficient? You want to use an arbitrary HTML page?
+This static login page can be used to customize the login experience for Splunk (Tested with Enterprise 8.2.3):
+ To activate it, you have to copy this file to $SPLUNK_HOME/share/search_mrsparkle/exposed/login.html (it will be served by Splunk Web as a static file) and add the following entry to the settings stanza in the web.</description>
+    </item>
+    
     <item>
       <title>Using username or token authentication in Splunk from Python</title>
       <link>https://marcusschiesser.github.io/2022/02/10/splunk-use-either-username-or-token-authentication/</link>

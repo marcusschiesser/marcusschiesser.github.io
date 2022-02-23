@@ -15,7 +15,7 @@
 <link rel=mask-icon href=https://marcusschiesser.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.1">
+<meta name=generator content="Hugo 0.92.2">
 <link rel=alternate type=application/rss+xml href=https://marcusschiesser.github.io/index.xml>
 <link rel=alternate type=application/json href=https://marcusschiesser.github.io/index.json>
 <noscript>
@@ -69,6 +69,19 @@
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Storing large images RESTful in the cloud using Google App Engine
+</h2>
+</header>
+<section class=entry-content>
+<p>In my last article I showed how to store files in the cloud using Google app engine. Problem there was that the maximum size of the files was 1MB. Not that much for images.
+To improve the situation, we just shrink the images with this very simple algorithm by factor 0.9 until the size is less than 1MB:
+public class FileTransformer { public static final Logger log = Logger.getLogger(FileTransformer.class.getName()); private static final int JPEG_QUALITY = 90; private static final int MAX_FILE_SIZE = 1024*1024; public byte[] transform(byte[] ba, String mediaType) { if(mediaType....</p>
+</section>
+<footer class=entry-footer>December 1, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
+<a class=entry-link aria-label="post link to Storing large images RESTful in the cloud using Google App Engine" href=https://marcusschiesser.github.io/2011/12/01/storing-large-images-restful-in-the-cloud-using-google-app-engine/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Storing files RESTful in the cloud using Google App Engine
 </h2>
 </header>
@@ -116,18 +129,6 @@ Then you should read further. Below you find a [TableColumnModel](http://downloa
 </section>
 <footer class=entry-footer>November 18, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
 <a class=entry-link aria-label="post link to Let the user change the column order in Java/Swing" href=https://marcusschiesser.github.io/2011/11/18/let-the-user-change-the-column-order-in-javaswing/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Openbahn-API – Bahn-Webseite als Webservice
-</h2>
-</header>
-<section class=entry-content>
-<p>As this is only of interest for German users - this article is in German only. It’s about a new project of mine. Sorry folks.
-Ich bin gerade dabei eine Android-App zu entwickeln, mit der es möglich ist Fahrkarten für Bahn-Pendler einfacher zu buchen. Bei der Entwicklung ist mir aufgefallen, dass die Bahn leider keine Webservices nach außen zur Verfügung stellt – die Webseite www.bahn.de ist zusammen mit der mobilen Variante m....</p>
-</section>
-<footer class=entry-footer>June 22, 2011&nbsp;·&nbsp;2 min&nbsp;·&nbsp;admin</footer>
-<a class=entry-link aria-label="post link to Openbahn-API – Bahn-Webseite als Webservice" href=https://marcusschiesser.github.io/2011/06/22/openbahn-api-%e2%80%93-bahn-webseite-als-webservice/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
