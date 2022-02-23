@@ -22,10 +22,10 @@ This static login page can be used to customize the login experience for Splunk 
 
 {{< gist marcusschiesser 905b1daeb32a1c56e9d7e8b4bedc5015 >}}
 
-To activate it, you have to copy this file to `$SPLUNK_HOME/share/search_mrsparkle/exposed/login.html` (it will be served by Splunk Web as a static file) and add the following entry to the `settings` stanza in the [`web.conf`](https://docs.splunk.com/Documentation/Splunk/8.2.4/Admin/Webconf):
+To activate it, you have to copy this file to `$SPLUNK_HOME/share/splunk/search_mrsparkle/exposed/login.html` (it will be served by Splunk Web as a static file) and add the following entry to the `settings` stanza in the [`web.conf`](https://docs.splunk.com/Documentation/Splunk/8.2.4/Admin/Webconf):
 
 ```
-login_content = <script>window.location.replace("http://localhost:8000/static/login.html?cval="+__splunkd_partials__['/services/session'].entry[0].content.cval)</script>
+login_content = <script>window.location.replace('/static/login.html?cval='+__splunkd_partials__['/services/session'].entry[0].content.cval)</script>
 ```
 
 This JS snippet automatically redirects every login attempt to this static HTML page and injects the necessary `cval` value for authentication. 
