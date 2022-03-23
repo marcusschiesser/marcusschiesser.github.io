@@ -9,7 +9,70 @@
       <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 23 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>convert</title>
+      <link>https://marcusschiesser.github.io/tags/convert/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/convert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>date</title>
+      <link>https://marcusschiesser.github.io/tags/date/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/date/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>extended</title>
+      <link>https://marcusschiesser.github.io/tags/extended/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/extended/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ISO8601</title>
+      <link>https://marcusschiesser.github.io/tags/iso8601/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/iso8601/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://marcusschiesser.github.io/tags/javascript/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Splunk</title>
+      <link>https://marcusschiesser.github.io/tags/splunk/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/splunk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>time</title>
+      <link>https://marcusschiesser.github.io/tags/time/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/time/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>authentication</title>
       <link>https://marcusschiesser.github.io/tags/authentication/</link>
@@ -227,15 +290,6 @@
     </item>
     
     <item>
-      <title>Splunk</title>
-      <link>https://marcusschiesser.github.io/tags/splunk/</link>
-      <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://marcusschiesser.github.io/tags/splunk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>URL</title>
       <link>https://marcusschiesser.github.io/tags/url/</link>
       <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
@@ -371,15 +425,6 @@
     </item>
     
     <item>
-      <title>convert</title>
-      <link>https://marcusschiesser.github.io/tags/convert/</link>
-      <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://marcusschiesser.github.io/tags/convert/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>run</title>
       <link>https://marcusschiesser.github.io/tags/run/</link>
       <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
@@ -493,15 +538,6 @@
       <pubDate>Fri, 13 Mar 2015 06:30:30 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/tags/grunt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>javascript</title>
-      <link>https://marcusschiesser.github.io/tags/javascript/</link>
-      <pubDate>Fri, 13 Mar 2015 06:30:30 +0000</pubDate>
-      
-      <guid>https://marcusschiesser.github.io/tags/javascript/</guid>
       <description></description>
     </item>
     
