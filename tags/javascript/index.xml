@@ -12,10 +12,10 @@
     <lastBuildDate>Wed, 23 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Converting Simplified Extended ISO8601 In Splunk</title>
-      <link>https://marcusschiesser.github.io/2022/02/23/converting-simplified-extended-iso8601-in-splunk/</link>
+      <link>https://marcusschiesser.github.io/2022/03/23/converting-simplified-extended-iso8601-in-splunk/</link>
       <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://marcusschiesser.github.io/2022/02/23/converting-simplified-extended-iso8601-in-splunk/</guid>
+      <guid>https://marcusschiesser.github.io/2022/03/23/converting-simplified-extended-iso8601-in-splunk/</guid>
       <description>Wonder how to use the ISO8601 format in Splunk?
 Simplified extended ISO8601 is for example used in Javascript&amp;rsquo;s toISOString function.
 It&amp;rsquo;s a great way (readable and to timezone agnostic) to exchange timestamps between Splunk and Splunk Apps.
