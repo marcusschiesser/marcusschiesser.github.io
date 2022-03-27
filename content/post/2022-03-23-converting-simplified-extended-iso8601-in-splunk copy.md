@@ -4,7 +4,7 @@ date: 2022-03-23
 draft: false
 title: Converting Simplified Extended ISO8601 In Splunk
 type: post
-url: 2022/02/23/converting-simplified-extended-iso8601-in-splunk
+url: 2022/03/23/converting-simplified-extended-iso8601-in-splunk
 categories:
   - Splunk
 tags:
