@@ -9,7 +9,97 @@
       <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 27 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>health</title>
+      <link>https://marcusschiesser.github.io/tags/health/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>K8S</title>
+      <link>https://marcusschiesser.github.io/tags/k8s/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/k8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://marcusschiesser.github.io/tags/kubernetes/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>liveness</title>
+      <link>https://marcusschiesser.github.io/tags/liveness/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/liveness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>operator</title>
+      <link>https://marcusschiesser.github.io/tags/operator/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/operator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>probes</title>
+      <link>https://marcusschiesser.github.io/tags/probes/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/probes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>readiness</title>
+      <link>https://marcusschiesser.github.io/tags/readiness/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/readiness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rolling update</title>
+      <link>https://marcusschiesser.github.io/tags/rolling-update/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/rolling-update/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Splunk</title>
+      <link>https://marcusschiesser.github.io/tags/splunk/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/splunk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>startup</title>
+      <link>https://marcusschiesser.github.io/tags/startup/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/startup/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>limit</title>
       <link>https://marcusschiesser.github.io/tags/limit/</link>
@@ -43,15 +133,6 @@
       <pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/tags/search/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Splunk</title>
-      <link>https://marcusschiesser.github.io/tags/splunk/</link>
-      <pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://marcusschiesser.github.io/tags/splunk/</guid>
       <description></description>
     </item>
     

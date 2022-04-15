@@ -3,18 +3,60 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://marcusschiesser.github.io/categories/</loc>
-    <lastmod>2022-03-27T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/health/</loc>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/k8s/</loc>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/kubernetes/</loc>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/categories/kubernetes/</loc>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/liveness/</loc>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/2022/04/15/liveness-and-readiness-checks-for-splunk-in-k8s/</loc>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/</loc>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/operator/</loc>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/post/</loc>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/probes/</loc>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/readiness/</loc>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/rolling-update/</loc>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/splunk/</loc>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/categories/splunk/</loc>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/startup/</loc>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/</loc>
+    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/limit/</loc>
     <lastmod>2022-03-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/map/</loc>
-    <lastmod>2022-03-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/</loc>
-    <lastmod>2022-03-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/post/</loc>
     <lastmod>2022-03-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/2022/03/27/running-mapped-subsearches-without-limits-in-splunk/</loc>
@@ -26,16 +68,7 @@
     <loc>https://marcusschiesser.github.io/tags/search/</loc>
     <lastmod>2022-03-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://marcusschiesser.github.io/tags/splunk/</loc>
-    <lastmod>2022-03-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/categories/splunk/</loc>
-    <lastmod>2022-03-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://marcusschiesser.github.io/tags/subsearch/</loc>
-    <lastmod>2022-03-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/tags/</loc>
     <lastmod>2022-03-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/convert/</loc>
@@ -431,10 +464,10 @@
     <loc>https://marcusschiesser.github.io/tags/wall/</loc>
     <lastmod>2013-01-03T13:49:30+00:00</lastmod>
   </url><url>
-    <loc>https://marcusschiesser.github.io/categories/android/</loc>
+    <loc>https://marcusschiesser.github.io/tags/android/</loc>
     <lastmod>2011-12-02T17:40:57+00:00</lastmod>
   </url><url>
-    <loc>https://marcusschiesser.github.io/tags/android/</loc>
+    <loc>https://marcusschiesser.github.io/categories/android/</loc>
     <lastmod>2011-12-02T17:40:57+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/jersey/</loc>

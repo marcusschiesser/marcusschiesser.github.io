@@ -9,11 +9,20 @@
       <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 27 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes</title>
+      <link>https://marcusschiesser.github.io/categories/kubernetes/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/categories/kubernetes/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Splunk</title>
       <link>https://marcusschiesser.github.io/categories/splunk/</link>
-      <pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/categories/splunk/</guid>
       <description></description>

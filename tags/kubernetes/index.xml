@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Kubernetes on Marcus Schiesser</title>
+    <link>https://marcusschiesser.github.io/tags/kubernetes/</link>
+    <description>Recent content in Kubernetes on Marcus Schiesser</description>
+    <image>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 15 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Liveness And Readiness Checks For Splunk In K8s</title>
+      <link>https://marcusschiesser.github.io/2022/04/15/liveness-and-readiness-checks-for-splunk-in-k8s/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2022/04/15/liveness-and-readiness-checks-for-splunk-in-k8s/</guid>
+      <description>Usually, you&amp;rsquo;ll use the Splunk Operator to run Splunk on K8S. There are some use cases where you might want to run Splunk without the operator though.
+As with any deployment, it&amp;rsquo;s good practice then to add liveness probes to restart Splunk if it&amp;rsquo;s not healthy anymore.
+Furthermore, as the Splunk container needs about one minute to startup, I&amp;rsquo;ll recommend adding a readiness probe. This ensures that no traffic is sent to a pod as long as Splunk hasn&amp;rsquo;t been fully started yet.</description>
+    </item>
+    
+  </channel>
+</rss>
