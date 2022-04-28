@@ -2,19 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://marcusschiesser.github.io/2022/04/28/adding-read-write-many-storage-to-an-eks-cluster/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://marcusschiesser.github.io/categories/</loc>
-    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/efs/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/efs-csi-driver/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/eks/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/categories/eks/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/kubernetes/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/categories/kubernetes/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/persistentvolume/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/post/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/readwritemany/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/storage/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/terraform/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/categories/terraform/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/health/</loc>
     <lastmod>2022-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/k8s/</loc>
-    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/tags/kubernetes/</loc>
-    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/categories/kubernetes/</loc>
     <lastmod>2022-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/liveness/</loc>
@@ -23,13 +62,7 @@
     <loc>https://marcusschiesser.github.io/2022/04/15/liveness-and-readiness-checks-for-splunk-in-k8s/</loc>
     <lastmod>2022-04-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://marcusschiesser.github.io/</loc>
-    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://marcusschiesser.github.io/tags/operator/</loc>
-    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/post/</loc>
     <lastmod>2022-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/probes/</loc>
@@ -48,9 +81,6 @@
     <lastmod>2022-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/startup/</loc>
-    <lastmod>2022-04-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/tags/</loc>
     <lastmod>2022-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/limit/</loc>
@@ -128,9 +158,6 @@
     <loc>https://marcusschiesser.github.io/tags/aws-certificate-manager/</loc>
     <lastmod>2022-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://marcusschiesser.github.io/tags/eks/</loc>
-    <lastmod>2022-02-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://marcusschiesser.github.io/tags/external-dns/</loc>
     <lastmod>2022-02-07T00:00:00+00:00</lastmod>
   </url><url>
@@ -144,9 +171,6 @@
     <lastmod>2022-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/route-53/</loc>
-    <lastmod>2022-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/tags/terraform/</loc>
     <lastmod>2022-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/cli/</loc>

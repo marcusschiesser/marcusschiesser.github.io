@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>EFS CSI driver on Marcus Schiesser</title>
+    <link>https://marcusschiesser.github.io/tags/efs-csi-driver/</link>
+    <description>Recent content in EFS CSI driver on Marcus Schiesser</description>
+    <image>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 28 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/efs-csi-driver/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding ReadWriteMany Storage To An EKS Cluster</title>
+      <link>https://marcusschiesser.github.io/2022/04/28/adding-read-write-many-storage-to-an-eks-cluster/</link>
+      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2022/04/28/adding-read-write-many-storage-to-an-eks-cluster/</guid>
+      <description>I needed an EKS cluster that supports Persistent Volumes with Access Mode ReadWriteMany.
+Therefore I updated my EKS Terraform template to support adding the EFS CSI driver if needed.
+Usage is pretty simple, you&amp;rsquo;ll just have to add enable_efs = true to your Terraform cluster definition.
+This will also create an EFS file system (storage will by provisioned dynamically depending on the requested persistent volume).
+You&amp;rsquo;ll just have to retrieve the file system ID from your AWS console and use it to create a new K8S storage class:</description>
+    </item>
+    
+  </channel>
+</rss>

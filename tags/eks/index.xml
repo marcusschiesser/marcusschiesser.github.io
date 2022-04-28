@@ -9,7 +9,20 @@
       <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 07 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/eks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/eks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding ReadWriteMany Storage To An EKS Cluster</title>
+      <link>https://marcusschiesser.github.io/2022/04/28/adding-read-write-many-storage-to-an-eks-cluster/</link>
+      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2022/04/28/adding-read-write-many-storage-to-an-eks-cluster/</guid>
+      <description>I needed an EKS cluster that supports Persistent Volumes with Access Mode ReadWriteMany.
+Therefore I updated my EKS Terraform template to support adding the EFS CSI driver if needed.
+Usage is pretty simple, you&amp;rsquo;ll just have to add enable_efs = true to your Terraform cluster definition.
+This will also create an EFS file system (storage will by provisioned dynamically depending on the requested persistent volume).
+You&amp;rsquo;ll just have to retrieve the file system ID from your AWS console and use it to create a new K8S storage class:</description>
+    </item>
+    
     <item>
       <title>Latest 2022 EKS Cluster with Load Balancing Controller and External DNS</title>
       <link>https://marcusschiesser.github.io/2022/02/07/latest-eks-cluster-with-load-balancing-controller-and-external-dns/</link>

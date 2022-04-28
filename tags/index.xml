@@ -9,7 +9,79 @@
       <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 15 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EFS</title>
+      <link>https://marcusschiesser.github.io/tags/efs/</link>
+      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/efs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EFS CSI driver</title>
+      <link>https://marcusschiesser.github.io/tags/efs-csi-driver/</link>
+      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/efs-csi-driver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EKS</title>
+      <link>https://marcusschiesser.github.io/tags/eks/</link>
+      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/eks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://marcusschiesser.github.io/tags/kubernetes/</link>
+      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PersistentVolume</title>
+      <link>https://marcusschiesser.github.io/tags/persistentvolume/</link>
+      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/persistentvolume/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadWriteMany</title>
+      <link>https://marcusschiesser.github.io/tags/readwritemany/</link>
+      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/readwritemany/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Storage</title>
+      <link>https://marcusschiesser.github.io/tags/storage/</link>
+      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/storage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terraform</title>
+      <link>https://marcusschiesser.github.io/tags/terraform/</link>
+      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/terraform/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>health</title>
       <link>https://marcusschiesser.github.io/tags/health/</link>
@@ -25,15 +97,6 @@
       <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/tags/k8s/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>https://marcusschiesser.github.io/tags/kubernetes/</link>
-      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://marcusschiesser.github.io/tags/kubernetes/</guid>
       <description></description>
     </item>
     
@@ -281,15 +344,6 @@
     </item>
     
     <item>
-      <title>EKS</title>
-      <link>https://marcusschiesser.github.io/tags/eks/</link>
-      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://marcusschiesser.github.io/tags/eks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>External DNS</title>
       <link>https://marcusschiesser.github.io/tags/external-dns/</link>
       <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
@@ -322,15 +376,6 @@
       <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/tags/route-53/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Terraform</title>
-      <link>https://marcusschiesser.github.io/tags/terraform/</link>
-      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://marcusschiesser.github.io/tags/terraform/</guid>
       <description></description>
     </item>
     
