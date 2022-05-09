@@ -9,7 +9,61 @@
       <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 28 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>apps</title>
+      <link>https://marcusschiesser.github.io/tags/apps/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/apps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>configuration</title>
+      <link>https://marcusschiesser.github.io/tags/configuration/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/configuration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gitops</title>
+      <link>https://marcusschiesser.github.io/tags/gitops/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/gitops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://marcusschiesser.github.io/tags/kubernetes/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Splunk</title>
+      <link>https://marcusschiesser.github.io/tags/splunk/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/splunk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>splunk-operator</title>
+      <link>https://marcusschiesser.github.io/tags/splunk-operator/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/tags/splunk-operator/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>EFS</title>
       <link>https://marcusschiesser.github.io/tags/efs/</link>
@@ -34,15 +88,6 @@
       <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/tags/eks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>https://marcusschiesser.github.io/tags/kubernetes/</link>
-      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://marcusschiesser.github.io/tags/kubernetes/</guid>
       <description></description>
     </item>
     
@@ -142,15 +187,6 @@
       <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/tags/rolling-update/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Splunk</title>
-      <link>https://marcusschiesser.github.io/tags/splunk/</link>
-      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://marcusschiesser.github.io/tags/splunk/</guid>
       <description></description>
     </item>
     
