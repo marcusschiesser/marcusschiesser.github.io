@@ -1,10 +1,10 @@
 ---
 author: Marcus Schiesser
-date: 2022-05-29
+date: 2022-05-09
 draft: false
 title: Storing Splunk Configuration for Kubernetes in Git
 type: post
-url: 2022/05/29/storing-splunk-configuration-for-kubernetes-in-git
+url: 2022/05/09/storing-splunk-configuration-for-kubernetes-in-git
 categories:
   - Kubernetes
   - Splunk
@@ -19,7 +19,7 @@ tags:
 
 After having [discussions about how to use Gitops with Splunk](https://splunk-usergroups.slack.com/archives/C01M8M2R3AM/p1651309478456499?thread_ts=1650596987.931899&cid=C01M8M2R3AM), I created this template to store the complete configuration (apps and system configuration) of a Splunk installation running on Kubernetes in Git:
 
-https://github.com/marcusschiesser/splunk-gitops.
+<https://github.com/marcusschiesser/splunk-gitops>.
 
 Having the complete configuration in a single repository is an important prerequisite to enjoy the [benefits of GitOps](https://www.weave.works/technologies/gitops/).
 
