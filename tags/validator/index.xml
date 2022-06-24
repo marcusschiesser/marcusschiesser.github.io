@@ -17,7 +17,7 @@
       
       <guid>https://marcusschiesser.github.io/2009/02/20/151/</guid>
       <description>Very unfortunately ExtJS doesn&amp;rsquo;t offer a validator for its checkbox component. Normally a validator checks whether a field is valid and takes care of displaying an error message if not. For a checkbox we would like that to happen if the checkbox is not selected. Overriding the validate function of the checkbox we can provide such a functionality for all checkbox instances we are about to create:
- Ext.form.Checkbox.prototype.validate = function(){ if (this.</description>
+Ext.form.Checkbox.prototype.validate = function(){ if (this.</description>
     </item>
     
   </channel>

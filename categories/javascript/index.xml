@@ -17,7 +17,7 @@
       
       <guid>https://marcusschiesser.github.io/2021/12/14/more-than-100-results-using-the-search-job-api/</guid>
       <description>If you’re using the @splunk/search-job API and want to return more than the 100 results (the default value), you’ll have to pass count to the getResults function, e.g.:
-new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </description>
+new SearchJob.create({ search: myQuery, }).getResults({ count: 500 }); </description>
     </item>
     
     <item>
@@ -26,8 +26,7 @@ new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </descri
       <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/12/09/mapping-types-using-the-splunk-search-job-api/</guid>
-      <description>In case you’re using the @splunk/search-job API you might find it annoying that the properties of the returned objects are all of type string. To fix this, I wrote a little type mapper (The unit test shows how to use it):
- </description>
+      <description>In case you’re using the @splunk/search-job API you might find it annoying that the properties of the returned objects are all of type string. To fix this, I wrote a little type mapper (The unit test shows how to use it):</description>
     </item>
     
     <item>
@@ -36,8 +35,7 @@ new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </descri
       <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/11/25/using-the-dashboard-api-from-a-splunk-visualization/</guid>
-      <description>How to use the Dashboard API from a Splunk visualization (e.g. to reload the datasource):
- </description>
+      <description>How to use the Dashboard API from a Splunk visualization (e.g. to reload the datasource):</description>
     </item>
     
     <item>
@@ -46,8 +44,7 @@ new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </descri
       <pubDate>Wed, 24 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/11/24/connect-a-datasource-to-a-splunk-visualization/</guid>
-      <description>How to programmatically connect a search datasource to a Splunk visualization (without using the dashboard):
- </description>
+      <description>How to programmatically connect a search datasource to a Splunk visualization (without using the dashboard):</description>
     </item>
     
     <item>
@@ -56,8 +53,7 @@ new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </descri
       <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/11/23/run-any-react-app-as-a-splunk-app/</guid>
-      <description>If you want to run any React app (any React version, any toolkit) as a Splunk app, have a look at this gist:
- </description>
+      <description>If you want to run any React app (any React version, any toolkit) as a Splunk app, have a look at this gist:</description>
     </item>
     
     <item>
@@ -75,8 +71,7 @@ new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </descri
       <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/11/08/post-request-from-a-splunk-app/</guid>
-      <description>This snippet shows how to use the handleError and handleResponse functions from the splunk-utils package to send a POST request from a Splunk app:
- </description>
+      <description>This snippet shows how to use the handleError and handleResponse functions from the splunk-utils package to send a POST request from a Splunk app:</description>
     </item>
     
     <item>

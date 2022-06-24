@@ -16,8 +16,7 @@
       <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/11/08/post-request-from-a-splunk-app/</guid>
-      <description>This snippet shows how to use the handleError and handleResponse functions from the splunk-utils package to send a POST request from a Splunk app:
- </description>
+      <description>This snippet shows how to use the handleError and handleResponse functions from the splunk-utils package to send a POST request from a Splunk app:</description>
     </item>
     
   </channel>

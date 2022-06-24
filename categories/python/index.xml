@@ -16,8 +16,7 @@
       <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/12/21/using-url-path-parameters-in-splunk-rest-endpoints/</guid>
-      <description>If you wonder how to pass an URL path parameter to your custom REST endpoint in Splunk, please have a look:
- </description>
+      <description>If you wonder how to pass an URL path parameter to your custom REST endpoint in Splunk, please have a look:</description>
     </item>
     
     <item>
@@ -26,8 +25,7 @@
       <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/12/20/enforce-arrays-for-multi-values-in-splunk/</guid>
-      <description>The Splunk SDK for Python is returning for multi-values that only have one entry a string instead of an array. To enforce arrays, you can do the following workaround:
- </description>
+      <description>The Splunk SDK for Python is returning for multi-values that only have one entry a string instead of an array. To enforce arrays, you can do the following workaround:</description>
     </item>
     
   </channel>

@@ -17,7 +17,7 @@
       
       <guid>https://marcusschiesser.github.io/2021/12/14/more-than-100-results-using-the-search-job-api/</guid>
       <description>If you’re using the @splunk/search-job API and want to return more than the 100 results (the default value), you’ll have to pass count to the getResults function, e.g.:
-new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </description>
+new SearchJob.create({ search: myQuery, }).getResults({ count: 500 }); </description>
     </item>
     
     <item>
@@ -26,8 +26,7 @@ new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </descri
       <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/12/09/mapping-types-using-the-splunk-search-job-api/</guid>
-      <description>In case you’re using the @splunk/search-job API you might find it annoying that the properties of the returned objects are all of type string. To fix this, I wrote a little type mapper (The unit test shows how to use it):
- </description>
+      <description>In case you’re using the @splunk/search-job API you might find it annoying that the properties of the returned objects are all of type string. To fix this, I wrote a little type mapper (The unit test shows how to use it):</description>
     </item>
     
   </channel>

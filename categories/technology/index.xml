@@ -28,7 +28,7 @@ Then you should read further. Below you find a [TableColumnModel](http://downloa
       <guid>https://marcusschiesser.github.io/2009/11/02/how-to-detect-whether-an-element-is-in-a-scrollable-parent/</guid>
       <description>Just think of having an element in a scrollable parent (the CSS property overflow is set to scroll) and you want to test whether the element is visible or not.
 Using this little function you can do the trick:
-function isInView(node){ var offsetParent = node.offsetParent; var top = offsetParent.scrollTop; var height = offsetParent.offsetHeight; var y = node.offsetTop; return y &amp;gt;= top &amp;amp;&amp;amp; y &amp;lt;= (top + height); }  And here&amp;rsquo;s a small use case - this one scrolls the element into the visible region, if it is not already in the view:</description>
+function isInView(node){ var offsetParent = node.offsetParent; var top = offsetParent.scrollTop; var height = offsetParent.offsetHeight; var y = node.offsetTop; return y &amp;gt;= top &amp;amp;&amp;amp; y &amp;lt;= (top + height); } And here&amp;rsquo;s a small use case - this one scrolls the element into the visible region, if it is not already in the view:</description>
     </item>
     
     <item>
@@ -61,7 +61,7 @@ As you can see, it is actually based on the component provided by the Ext exampl
       
       <guid>https://marcusschiesser.github.io/2009/02/09/generic-error-handler-for-extjs/</guid>
       <description>When you are doing client/server communication with ExtJS you probably run into the problem that you want to handle server side errors in a generic way. A solution that I found is to override the handleFailure function in the Ext.data.Connection class:
-Ext.data.Connection.prototype._handleFailure = Ext.data.Connection.prototype.handleFailure; Ext.data.Connection.prototype.handleFailure = function(response, e) { var errorText = Ext.DomQuery.selectValue(&amp;quot;Reason/Text&amp;quot;, response.responseXML, &amp;quot;Unknown Error&amp;quot;); Ext.Msg.alert(&#39;Error&#39;, errorText); Ext.data.Connection.prototype._handleFailure.call(this, response, e); };  This handler simply is called whenever a server side failure occurs.</description>
+Ext.data.Connection.prototype._handleFailure = Ext.data.Connection.prototype.handleFailure; Ext.data.Connection.prototype.handleFailure = function(response, e) { var errorText = Ext.DomQuery.selectValue(&amp;quot;Reason/Text&amp;quot;, response.responseXML, &amp;quot;Unknown Error&amp;quot;); Ext.Msg.alert(&#39;Error&#39;, errorText); Ext.data.Connection.prototype._handleFailure.call(this, response, e); }; This handler simply is called whenever a server side failure occurs.</description>
     </item>
     
     <item>

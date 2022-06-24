@@ -18,7 +18,7 @@
       <guid>https://marcusschiesser.github.io/2022/03/27/running-mapped-subsearches-without-limits-in-splunk/</guid>
       <description>If you&amp;rsquo;re running saved searches in Splunk as subsearches inside of the map command, they are bound by the subsearch limitation.
 This is an alternative command that doesn&amp;rsquo;t have this limitation as it starts a new job for each subsearch.
- To use it, instead of calling:
+To use it, instead of calling:
 | makeresults | map test You&amp;rsquo;re using:
 | makeresults | mapsearch search=test Missing the full flexibility of map, the command also passes each event&amp;rsquo;s values as input parameters to each called saved search.</description>
     </item>
@@ -29,8 +29,7 @@ This is an alternative command that doesn&amp;rsquo;t have this limitation as it
       <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/12/20/enforce-arrays-for-multi-values-in-splunk/</guid>
-      <description>The Splunk SDK for Python is returning for multi-values that only have one entry a string instead of an array. To enforce arrays, you can do the following workaround:
- </description>
+      <description>The Splunk SDK for Python is returning for multi-values that only have one entry a string instead of an array. To enforce arrays, you can do the following workaround:</description>
     </item>
     
     <item>
@@ -40,7 +39,7 @@ This is an alternative command that doesn&amp;rsquo;t have this limitation as it
       
       <guid>https://marcusschiesser.github.io/2021/12/14/more-than-100-results-using-the-search-job-api/</guid>
       <description>If you’re using the @splunk/search-job API and want to return more than the 100 results (the default value), you’ll have to pass count to the getResults function, e.g.:
-new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </description>
+new SearchJob.create({ search: myQuery, }).getResults({ count: 500 }); </description>
     </item>
     
     <item>
@@ -49,8 +48,7 @@ new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </descri
       <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/12/09/mapping-types-using-the-splunk-search-job-api/</guid>
-      <description>In case you’re using the @splunk/search-job API you might find it annoying that the properties of the returned objects are all of type string. To fix this, I wrote a little type mapper (The unit test shows how to use it):
- </description>
+      <description>In case you’re using the @splunk/search-job API you might find it annoying that the properties of the returned objects are all of type string. To fix this, I wrote a little type mapper (The unit test shows how to use it):</description>
     </item>
     
     <item>
@@ -59,8 +57,7 @@ new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </descri
       <pubDate>Wed, 24 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/11/24/connect-a-datasource-to-a-splunk-visualization/</guid>
-      <description>How to programmatically connect a search datasource to a Splunk visualization (without using the dashboard):
- </description>
+      <description>How to programmatically connect a search datasource to a Splunk visualization (without using the dashboard):</description>
     </item>
     
   </channel>

@@ -28,7 +28,7 @@ In the article we explain the implementation of meinkabinett, a web application 
       <guid>https://marcusschiesser.github.io/2008/07/22/vendor-gems-in-rake-tasks-verwenden/</guid>
       <description>Für das Deployment einer Rails-Anwendung ist es eine gute Sache, die für die Anwendung benötigten Gems in das Verzeichnis /vendor/gems zu kopieren. Der Hintergrund ist einfach - so wird sichergestellt, dass der Server dieselbe Version des Gems referenziert wie vom Entwickler vorgesehen.
 Damit Rails diese zur Laufzeit findet wird in der environment.rb folgender Code eingefügt:
-config.load_paths += Dir[&amp;quot;#{RAILS_ROOT}/vendor/gems/**&amp;quot;].map do |dir| File.directory?(lib = &amp;quot;#{dir}/lib&amp;quot;) ? lib : dir end  Das Problem dabei ist nun, dass die Vendor-Gems nicht von den Rake-Tasks gefunden werden.</description>
+config.load_paths += Dir[&amp;quot;#{RAILS_ROOT}/vendor/gems/**&amp;quot;].map do |dir| File.directory?(lib = &amp;quot;#{dir}/lib&amp;quot;) ? lib : dir end Das Problem dabei ist nun, dass die Vendor-Gems nicht von den Rake-Tasks gefunden werden.</description>
     </item>
     
   </channel>

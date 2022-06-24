@@ -29,7 +29,7 @@ Auch habe ich immer das Problem, unter der großen Auswahl einen guten Film zu f
       <guid>https://marcusschiesser.github.io/2008/03/05/zugang-zum-11-control-center-mit-adobe-air/</guid>
       <description>Am Wochenende habe ich mal ein wenig mit Adobe AIR herumgespielt. Wer noch nichts davon gehört hat, mit Adobe AIR kann man Desktopanwendungen mit den üblichen Webtechnologien (HTML, Ajax, Flex) entwicklen - klingt erstmal nicht so prickelnd, ist aber eine tolle Sache. Warum? Beispielsweise kann man damit sehr einfach bestehende Webanwendungen um Desktopfunktionalitäten erweitern.
 Heraus kam dabei eine Desktopanwendung, die das Control-Center von 1&amp;amp;1 um folgende nette Funktionen erweitert:
- * lokale Speicherung von mehreren Zugangsdaten * Beim Aufruf des SSH-Zugangs wird in die Zwischenablage eine Kommandozeile eingefügt, die einen SSH-Client startet * Schließen der Anwendung, wenn auf den Logout-Button gedrückt wird  Zum Installieren einfach auf &amp;ldquo;INSTALL NOW&amp;rdquo; drücken:</description>
+* lokale Speicherung von mehreren Zugangsdaten * Beim Aufruf des SSH-Zugangs wird in die Zwischenablage eine Kommandozeile eingefügt, die einen SSH-Client startet * Schließen der Anwendung, wenn auf den Logout-Button gedrückt wird Zum Installieren einfach auf &amp;ldquo;INSTALL NOW&amp;rdquo; drücken:</description>
     </item>
     
     <item>

@@ -16,8 +16,7 @@
       <pubDate>Wed, 24 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/11/24/connect-a-datasource-to-a-splunk-visualization/</guid>
-      <description>How to programmatically connect a search datasource to a Splunk visualization (without using the dashboard):
- </description>
+      <description>How to programmatically connect a search datasource to a Splunk visualization (without using the dashboard):</description>
     </item>
     
   </channel>

@@ -16,8 +16,7 @@
       <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/12/20/enforce-arrays-for-multi-values-in-splunk/</guid>
-      <description>The Splunk SDK for Python is returning for multi-values that only have one entry a string instead of an array. To enforce arrays, you can do the following workaround:
- </description>
+      <description>The Splunk SDK for Python is returning for multi-values that only have one entry a string instead of an array. To enforce arrays, you can do the following workaround:</description>
     </item>
     
     <item>

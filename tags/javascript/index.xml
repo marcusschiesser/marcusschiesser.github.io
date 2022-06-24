@@ -19,8 +19,7 @@
       <description>Wonder how to use the ISO8601 format in Splunk?
 Simplified extended ISO8601 is for example used in Javascript&amp;rsquo;s toISOString function.
 It&amp;rsquo;s a great way (readable and to timezone agnostic) to exchange timestamps between Splunk and Splunk Apps.
-Here&amp;rsquo;s how it&amp;rsquo;s done:
- </description>
+Here&amp;rsquo;s how it&amp;rsquo;s done:</description>
     </item>
     
     <item>
@@ -40,7 +39,7 @@ Here&amp;rsquo;s how it&amp;rsquo;s done:
       <guid>https://marcusschiesser.github.io/2009/11/02/how-to-detect-whether-an-element-is-in-a-scrollable-parent/</guid>
       <description>Just think of having an element in a scrollable parent (the CSS property overflow is set to scroll) and you want to test whether the element is visible or not.
 Using this little function you can do the trick:
-function isInView(node){ var offsetParent = node.offsetParent; var top = offsetParent.scrollTop; var height = offsetParent.offsetHeight; var y = node.offsetTop; return y &amp;gt;= top &amp;amp;&amp;amp; y &amp;lt;= (top + height); }  And here&amp;rsquo;s a small use case - this one scrolls the element into the visible region, if it is not already in the view:</description>
+function isInView(node){ var offsetParent = node.offsetParent; var top = offsetParent.scrollTop; var height = offsetParent.offsetHeight; var y = node.offsetTop; return y &amp;gt;= top &amp;amp;&amp;amp; y &amp;lt;= (top + height); } And here&amp;rsquo;s a small use case - this one scrolls the element into the visible region, if it is not already in the view:</description>
     </item>
     
     <item>

@@ -27,7 +27,7 @@ Another benefit is that you can reuse your transfer objects on the client and on
       
       <guid>https://marcusschiesser.github.io/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/</guid>
       <description>Are you annoyed that you have to annotate your POJOs with @XmlRootElement, so they can be used with JAX-RS? If your using Jersey as JAX-RS implementation your lucky: Just add to the &amp;lt;servlet&amp;gt; tag in your web.xml the following snippet:
-&amp;lt;init-param&amp;gt; &amp;lt;param-name&amp;gt;com.sun.jersey.api.json.POJOMappingFeature&amp;lt;/param-name&amp;gt; &amp;lt;param-value&amp;gt;true&amp;lt;/param-value&amp;gt; &amp;lt;/init-param&amp;gt;  After restarting your servlet, your POJOs are marshalled to JSON as a charme. Enjoy!</description>
+&amp;lt;init-param&amp;gt; &amp;lt;param-name&amp;gt;com.sun.jersey.api.json.POJOMappingFeature&amp;lt;/param-name&amp;gt; &amp;lt;param-value&amp;gt;true&amp;lt;/param-value&amp;gt; &amp;lt;/init-param&amp;gt; After restarting your servlet, your POJOs are marshalled to JSON as a charme. Enjoy!</description>
     </item>
     
     <item>

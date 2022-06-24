@@ -19,8 +19,7 @@
       <description>Wonder how to use the ISO8601 format in Splunk?
 Simplified extended ISO8601 is for example used in Javascript&amp;rsquo;s toISOString function.
 It&amp;rsquo;s a great way (readable and to timezone agnostic) to exchange timestamps between Splunk and Splunk Apps.
-Here&amp;rsquo;s how it&amp;rsquo;s done:
- </description>
+Here&amp;rsquo;s how it&amp;rsquo;s done:</description>
     </item>
     
     <item>
@@ -29,8 +28,7 @@ Here&amp;rsquo;s how it&amp;rsquo;s done:
       <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/11/23/run-any-react-app-as-a-splunk-app/</guid>
-      <description>If you want to run any React app (any React version, any toolkit) as a Splunk app, have a look at this gist:
- </description>
+      <description>If you want to run any React app (any React version, any toolkit) as a Splunk app, have a look at this gist:</description>
     </item>
     
   </channel>

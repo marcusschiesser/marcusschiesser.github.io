@@ -3,42 +3,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://marcusschiesser.github.io/tags/apps/</loc>
-    <lastmod>2022-05-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/categories/</loc>
-    <lastmod>2022-05-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/configuration/</loc>
-    <lastmod>2022-05-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/gitops/</loc>
-    <lastmod>2022-05-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/2022/06/24/injecting-passwords-from-kubernetes-secrets-into-splunk-config-files/</loc>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/kubernetes/</loc>
-    <lastmod>2022-05-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/categories/kubernetes/</loc>
-    <lastmod>2022-05-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/</loc>
-    <lastmod>2022-05-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/post/</loc>
-    <lastmod>2022-05-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/splunk/</loc>
-    <lastmod>2022-05-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/categories/splunk/</loc>
-    <lastmod>2022-05-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/splunk-operator/</loc>
-    <lastmod>2022-05-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/2022/05/09/storing-splunk-configuration-for-kubernetes-in-git/</loc>
-    <lastmod>2022-05-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/</loc>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/2022/05/09/storing-splunk-configuration-for-kubernetes-in-git/</loc>
     <lastmod>2022-05-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/2022/04/28/adding-read-write-many-storage-to-an-eks-cluster/</loc>

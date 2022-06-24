@@ -18,7 +18,7 @@
       <guid>https://marcusschiesser.github.io/2009/02/27/adding-rows-to-a-grid-in-extjs/</guid>
       <description>Note: Has been updated for ExtJS 4.1
 In the last article we built a data grid mockup in ExtJS 4.1. Now we want to add some rows to the grid. Firstly we need to create a model class to store a data. We&amp;rsquo;ve done that also in the previously article, but for the better understanding, here&amp;rsquo;s it again:
-Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;firstName&#39;, &#39;lastName&#39;] });  Having the Person class we can simply add new rows to the store (people in our case) by calling the add function with new instances of that class:</description>
+Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;firstName&#39;, &#39;lastName&#39;] }); Having the Person class we can simply add new rows to the store (people in our case) by calling the add function with new instances of that class:</description>
     </item>
     
   </channel>

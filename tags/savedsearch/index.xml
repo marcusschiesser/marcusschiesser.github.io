@@ -18,7 +18,7 @@
       <guid>https://marcusschiesser.github.io/2022/03/27/running-mapped-subsearches-without-limits-in-splunk/</guid>
       <description>If you&amp;rsquo;re running saved searches in Splunk as subsearches inside of the map command, they are bound by the subsearch limitation.
 This is an alternative command that doesn&amp;rsquo;t have this limitation as it starts a new job for each subsearch.
- To use it, instead of calling:
+To use it, instead of calling:
 | makeresults | map test You&amp;rsquo;re using:
 | makeresults | mapsearch search=test Missing the full flexibility of map, the command also passes each event&amp;rsquo;s values as input parameters to each called saved search.</description>
     </item>

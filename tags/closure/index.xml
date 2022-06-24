@@ -18,7 +18,7 @@
       <guid>https://marcusschiesser.github.io/2008/07/10/factories-fur-event-handler-in-as3/</guid>
       <description>In meinem letzten Projekt ist mir ein nettes Pattern für die Verwendung von Closures in Actionscript 3 eingefallen: Factories für Event-Handler.
 Hier ein sehr einfaches Beispiel für einen Handler, der einen Alert anzeigt:
-public static function createAlertHandler(text:String, title:String):Function { return function():void { Alert.show(text, title); } }	 Das Ganze kann man sich nun in der Praxis noch mit weiteren Parametern und natürlich einer komplexeren Handlerfunktion vorstellen. Der Vorteil an diesem Pattern ist, das über die Parameter der Factorymethode verschiedene Handler erstellt werden können, d.</description>
+public static function createAlertHandler(text:String, title:String):Function { return function():void { Alert.show(text, title); } }	Das Ganze kann man sich nun in der Praxis noch mit weiteren Parametern und natürlich einer komplexeren Handlerfunktion vorstellen. Der Vorteil an diesem Pattern ist, das über die Parameter der Factorymethode verschiedene Handler erstellt werden können, d.</description>
     </item>
     
   </channel>

@@ -9,7 +9,17 @@
       <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/gitops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/gitops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Injecting passwords from Kubernetes secrets into Splunk config files</title>
+      <link>https://marcusschiesser.github.io/2022/06/24/injecting-passwords-from-kubernetes-secrets-into-splunk-config-files/</link>
+      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2022/06/24/injecting-passwords-from-kubernetes-secrets-into-splunk-config-files/</guid>
+      <description>Currently, the Splunk K8S operator doesn&amp;rsquo;t support injecting passwords from Kubernetes secrets into the Splunk config. The workaround is to store a complete configuration file as a secret, see https://github.com/splunk/splunk-operator/issues/657
+As configuration files can be quite large, I created a small bash script that is using template files for the configuration and filling in the secrets based on user input. You can create the K8S secret containing the configuration by calling:</description>
+    </item>
+    
     <item>
       <title>Storing Splunk Configuration for Kubernetes in Git</title>
       <link>https://marcusschiesser.github.io/2022/05/09/storing-splunk-configuration-for-kubernetes-in-git/</link>

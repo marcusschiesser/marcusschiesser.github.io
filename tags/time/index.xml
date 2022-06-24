@@ -19,8 +19,7 @@
       <description>Wonder how to use the ISO8601 format in Splunk?
 Simplified extended ISO8601 is for example used in Javascript&amp;rsquo;s toISOString function.
 It&amp;rsquo;s a great way (readable and to timezone agnostic) to exchange timestamps between Splunk and Splunk Apps.
-Here&amp;rsquo;s how it&amp;rsquo;s done:
- </description>
+Here&amp;rsquo;s how it&amp;rsquo;s done:</description>
     </item>
     
   </channel>

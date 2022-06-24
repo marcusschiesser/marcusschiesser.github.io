@@ -78,7 +78,7 @@ Verwendet man beispielsweise die Klasse MyItemRenderer im Package itemrenders , 
       <guid>https://marcusschiesser.github.io/2008/03/05/zugang-zum-11-control-center-mit-adobe-air/</guid>
       <description>Am Wochenende habe ich mal ein wenig mit Adobe AIR herumgespielt. Wer noch nichts davon gehört hat, mit Adobe AIR kann man Desktopanwendungen mit den üblichen Webtechnologien (HTML, Ajax, Flex) entwicklen - klingt erstmal nicht so prickelnd, ist aber eine tolle Sache. Warum? Beispielsweise kann man damit sehr einfach bestehende Webanwendungen um Desktopfunktionalitäten erweitern.
 Heraus kam dabei eine Desktopanwendung, die das Control-Center von 1&amp;amp;1 um folgende nette Funktionen erweitert:
- * lokale Speicherung von mehreren Zugangsdaten * Beim Aufruf des SSH-Zugangs wird in die Zwischenablage eine Kommandozeile eingefügt, die einen SSH-Client startet * Schließen der Anwendung, wenn auf den Logout-Button gedrückt wird  Zum Installieren einfach auf &amp;ldquo;INSTALL NOW&amp;rdquo; drücken:</description>
+* lokale Speicherung von mehreren Zugangsdaten * Beim Aufruf des SSH-Zugangs wird in die Zwischenablage eine Kommandozeile eingefügt, die einen SSH-Client startet * Schließen der Anwendung, wenn auf den Logout-Button gedrückt wird Zum Installieren einfach auf &amp;ldquo;INSTALL NOW&amp;rdquo; drücken:</description>
     </item>
     
     <item>
@@ -107,7 +107,7 @@ Wer möchte kann hier gerne Fragen stellen und Kommentare abgeben.</description>
       
       <guid>https://marcusschiesser.github.io/2007/09/29/ein-paar-beitrage-zum-adobe-flex-cookbook/</guid>
       <description>Habe gerade ein paar Beiträge für das Adobe Flex Cookbook erstellt:
- * [Setting the properties of an itemRenderer from MXML](http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&amp;amp;postId=5762&amp;amp;productId=2&amp;amp;loc=en_US) * [Selecting a view in a ViewStack just by its Class](http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&amp;amp;postId=5782&amp;amp;productId=2&amp;amp;loc=en_US)  Viel Spaß beim voten ;-)</description>
+* [Setting the properties of an itemRenderer from MXML](http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&amp;amp;postId=5762&amp;amp;productId=2&amp;amp;loc=en_US) * [Selecting a view in a ViewStack just by its Class](http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&amp;amp;postId=5782&amp;amp;productId=2&amp;amp;loc=en_US) Viel Spaß beim voten ;-)</description>
     </item>
     
     <item>

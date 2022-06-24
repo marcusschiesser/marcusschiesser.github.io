@@ -18,7 +18,7 @@
       <guid>https://marcusschiesser.github.io/2022/02/23/using-any-html-page-as-login-page-in-splunk/</guid>
       <description>The configuration options in Splunk to customize the login page are not sufficient? You want to use an arbitrary HTML page?
 This static login page can be used to customize the login experience for Splunk (Tested with Enterprise 8.2.3):
- To activate it, you have to copy this file to $SPLUNK_HOME/share/splunk/search_mrsparkle/exposed/login.html (it will be served by Splunk Web as a static file) and add the following entry to the settings stanza in the web.</description>
+To activate it, you have to copy this file to $SPLUNK_HOME/share/splunk/search_mrsparkle/exposed/login.html (it will be served by Splunk Web as a static file) and add the following entry to the settings stanza in the web.</description>
     </item>
     
     <item>
@@ -28,8 +28,7 @@ This static login page can be used to customize the login experience for Splunk 
       
       <guid>https://marcusschiesser.github.io/2022/02/10/splunk-use-either-username-or-token-authentication/</guid>
       <description>For either using username or token authentication in Splunk, I wrote a small wrapper for the connect function.
-The advantage compared to the existing connect function is that you can use the same line of code for both authentication methods depending on the parameters that you pass (here shown by using ENV variables):
- </description>
+The advantage compared to the existing connect function is that you can use the same line of code for both authentication methods depending on the parameters that you pass (here shown by using ENV variables):</description>
     </item>
     
   </channel>

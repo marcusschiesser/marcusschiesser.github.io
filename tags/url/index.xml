@@ -16,8 +16,7 @@
       <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/12/21/using-url-path-parameters-in-splunk-rest-endpoints/</guid>
-      <description>If you wonder how to pass an URL path parameter to your custom REST endpoint in Splunk, please have a look:
- </description>
+      <description>If you wonder how to pass an URL path parameter to your custom REST endpoint in Splunk, please have a look:</description>
     </item>
     
   </channel>

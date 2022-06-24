@@ -17,7 +17,7 @@
       
       <guid>https://marcusschiesser.github.io/2021/12/14/more-than-100-results-using-the-search-job-api/</guid>
       <description>If you’re using the @splunk/search-job API and want to return more than the 100 results (the default value), you’ll have to pass count to the getResults function, e.g.:
-new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </description>
+new SearchJob.create({ search: myQuery, }).getResults({ count: 500 }); </description>
     </item>
     
   </channel>

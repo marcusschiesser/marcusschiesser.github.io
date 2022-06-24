@@ -9,7 +9,17 @@
       <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Injecting passwords from Kubernetes secrets into Splunk config files</title>
+      <link>https://marcusschiesser.github.io/2022/06/24/injecting-passwords-from-kubernetes-secrets-into-splunk-config-files/</link>
+      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2022/06/24/injecting-passwords-from-kubernetes-secrets-into-splunk-config-files/</guid>
+      <description>Currently, the Splunk K8S operator doesn&amp;rsquo;t support injecting passwords from Kubernetes secrets into the Splunk config. The workaround is to store a complete configuration file as a secret, see https://github.com/splunk/splunk-operator/issues/657
+As configuration files can be quite large, I created a small bash script that is using template files for the configuration and filling in the secrets based on user input. You can create the K8S secret containing the configuration by calling:</description>
+    </item>
+    
     <item>
       <title>Storing Splunk Configuration for Kubernetes in Git</title>
       <link>https://marcusschiesser.github.io/2022/05/09/storing-splunk-configuration-for-kubernetes-in-git/</link>
@@ -54,7 +64,7 @@ Furthermore, as the Splunk container needs about one minute to startup, I&amp;rs
       <guid>https://marcusschiesser.github.io/2022/03/27/running-mapped-subsearches-without-limits-in-splunk/</guid>
       <description>If you&amp;rsquo;re running saved searches in Splunk as subsearches inside of the map command, they are bound by the subsearch limitation.
 This is an alternative command that doesn&amp;rsquo;t have this limitation as it starts a new job for each subsearch.
- To use it, instead of calling:
+To use it, instead of calling:
 | makeresults | map test You&amp;rsquo;re using:
 | makeresults | mapsearch search=test Missing the full flexibility of map, the command also passes each event&amp;rsquo;s values as input parameters to each called saved search.</description>
     </item>
@@ -68,8 +78,7 @@ This is an alternative command that doesn&amp;rsquo;t have this limitation as it
       <description>Wonder how to use the ISO8601 format in Splunk?
 Simplified extended ISO8601 is for example used in Javascript&amp;rsquo;s toISOString function.
 It&amp;rsquo;s a great way (readable and to timezone agnostic) to exchange timestamps between Splunk and Splunk Apps.
-Here&amp;rsquo;s how it&amp;rsquo;s done:
- </description>
+Here&amp;rsquo;s how it&amp;rsquo;s done:</description>
     </item>
     
     <item>
@@ -80,7 +89,7 @@ Here&amp;rsquo;s how it&amp;rsquo;s done:
       <guid>https://marcusschiesser.github.io/2022/02/23/using-any-html-page-as-login-page-in-splunk/</guid>
       <description>The configuration options in Splunk to customize the login page are not sufficient? You want to use an arbitrary HTML page?
 This static login page can be used to customize the login experience for Splunk (Tested with Enterprise 8.2.3):
- To activate it, you have to copy this file to $SPLUNK_HOME/share/splunk/search_mrsparkle/exposed/login.html (it will be served by Splunk Web as a static file) and add the following entry to the settings stanza in the web.</description>
+To activate it, you have to copy this file to $SPLUNK_HOME/share/splunk/search_mrsparkle/exposed/login.html (it will be served by Splunk Web as a static file) and add the following entry to the settings stanza in the web.</description>
     </item>
     
     <item>
@@ -90,8 +99,7 @@ This static login page can be used to customize the login experience for Splunk 
       
       <guid>https://marcusschiesser.github.io/2022/02/10/splunk-use-either-username-or-token-authentication/</guid>
       <description>For either using username or token authentication in Splunk, I wrote a small wrapper for the connect function.
-The advantage compared to the existing connect function is that you can use the same line of code for both authentication methods depending on the parameters that you pass (here shown by using ENV variables):
- </description>
+The advantage compared to the existing connect function is that you can use the same line of code for both authentication methods depending on the parameters that you pass (here shown by using ENV variables):</description>
     </item>
     
     <item>
@@ -121,8 +129,7 @@ The trick is to add a mfa_serial parameter to the profile in the ~/.aws/config f
       <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/12/21/using-url-path-parameters-in-splunk-rest-endpoints/</guid>
-      <description>If you wonder how to pass an URL path parameter to your custom REST endpoint in Splunk, please have a look:
- </description>
+      <description>If you wonder how to pass an URL path parameter to your custom REST endpoint in Splunk, please have a look:</description>
     </item>
     
     <item>
@@ -131,8 +138,7 @@ The trick is to add a mfa_serial parameter to the profile in the ~/.aws/config f
       <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/12/20/enforce-arrays-for-multi-values-in-splunk/</guid>
-      <description>The Splunk SDK for Python is returning for multi-values that only have one entry a string instead of an array. To enforce arrays, you can do the following workaround:
- </description>
+      <description>The Splunk SDK for Python is returning for multi-values that only have one entry a string instead of an array. To enforce arrays, you can do the following workaround:</description>
     </item>
     
     <item>
@@ -142,7 +148,7 @@ The trick is to add a mfa_serial parameter to the profile in the ~/.aws/config f
       
       <guid>https://marcusschiesser.github.io/2021/12/14/more-than-100-results-using-the-search-job-api/</guid>
       <description>If you’re using the @splunk/search-job API and want to return more than the 100 results (the default value), you’ll have to pass count to the getResults function, e.g.:
-new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </description>
+new SearchJob.create({ search: myQuery, }).getResults({ count: 500 }); </description>
     </item>
     
     <item>
@@ -151,8 +157,7 @@ new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </descri
       <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/12/09/mapping-types-using-the-splunk-search-job-api/</guid>
-      <description>In case you’re using the @splunk/search-job API you might find it annoying that the properties of the returned objects are all of type string. To fix this, I wrote a little type mapper (The unit test shows how to use it):
- </description>
+      <description>In case you’re using the @splunk/search-job API you might find it annoying that the properties of the returned objects are all of type string. To fix this, I wrote a little type mapper (The unit test shows how to use it):</description>
     </item>
     
     <item>
@@ -161,8 +166,7 @@ new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </descri
       <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/11/25/using-the-dashboard-api-from-a-splunk-visualization/</guid>
-      <description>How to use the Dashboard API from a Splunk visualization (e.g. to reload the datasource):
- </description>
+      <description>How to use the Dashboard API from a Splunk visualization (e.g. to reload the datasource):</description>
     </item>
     
     <item>
@@ -171,8 +175,7 @@ new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </descri
       <pubDate>Wed, 24 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/11/24/connect-a-datasource-to-a-splunk-visualization/</guid>
-      <description>How to programmatically connect a search datasource to a Splunk visualization (without using the dashboard):
- </description>
+      <description>How to programmatically connect a search datasource to a Splunk visualization (without using the dashboard):</description>
     </item>
     
     <item>
@@ -181,8 +184,7 @@ new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </descri
       <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/11/23/run-any-react-app-as-a-splunk-app/</guid>
-      <description>If you want to run any React app (any React version, any toolkit) as a Splunk app, have a look at this gist:
- </description>
+      <description>If you want to run any React app (any React version, any toolkit) as a Splunk app, have a look at this gist:</description>
     </item>
     
     <item>
@@ -200,8 +202,7 @@ new SearchJob.create({  search: myQuery, }).getResults({ count: 500 }); </descri
       <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/2021/11/08/post-request-from-a-splunk-app/</guid>
-      <description>This snippet shows how to use the handleError and handleResponse functions from the splunk-utils package to send a POST request from a Splunk app:
- </description>
+      <description>This snippet shows how to use the handleError and handleResponse functions from the splunk-utils package to send a POST request from a Splunk app:</description>
     </item>
     
     <item>
@@ -241,7 +242,7 @@ We call it a cloud tutorial, because you learn everything step by step using an 
       <guid>https://marcusschiesser.github.io/2014/08/22/restart-a-extjs-4-2-application-by-recreating-the-viewport/</guid>
       <description>If you are debugging your ExtJS application, it could be helpful from time to time to restart the application. Sure, simply pressing F5 usually does the trick, but it might happen that you want to keep the state of the application and just restart the viewport.
 This is simply done by typing the following lines in your favorite JavaScript console:
- 1. Remove existing viewport with a ComponentQuery Ext.ComponentQuery.query(&#39;viewport&#39;)[0].removeAll(); 2. Recreate viewport, here the viewport&#39;s class name is _myApp.</description>
+1. Remove existing viewport with a ComponentQuery Ext.ComponentQuery.query(&#39;viewport&#39;)[0].removeAll(); 2. Recreate viewport, here the viewport&#39;s class name is _myApp.</description>
     </item>
     
     <item>
@@ -351,7 +352,7 @@ Firstly you will need a entity class that is storing the file in the data store:
       
       <guid>https://marcusschiesser.github.io/2011/12/01/using-real-pojos-without-jaxb-annotations-as-transfer-objects-with-jax-rs/</guid>
       <description>Are you annoyed that you have to annotate your POJOs with @XmlRootElement, so they can be used with JAX-RS? If your using Jersey as JAX-RS implementation your lucky: Just add to the &amp;lt;servlet&amp;gt; tag in your web.xml the following snippet:
-&amp;lt;init-param&amp;gt; &amp;lt;param-name&amp;gt;com.sun.jersey.api.json.POJOMappingFeature&amp;lt;/param-name&amp;gt; &amp;lt;param-value&amp;gt;true&amp;lt;/param-value&amp;gt; &amp;lt;/init-param&amp;gt;  After restarting your servlet, your POJOs are marshalled to JSON as a charme. Enjoy!</description>
+&amp;lt;init-param&amp;gt; &amp;lt;param-name&amp;gt;com.sun.jersey.api.json.POJOMappingFeature&amp;lt;/param-name&amp;gt; &amp;lt;param-value&amp;gt;true&amp;lt;/param-value&amp;gt; &amp;lt;/init-param&amp;gt; After restarting your servlet, your POJOs are marshalled to JSON as a charme. Enjoy!</description>
     </item>
     
     <item>
@@ -393,7 +394,7 @@ Ich bin gerade dabei eine Android-App zu entwickeln, mit der es möglich ist Fah
       <guid>https://marcusschiesser.github.io/2009/11/02/how-to-detect-whether-an-element-is-in-a-scrollable-parent/</guid>
       <description>Just think of having an element in a scrollable parent (the CSS property overflow is set to scroll) and you want to test whether the element is visible or not.
 Using this little function you can do the trick:
-function isInView(node){ var offsetParent = node.offsetParent; var top = offsetParent.scrollTop; var height = offsetParent.offsetHeight; var y = node.offsetTop; return y &amp;gt;= top &amp;amp;&amp;amp; y &amp;lt;= (top + height); }  And here&amp;rsquo;s a small use case - this one scrolls the element into the visible region, if it is not already in the view:</description>
+function isInView(node){ var offsetParent = node.offsetParent; var top = offsetParent.scrollTop; var height = offsetParent.offsetHeight; var y = node.offsetTop; return y &amp;gt;= top &amp;amp;&amp;amp; y &amp;lt;= (top + height); } And here&amp;rsquo;s a small use case - this one scrolls the element into the visible region, if it is not already in the view:</description>
     </item>
     
     <item>
@@ -521,7 +522,7 @@ Ext.ns(&#39;templates&#39;); templates.Loader = function(){ var that = {}; var m
       <guid>https://marcusschiesser.github.io/2009/02/27/adding-rows-to-a-grid-in-extjs/</guid>
       <description>Note: Has been updated for ExtJS 4.1
 In the last article we built a data grid mockup in ExtJS 4.1. Now we want to add some rows to the grid. Firstly we need to create a model class to store a data. We&amp;rsquo;ve done that also in the previously article, but for the better understanding, here&amp;rsquo;s it again:
-Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;firstName&#39;, &#39;lastName&#39;] });  Having the Person class we can simply add new rows to the store (people in our case) by calling the add function with new instances of that class:</description>
+Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;firstName&#39;, &#39;lastName&#39;] }); Having the Person class we can simply add new rows to the store (people in our case) by calling the add function with new instances of that class:</description>
     </item>
     
     <item>
@@ -532,7 +533,7 @@ Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;f
       <guid>https://marcusschiesser.github.io/2009/02/27/167/</guid>
       <description>Note: This post has been updated for ExtJS 4.1
 In the early development phase it is usually a good idea to provide a mockup that is not using real data but some dummy data from memory. To do that for a grid in ExtJS we need to create a record class first. For a person this might look like this:
-Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;firstName&#39;, &#39;lastName&#39;] });  Then we need a store where instances of the Person class will be stored:</description>
+Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;firstName&#39;, &#39;lastName&#39;] }); Then we need a store where instances of the Person class will be stored:</description>
     </item>
     
     <item>
@@ -542,7 +543,7 @@ Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;f
       
       <guid>https://marcusschiesser.github.io/2009/02/20/151/</guid>
       <description>Very unfortunately ExtJS doesn&amp;rsquo;t offer a validator for its checkbox component. Normally a validator checks whether a field is valid and takes care of displaying an error message if not. For a checkbox we would like that to happen if the checkbox is not selected. Overriding the validate function of the checkbox we can provide such a functionality for all checkbox instances we are about to create:
- Ext.form.Checkbox.prototype.validate = function(){ if (this.</description>
+Ext.form.Checkbox.prototype.validate = function(){ if (this.</description>
     </item>
     
     <item>
@@ -552,7 +553,7 @@ Ext.define(&#39;Person&#39;, { extend: &#39;Ext.data.Model&#39;, fields: [&#39;f
       
       <guid>https://marcusschiesser.github.io/2009/02/09/generic-error-handler-for-extjs/</guid>
       <description>When you are doing client/server communication with ExtJS you probably run into the problem that you want to handle server side errors in a generic way. A solution that I found is to override the handleFailure function in the Ext.data.Connection class:
-Ext.data.Connection.prototype._handleFailure = Ext.data.Connection.prototype.handleFailure; Ext.data.Connection.prototype.handleFailure = function(response, e) { var errorText = Ext.DomQuery.selectValue(&amp;quot;Reason/Text&amp;quot;, response.responseXML, &amp;quot;Unknown Error&amp;quot;); Ext.Msg.alert(&#39;Error&#39;, errorText); Ext.data.Connection.prototype._handleFailure.call(this, response, e); };  This handler simply is called whenever a server side failure occurs.</description>
+Ext.data.Connection.prototype._handleFailure = Ext.data.Connection.prototype.handleFailure; Ext.data.Connection.prototype.handleFailure = function(response, e) { var errorText = Ext.DomQuery.selectValue(&amp;quot;Reason/Text&amp;quot;, response.responseXML, &amp;quot;Unknown Error&amp;quot;); Ext.Msg.alert(&#39;Error&#39;, errorText); Ext.data.Connection.prototype._handleFailure.call(this, response, e); }; This handler simply is called whenever a server side failure occurs.</description>
     </item>
     
     <item>
@@ -650,7 +651,7 @@ I thought it would be nice to integrate such a picture view in your own Flex app
       <guid>https://marcusschiesser.github.io/2008/07/22/vendor-gems-in-rake-tasks-verwenden/</guid>
       <description>Für das Deployment einer Rails-Anwendung ist es eine gute Sache, die für die Anwendung benötigten Gems in das Verzeichnis /vendor/gems zu kopieren. Der Hintergrund ist einfach - so wird sichergestellt, dass der Server dieselbe Version des Gems referenziert wie vom Entwickler vorgesehen.
 Damit Rails diese zur Laufzeit findet wird in der environment.rb folgender Code eingefügt:
-config.load_paths += Dir[&amp;quot;#{RAILS_ROOT}/vendor/gems/**&amp;quot;].map do |dir| File.directory?(lib = &amp;quot;#{dir}/lib&amp;quot;) ? lib : dir end  Das Problem dabei ist nun, dass die Vendor-Gems nicht von den Rake-Tasks gefunden werden.</description>
+config.load_paths += Dir[&amp;quot;#{RAILS_ROOT}/vendor/gems/**&amp;quot;].map do |dir| File.directory?(lib = &amp;quot;#{dir}/lib&amp;quot;) ? lib : dir end Das Problem dabei ist nun, dass die Vendor-Gems nicht von den Rake-Tasks gefunden werden.</description>
     </item>
     
     <item>
@@ -661,7 +662,7 @@ config.load_paths += Dir[&amp;quot;#{RAILS_ROOT}/vendor/gems/**&amp;quot;].map d
       <guid>https://marcusschiesser.github.io/2008/07/10/factories-fur-event-handler-in-as3/</guid>
       <description>In meinem letzten Projekt ist mir ein nettes Pattern für die Verwendung von Closures in Actionscript 3 eingefallen: Factories für Event-Handler.
 Hier ein sehr einfaches Beispiel für einen Handler, der einen Alert anzeigt:
-public static function createAlertHandler(text:String, title:String):Function { return function():void { Alert.show(text, title); } }	 Das Ganze kann man sich nun in der Praxis noch mit weiteren Parametern und natürlich einer komplexeren Handlerfunktion vorstellen. Der Vorteil an diesem Pattern ist, das über die Parameter der Factorymethode verschiedene Handler erstellt werden können, d.</description>
+public static function createAlertHandler(text:String, title:String):Function { return function():void { Alert.show(text, title); } }	Das Ganze kann man sich nun in der Praxis noch mit weiteren Parametern und natürlich einer komplexeren Handlerfunktion vorstellen. Der Vorteil an diesem Pattern ist, das über die Parameter der Factorymethode verschiedene Handler erstellt werden können, d.</description>
     </item>
     
     <item>
@@ -778,7 +779,7 @@ Ich hoffe, es findet sich etwas brauchbares, das jemand entwickeln möchte – s
       <guid>https://marcusschiesser.github.io/2008/03/05/zugang-zum-11-control-center-mit-adobe-air/</guid>
       <description>Am Wochenende habe ich mal ein wenig mit Adobe AIR herumgespielt. Wer noch nichts davon gehört hat, mit Adobe AIR kann man Desktopanwendungen mit den üblichen Webtechnologien (HTML, Ajax, Flex) entwicklen - klingt erstmal nicht so prickelnd, ist aber eine tolle Sache. Warum? Beispielsweise kann man damit sehr einfach bestehende Webanwendungen um Desktopfunktionalitäten erweitern.
 Heraus kam dabei eine Desktopanwendung, die das Control-Center von 1&amp;amp;1 um folgende nette Funktionen erweitert:
- * lokale Speicherung von mehreren Zugangsdaten * Beim Aufruf des SSH-Zugangs wird in die Zwischenablage eine Kommandozeile eingefügt, die einen SSH-Client startet * Schließen der Anwendung, wenn auf den Logout-Button gedrückt wird  Zum Installieren einfach auf &amp;ldquo;INSTALL NOW&amp;rdquo; drücken:</description>
+* lokale Speicherung von mehreren Zugangsdaten * Beim Aufruf des SSH-Zugangs wird in die Zwischenablage eine Kommandozeile eingefügt, die einen SSH-Client startet * Schließen der Anwendung, wenn auf den Logout-Button gedrückt wird Zum Installieren einfach auf &amp;ldquo;INSTALL NOW&amp;rdquo; drücken:</description>
     </item>
     
     <item>
@@ -807,7 +808,7 @@ Wer möchte kann hier gerne Fragen stellen und Kommentare abgeben.</description>
       
       <guid>https://marcusschiesser.github.io/2007/09/29/ein-paar-beitrage-zum-adobe-flex-cookbook/</guid>
       <description>Habe gerade ein paar Beiträge für das Adobe Flex Cookbook erstellt:
- * [Setting the properties of an itemRenderer from MXML](http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&amp;amp;postId=5762&amp;amp;productId=2&amp;amp;loc=en_US) * [Selecting a view in a ViewStack just by its Class](http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&amp;amp;postId=5782&amp;amp;productId=2&amp;amp;loc=en_US)  Viel Spaß beim voten ;-)</description>
+* [Setting the properties of an itemRenderer from MXML](http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&amp;amp;postId=5762&amp;amp;productId=2&amp;amp;loc=en_US) * [Selecting a view in a ViewStack just by its Class](http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&amp;amp;postId=5782&amp;amp;productId=2&amp;amp;loc=en_US) Viel Spaß beim voten ;-)</description>
     </item>
     
     <item>
