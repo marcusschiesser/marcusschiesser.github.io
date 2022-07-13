@@ -43,7 +43,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Marcus Schiesser - Cloud Architect. Full-Stack Developer. Technical Advisor."
+    description: "Marcus Schiesser - Building Better Software. Splunk and Kubernetes Specialist"
     author: Marcus Schiesser
     # author: ["Me", "You"] # multiple authors
 
@@ -76,11 +76,7 @@ params:
     homeInfoParams:
         Title: "Marcus Schiesser"
         Content: >
-            - **Cloud Architect. Full-Stack Developer. Technical Advisor.** 
-            
-            - I love creating complex systems, discovering new places and tasting delicious food. 
-
-            - This is my blog. Enjoy!
+            - **Building Better Software.** <br>[Splunk](https://www.splunk.com/) & [Kubernetes](https://kubernetes.io/) Specialist, Former CTO [@glasnostic](https://glasnostic.com/) and [@arena](https://www.arena-banking.com/). 
 
     socialIcons:
         - name: github
