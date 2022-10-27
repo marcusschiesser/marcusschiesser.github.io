@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>update on Marcus Schiesser</title>
+    <link>https://marcusschiesser.github.io/tags/update/</link>
+    <description>Recent content in update on Marcus Schiesser</description>
+    <image>
+      <url>https://marcusschiesser.github.io/papermod-cover.png</url>
+      <link>https://marcusschiesser.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/update/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Copy K8s Secrets Between Namespaces With Updating</title>
+      <link>https://marcusschiesser.github.io/2022/08/09/copy-k8s-secrets-between-namespaces-with-updating/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2022/08/09/copy-k8s-secrets-between-namespaces-with-updating/</guid>
+      <description>K8S doesn&amp;rsquo;t allow to share secrets between namespaces for security reasons.
+It might be acceptable from a security point of view to share secrets nevertheless - then a common workaround is to copy secrets between namespaces. One pattern is to keep a template of the secret in the default namespace and copy it from there to other namespaces.
+Here&amp;rsquo;s a version of copying secrets between namespaces that also works if the destination secret already exists - in this case it&amp;rsquo;s just updated with the data from the source:</description>
+    </item>
+    
+  </channel>
+</rss>

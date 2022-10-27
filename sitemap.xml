@@ -41,6 +41,18 @@
     <loc>https://marcusschiesser.github.io/tags/</loc>
     <lastmod>2022-10-27T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://marcusschiesser.github.io/2022/08/09/copy-k8s-secrets-between-namespaces-with-updating/</loc>
+    <lastmod>2022-08-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/namespaces/</loc>
+    <lastmod>2022-08-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/secrets/</loc>
+    <lastmod>2022-08-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://marcusschiesser.github.io/tags/update/</loc>
+    <lastmod>2022-08-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://marcusschiesser.github.io/2022/06/24/injecting-passwords-from-kubernetes-secrets-into-splunk-config-files/</loc>
     <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
@@ -873,9 +885,6 @@
     <lastmod>2009-01-27T17:15:13+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/formatter/</loc>
-    <lastmod>2009-01-27T17:15:13+00:00</lastmod>
-  </url><url>
-    <loc>https://marcusschiesser.github.io/tags/namespaces/</loc>
     <lastmod>2009-01-27T17:15:13+00:00</lastmod>
   </url><url>
     <loc>https://marcusschiesser.github.io/tags/service/</loc>
