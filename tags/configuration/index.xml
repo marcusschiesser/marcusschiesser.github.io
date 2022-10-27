@@ -9,7 +9,18 @@
       <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/configuration/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/configuration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuring Splunk Instances Running K8s</title>
+      <link>https://marcusschiesser.github.io/2022/10/27/configuring-splunk-instances-running-k8s/</link>
+      <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcusschiesser.github.io/2022/10/27/configuring-splunk-instances-running-k8s/</guid>
+      <description>The recommendations to configure Splunk instances that are running on K8S using the Splunk operator is by bundling .conf files in Splunk apps.
+Unfortunately some things can&amp;rsquo;t be configured with Splunk apps, e.g. adding a user. Then you have two options:
+Adding the user manually via CLI or UI and therefore not having the configuration in Git OR Deploying a second instance in K8S that is doing the configuration for the first instance Here&amp;rsquo;s the deployment YAML for this second option:</description>
+    </item>
+    
     <item>
       <title>Injecting passwords from Kubernetes secrets into Splunk config files</title>
       <link>https://marcusschiesser.github.io/2022/06/24/injecting-passwords-from-kubernetes-secrets-into-splunk-config-files/</link>

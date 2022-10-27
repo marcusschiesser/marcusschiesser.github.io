@@ -9,11 +9,11 @@
       <link>https://marcusschiesser.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://marcusschiesser.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>apps</title>
       <link>https://marcusschiesser.github.io/tags/apps/</link>
-      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/tags/apps/</guid>
       <description></description>
@@ -22,7 +22,7 @@
     <item>
       <title>configuration</title>
       <link>https://marcusschiesser.github.io/tags/configuration/</link>
-      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/tags/configuration/</guid>
       <description></description>
@@ -31,7 +31,7 @@
     <item>
       <title>Gitops</title>
       <link>https://marcusschiesser.github.io/tags/gitops/</link>
-      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/tags/gitops/</guid>
       <description></description>
@@ -40,7 +40,7 @@
     <item>
       <title>Kubernetes</title>
       <link>https://marcusschiesser.github.io/tags/kubernetes/</link>
-      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/tags/kubernetes/</guid>
       <description></description>
@@ -49,7 +49,7 @@
     <item>
       <title>Splunk</title>
       <link>https://marcusschiesser.github.io/tags/splunk/</link>
-      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/tags/splunk/</guid>
       <description></description>
@@ -58,7 +58,7 @@
     <item>
       <title>splunk-operator</title>
       <link>https://marcusschiesser.github.io/tags/splunk-operator/</link>
-      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marcusschiesser.github.io/tags/splunk-operator/</guid>
       <description></description>
